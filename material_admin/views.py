@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.contrib.admin import AdminSite
 
-# Create your views here.
+
+class MaterialAdminSite(AdminSite):
+    login_template = 'material_admin/login.html'
+
+
+admin_site = MaterialAdminSite()
