@@ -5618,6 +5618,10 @@ body.keyboard-focused .dropdown-content li:focus {
           transform: none;
 }
 
+.input-field.has-error .prefix {
+    color: #f44336 !important;
+}
+
 .dropdown-trigger {
   cursor: pointer;
 }
