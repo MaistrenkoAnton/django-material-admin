@@ -13,6 +13,10 @@
     height: 100%;
 }
 
+.login div#header {
+    padding: 0;
+}
+
 .login div#container {
     width: 100%;
     margin: 0 auto;
@@ -22,6 +26,7 @@
 
 .login-form {
     width: 30%;
+    min-width: 350px;
     padding: 0 20px;
 }
 
@@ -46,10 +51,7 @@
 }
 
 .errornote {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50px;
+    margin: 20px;
     background: #f8d7da;
     animation: fadeout 0.5s 5s forwards;
 }

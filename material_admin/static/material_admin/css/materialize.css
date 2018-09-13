@@ -6588,6 +6588,11 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
   top: 0.5rem;
 }
 
+.prefix-error {
+    margin-top: -8px;
+    padding-left: 45px;
+}
+
 .input-field .prefix.active {
   color: #477091;
 }
