@@ -1,9 +1,10 @@
-from django.contrib import admin
+from django.contrib.admin import site as admin_site
 from django.urls import path
-from material_admin.views import admin_site
+
+admin_site.login_template = 'material_admin/login.html'
+admin_site.logout_template = 'material_admin/logout.html'
+admin_site.index_template = 'material_admin/index.html'
 
 urlpatterns = [
-    path('login/', admin_site.login, name='login'),
-    path('logout/', admin_site.logout, name='logout'),
-    path('', admin.site.urls),
+    path('', admin_site.urls),
 ]
