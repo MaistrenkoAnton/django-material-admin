@@ -1,4 +1,4 @@
-from django.contrib.admin.sites import DefaultAdminSite
+from django.contrib.admin.sites import site
 
 material_templates = {
     'login_template': 'material_admin/login.html',
@@ -10,11 +10,5 @@ material_templates = {
     'password_change_done_template': None
 }
 
-
-class MaterialAdminSite(DefaultAdminSite):
-    def _setup(self):
-        super()._setup()
-        self._wrapped.__dict__.update(material_templates)
-
-
-material_site = MaterialAdminSite()
+site._wrapped.__dict__.update(material_templates)
+material_site = site
