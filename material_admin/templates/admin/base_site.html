@@ -3,8 +3,8 @@
 
 {% block extrastyle %}
 <link rel="stylesheet" href="{% static 'material_admin/css/materialize.css' %}">
-<script src="{% static 'material_admin/js/materialize.js' %}"></script>
 <link href="{% static 'material_admin/css/material_icons.css' %}" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 {% endblock %}
 
 {% block branding %}
@@ -12,3 +12,8 @@
 {% endblock %}
 
 {% block content_title %}{% endblock %}
+
+{% block footer %}
+  <script src="{% static 'material_admin/js/materialize.js' %}"></script>
+  <script src="{% static 'material_admin/js/materialize.admin.js' %}"></script>
+{% endblock %}

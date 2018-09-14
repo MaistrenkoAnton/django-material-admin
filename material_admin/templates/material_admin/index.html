@@ -1,1 +1,54 @@
 {% extends 'admin/index.html' %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/index.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div id="content-main">
+  <div class="row">
+    <div class="menu">
+      {% if app_list %}
+      <ul class="collapsible card">
+        {% for i in "13123212321231321321414"|make_list %}
+
+        {% for app in app_list %}
+        <li class="scrollspy">
+          <div class="collapsible-header">
+            <i class="material-icons">settings</i>
+            {{ app.name }}
+            <span class="new badge" data-badge-caption="">{{ app.models|length }}</span></div>
+          <div class="collapsible-body">
+            {% for model in app.models %}
+            {% if model.admin_url %}
+            <div><a href="{{ model.admin_url }}">{{ model.name }}</a></div>
+            {% else %}
+            <div>{{ model.name }}</div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </li>
+        {% endfor %}
+        {% endfor %}
+
+      </ul>
+      {% else %}
+      <p>{% trans "You don't have permission to view or edit anything." %}</p>
+      {% endif %}
+    </div>
+
+    <div class="content">
+      <!-- Teal page content  -->
+    </div>
+
+  </div>
+
+
+</div>
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
