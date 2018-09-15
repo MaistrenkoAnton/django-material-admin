@@ -1,12 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, {
+    var collapsible = document.querySelectorAll('.collapsible');
+     M.Collapsible.init(collapsible, {
         accordion: false
     });
+
+    var sidenav = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenav);
 });
 
-$(function()
-    {
-      $('.scroll-pane').jScrollPane();
+
+
+$('#side-bar, #mobile-demo').mouseenter(
+    function() {
+        $('.scroll-pane').jScrollPane();
+    }
+).mouseleave(
+    function() {
+        $('.scroll-pane').data('jsp').destroy();
     }
 );
+
+
+

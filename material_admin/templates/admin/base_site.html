@@ -2,53 +2,107 @@
 {% load static i18n %}
 
 {% block extrastyle %}
-<link rel="stylesheet" href="{% static 'material_admin/css/materialize.css' %}">
-<link href="{% static 'material_admin/css/material_icons.css' %}" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/base_site.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/jquery.jscrollpane.css' %}">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="{% static 'material_admin/css/materialize.css' %}">
+  <link href="{% static 'material_admin/css/material_icons.css' %}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/base_site.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/jquery.jscrollpane.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="{% static 'material_admin/js/jquery.min.js' %}"></script>
 {% endblock %}
 
 {% block branding %}
-<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <h1 id="site-name">
+        <a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a>
+      </h1>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block userlinks %}
+    {% if site_url %}
+        <a href="{{ site_url }}">{% trans 'View site' %}</a>
+    {% endif %}
+    {% if user.is_active and user.is_staff %}
+        {% url 'django-admindocs-docroot' as docsroot %}
+        {% if docsroot %}
+            <a href="{{ docsroot }}">{% trans 'Documentation' %}</a>
+        {% endif %}
+    {% endif %}
+    {% if user.has_usable_password %}
+    <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a>
+    {% endif %}
+    <a href="{% url 'admin:logout' %}">
+      {% trans 'Log out' %}
+      <i class="material-icons">exit_to_app</i>
+    </a>
 {% endblock %}
 
 {% block content_title %}
+  <div id="side-bar" class="hide-on-med-and-down">
+    <div id="content-main" class="scroll-pane">
+      {% if available_apps %}
+        <ul class="collapsible card">
+          {% for i in "111111111111111111111111111"|make_list %}
+            {% for app in available_apps %}
+              <li class="scrollspy">
+                <div class="collapsible-header">
+                  <i class="material-icons">settings</i>
+                  {{ app.name }}
+                </div>
+                <div class="collapsible-body">
+                  {% for model in app.models %}
+                    {% if model.admin_url %}
+                      <div><a href="{{ model.admin_url }}">{{ model.name }}</a></div>
+                    {% else %}
+                      <div>{{ model.name }}</div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
 
-<div id="content-main">
-    <div class="row">
-        <div class="menu">
-            {% if available_apps %}
-            <ul class="collapsible card">
-                {% for i in "111111111111111111111111111"|make_list %}
-                {% for app in available_apps %}
-                <li class="scrollspy">
-                    <div class="collapsible-header">
-                        <i class="material-icons">settings</i>
-                        {{ app.name }}
-                        <span class="new badge" data-badge-caption="">{{ app.models|length }}</span></div>
-                    <div class="collapsible-body">
-                        {% for model in app.models %}
-                        {% if model.admin_url %}
-                        <div><a href="{{ model.admin_url }}">{{ model.name }}</a></div>
-                        {% else %}
-                        <div>{{ model.name }}</div>
-                        {% endif %}
-                        {% endfor %}
-                    </div>
-                </li>
-                {% endfor %}
-                {% endfor %}
-
-            </ul>
-            {% else %}
-            <p>{% trans "You don't have permission to view or edit anything." %}</p>
-            {% endif %}
-        </div>
+      {% else %}
+        <p>{% trans "You don't have permission to view or edit anything." %}</p>
+      {% endif %}
     </div>
-</div>
+  </div>
 
+  <div id="mobile-demo" class="sidenav">
+    <div id="content-main" class="scroll-pane">
+      {% if available_apps %}
+        <ul class="collapsible card">
+          {% for i in "111111111111111111111111111"|make_list %}
+            {% for app in available_apps %}
+              <li class="scrollspy">
+                <div class="collapsible-header">
+                  <i class="material-icons">settings</i>
+                  {{ app.name }}
+                </div>
+                <div class="collapsible-body">
+                  {% for model in app.models %}
+                    {% if model.admin_url %}
+                      <div><a href="{{ model.admin_url }}">{{ model.name }}</a></div>
+                    {% else %}
+                      <div>{{ model.name }}</div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+
+      {% else %}
+        <p>{% trans "You don't have permission to view or edit anything." %}</p>
+      {% endif %}
+    </div>
+  </div>
 {% endblock %}
 
 {% block footer %}
