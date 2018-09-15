@@ -1,14 +1,59 @@
 {% extends "admin/base_site.html" %}
-{% load static %}
+{% load static i18n %}
 
 {% block extrastyle %}
 <link rel="stylesheet" href="{% static 'material_admin/css/materialize.css' %}">
-<script src="{% static 'material_admin/js/materialize.js' %}"></script>
 <link href="{% static 'material_admin/css/material_icons.css' %}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/base_site.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/jquery.jscrollpane.css' %}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 {% endblock %}
 
 {% block branding %}
 <h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
 {% endblock %}
 
-{% block content_title %}{% endblock %}
+{% block content_title %}
+
+<div id="content-main">
+    <div class="row">
+        <div class="menu">
+            {% if available_apps %}
+            <ul class="collapsible card">
+                {% for i in "111111111111111111111111111"|make_list %}
+                {% for app in available_apps %}
+                <li class="scrollspy">
+                    <div class="collapsible-header">
+                        <i class="material-icons">settings</i>
+                        {{ app.name }}
+                        <span class="new badge" data-badge-caption="">{{ app.models|length }}</span></div>
+                    <div class="collapsible-body">
+                        {% for model in app.models %}
+                        {% if model.admin_url %}
+                        <div><a href="{{ model.admin_url }}">{{ model.name }}</a></div>
+                        {% else %}
+                        <div>{{ model.name }}</div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </li>
+                {% endfor %}
+                {% endfor %}
+
+            </ul>
+            {% else %}
+            <p>{% trans "You don't have permission to view or edit anything." %}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+  <script src="{% static 'material_admin/js/materialize.js' %}"></script>
+  <script src="{% static 'material_admin/js/materialize.admin.js' %}"></script>
+  <script type="text/javascript" src="{% static 'material_admin/js/jquery.mousewheel.js' %}"></script>
+  <script type="text/javascript" src="{% static 'material_admin/js/jquery.jscrollpane.min.js' %}"></script>
+{% endblock %}
