@@ -1,0 +1,66 @@
+#content.colMS {
+    padding: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+#content-main {
+    display: flex;
+    float: none;
+}
+
+#content-main .menu {
+    width: 300px;
+    background: white;
+    height: 100vh;
+    overflow:hidden;
+}
+
+#content-main .menu:hover {
+    overflow-y: scroll;
+}
+
+#content-main .content {
+    background: #eee;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.collapsible-card li {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.collapsible-header {
+    font-weight: bold;
+    color: #417690;
+    padding: 10px 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.collapsible-header:hover,
+.active .collapsible-header {
+    background: #417690;
+    color: white;
+}
+
+.collapsible-header:hover .new.badge,
+ .active .collapsible-header .new.badge {
+    background: white;
+    color: #417690;
+}
+
+.collapsible-body {
+    border: none;
+}
+
+span.badge.new {
+    font-weight: bold;
+    min-width: auto;
+}
+.clear {
+    display: none;
+}

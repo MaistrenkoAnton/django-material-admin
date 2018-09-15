@@ -4,3 +4,4 @@
 django/
 venv/
 __pycache__/
+staticfiles/
