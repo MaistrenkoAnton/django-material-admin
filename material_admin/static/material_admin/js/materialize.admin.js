@@ -4,3 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
         accordion: false
     });
 });
+
+$(function()
+    {
+      $('.scroll-pane').jScrollPane();
+    }
+);

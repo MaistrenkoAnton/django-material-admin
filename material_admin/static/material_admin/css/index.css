@@ -1,18 +1,29 @@
 #content.colMS {
-    padding: 0;
-    width: 100%;
+    padding: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+#content-main {
+    display: flex;
+    float: none;
 }
 
 #content-main .menu {
     width: 300px;
     background: white;
     height: 100vh;
+    overflow:hidden;
+}
+
+#content-main .menu:hover {
     overflow-y: scroll;
 }
 
 #content-main .content {
     background: #eee;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
 }
 
 .collapsible-card li {

@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="{% static 'material_admin/css/materialize.css' %}">
 <link href="{% static 'material_admin/css/material_icons.css' %}" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 {% endblock %}
 
 {% block branding %}
@@ -49,6 +50,8 @@
 {% endblock %}
 
 {% block footer %}
-<script src="{% static 'material_admin/js/materialize.js' %}"></script>
-<script src="{% static 'material_admin/js/materialize.admin.js' %}"></script>
+  <script src="{% static 'material_admin/js/materialize.js' %}"></script>
+  <script src="{% static 'material_admin/js/materialize.admin.js' %}"></script>
+  <script type="text/javascript" src="{% static 'material_admin/js/jquery.mousewheel.js' %}"></script>
+  <script type="text/javascript" src="{% static 'material_admin/js/jquery.jscrollpane.min.js' %}"></script>
 {% endblock %}
