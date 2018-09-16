@@ -17,3 +17,5 @@ $('#side-bar, #mobile-demo').mouseenter(
         $('.scroll-pane').data('jsp').destroy();
     }
 );
+
+$('.collapsible-body > .active').closest('.scrollspy').addClass('active');
