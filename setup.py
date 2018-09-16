@@ -21,8 +21,8 @@ setup(
     url="https://github.com/MaistrenkoAnton/django-material-admin",
     classifiers=[
         "Programming Language :: Python :: 3.6",
-        'Framework :: Django 2.0',
-        'Framework :: Django 2.1',
+        'Framework :: Django :: 2.0',
+        'Framework :: Django :: 2.1',
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
