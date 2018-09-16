@@ -52,7 +52,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     transform: translateY(-50%);
 }
 
-#content.colMS {
+#content {
     padding: 0 !important;
     width: 100% !important;
     box-sizing: border-box;
