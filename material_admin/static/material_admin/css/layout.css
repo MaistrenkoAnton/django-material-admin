@@ -4,7 +4,7 @@
 }
 
 #content {
-    padding: 0 !important;
+    display: block;
 }
 
 #layout-content {
