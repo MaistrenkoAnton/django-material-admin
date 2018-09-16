@@ -1,0 +1,27 @@
+{
+  "name": "django-materail-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaistrenkoAnton/django-material-admin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaistrenkoAnton/django-material-admin/issues"
+  },
+  "homepage": "https://github.com/MaistrenkoAnton/django-material-admin#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1"
+  }
+}
