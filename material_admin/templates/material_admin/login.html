@@ -3,6 +3,7 @@
 
 {% block extrastyle %}
 {{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/layout.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/login.css' %}">
 {% endblock %}
 
@@ -10,8 +11,8 @@
 
 {% block content %}
 
-<div id="content-main">
-  <div class="login-form">
+<div id="layout-content">
+  <div class="text-content">
     {% if form.errors and not form.non_field_errors %}
     <p class="errornote">
       {% if form.errors.items|length == 1 %}
