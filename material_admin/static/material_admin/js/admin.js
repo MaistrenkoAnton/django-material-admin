@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Sidenav.init(sidenav);
 });
 
-
-
 $('#side-bar, #mobile-demo').mouseenter(
     function() {
         $('.scroll-pane').jScrollPane();
@@ -19,6 +17,3 @@ $('#side-bar, #mobile-demo').mouseenter(
         $('.scroll-pane').data('jsp').destroy();
     }
 );
-
-
-

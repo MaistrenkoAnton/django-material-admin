@@ -3,6 +3,7 @@
     height: calc(100vh - 40px);
     overflow: auto;
     padding-bottom: 50px;
+    background-color: #EEEEEF;
 }
 
 .app-list {
