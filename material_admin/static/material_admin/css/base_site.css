@@ -1,0 +1,162 @@
+body {
+    overflow-y: hidden;
+}
+
+a, a:hover, a:active, a:link, a:visited, a:focus {
+    text-decoration: none;
+}
+
+#header {
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 60px;
+}
+
+#header #branding nav {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: white;
+}
+
+#branding h1 {
+    height: 100%;
+    line-height: 60px;
+}
+
+#user-tools a {
+    border-bottom: 0;
+    color: #fff;
+    height: 100%;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#user-tools a:hover {
+    color: #fff;
+    background-color: #205466;
+}
+
+#user-tools a:last-child {
+    position: relative;
+    padding-right: 30px;
+}
+
+#user-tools a i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#content.colMS {
+    padding: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    display: flex;
+    float: none;
+}
+
+#content-main {
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    margin-top: 5px;
+    background-color: #EEEEEF;
+}
+
+#side-bar {
+    background-color: #EEEEEF;
+}
+
+#content-main .menu:hover {
+    overflow-y: scroll;
+}
+
+.card {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.collapsible {
+    width: 300px;
+    z-index: 2;
+    transform: translateX(0%);
+}
+
+.collapsible li {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    min-height: 48px;
+}
+
+.collapsible li:first-child {
+    padding-top: 20px;
+}
+
+.collapsible li:last-child {
+    padding-bottom: 20px;
+}
+
+.collapsible-header {
+    font-weight: bold;
+    padding: 10px 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,.87);
+}
+
+.collapsible-header i {
+    color: #417690;
+}
+
+.collapsible-header:hover,
+.active .collapsible-header {
+    background: rgba(46, 118, 143, .2);
+    color: #417690;
+}
+
+.collapsible-body {
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    #header #site-name, #header #user-tools{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    #header #site-name {
+        top: 0;
+    }
+
+    #header #user-tools {
+        top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    #header {
+        height: 150px !important;
+    }
+
+    #header #user-tools a {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #user-tools a:last-child {
+        margin: 0 auto;
+        width:100px;
+    }
+}
+
+

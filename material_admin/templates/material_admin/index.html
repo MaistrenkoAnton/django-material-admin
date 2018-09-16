@@ -1,1 +1,46 @@
 {% extends 'admin/index.html' %}
+{% load static i18n %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="content-wrapper">
+    <div class="app-list">
+        {% if app_list %}
+        {% for app in app_list %}
+        <div class="app">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-title">
+                        {{ app.name }}
+                    </div>
+                    <div class="row">
+                        {% for model in app.models %}
+                        {% if model.admin_url %}
+                        <div class="app-item col s6 m6 l4">
+                            <a href="{{ model.admin_url }}">
+                                <i class="material-icons">verified_user</i>
+                                <h6>{{ model.name }}</h6>
+                            </a>
+                        </div>
+                        {% else %}
+                        <div class="app-item col s6 m6 l4">{{ model.name }}</div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% else %}
+<p>{% trans "You don't have permission to view or edit anything." %}</p>
+{% endif %}
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
