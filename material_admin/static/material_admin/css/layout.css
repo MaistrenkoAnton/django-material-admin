@@ -7,7 +7,7 @@
     padding: 0 !important;
 }
 
-#content-main {
+#layout-content {
     display: flex;
     align-items: center;
     height: 100vh;
