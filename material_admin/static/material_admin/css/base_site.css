@@ -4,6 +4,7 @@ body {
 
 a, a:hover, a:active, a:link, a:visited, a:focus {
     text-decoration: none;
+    color: #417690;
 }
 
 #header {
@@ -91,6 +92,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     width: 100%;
     overflow: hidden;
     min-height: 48px;
+    padding: 0;
 }
 
 .collapsible li:first-child {
@@ -103,25 +105,48 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 
 .collapsible-header {
     font-weight: bold;
-    padding: 10px 10px;
+    padding: 10px;
     border: none;
     display: flex;
     align-items: center;
-    color: rgba(0,0,0,.87);
+    color: #417690;
 }
 
 .collapsible-header i {
     color: #417690;
 }
 
-.collapsible-header:hover,
-.active .collapsible-header {
+.active .collapsible-header, .collapsible-body > div:hover {
     background: rgba(46, 118, 143, .2);
     color: #417690;
 }
 
 .collapsible-body {
+    padding: 0;
+    font-weight: bold;
     border: none;
+}
+
+.collapsible-body > div {
+    cursor: pointer;
+    padding: 7px 10px 7px 53px;
+}
+
+.collapsible-header:hover {
+    background: rgba(46, 118, 143, .1);
+}
+
+.collapsible-body > div a {
+    display: inline-block;
+    width: 100%;
+}
+
+.collapsible-body > div.active {
+    background-color: #417690;
+}
+
+.collapsible-body > div.active a {
+    color: white;
 }
 
 @media (max-width: 1024px) {

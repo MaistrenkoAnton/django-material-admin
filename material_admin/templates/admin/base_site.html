@@ -55,7 +55,9 @@
                 <div class="collapsible-body">
                     {% for model in app.models %}
                     {% if model.admin_url %}
-                    <div><a href="{{ model.admin_url }}">{{ model.name }}</a></div>
+                    <div {% if model.admin_url in request.path %}class="active"{% endif %}>
+                        <a href="{{ model.admin_url }}">{{ model.name }}</a>
+                    </div>
                     {% else %}
                     <div>{{ model.name }}</div>
                     {% endif %}
