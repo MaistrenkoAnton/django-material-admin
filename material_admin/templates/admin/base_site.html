@@ -47,7 +47,7 @@
         {% if available_apps %}
         <ul class="collapsible card">
             {% for app in available_apps %}
-            <li class="scrollspy">
+            <li class="scrollspy{% if app_list.0.name == app.name and request.path != '/admin/' %} active{% endif %}">
                 <div class="collapsible-header">
                     <i class="material-icons">settings</i>
                     {{ app.name }}
