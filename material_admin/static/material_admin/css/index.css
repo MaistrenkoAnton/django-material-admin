@@ -12,7 +12,7 @@
     background-color: #EEEEEF;
 }
 
-.app-list .app {
+.app {
     page-break-inside: avoid;
     padding: 5px;
 }

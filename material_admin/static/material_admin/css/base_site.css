@@ -2,9 +2,17 @@ body {
     overflow-y: hidden;
 }
 
+input {
+    box-sizing: border-box !important;
+}
+
 a, a:hover, a:active, a:link, a:visited, a:focus {
     text-decoration: none;
     color: #417690;
+}
+
+ul {
+    margin: 0 !important;
 }
 
 #header {
@@ -65,7 +73,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     height: calc(100vh - 60px);
     overflow: hidden;
     margin-top: 5px;
-    background-color: #EEEEEF;
+    background-color: #eeeeef;
 }
 
 #side-bar {

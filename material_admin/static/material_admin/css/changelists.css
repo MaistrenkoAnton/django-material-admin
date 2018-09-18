@@ -1,0 +1,29 @@
+.main-container {
+    padding: 5px;
+    background-color: #eeeeef;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.module.filtered {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.filtered #toolbar, .change-list .filtered .results, .change-list .filtered .paginator, .filtered .actions {
+    margin-right: 240px;
+}
+
+#changelist #toolbar {
+    padding-right: 25px;
+}
+
+#changelist #changelist-form .actions {
+    padding-left: 15px;
+}
+
+@media (max-width: 1024px) {
+    .filtered #toolbar, .change-list .filtered .results, .change-list .filtered .paginator, .filtered .actions {
+        margin-right: 200px !important;
+    }
+}
