@@ -1,0 +1,9 @@
+.search_form_icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.input-field.col label {
+    left: 0;
+}

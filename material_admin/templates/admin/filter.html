@@ -1,18 +1,16 @@
 {% load i18n %}
-<h3>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</h3>
 
-<ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider" tabindex="-1"></li>
-    <li><a href="#!">three</a></li>
-    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-</ul>
-<ul>
 
-{% for choice in choices %}
-    <li{% if choice.selected %} class="selected"{% endif %}>
-    <a href="{{ choice.query_string|iriencode }}" title="{{ choice.display }}">{{ choice.display }}</a></li>
-{% endfor %}
-</ul>
+<div class="col s12">
+  <select>
+    <option value="" disabled selected>
+      <h3>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</h3>
+    </option>
+     {% for choice in choices %}
+        <option{% if choice.selected %}{% endif %}>
+          <a href="{{ choice.query_string|iriencode }}" title="{{ choice.display }}">{{ choice.display }}</a>
+        </option>
+    {% endfor %}
+  </select>
+</div>
+

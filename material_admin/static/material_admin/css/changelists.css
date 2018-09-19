@@ -1,20 +1,39 @@
-#changelist, .module {
+.list-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.actions label{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    /*padding: 15px 15px 15px 0;*/
+    padding-top: -15px;
+    margin-bottom: 12px;
+    border-bottom: none;
+    color: #333;
+}
+
+
+#changelist {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
-    overflow: auto;
     margin: 0 5px;
+    padding: 15px;
+    width: 75%;
 }
 
 .filtered #toolbar, .change-list .filtered .results, .change-list .filtered .paginator, .filtered .actions {
-    margin-right: 240px;
+    margin-right: 0 !important;
+}
+
+.change-list .filtered {
+    min-height: 40px;
 }
 
 #changelist #toolbar {
     padding-right: 25px;
     margin-bottom: 0;
-}
-
-#changelist #changelist-form .actions {
-    padding-left: 15px;
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
 }
 
 .fixed-action-btn {
@@ -25,10 +44,50 @@
     display: none;
 }
 
+#changelist-filter, .actions {
+    position: static !important;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 5px;
+    /*padding: 15px;*/
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+#changelist-filter h2 {
+    margin: 0;
+    padding-left: 0;
+}
+
+#changelist-filter a h3{
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    padding: 0;
+    line-height: 36px;
+}
+
+#changelist-filter ul, .dropdown-content.select-dropdown {
+    padding: 0;
+}
+
+#changelist-filter li.selected {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.side-wrapper {
+    width: 25%;
+    margin-right: 5px;
+}
+
 
 @media (max-width: 1024px) {
     .filtered #toolbar, .change-list .filtered .results, .change-list .filtered .paginator, .filtered .actions {
-        margin-right: 200px !important;
+        margin-right: 0 !important;
+    }
+
+    #changelist-filter {
+        width: 100% !important;
     }
 }
 
