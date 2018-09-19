@@ -3,14 +3,10 @@
 
 <div class="col s12">
   <select>
-    <option value="" disabled selected>
-      <h3>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</h3>
-    </option>
+     <option value="" disabled selected>{% blocktrans with filter_title=title %} By {{ filter_title }} {% endblocktrans %}</option>
      {% for choice in choices %}
-        <option{% if choice.selected %}{% endif %}>
-          <a href="{{ choice.query_string|iriencode }}" title="{{ choice.display }}">{{ choice.display }}</a>
-        </option>
-    {% endfor %}
+        <option{% if choice.selected %}class="selected"{% endif %}><a href="{{ choice.query_string|iriencode }}" title="{{ choice.display }}">{{ choice.display }}</a></option>
+     {% endfor %}
   </select>
 </div>
 
