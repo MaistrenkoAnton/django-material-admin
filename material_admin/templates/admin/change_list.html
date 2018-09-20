@@ -41,16 +41,16 @@
       {% endif %}
 
       {% block result_list %}
-
-          {% result_list cl %}
-{#          {% if action_form and actions_on_bottom and cl.show_admin_actions %}{% admin_actions %}{% endif %}#}
+    {% if action_form and actions_on_top and cl.show_admin_actions %}{% admin_actions %}{% endif %}
+        {% result_list cl %}
+        {% if action_form and actions_on_bottom and cl.show_admin_actions %}{% admin_actions %}{% endif %}
       {% endblock %}
       {% block pagination %}{% pagination cl %}{% endblock %}
       </form>
     </div>
   <div class="side-wrapper">
     <div class="card">
-    {% if action_form and actions_on_top and cl.show_admin_actions %}{% admin_actions %}{% endif %}
+      {% if action_form and actions_on_top and cl.show_admin_actions %}{% admin_actions %}{% endif %}
     </div>
     <div class="card">
       <div class="card-content" id="changelist-filter">

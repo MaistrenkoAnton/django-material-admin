@@ -22,7 +22,7 @@
     </div>
       <div class="card-action">
         <div class="right-align">
-         <button type="submit" class="waves-effect waves-light btn action-button" title="{% trans "Run the selected action" %}" name="index" value="{{ action_index|default:0 }}">{% trans "Go" %}</button>
+         <button type="submit" form="changelist-form" class="waves-effect waves-light btn action-button" title="{% trans "Run the selected action" %}" name="index" value="{{ action_index|default:0 }}">{% trans "Go" %}</button>
         </div>
       </div>
     {% endblock %}

@@ -1,4 +1,4 @@
-{% load i18n static %}
+{% load i18n static material_admin %}
 {% if result_hidden_fields %}
 <div class="hiddenfields">{# DIV for HTML validation #}
 {% for item in result_hidden_fields %}{{ item }}{% endfor %}
@@ -40,10 +40,15 @@
 <tr class="{% cycle 'row1' 'row2' %}">
     {% for item in result %}
     {% if 'action_checkbox' in cl.list_display and forloop.counter == 1 %}
-                    <td class="action-checkbox">
-                        <label for="_selected_action_{{ forloop.parentloop.counter }}"><input class="action-select" name="_selected_action" id="_selected_action_{{ forloop.parentloop.counter }}" type="checkbox" value="" /><span></span></label>
-                    </td>
-                {% else %}
+        <td class="action-checkbox">
+            <label for="_selected_action_{{ forloop.parentloop.counter }}">
+                <input class="action-select" name="_selected_action"
+                       id="_selected_action_{{ forloop.parentloop.counter }}" type="checkbox"
+                       value="{{ item|admin_change_list_value }}" />
+                <span></span>
+            </label>
+        </td>
+    {% else %}
         {{ item }}
     {% endif %}
     {% endfor %}
