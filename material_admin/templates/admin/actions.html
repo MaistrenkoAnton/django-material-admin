@@ -4,7 +4,21 @@
   {% block actions %}
     <div class="card-content">
       {% block actions-form %}
-      {% for field in action_form %}{% if field.label %}<label>{{ field.label }} {% endif %}{{ field }}{% if field.label %}</label>{% endif %}{% endfor %}
+      {% for field in action_form %}
+        {% if field.label %}
+          <label>{{ field.label }}
+        {% endif %}
+          {% if field.field.widget.choices %}
+            <select form="changelist-form" name="action" required="" tabindex="-1">
+              {% for option in field.field.widget.choices %}
+                <option value="{{ option.0 }}">{{ option.1 }}</option>
+              {% endfor %}
+            </select>
+          {% else %}
+            {{ field }}
+          {% endif %}
+        {% if field.label %}</label>{% endif %}
+      {% endfor %}
       {% endblock %}
       {% block actions-submit %}
         {% block actions-counter %}
