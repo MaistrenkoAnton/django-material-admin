@@ -52,21 +52,19 @@
       {% if action_form and actions_on_top and cl.show_admin_actions %}{% admin_actions %}{% endif %}
     </div>
     <div class="card">
+      {% block search %}{% search_form cl %}{% endblock %}
+    </div>
+    <div class="card">
       <div class="card-content" id="changelist-filter">
         {% block filters %}
           {% if cl.has_filters %}
-
-                <h2>{% trans 'Filter' %}</h2>
-                {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
-
+            <h2>{% trans 'Filter' %}</h2>
+            {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
           {% endif %}
         {% endblock %}
       </div>
     </div>
-    <div class="card">
-      {% block search %}{% search_form cl %}{% endblock %}
-    </div>
-    </div>
   </div>
+</div>
 {% endblock %}
 
