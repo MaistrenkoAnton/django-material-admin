@@ -182,6 +182,10 @@ div.submit-row {
     background: #eeeeef;
 }
 
+.success-toast {
+    background: #28a745;
+}
+
 @media (max-width: 1024px) {
     #header #site-name, #header #user-tools{
         position: absolute;

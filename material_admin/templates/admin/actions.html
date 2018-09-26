@@ -9,7 +9,7 @@
           <label class="label">{{ field.label }}
         {% endif %}
           {% if field.field.widget.choices %}
-            <select form="changelist-form" name="action" required="" tabindex="-1">
+            <select form="changelist-form" name="action" required tabindex="-1">
               {% for option in field.field.widget.choices %}
                 <option value="{{ option.0 }}">{{ option.1 }}</option>
               {% endfor %}
@@ -40,6 +40,5 @@
         </div>
       </div>
     {% endblock %}
-
   {% endblock %}
 </div>

@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.dropdown-trigger');
     M.Dropdown.init(elems);
 
-    $(document).ready(function(){
     $('select').formSelect();
-  });
-
+    const messages = $('.messagelist > .success');
+    for(let message of messages) {
+        M.toast({html: message.innerText, classes: 'rounded success-toast'});
+    }
 });
 
 $('#side-bar, #mobile-demo').mouseenter(
