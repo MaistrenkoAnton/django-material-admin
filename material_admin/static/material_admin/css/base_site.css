@@ -200,6 +200,25 @@ div.submit-row {
     }
 }
 
+@media (max-width: 767px) {
+    #content-main {
+        flex-direction: column-reverse;
+    }
+    #changelist, .side-wrapper {
+        width: 100% !important;
+        padding: 5px;
+    }
+    #changelist {
+        max-width: 98%;
+    }
+    .card .card-content {
+        width: 100%;
+    }
+    #changelist-search > div {
+        max-width: 100% !important;
+    }
+}
+
 @media (max-width: 576px) {
     #header {
         height: 150px !important;

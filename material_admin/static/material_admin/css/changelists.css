@@ -3,8 +3,8 @@
     align-items: flex-start;
 }
 
-.actions label{
-    font-size: 14px;
+label.label{
+    font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     padding-top: -15px;
@@ -105,5 +105,9 @@
 @media (max-width: 767px) {
     .filtered #toolbar, .change-list .filtered .results, .change-list .filtered .paginator, .filtered .actions {
         margin-right: 0 !important;
+    }
+
+    #changelist-filter {
+        margin-top: 0 !important;
     }
 }

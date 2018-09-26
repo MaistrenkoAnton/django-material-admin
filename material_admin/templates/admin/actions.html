@@ -6,7 +6,7 @@
       {% block actions-form %}
       {% for field in action_form %}
         {% if field.label %}
-          <label>{{ field.label }}
+          <label class="label">{{ field.label }}
         {% endif %}
           {% if field.field.widget.choices %}
             <select form="changelist-form" name="action" required="" tabindex="-1">
