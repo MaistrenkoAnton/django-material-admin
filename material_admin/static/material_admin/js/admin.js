@@ -1,3 +1,5 @@
+const toasts = ['success', 'warning']
+
 document.addEventListener('DOMContentLoaded', function() {
     var collapsible = document.querySelectorAll('.collapsible');
      M.Collapsible.init(collapsible, {
@@ -11,20 +13,22 @@ document.addEventListener('DOMContentLoaded', function() {
     M.Dropdown.init(elems);
 
     $('select').formSelect();
-    const messages = $('.messagelist > .success');
-    for(let message of messages) {
-        M.toast({html: message.innerText, classes: 'rounded success-toast'});
-    }
-});
 
-$('#side-bar, #mobile-demo').mouseenter(
+    for(const toast of toasts) {
+        const messages = $(`.messagelist > .${toast}`);
+        for(let message of messages) {
+            M.toast({html: message.innerText, classes: `rounded ${toast}-toast`});
+        }
+    }
+    $('#side-bar, #mobile-demo').mouseenter(
     function() {
         $('.scroll-pane').jScrollPane();
     }
-).mouseleave(
-    function() {
-        $('.scroll-pane').data('jsp').destroy();
-    }
-);
+    ).mouseleave(
+        function() {
+            $('.scroll-pane').data('jsp').destroy();
+        }
+    );
+    $('.collapsible-body > .active').closest('.scrollspy').addClass('active');
+});
 
-$('.collapsible-body > .active').closest('.scrollspy').addClass('active');

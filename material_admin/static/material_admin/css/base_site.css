@@ -6,6 +6,10 @@ body {
     background: #eeeeef;
 }
 
+br.clear {
+    display: none;
+}
+
 a, a:hover, a:active, a:link, a:visited, a:focus {
     text-decoration: none;
     color: #417690;
@@ -116,10 +120,12 @@ ul {
 
 .collapsible li:first-child {
     padding-top: 20px;
+    background: white;
 }
 
 .collapsible li:last-child {
     padding-bottom: 20px;
+    background: white;
 }
 
 .collapsible-header {
@@ -186,6 +192,11 @@ div.submit-row {
     background: #28a745;
 }
 
+.warning-toast {
+    background: #ffc107;
+    color: #343a40;
+}
+
 @media (max-width: 1024px) {
     #header #site-name, #header #user-tools{
         position: absolute;
@@ -240,4 +251,10 @@ div.submit-row {
     }
 }
 
+#changelist #changelist-form .paginator {
+    border: none;
+}
 
+.sidenav .collapsible-body div {
+    line-height: 20px;
+}
