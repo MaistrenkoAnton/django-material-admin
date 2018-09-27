@@ -1,5 +1,16 @@
 const toasts = ['success', 'warning']
 
+$('#side-bar, #mobile-demo').mouseenter(
+    function() {
+    $('.scroll-pane').jScrollPane();
+}
+).mouseleave(
+    function() {
+        $('.scroll-pane').data('jsp').destroy();
+    }
+);
+$('.collapsible-body > .active').closest('.scrollspy').addClass('active');
+
 document.addEventListener('DOMContentLoaded', function() {
     var collapsible = document.querySelectorAll('.collapsible');
      M.Collapsible.init(collapsible, {
@@ -20,15 +31,5 @@ document.addEventListener('DOMContentLoaded', function() {
             M.toast({html: message.innerText, classes: `rounded ${toast}-toast`});
         }
     }
-    $('#side-bar, #mobile-demo').mouseenter(
-    function() {
-        $('.scroll-pane').jScrollPane();
-    }
-    ).mouseleave(
-        function() {
-            $('.scroll-pane').data('jsp').destroy();
-        }
-    );
-    $('.collapsible-body > .active').closest('.scrollspy').addClass('active');
-});
 
+});
