@@ -43,69 +43,17 @@
 
 {% block content_title %}
 <div id="side-bar" class="hide-on-med-and-down">
-    <div id="content-main" class="scroll-pane">
-        {% if available_apps %}
-        <ul class="collapsible card">
-            {% for app in available_apps %}
-            <li class="scrollspy{% if app_list.0.name == app.name and request.path != '/admin/' %} active{% endif %}">
-                <div class="collapsible-header">
-                    <i class="material-icons">settings</i>
-                    {{ app.name }}
-                </div>
-                <div class="collapsible-body">
-                    {% for model in app.models %}
-                    {% if model.admin_url %}
-                    <div {% if model.admin_url in request.path %}class="active"{% endif %}>
-                        <a href="{{ model.admin_url }}">{{ model.name }}</a>
-                    </div>
-                    {% else %}
-                    <div>{{ model.name }}</div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
-
-        {% else %}
-        <p>{% trans "You don't have permission to view or edit anything." %}</p>
-        {% endif %}
-    </div>
+    {% include 'admin/navbar.html' with available_apps=available_apps app=app %}
 </div>
-
 <div id="mobile-demo" class="sidenav">
-    <div id="content-main" class="scroll-pane">
-        {% if available_apps %}
-        <ul class="collapsible card">
-            {% for app in available_apps %}
-            <li class="scrollspy">
-                <div class="collapsible-header">
-                    <i class="material-icons">settings</i>
-                    {{ app.name }}
-                </div>
-                <div class="collapsible-body">
-                    {% for model in app.models %}
-                    {% if model.admin_url %}
-                    <div><a href="{{ model.admin_url }}">{{ model.name }}</a></div>
-                    {% else %}
-                    <div>{{ model.name }}</div>
-                    {% endif %}
-                    {% endfor %}
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
-
-        {% else %}
-        <p>{% trans "You don't have permission to view or edit anything." %}</p>
-        {% endif %}
-    </div>
+    {% include 'admin/navbar.html' with available_apps=available_apps app=app %}
 </div>
 {% endblock %}
 
 {% block footer %}
 <script src="{% static 'material_admin/js/materialize.min.js' %}"></script>
 <script src="{% static 'material_admin/js/admin.js' %}"></script>
+<script src="{% static 'material_admin/js/filters.js' %}"></script>
 <script type="text/javascript" src="{% static 'material_admin/js/jquery.mousewheel.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'material_admin/js/jquery.jscrollpane.min.js' %}"></script>
 {% endblock %}
