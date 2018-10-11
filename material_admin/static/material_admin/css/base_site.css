@@ -27,8 +27,8 @@ ul {
     padding-top: 10px;
 }
 
-.messagelist .success {
-    margin-bottom: 0;
+.messagelist {
+    display: none
 }
 
 #header {
