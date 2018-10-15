@@ -6,7 +6,7 @@ material_templates = {
     'index_template': 'material_admin/index.html',
     'login_form': None,
     'app_index_template': None,
-    'password_change_template': None,
+    'password_change_template': 'material_admin/password_change.html',
     'password_change_done_template': None
 }
 
