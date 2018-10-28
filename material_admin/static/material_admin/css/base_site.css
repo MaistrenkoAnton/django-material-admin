@@ -192,6 +192,11 @@ div.submit-row {
     background: #28a745;
 }
 
+.error-toast {
+    background: #f8d7da;
+    color: #ba2121;
+}
+
 .warning-toast {
     background: #ffc107;
     color: #343a40;
