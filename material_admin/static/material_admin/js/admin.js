@@ -6,7 +6,10 @@ $('#side-bar, #mobile-demo').mouseenter(
 }
 ).mouseleave(
     function() {
-        $('.scroll-pane').data('jsp').destroy();
+        const jsp = $('.scroll-pane').data('jsp')
+        if (jsp) {
+            jsp.destroy();
+        }
     }
 );
 $('.collapsible-body > .active').closest('.scrollspy').addClass('active');
