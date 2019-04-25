@@ -38,3 +38,29 @@ fieldset.aligned {
     border: none;
 }
 
+.selector-available select,
+.selector-chosen select {
+    display: block;
+}
+
+.select-wrapper .selector-available h2,
+.select-wrapper .selector-chosen h2 {
+    background: #79aec8;
+    border: none;
+    color: white;
+}
+
+.help.help-tooltip.help-icon {
+
+}
+
+.select-dropdown.dropdown-trigger {
+    display: none;
+}
+
+form .related-widget-wrapper .dropdown-content,
+form .related-widget-wrapper .select-dropdown.dropdown-trigger,
+form .related-widget-wrapper .caret {
+    display: none;
+}
+
