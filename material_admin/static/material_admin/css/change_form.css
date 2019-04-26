@@ -85,3 +85,8 @@ div.selector select {
     background: none;
     padding-top: 80px;
 }
+
+div.submit-row {
+    background: none;
+    border: none;
+}
