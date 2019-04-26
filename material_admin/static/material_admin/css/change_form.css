@@ -1,0 +1,92 @@
+.required label, label.required {
+    font-weight: normal;
+    color: #9e9e9e;
+}
+
+fieldset.module.aligned {
+    margin-bottom: 0;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: none;
+    color: rgb(65, 118, 144);
+    border-left: 3px solid rgb(65, 118, 144);
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.checkbox-label {
+    color: #666;
+    font-size: 14px;
+}
+
+label.checkbox-block {
+    width: 25px;
+    height: 25px;
+    margin-top: -7px;
+}
+form .aligned div.help {
+   margin-left: -10px;
+}
+
+.input-field label + div {
+    padding-top: 40px;
+}
+
+fieldset.aligned {
+    border: none;
+}
+
+.selector-available select,
+.selector-chosen select {
+    display: block;
+}
+
+.select-wrapper .selector-available h2,
+.select-wrapper .selector-chosen h2 {
+    background: #79aec8;
+    border: none;
+    color: white;
+}
+
+.help.help-tooltip.help-icon {
+
+}
+
+.select-dropdown.dropdown-trigger {
+    display: none;
+}
+
+form .related-widget-wrapper .dropdown-content,
+form .related-widget-wrapper .select-dropdown.dropdown-trigger,
+form .related-widget-wrapper .caret {
+    display: none;
+}
+
+.selector .help-icon {
+  background: url(../img/icon-unknown-alt.svg) 0 0 no-repeat;
+}
+div.selector option {
+    height: 25px;
+    padding: 4px;
+}
+
+div.selector select {
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+.selector-available input[type=text] {
+    height: 30px;
+}
+
+.selector ul.selector-chooser {
+    background: none;
+    padding-top: 80px;
+}
+
+div.submit-row {
+    background: none;
+    border: none;
+}
