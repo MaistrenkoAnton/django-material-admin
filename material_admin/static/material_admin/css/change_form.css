@@ -64,3 +64,24 @@ form .related-widget-wrapper .caret {
     display: none;
 }
 
+.selector .help-icon {
+  background: url(../img/icon-unknown-alt.svg) 0 0 no-repeat;
+}
+div.selector option {
+    height: 25px;
+    padding: 4px;
+}
+
+div.selector select {
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+.selector-available input[type=text] {
+    height: 30px;
+}
+
+.selector ul.selector-chooser {
+    background: none;
+    padding-top: 80px;
+}
