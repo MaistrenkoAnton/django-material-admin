@@ -1,0 +1,31 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/layout.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/logout.css' %}">
+{% endblock %}
+
+{% block branding %}{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block content %}
+
+<div id="layout-content">
+  <div class="side-bar">
+    <img src="{% static 'material_admin/images/login-logo.png' %}" alt="">
+  </div>
+  <div class="text-content">
+    <h2>{% trans "Logged out" %}</h2>
+    <p>{% trans "Thanks for spending some quality time with the Web site today." %}</p>
+    <p><a class="btn waves-effect white-text waves-light" href="{% url 'admin:index' %}">{% trans 'Log in again' %}
+      <i class="material-icons right">send</i>
+    </a></p>
+  </div>
+</div>
+
+{% endblock %}

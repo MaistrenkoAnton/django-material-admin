@@ -1,0 +1,138 @@
+.list-content {
+    display: flex;
+    align-items: flex-start;
+    min-height: 0 !important;
+}
+
+label.label{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-top: -15px;
+    margin-bottom: 12px;
+    border-bottom: none;
+    color: #333;
+}
+
+.actions .action-counter {
+    font-size: .8rem;
+    color: #9e9e9e;
+}
+
+#changelist {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    margin: 0 5px;
+    padding: 15px;
+    width: 75%;
+}
+
+.filtered #toolbar, .change-list .filtered .results, .change-list .filtered .paginator, .filtered .actions {
+    margin-right: 0 !important;
+}
+
+.change-list .filtered {
+    min-height: 40px;
+}
+
+#changelist #toolbar {
+    padding-right: 25px;
+    margin-bottom: 0;
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.fixed-action-btn {
+    z-index:9999;
+}
+
+.clear {
+    display: none;
+}
+
+#changelist-filter, .actions {
+    position: static !important;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+#changelist-filter h2 {
+    margin: 0;
+    padding-left: 0;
+}
+
+#changelist-filter a h3{
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    padding: 0;
+    line-height: 36px;
+}
+
+#changelist-filter ul, .dropdown-content.select-dropdown {
+    padding: 0;
+}
+
+#changelist-filter li.selected {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.side-wrapper {
+    width: 25%;
+    margin-right: 5px;
+}
+
+#result_list thead tr {
+    border-bottom: 2px solid rgb(0, 0, 0, 0.7);
+}
+
+.action-checkbox-column [type=checkbox]+span {
+    left: 5px;
+}
+
+#result_list th {
+    background: none;
+    border: none;
+}
+
+#result_list tr {
+    height: 50px;
+}
+
+#result_list th .text a,
+#result_list th .text label
+{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    line-height 14px;
+}
+
+table thead th .text span {
+    padding: 2px 10px;
+}
+
+#result_list th a:hover {
+    background: none
+}
+
+@media (max-width: 1024px) {
+    .filtered #toolbar, .change-list .filtered .results, .change-list .filtered .paginator, .filtered .actions {
+        margin-right: 0 !important;
+    }
+
+    #changelist-filter {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .filtered #toolbar, .change-list .filtered .results, .change-list .filtered .paginator, .filtered .actions {
+        margin-right: 0 !important;
+    }
+
+    #changelist-filter {
+        margin-top: 0 !important;
+    }
+}

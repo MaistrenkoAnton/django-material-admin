@@ -1,0 +1,91 @@
+{% extends "admin/login.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/layout.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/login.css' %}">
+{% endblock %}
+
+{% block branding %}{% endblock %}
+
+{% block content %}
+
+<div id="layout-content">
+  <div class="text-content">
+    {% if form.errors and not form.non_field_errors %}
+    <p class="errornote">
+      {% if form.errors.items|length == 1 %}
+      {% trans "Please correct the error below." %}
+      {% else %}
+      {% trans "Please correct the errors below." %}
+      {% endif %}
+    </p>
+    {% endif %}
+
+    {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    <p class="errornote">
+      {{ error }}
+    </p>
+    {% endfor %}
+    {% endif %}
+    {% if user.is_authenticated %}
+    <p class="errornote">
+      {% blocktrans trimmed %}
+      You are authenticated as {{ username }}, but are not authorized to
+      access this page. Would you like to login to a different account?
+      {% endblocktrans %}
+    </p>
+    {% endif %}
+    <form action="{{ app_path }}" method="post" id="login-form">{% csrf_token %}
+
+      <div class="row">
+        <div class="col s12">
+          <div class="row">
+            <div class="input-field {% if form.username.errors %}has-error{% endif %} col s12">
+              <i class="material-icons prefix">person</i>
+              <input type="text" id="username-input" name="{{ form.username.name }}"
+                     class="{% if form.username.errors %}invalid{% endif %}"
+                     value="{{ form.username.value|default_if_none:'' }}" autofocus>
+              <label for="username-input">{{ form.username.label }}</label>
+              <div class="prefix-error">{{ form.username.errors }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <div class="row">
+            <div class="input-field {% if form.password.errors %}has-error{% endif %} col s12">
+              <i class="material-icons prefix">lock</i>
+              <input type="password" id="password-input" name="{{ form.password.name }}"
+                     class="{% if form.password.errors %}invalid{% endif %}"
+                     value="{{ form.password.value|default_if_none:'' }}">
+              <label for="password-input">{{ form.password.label }}</label>
+              <div class="prefix-error">{{ form.password.errors }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% url 'admin_password_reset' as password_reset_url %}
+      {% if password_reset_url %}
+      <div class="password-reset-link">
+        <a href="{{ password_reset_url }}">{% trans 'Forgotten your password or username?' %}</a>
+      </div>
+      {% endif %}
+      <div class="submit-row-btn">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Log in
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="side-bar">
+    <img src="{% static 'material_admin/images/login-logo.png' %}" alt="">
+  </div>
+</div>
+
+{% endblock %}

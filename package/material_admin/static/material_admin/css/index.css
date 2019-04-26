@@ -1,0 +1,43 @@
+.content-wrapper {
+    width: 100%;
+    height: calc(100vh - 40px);
+    overflow: auto;
+    padding-bottom: 50px;
+    background-color: #EEEEEF;
+}
+
+.app-list {
+    column-gap: 0;
+    column-count: 2;
+    background-color: #EEEEEF;
+}
+
+.app {
+    page-break-inside: avoid;
+    padding: 5px;
+}
+
+.app-list .app .card .app-item a {
+    background: #f5f5f5;
+    color: #686868;
+    display: block;
+    border-radius: 4px;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    height: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0;
+}
+
+.app-list .app .card .app-item i {
+    font-size: 48px;
+    color: #417690;
+}
+
+@media (max-width: 600px) {
+    .app-list {
+        column-count: 1;
+    }
+}

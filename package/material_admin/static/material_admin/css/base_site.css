@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    background: #eeeeef;
+}
+
+br.clear {
+    display: none;
+}
+
+a, a:hover, a:active, a:link, a:visited, a:focus {
+    text-decoration: none;
+    color: #417690;
+}
+
+ul {
+    margin: 0 !important;
+}
+
+.btn {
+    padding: 0 2rem;
+}
+
+.card .card-content {
+    padding-top: 10px;
+}
+
+.messagelist {
+    display: none
+}
+
+#header {
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 60px;
+}
+
+#header #branding nav {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: white;
+}
+
+#branding h1 {
+    height: 100%;
+    line-height: 60px;
+}
+
+#user-tools a {
+    border-bottom: 0;
+    color: #fff;
+    height: 100%;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+#user-tools a:hover {
+    color: #fff;
+    background-color: #205466;
+}
+
+#user-tools a:last-child {
+    position: relative;
+    padding-right: 30px;
+}
+
+#user-tools a i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#content {
+    padding: 0 !important;
+    width: 100% !important;
+    display: flex;
+    float: none;
+}
+
+#content-main {
+    min-height: calc(100vh - 60px);
+    overflow: hidden;
+    padding-top: 5px !important;
+    background-color: #eeeeef;
+}
+
+#side-bar {
+    background-color: #EEEEEF;
+}
+
+#content-main .menu:hover {
+    overflow-y: scroll;
+}
+
+.card {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.collapsible {
+    width: 300px;
+    z-index: 2;
+    transform: translateX(0%);
+}
+
+.collapsible li {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    min-height: 48px;
+    padding: 0;
+}
+
+.collapsible li:first-child {
+    padding-top: 20px;
+    background: white;
+}
+
+.collapsible li:last-child {
+    padding-bottom: 20px;
+    background: white;
+}
+
+.collapsible-header {
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #417690;
+}
+
+.collapsible-header i {
+    color: #417690;
+}
+
+.active .collapsible-header, .collapsible-body > div:hover {
+    background: rgba(46, 118, 143, .2);
+    color: #417690;
+}
+
+.collapsible-body {
+    padding: 0;
+    font-weight: bold;
+    border: none;
+}
+
+.collapsible-body > div {
+    cursor: pointer;
+    padding: 7px 10px 7px 53px;
+}
+
+.collapsible-header:hover {
+    background: rgba(46, 118, 143, .1);
+}
+
+.collapsible-body > div a {
+    display: inline-block;
+    width: 100%;
+}
+
+.collapsible-body > div.active {
+    background-color: #417690;
+}
+
+.collapsible-body > div.active a {
+    color: white;
+}
+
+.module {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.submit-row .deletelink-box a.deletelink {
+    height: 100%;
+}
+
+div.submit-row {
+    background: #eeeeef;
+}
+
+.success-toast {
+    background: #28a745;
+}
+
+.error-toast {
+    background: #f8d7da;
+    color: #ba2121;
+}
+
+.warning-toast {
+    background: #ffc107;
+    color: #343a40;
+}
+
+@media (max-width: 1024px) {
+    #header #site-name, #header #user-tools{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    #header #site-name {
+        top: 0;
+    }
+
+    #header #user-tools {
+        top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    #content-main {
+        flex-direction: column-reverse;
+    }
+    #changelist, .side-wrapper {
+        width: 100% !important;
+        padding: 5px;
+    }
+    #changelist {
+        max-width: 98%;
+    }
+    .card .card-content {
+        width: 100%;
+    }
+    #changelist-search > div {
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #header {
+        height: 150px !important;
+    }
+
+    #header #user-tools a {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #user-tools a:last-child {
+        margin: 0 auto;
+        width:100px;
+    }
+}
+
+#changelist #changelist-form .paginator {
+    border: none;
+}
+
+.sidenav .collapsible-body div {
+    line-height: 20px;
+}
