@@ -202,6 +202,14 @@ div.submit-row {
     color: #343a40;
 }
 
+input.valid[type=text]:not(.browser-default) {
+    border-bottom-color: #477091;
+}
+
+.input-field > .btn {
+    width: 90px;
+}
+
 @media (max-width: 1024px) {
     #header #site-name, #header #user-tools{
         position: absolute;
