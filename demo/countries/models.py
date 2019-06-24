@@ -9,12 +9,12 @@ class Country(models.Model):
     picture = models.ImageField(_('Picture'), null=True, blank=True)
     population = models.IntegerField(null=True)
     type = models.CharField(_('Type'), choices=COUNTRY_TYPES, max_length=2)
+    is_safe = models.BooleanField(default=True)
+    created = models.DateField()
+    modified = models.DateTimeField()
 
     class Meta:
         verbose_name = _('County')
         verbose_name_plural = _('Countries')
         db_table = 'country'
         ordering = ('name',)
-
-
-

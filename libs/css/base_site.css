@@ -192,6 +192,14 @@ div.submit-row {
     background: #28a745;
 }
 
+p.errornote {
+    margin: 0 5px 10px;
+}
+
+.errorlist + .input-field input {
+    background: #FFF1F2;
+}
+
 .error-toast {
     background: #f8d7da;
     color: #ba2121;
@@ -208,6 +216,14 @@ input.valid[type=text]:not(.browser-default) {
 
 .input-field > .btn {
     width: 90px;
+}
+
+.aligned > .form-row {
+    overflow: visible;
+}
+
+.dropdown-content.select-dropdown {
+    padding: 0;
 }
 
 @media (max-width: 1024px) {

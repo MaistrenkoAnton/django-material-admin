@@ -19,5 +19,5 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('admin/', include('material_admin.urls')),
+    path('admin/', include('material.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

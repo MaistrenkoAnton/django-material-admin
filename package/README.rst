@@ -10,7 +10,7 @@ Quick start
 .. code-block:: python
     INSTALLED_APPS = (
         ...
-        'material_admin',
+        'material',
         'django.contrib.admin',
     )
 
@@ -18,6 +18,6 @@ Quick start
 2. Include the material templates URLconf in your project urls.py like this::
 
 .. code-block:: python
-    path('admin/', include('material_admin.urls')),
+    path('admin/', include('material.urls')),
 
 
