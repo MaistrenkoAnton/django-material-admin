@@ -226,6 +226,11 @@ input.valid[type=text]:not(.browser-default) {
     padding: 0;
 }
 
+.timepicker-display-column > .timepicker-span-hours,
+.timepicker-display-column > .timepicker-span-minutes {
+    font-size: 50px;
+}
+
 @media (max-width: 1024px) {
     #header #site-name, #header #user-tools{
         position: absolute;
