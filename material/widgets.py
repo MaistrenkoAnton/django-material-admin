@@ -1,13 +1,13 @@
-from django.contrib.admin.widgets import AdminDateWidget
-from django.forms import SplitDateTimeWidget
+from django.contrib.admin import widgets
+from django import forms
 
 
-class MaterialAdminDateWidget(AdminDateWidget):
+class MaterialAdminDateWidget(widgets.AdminDateWidget):
     """Date widget with material specific styling"""
     template_name = 'material/widgets/date.html'
 
 
-class MaterialAdminSplitDateTime(SplitDateTimeWidget):
+class MaterialAdminSplitDateTime(forms.SplitDateTimeWidget):
     """A SplitDateTime Widget with material specific styling"""
     template_name = 'material/widgets/split_datetime.html'
 
@@ -17,3 +17,7 @@ class MaterialAdminSplitDateTime(SplitDateTimeWidget):
         time_attrs = time_attrs or {}
         time_attrs.update({'class': 'timepicker'})
         super().__init__(attrs, date_format, time_format, date_attrs, time_attrs)
+
+
+class MaterialAdminTimeWidget(forms.TimeInput):
+    template_name = 'material/widgets/time.html'

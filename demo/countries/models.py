@@ -12,6 +12,7 @@ class Country(models.Model):
     is_safe = models.BooleanField(default=True)
     created = models.DateField()
     modified = models.DateTimeField()
+    time = models.TimeField()
 
     class Meta:
         verbose_name = _('County')

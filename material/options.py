@@ -10,6 +10,7 @@ FORMFIELD_FOR_DBFIELD_MATERIAL = {
         'form_class': SplitDateTimeField,
         'widget': widgets.MaterialAdminSplitDateTime
     },
+    models.TimeField: {'widget': widgets.MaterialAdminTimeWidget},
 }
 
 
