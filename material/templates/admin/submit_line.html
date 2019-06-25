@@ -1,0 +1,45 @@
+{% load i18n admin_urls %}
+<div class="submit-row">
+{% block submit-row %}
+    {% if show_save %}
+    <button type="submit" class="default waves-effect waves-light btn" name="_save">
+        {% trans 'Save' %}
+        <i class="material-icons right">save</i>
+    </button>
+    {% endif %}
+{% if show_delete_link and original %}
+    {% url opts|admin_urlname:'delete' original.pk|admin_urlquote as delete_url %}
+    <p class="deletelink-box">
+        <a href="{% add_preserved_filters delete_url %}" class="deletelink waves-effect waves-light btn">
+            {% trans "Delete" %}
+            <i class="material-icons right">delete_forever</i>
+        </a>
+    </p>
+{% endif %}
+{% if show_save_as_new %}<input type="submit" value="{% trans 'Save as new' %}" class="waves-effect waves-light btn" name="_saveasnew">{% endif %}
+{% if show_save_and_add_another %}
+    <button type="submit" class="waves-effect waves-light btn" name="_addanother">
+        {% trans 'Save and add another' %}
+        <i class="material-icons right">add_circle</i>
+    </button>
+{% endif %}
+{% if show_save_and_continue %}
+    <button type="submit" class="waves-effect waves-light btn" name="_continue">
+        {% if can_change %}
+            {% trans 'Save and continue editing' %}
+            <i class="material-icons right">edit</i>
+        {% else %}
+            {% trans 'Save and view' %}
+            <i class="material-icons right">visibility</i>
+        {% endif %}
+    </button>
+{% endif %}
+{% if show_close %}
+    <a href="{% url opts|admin_urlname:'changelist' %}"
+       title="{% trans 'Close' %}"
+       class="btn-floating btn-large waves-effect waves-light orange">
+        <i class="material-icons right">close</i>
+    </a>
+{% endif %}
+{% endblock %}
+</div>
