@@ -34,6 +34,12 @@
         {% endif %}
     </button>
 {% endif %}
-{% if show_close %}<a href="{% url opts|admin_urlname:'changelist' %}" class="closelink waves-effect waves-light btn">{% trans 'Close' %}</a>{% endif %}
+{% if show_close %}
+    <a href="{% url opts|admin_urlname:'changelist' %}"
+       title="{% trans 'Close' %}"
+       class="btn-floating btn-large waves-effect waves-light orange">
+        <i class="material-icons right">close</i>
+    </a>
+{% endif %}
 {% endblock %}
 </div>
