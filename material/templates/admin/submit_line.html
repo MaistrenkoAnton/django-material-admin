@@ -10,7 +10,7 @@
 {% if show_delete_link and original %}
     {% url opts|admin_urlname:'delete' original.pk|admin_urlquote as delete_url %}
     <p class="deletelink-box">
-        <a href="{% add_preserved_filters delete_url %}" class="deletelink waves-effect waves-light btn">
+        <a href="{% add_preserved_filters delete_url %}" class="deletelink waves-effect waves-light btn red">
             {% trans "Delete" %}
             <i class="material-icons right">delete_forever</i>
         </a>
