@@ -1,0 +1,11 @@
+{% extends "admin/index.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'material/css/index.min.css' %}">
+{% endblock %}
+
+{% block content %}
+    {% include 'material/includes/app_content.html' %}
+{% endblock %}

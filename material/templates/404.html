@@ -1,0 +1,30 @@
+{% extends "admin/base_site.html" %}
+{% load static i18n %}
+
+{% block title %}{% trans 'Page not found' %}{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'material/css/layout.min.css' %}">
+{% endblock %}
+
+{% block branding %}{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block content %}
+
+<div id="layout-content">
+  <div class="side-bar">
+    <img src="{% static 'material/images/error.jpg' %}" alt="">
+  </div>
+  <div class="text-content">
+    <h2>404</h2>
+    <h3>{% trans 'Page not found' %}</h3>
+    <p>{% trans 'We\'re sorry, but the requested page could not be found.' %}</p>
+  </div>
+</div>
+
+{% endblock %}

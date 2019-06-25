@@ -3,8 +3,8 @@
 
 {% block extrastyle %}
 {{ block.super }}
-<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/layout.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'material_admin/css/logout.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'material/css/layout.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'material/css/logout.css' %}">
 {% endblock %}
 
 {% block branding %}{% endblock %}
@@ -17,7 +17,7 @@
 
 <div id="layout-content">
   <div class="side-bar">
-    <img src="{% static 'material_admin/images/login-logo.png' %}" alt="">
+    <img src="{% static 'material/images/login-logo.png' %}" alt="">
   </div>
   <div class="text-content">
     <h2>{% trans "Logged out" %}</h2>

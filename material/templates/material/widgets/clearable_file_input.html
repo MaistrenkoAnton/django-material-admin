@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'material/css/clearable_file_input.min.css' %}">
+
+<div class="file-flex-block">
+  <div class="file-field input-field">
+  <div class="btn">
+    <span>File</span>
+    <input type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+  </div>
+  <div class="file-path-wrapper">
+    <input class="file-path validate" value="{% if widget.is_initial %}{{ widget.value }}{% endif %}" type="text">
+    {% if not widget.required and widget.is_initial %}
+      <div class="clearable-file-input">
+        <label>
+          <input type="checkbox" name="{{ widget.checkbox_name }}" id="{{ widget.checkbox_id }}">
+          <span>{{ widget.clear_checkbox_label }}</span>
+        </label>
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% if widget.is_initial %}
+  <a href="{{ widget.value.url }}" class="file-download">
+    <i class="material-icons">get_app</i>
+  </a>
+{% endif %}
+</div>
