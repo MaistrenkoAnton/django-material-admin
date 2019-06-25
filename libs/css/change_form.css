@@ -7,15 +7,6 @@ fieldset.module.aligned {
     margin-bottom: 0;
 }
 
-.module h2, .module caption, .inline-group h2 {
-    background: none;
-    color: rgb(65, 118, 144);
-    border-left: 3px solid rgb(65, 118, 144);
-    font-weight: bold;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
 .checkbox-label {
     color: #666;
     font-size: 14px;
