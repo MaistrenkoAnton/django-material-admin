@@ -21,3 +21,7 @@ class MaterialAdminSplitDateTime(forms.SplitDateTimeWidget):
 
 class MaterialAdminTimeWidget(forms.TimeInput):
     template_name = 'material/widgets/time.html'
+
+
+class MaterialAdminFileWidget(widgets.AdminFileWidget):
+    template_name = 'material/widgets/clearable_file_input.html'

@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
@@ -19,3 +20,14 @@ class Country(models.Model):
         verbose_name_plural = _('Countries')
         db_table = 'country'
         ordering = ('name',)
+
+
+class Person(models.Model):
+    uuid = models.UUIDField(_('UUID number'))
+    nationality = models.ForeignKey('countries.Country', on_delete=models.CASCADE, null=True, blank=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
+
+    class Meta:
+        verbose_name = _('Person')
+        verbose_name_plural = _('Persons')
+        db_table = 'persons'
