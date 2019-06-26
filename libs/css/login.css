@@ -19,6 +19,14 @@
     animation: fadeout 0.5s 5s forwards;
 }
 
+.material-icons.prefix.password-visible {
+    right: 5px;
+    top: 12px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
 @keyframes fadeout {
     from {
         opacity: 1
