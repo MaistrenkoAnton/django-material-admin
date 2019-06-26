@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var elems = document.querySelectorAll('.dropdown-trigger');
     M.Dropdown.init(elems);
-    $('select[style*="display: block"]').formSelect();
+    $('select').not('.empty-form select').formSelect();
 
     for(const toast of toasts) {
         const messages = $(`.messagelist > .${toast}`);
