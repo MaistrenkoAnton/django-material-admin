@@ -49,7 +49,6 @@ fieldset.aligned {
     display: none;
 }
 
-form .related-widget-wrapper .dropdown-content,
 form .related-widget-wrapper .select-dropdown.dropdown-trigger,
 form .related-widget-wrapper .caret {
     display: none;
