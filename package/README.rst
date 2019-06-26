@@ -22,4 +22,14 @@ Quick start
 
     .. code-block:: python
 
-         path('admin/', include('material.urls')),
+        urlpatterns = [
+            path('admin/', include('material.urls')),
+        ]
+
+3. Extend Admin config from  `MaterialModelAdmin`
+
+    .. code-block:: python
+
+        @admin.register(User)
+        class UserAdmin(MaterialModelAdmin):
+            list_display = ('name', 'first_name', 'last_name')

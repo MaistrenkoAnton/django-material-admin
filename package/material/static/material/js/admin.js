@@ -34,5 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
             M.toast({html: message.innerText, classes: `rounded ${toast}-toast`});
         }
     }
-
 });
