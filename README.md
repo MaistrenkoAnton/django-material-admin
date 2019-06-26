@@ -13,7 +13,8 @@ http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com/admin/
 
 ### Todo:
 
+1. Fix FK choices
 1. Fix inlines.
-2. App icons check.
-3. Change password card margin fixes.
-4. Responsive enhancements.
+1. App icons check.
+1. Change password card margin fixes.
+1. Responsive enhancements.

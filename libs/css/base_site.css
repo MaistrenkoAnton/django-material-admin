@@ -306,3 +306,7 @@ input.valid[type=text]:not(.browser-default) {
     font-size: 16px;
     text-transform: uppercase;
 }
+
+.small-icon {
+    font-size: 16px;
+}
