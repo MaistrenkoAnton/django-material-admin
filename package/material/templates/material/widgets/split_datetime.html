@@ -1,0 +1,26 @@
+<p class="datetime material flex">
+  <span class="flex">{{ date_label }} {% with widget=widget.subwidgets.0 %}{% include widget.template_name %}{% endwith %}
+    <i class="material-icons datetime-icons">insert_invitation</i>
+  </span>
+  <span class="time-input flex">{{ time_label }} {% with widget=widget.subwidgets.1 %}{% include widget.template_name %}{% endwith %}
+    <i class="material-icons datetime-icons">access_time</i>
+  </span>
+</p>
+
+<style>
+  .datetime.material {
+    margin: 0;
+    padding-top: 30px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  .time-input {
+    margin-left: 40px;
+  }
+  .datetime-icons {
+    margin: 10px 0 0 -25px;
+    color: #417690;
+  }
+</style>
