@@ -1,4 +1,4 @@
-(function() {
+(function () {
     var input = document.getElementById("password-input");
     var visibleOff = document.getElementById("visible-off");
     var visibleOn = document.getElementById("visible-on");
@@ -9,7 +9,7 @@
       visibleOff.classList.remove("hide");
     }
 
-    function passwordHide() {
+    function passwordHide () {
       input.type = "password";
       visibleOff.classList.add("hide");
       visibleOn.classList.remove("hide");
