@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls.static import static
 from django.urls import path, include
 from django.conf import settings
-
+from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', include('material.urls')),
+    path('', RedirectView.as_view(url='admin/', permanent=False), name='index')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
 )
