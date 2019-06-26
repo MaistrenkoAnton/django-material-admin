@@ -292,3 +292,17 @@ input.valid[type=text]:not(.browser-default) {
 .sidenav .collapsible-body div {
     line-height: 20px;
 }
+
+#cancel-button {
+    height: 36px;
+    color: white;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: none;
+    color: rgb(65, 118, 144);
+    border-left: 3px solid rgb(65, 118, 144);
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
