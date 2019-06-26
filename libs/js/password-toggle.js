@@ -14,4 +14,11 @@
       visibleOff.classList.add("hide");
       visibleOn.classList.remove("hide");
     }
+
+    $('#visible-on').click(function() {
+        passwordShow();
+    });
+    $('#visible-off').click(function() {
+        passwordHide();
+    });
 })();
