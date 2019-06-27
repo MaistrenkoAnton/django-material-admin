@@ -52,3 +52,9 @@
 </div>
 </form></div>
 {% endblock %}
+
+{% block footer %}
+  {{ block.super }}
+  <script type="text/javascript" src="{% static 'material/js/inline-forms.min.js' %}"></script>
+{% endblock %}
+
