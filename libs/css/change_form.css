@@ -113,3 +113,10 @@ a.add-related {
 .inline-deletelink {
     display: none;
 }
+
+.inline-group .tabular tr.add-row td a.add-inline-link {
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -12,7 +12,7 @@ Quick start
         INSTALLED_APPS = (
             ...
             'material',
-            'material.authentication',
+            'material.material_authentication',
             'django.contrib.admin',
             ...
         )
@@ -29,6 +29,9 @@ Quick start
 3. Extend Admin config from  `MaterialModelAdmin`
 
     .. code-block:: python
+
+        from material.options import MaterialModelAdmin
+
 
         @admin.register(Person)
         class UserAdmin(MaterialModelAdmin):
