@@ -7,7 +7,7 @@
             {% for app in available_apps %}
             <li class="scrollspy">
                 <div class="collapsible-header">
-                    <i class="material-icons">settings</i>
+                    <i class="material-icons">{% if app.icon %}{{ app.icon }}{% else %}settings{% endif %}</i>
                     {{ app.name }}
                 </div>
                 <div class="collapsible-body">
