@@ -6,12 +6,12 @@ from django.apps import apps
 
 
 class MaterialAdminSite(AdminSite):
+    """Extends AdminSite to add material design for admin interface"""
     default_config_mapping = {
         'auth': 'group',
         'sites': 'web'
     }
 
-    """Extends AdminSite to add material design for admin interface"""
     def __init__(self, name='material'):
         super().__init__(name)
         self.login_template = 'material/login.html'
@@ -22,7 +22,7 @@ class MaterialAdminSite(AdminSite):
     def _build_app_dict(self, request, label=None):
         """
         Build the app dictionary. The optional `label` parameter filters models
-        of a specific app.
+        of a specific app. Adding material icons, default icons.
         """
         app_dict = super()._build_app_dict(request, label)
         for key in app_dict:
