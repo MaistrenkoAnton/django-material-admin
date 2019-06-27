@@ -1,8 +1,8 @@
 from django.urls import path
 
-from material.sites import material_site
+from material.sites import site
 
 
 urlpatterns = [
-    path('', material_site.urls, name='base')
+    path('', site.urls, name='base')
 ]

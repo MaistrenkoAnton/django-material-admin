@@ -12,7 +12,7 @@ Quick start
         INSTALLED_APPS = (
             ...
             'material',
-            'material.material_authentication',
+            'material.defaults',
             'django.contrib.admin',
             ...
         )
@@ -31,8 +31,20 @@ Quick start
     .. code-block:: python
 
         from material.options import MaterialModelAdmin
+        from material.decorators import register
 
-
-        @admin.register(Person)
-        class UserAdmin(MaterialModelAdmin):
+        @register(Person)
+        class PersonAdmin(MaterialModelAdmin):
             list_display = ('name', 'first_name', 'last_name')
+
+    or
+
+    .. code-block:: python
+
+        from material.options import MaterialModelAdmin
+        from material.sites import site
+
+        class PersonAdmin(MaterialModelAdmin):
+            list_display = ('name', 'first_name', 'last_name')
+
+        site.register(User)

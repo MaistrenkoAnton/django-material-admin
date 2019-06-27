@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 from demo.countries.models import Country, Person
+from material.decorators import register
 from material.options import MaterialModelAdmin
 
 
@@ -10,12 +11,12 @@ class PersonInline(admin.TabularInline):
     extra = 0
 
 
-@admin.register(Country)
+@register(Country)
 class CountryAdmin(MaterialModelAdmin):
     list_display = ('name', 'created', 'modified')
     inlines = [PersonInline]
 
 
-@admin.register(Person)
+@register(Person)
 class PersonAdmin(MaterialModelAdmin):
     pass
