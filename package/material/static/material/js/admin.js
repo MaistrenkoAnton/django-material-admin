@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var elems = document.querySelectorAll('.dropdown-trigger');
     M.Dropdown.init(elems);
-
-    $('select').formSelect();
+    $('select').not('.empty-form select').formSelect();
 
     for(const toast of toasts) {
         const messages = $(`.messagelist > .${toast}`);
@@ -34,4 +33,5 @@ document.addEventListener('DOMContentLoaded', function() {
             M.toast({html: message.innerText, classes: `rounded ${toast}-toast`});
         }
     }
+
 });

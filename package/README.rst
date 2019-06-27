@@ -30,6 +30,6 @@ Quick start
 
     .. code-block:: python
 
-        @admin.register(User)
+        @admin.register(Person)
         class UserAdmin(MaterialModelAdmin):
             list_display = ('name', 'first_name', 'last_name')
