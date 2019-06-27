@@ -80,3 +80,36 @@ div.submit-row {
     background: none;
     border: none;
 }
+
+.original {
+    display: flex;
+}
+
+.inline-group .tabular td.original p {
+    overflow: visible;
+}
+
+.related-wrapper {
+    position: relative;
+}
+
+.related-wrapper a {
+    position: absolute;
+    top: -6px;
+}
+
+a.add-related {
+    left: 10px;
+}
+
+.delete-inline-row {
+    cursor: pointer
+}
+
+.delete {
+    text-align: center;
+}
+
+.inline-deletelink {
+    display: none;
+}
