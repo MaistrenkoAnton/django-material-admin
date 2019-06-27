@@ -12,7 +12,7 @@ Quick start
         INSTALLED_APPS = (
             ...
             'material',
-            'material.material_authentication',
+            'material.defaults',
             'django.contrib.admin',
             ...
         )
