@@ -12,7 +12,6 @@ Quick start
         INSTALLED_APPS = (
             ...
             'material',
-            'material.defaults',
             'django.contrib.admin',
             ...
         )
