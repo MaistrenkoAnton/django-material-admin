@@ -16,7 +16,7 @@ class Country(models.Model):
     time = models.TimeField()
 
     class Meta:
-        verbose_name = _('County')
+        verbose_name = _('Country')
         verbose_name_plural = _('Countries')
         db_table = 'country'
         ordering = ('name',)
