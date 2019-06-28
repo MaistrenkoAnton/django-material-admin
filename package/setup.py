@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="django-material-admin",
-    version="0.0.14",
+    version="0.0.15",
     packages=find_packages(),
     author="Anton Maistrenko",
     include_package_data=True,

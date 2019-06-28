@@ -25,10 +25,11 @@ class MaterialAdminSite(AdminSite):
         of a specific app. Adding material icons, default icons.
         """
         app_dict = super()._build_app_dict(request, label)
-        for key in app_dict:
-            icon = getattr(apps.get_app_config(key), 'icon_name', None) or self.default_config_mapping.get(key)
-            if icon:
-                app_dict[key]['icon'] = strip_tags(icon)
+        if not label:
+            for key in app_dict.keys():
+                icon = getattr(apps.get_app_config(key), 'icon_name', None) or self.default_config_mapping.get(key)
+                if icon:
+                    app_dict[key]['icon'] = strip_tags(icon)
         return app_dict
 
 

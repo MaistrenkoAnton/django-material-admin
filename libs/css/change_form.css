@@ -120,3 +120,7 @@ a.add-related {
     align-items: center;
     justify-content: center;
 }
+
+.form-row {
+    border-bottom: none;
+}
