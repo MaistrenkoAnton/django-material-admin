@@ -93,11 +93,6 @@ div.submit-row {
     position: relative;
 }
 
-.related-wrapper-row a {
-    position: absolute;
-    top: -12px;
-}
-
 a.add-related {
     left: 10px;
 }
@@ -106,8 +101,9 @@ a.add-related {
     cursor: pointer
 }
 
-.delete {
+.form-row .delete {
     text-align: center;
+    vertical-align: middle;
 }
 
 .inline-deletelink {
@@ -123,4 +119,8 @@ a.add-related {
 
 .form-row {
     border-bottom: none;
+}
+
+.form-row td {
+    vertical-align: bottom;
 }
