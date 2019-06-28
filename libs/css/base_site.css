@@ -58,6 +58,7 @@ ul {
     height: 100%;
     display: inline-block;
     padding: 0 5px;
+    font-weight: bold;
 }
 
 #user-tools a:hover {
@@ -243,9 +244,12 @@ input.valid[type=text]:not(.browser-default) {
     #header #site-name {
         top: 0;
     }
+    #header {
+        flex-direction: row !important;
+    }
 
-    #header #user-tools {
-        top: 50px;
+    .sidenav-trigger + h1 {
+        display: none;
     }
 }
 

@@ -89,13 +89,13 @@ div.submit-row {
     overflow: visible;
 }
 
-.related-wrapper {
+.related-wrapper-row {
     position: relative;
 }
 
-.related-wrapper a {
+.related-wrapper-row a {
     position: absolute;
-    top: -6px;
+    top: -12px;
 }
 
 a.add-related {
