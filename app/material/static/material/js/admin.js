@@ -1,11 +1,20 @@
 (function($) {
     const toasts = ['success', 'warning']
 
-    $('#side-bar, #mobile-demo').mouseenter(
+    $('#mobile-demo').scroll(
         function() {
         $('.scroll-pane').jScrollPane();
-    }
-    ).mouseleave(
+    })
+
+//    $('.sidenav-trigger').click(
+//        function() {
+//        $('.scroll-pane').jScrollPane();
+//    })
+
+    $('#side-bar').mouseenter(
+        function() {
+        $('.scroll-pane').jScrollPane();
+    }).mouseleave(
         function() {
             const jsp = $('.scroll-pane').data('jsp')
             if (jsp) {
