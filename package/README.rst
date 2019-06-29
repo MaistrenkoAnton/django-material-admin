@@ -32,6 +32,9 @@ Quick start
         from material.options import MaterialModelAdmin
         from material.decorators import register
 
+        from persons.models import Person
+
+
         @register(Person)
         class PersonAdmin(MaterialModelAdmin):
             list_display = ('name', 'first_name', 'last_name')
@@ -42,6 +45,9 @@ Quick start
 
         from material.options import MaterialModelAdmin
         from material.sites import site
+
+        from persons.models import Person
+
 
         class PersonAdmin(MaterialModelAdmin):
             list_display = ('name', 'first_name', 'last_name')

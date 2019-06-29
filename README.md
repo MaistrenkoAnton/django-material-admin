@@ -16,60 +16,65 @@ Quick start
 
 1. Add "django-material-admin" to your INSTALLED_APPS setting like this:
 
-     .. code-block:: python
+```python
 
-        INSTALLED_APPS = (
-            ...
-            'material',
-            'django.contrib.admin',
-            ...
-        )
+INSTALLED_APPS = (
+    ...,
+    'material',
+    'django.contrib.admin',
+    ...,
+)
+```
 
 
 2. Include the material templates URLconf in your project urls.py like this:
 
-    .. code-block:: python
+```python
+from django.urls import path, include
 
-        urlpatterns = [
-            path('admin/', include('material.urls')),
-        ]
+urlpatterns = [
+    path('admin/', include('material.urls')),
+]
+```
 
 3. Extend Admin config from  `MaterialModelAdmin`
 
-    .. code-block:: python
+```python
+from material.options import MaterialModelAdmin
+from material.decorators import register
 
-        from material.options import MaterialModelAdmin
-        from material.decorators import register
+from persons.models import Person
 
-        @register(Person)
-        class PersonAdmin(MaterialModelAdmin):
-            list_display = ('name', 'first_name', 'last_name')
-
+@register(Person)
+class PersonAdmin(MaterialModelAdmin):
+    list_display = ('name', 'first_name', 'last_name')
+```
     or
+    
+```python
+from material.options import MaterialModelAdmin
+from material.sites import site
 
-    .. code-block:: python
+from persons.models import Person
 
-        from material.options import MaterialModelAdmin
-        from material.sites import site
 
-        class PersonAdmin(MaterialModelAdmin):
-            list_display = ('name', 'first_name', 'last_name')
+class PersonAdmin(MaterialModelAdmin):
+    list_display = ('name', 'first_name', 'last_name')
 
-        site.register(User)
+site.register(Person)
+ ```
 
 4. Add icon to the application in `app.py`
 https://materializecss.com/icons.html
 
-    .. code-block:: python
-
-        from django.apps import AppConfig
-
-
-        class PersonsConfig(AppConfig):
-            name = 'persons'
-            icon_name = 'person'
+```python
+from django.apps import AppConfig
 
 
+class PersonsConfig(AppConfig):
+    name = 'persons'
+    icon_name = 'person'
+```
 
 ### Todo:
 
