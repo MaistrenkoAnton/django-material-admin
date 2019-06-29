@@ -1,0 +1,89 @@
+#side-bar {
+    background-color: #EEEEEF;
+}
+
+.scroll-pane {
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+}
+
+.collapsible {
+    width: 300px;
+}
+
+.collapsible img.login-logo {
+    position: absolute;
+    top: 40px;
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+    border-radius: 100%;
+}
+
+.collapsible li {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.collapsible li:first-child {
+    background: white;
+}
+
+.collapsible li:last-child {
+    padding-bottom: 20px;
+    background: white;
+}
+
+.collapsible-header {
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #417690;
+}
+
+.collapsible-header:hover {
+    background: rgba(46, 118, 143, .1);
+}
+
+.collapsible-header i {
+    color: #417690;
+}
+
+.active .collapsible-header,
+.collapsible-body > div:hover {
+    background: rgba(46, 118, 143, .2);
+    color: #417690;
+}
+
+.collapsible-body {
+    padding: 0;
+    font-weight: bold;
+    border: none;
+}
+
+.collapsible-body > div {
+    cursor: pointer;
+    line-height: 20px;
+    padding: 7px 10px 7px 53px;
+}
+
+
+.collapsible-body > div a {
+    display: inline-block;
+    width: 100%;
+}
+
+.collapsible-body > div.active {
+    background-color: #417690;
+}
+
+.collapsible-body > div.active a {
+    color: white;
+}

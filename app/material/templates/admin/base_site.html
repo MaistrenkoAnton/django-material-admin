@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="{% static 'material/css/materialize.min.css' %}">
 <link href="{% static 'material/css/material_icons.min.css' %}" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="{% static 'material/css/base_site.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'material/css/side_nav.min.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'material/css/material-responsive.min.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'material/css/jquery.jscrollpane.min.css' %}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -48,12 +49,12 @@
     </a>
 {% endblock %}
 
-{% block content_title %}
+{% block side_nav %}
 <div id="side-bar" class="hide-on-med-and-down">
-    {% include 'admin/navbar.html' with available_apps=available_apps app=app %}
+    {% include 'admin/side_nav.html' with available_apps=available_apps app=app %}
 </div>
 <div id="mobile-demo" class="sidenav">
-    {% include 'admin/navbar.html' with available_apps=available_apps app=app %}
+    {% include 'admin/side_nav.html' with available_apps=available_apps app=app %}
 </div>
 {% endblock %}
 

@@ -2,21 +2,22 @@
 
 <div class="scroll-pane">
     {% if available_apps %}
-    <div class="card sidenav-card">
         <ul class="collapsible">
             <li>
-                <div class="card-image">
-                    <a href="{% url 'admin:auth_user_change' user.pk %}">
-                        {% if user.picture %}
-                            <img class="login-logo" src="{{ user.picture.url }}">
-                        {% else %}
-                            <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
-                        {% endif %}
-                    </a>
-                    <img src="{% static 'material/images/login-bg.jpg' %}">
-                    <div class="card-title">
-                        <strong>{% firstof user.get_short_name user.get_username %}</strong>
-                        <small>{{ user.email|default_if_none:'' }}</small>
+                <div class="card">
+                    <div class="card-image">
+                        <a href="{% url 'admin:auth_user_change' user.pk %}">
+                            {% if user.picture %}
+                                <img class="login-logo" src="{{ user.picture.url }}">
+                            {% else %}
+                                <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
+                            {% endif %}
+                        </a>
+                        <img src="{% static 'material/images/login-bg.jpg' %}">
+                        <div class="card-title">
+                            <strong>{% firstof user.get_short_name user.get_username %}</strong>
+                            <small>{{ user.email|default_if_none:'' }}</small>
+                        </div>
                     </div>
                 </div>
             </li>
@@ -40,7 +41,6 @@
             </li>
             {% endfor %}
         </ul>
-    </div>
     {% else %}
     <p>{% trans "You don't have permission to view or edit anything." %}</p>
     {% endif %}
