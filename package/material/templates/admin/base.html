@@ -19,8 +19,10 @@
 <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}"
   data-admin-utc-offset="{% now "Z" %}">
 
+<!-- Side Nav -->
 {% block side_nav %}
 {% endblock %}
+<!-- End Side Nav -->
 
 <!-- Container -->
 <div id="container">
@@ -35,8 +37,6 @@
         {% if has_permission %}
         <div id="user-tools">
             {% block welcome-msg %}
-                {% trans 'Welcome,' %}
-                <strong>{% firstof user.get_short_name user.get_username %}</strong>.
             {% endblock %}
             {% block userlinks %}
                 {% if site_url %}
@@ -78,7 +78,7 @@
     <!-- Content -->
     <div id="content" class="{% block coltype %}colM{% endblock %}">
         {% block pretitle %}{% endblock %}
-        {% block content_title %}{% endif %}{% endblock %}
+        {% block content_title %}{% endblock %}
         {% block content %}
         {% block object-tools %}{% endblock %}
         {{ content }}
