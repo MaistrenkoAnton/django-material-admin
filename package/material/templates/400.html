@@ -9,21 +9,18 @@
 {% endblock %}
 
 {% block branding %}{% endblock %}
-
+{% block inside_container %}{% endblock %}
 {% block breadcrumbs %}{% endblock %}
-
-{% block content_title %}{% endblock %}
+{% block side_nav %}{% endblock %}
 
 {% block content %}
-
-<div id="layout-content">
-  <div class="side-bar">
-    <img src="{% static 'material/images/error.jpg' %}" alt="">
+  <div id="layout-content">
+    <div class="side-bar">
+      <img src="{% static 'material/images/error.jpg' %}" alt="">
+    </div>
+    <div class="text-content">
+      <h2>400</h2>
+      <h3>{% trans 'Bad request' %}</h3>
+    </div>
   </div>
-  <div class="text-content">
-    <h2>400</h2>
-    <h3>{% trans 'Bad request' %}</h3>
-  </div>
-</div>
-
 {% endblock %}

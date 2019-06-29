@@ -9,22 +9,19 @@
 {% endblock %}
 
 {% block branding %}{% endblock %}
-
+{% block inside_container %}{% endblock %}
 {% block breadcrumbs %}{% endblock %}
-
-{% block content_title %}{% endblock %}
+{% block side_nav %}{% endblock %}
 
 {% block content %}
-
-<div id="layout-content">
-  <div class="side-bar">
-    <img src="{% static 'material/images/error.jpg' %}" alt="">
+  <div id="layout-content">
+    <div class="side-bar">
+      <img src="{% static 'material/images/error.jpg' %}" alt="">
+    </div>
+    <div class="text-content">
+      <h2>404</h2>
+      <h3>{% trans 'Page not found' %}</h3>
+      <p>{% trans 'We\'re sorry, but the requested page could not be found.' %}</p>
+    </div>
   </div>
-  <div class="text-content">
-    <h2>404</h2>
-    <h3>{% trans 'Page not found' %}</h3>
-    <p>{% trans 'We\'re sorry, but the requested page could not be found.' %}</p>
-  </div>
-</div>
-
 {% endblock %}

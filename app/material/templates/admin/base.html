@@ -25,7 +25,7 @@
 <!-- End Side Nav -->
 
 <!-- Container -->
-<div id="container">
+<div {% block inside_container %}id="container"{% endblock %}>
 
     {% if not is_popup %}
     <!-- Header -->

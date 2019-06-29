@@ -19,6 +19,10 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     padding-left: 300px;
 }
 
+#container-outside {
+    padding-ledt: 0
+}
+
 ul {
     margin: 0 !important;
 }

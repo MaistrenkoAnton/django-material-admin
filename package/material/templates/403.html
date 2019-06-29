@@ -9,22 +9,19 @@
 {% endblock %}
 
 {% block branding %}{% endblock %}
-
+{% block inside_container %}{% endblock %}
 {% block breadcrumbs %}{% endblock %}
-
-{% block content_title %}{% endblock %}
+{% block side_nav %}{% endblock %}
 
 {% block content %}
-
-<div id="layout-content">
-  <div class="side-bar">
-    <img src="{% static 'material/images/error.jpg' %}" alt="">
+  <div id="layout-content">
+    <div class="side-bar">
+      <img src="{% static 'material/images/error.jpg' %}" alt="">
+    </div>
+    <div class="text-content">
+      <h2>403</h2>
+      <h3>{% trans 'Page not found' %}</h3>
+      <p>{% trans 'You have no permissions to do this action.' %}</p>
+    </div>
   </div>
-  <div class="text-content">
-    <h2>403</h2>
-    <h3>{% trans 'Page not found' %}</h3>
-    <p>{% trans 'You have no permissions to do this action.' %}</p>
-  </div>
-</div>
-
 {% endblock %}
