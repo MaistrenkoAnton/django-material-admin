@@ -15,6 +15,10 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     color: #417690;
 }
 
+#container {
+    padding-left: 300px;
+}
+
 ul {
     margin: 0 !important;
 }
@@ -29,53 +33,6 @@ ul {
 
 .messagelist {
     display: none
-}
-
-#header {
-    height: 60px;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 60px;
-}
-
-#header #branding nav {
-    box-shadow: none;
-    background-color: transparent;
-}
-
-#branding h1, #branding h1 a:link, #branding h1 a:visited {
-    color: white;
-}
-
-#branding h1 {
-    height: 100%;
-    line-height: 60px;
-}
-
-#user-tools a {
-    border-bottom: 0;
-    color: #fff;
-    height: 100%;
-    display: inline-block;
-    padding: 0 5px;
-    font-weight: bold;
-}
-
-#user-tools a:hover {
-    color: #fff;
-    background-color: #205466;
-}
-
-#user-tools a:last-child {
-    position: relative;
-    padding-right: 30px;
-}
-
-#user-tools a i {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #content {
@@ -93,13 +50,6 @@ ul {
 
 #content-main .menu:hover {
     overflow-y: scroll;
-}
-
-#header,
-#content-main,
-.breadcrumbs,
-.content-wrapper {
-    margin-left: 300px;
 }
 
 .card {

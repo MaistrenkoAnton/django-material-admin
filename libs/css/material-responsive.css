@@ -13,18 +13,15 @@
     #header {
         flex-direction: row !important;
     }
-
     .sidenav-trigger + h1 {
         display: none;
     }
+
 }
 
 @media (max-width: 992px) {
-    #header,
-    #content-main,
-    .breadcrumbs,
-    .content-wrapper {
-        margin-left: 0;
+    #container {
+       padding-left: 0;
     }
 }
 
@@ -32,7 +29,8 @@
     #content-main {
         flex-direction: column-reverse;
     }
-    #changelist, .side-wrapper {
+    #changelist,
+    .side-wrapper {
         width: 100% !important;
         padding: 5px;
     }
@@ -52,14 +50,11 @@
         height: 150px !important;
     }
 
-    #header #user-tools a {
+    #user-tools a {
+        margin: 0 auto;
+        width:100px;
         display: block;
         padding-top: 5px;
         padding-bottom: 5px;
-    }
-
-    #user-tools a:last-child {
-        margin: 0 auto;
-        width:100px;
     }
 }

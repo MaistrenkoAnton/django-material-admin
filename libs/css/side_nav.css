@@ -7,10 +7,12 @@
     overflow: hidden;
     position: fixed;
     z-index: 999;
+    background: white;
 }
 
 .collapsible {
     width: 300px;
+    box-shadow: none;
 }
 
 .collapsible img.login-logo {
