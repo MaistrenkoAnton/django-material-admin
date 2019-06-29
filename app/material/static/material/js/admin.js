@@ -6,10 +6,10 @@
         $('.scroll-pane').jScrollPane();
     })
 
-//    $('.sidenav-trigger').click(
-//        function() {
-//        $('.scroll-pane').jScrollPane();
-//    })
+    $('.sidenav-trigger').click(
+        function() {
+        $('.scroll-pane').jScrollPane();
+    })
 
     $('#side-bar').mouseenter(
         function() {
