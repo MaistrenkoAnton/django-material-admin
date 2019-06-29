@@ -6,7 +6,7 @@
         $('.scroll-pane').jScrollPane();
     })
 
-    $('.sidenav-trigger').on('touchstart click touchmove',
+    $('.sidenav-trigger').on('touchstart click',
         function() {
         $('.scroll-pane').jScrollPane();
     })
