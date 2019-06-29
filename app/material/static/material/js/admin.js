@@ -1,12 +1,12 @@
 (function($) {
     const toasts = ['success', 'warning']
 
-    $('#mobile-demo').scroll(
+    $('#mobile-demo').on('touchstart click touchmove',
         function() {
         $('.scroll-pane').jScrollPane();
     })
 
-    $('.sidenav-trigger').click(
+    $('.sidenav-trigger').on('touchstart click touchmove',
         function() {
         $('.scroll-pane').jScrollPane();
     })
