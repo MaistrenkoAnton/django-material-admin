@@ -47,3 +47,15 @@ Quick start
             list_display = ('name', 'first_name', 'last_name')
 
         site.register(User)
+
+4. Add icon to the application in `app.py`
+https://materializecss.com/icons.html
+
+    .. code-block:: python
+
+        from django.apps import AppConfig
+
+
+        class PersonsConfig(AppConfig):
+            name = 'persons'
+            icon_name = 'person'
