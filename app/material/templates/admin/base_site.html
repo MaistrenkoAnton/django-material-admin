@@ -14,7 +14,6 @@
 {% endblock %}
 
 {% block branding %}
-
     <nav class="nav-extended">
         <div class="nav-wrapper">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -27,7 +26,6 @@
             </h1>
         </div>
     </nav>
-
 {% endblock %}
 
 {% block userlinks %}
@@ -51,7 +49,7 @@
 {% endblock %}
 
 {% block side_nav %}
-<div id="side-bar" class="hide-on-med-and-down">
+<div id="side-bar" class="hide-on-med-and-down {% if request.COOKIES.side_nav == 'hidden' %}hide{% endif %}">
     {% include 'admin/side_nav.html' with available_apps=available_apps app=app %}
 </div>
 <div id="mobile-demo" class="sidenav">
@@ -64,6 +62,7 @@
 <script src="{% static 'material/js/materialize-init.min.js' %}"></script>
 <script src="{% static 'material/js/admin.js' %}"></script>
 <script src="{% static 'material/js/filters.js' %}"></script>
+<script src="{% static 'material/js/nav-bar.js' %}"></script>
 <script type="text/javascript" src="{% static 'material/js/jquery.mousewheel.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'material/js/jquery.jscrollpane.min.js' %}"></script>
 {% endblock %}

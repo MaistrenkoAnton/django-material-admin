@@ -25,11 +25,14 @@
 <!-- End Side Nav -->
 
 <!-- Container -->
-<div {% block inside_container %}id="container"{% endblock %}>
+<div id="container" {% block inside_container %}
+     {% if request.COOKIES.side_nav == 'hidden' %}class="side_nav_shown"{% endif %}
+     {% endblock %}>
 
     {% if not is_popup %}
     <!-- Header -->
     <div id="header">
+        <span class="hide-side_nav"><i class="material-icons">format_list_bulleted</i></span>
         <div id="branding">
         {% block branding %}{% endblock %}
         </div>
@@ -88,7 +91,9 @@
     </div>
     <!-- END Content -->
 
-    {% block footer %}<div id="footer"></div>{% endblock %}
+    {% block footer %}
+        <div id="footer"></div>
+    {% endblock %}
 </div>
 <!-- END Container -->
 
