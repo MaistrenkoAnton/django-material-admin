@@ -7,6 +7,7 @@ try:
     @register(Site)
     class MaterialSiteAdmin(MaterialModelAdmin):
         """Register Site model with material styles"""
+        icon_name = 'web'
 
 except RuntimeError:
     pass
@@ -19,11 +20,13 @@ try:
     @register(User)
     class MaterialUserAdmin(MaterialModelAdmin, UserAdmin):
         """Register User model with material styles"""
+        icon_name = 'person'
 
 
     @register(Group)
     class MaterialGroupAdmin(MaterialModelAdmin, GroupAdmin):
         """Register Group model with material styles"""
+        icon_name = 'people'
 
 except RuntimeError:
     pass

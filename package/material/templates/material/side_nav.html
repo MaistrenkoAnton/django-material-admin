@@ -6,13 +6,11 @@
             <li>
                 <div class="card">
                     <div class="card-image">
-                        <a href="{% url 'admin:auth_user_change' user.pk %}">
-                            {% if user.picture %}
-                                <img class="login-logo" src="{{ user.picture.url }}">
-                            {% else %}
-                                <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
-                            {% endif %}
-                        </a>
+                        {% if user.picture %}
+                            <img class="login-logo" src="{{ user.picture.url }}">
+                        {% else %}
+                            <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
+                        {% endif %}
                         <img src="{% static 'material/images/login-bg.jpg' %}">
                         <div class="card-title">
                             <strong>{% firstof user.get_short_name user.get_username %}</strong>
