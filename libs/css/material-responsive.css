@@ -49,11 +49,13 @@
     #header {
         height: 150px !important;
     }
+    #user-tools {
+        display: flex;
+        flex-direction: column;
+    }
 
     #user-tools a {
         margin: 0 auto;
-        width:100px;
-        display: block !important;
         padding-top: 5px;
         padding-bottom: 5px;
     }

@@ -1,3 +1,7 @@
+form {
+    flex: 1;
+}
+
 .required label, label.required {
     font-weight: normal;
     color: #9e9e9e;
@@ -101,11 +105,6 @@ a.add-related {
     cursor: pointer
 }
 
-.form-row .delete {
-    text-align: center;
-    vertical-align: middle;
-}
-
 .inline-deletelink {
     display: none;
 }
@@ -119,6 +118,11 @@ a.add-related {
 
 .form-row {
     border-bottom: none;
+}
+
+.form-row .delete {
+    text-align: center;
+    vertical-align: middle;
 }
 
 .form-row td {

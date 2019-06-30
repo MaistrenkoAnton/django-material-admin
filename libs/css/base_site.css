@@ -50,6 +50,7 @@ ul {
     overflow: hidden;
     background-color: #eeeeef;
     margin-top: 5px;
+    display: flex;
 }
 
 #content-main .menu:hover {

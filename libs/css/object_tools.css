@@ -1,0 +1,12 @@
+.side-wrapper-tools {
+    width: 220px;
+}
+
+.side-wrapper-tools h4 {
+    margin: 0;
+}
+
+.material-object-tools {
+    border-left: none;
+    border-right: none;
+}
