@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.file-flex-block i {
+    background: white
+}
+
 .input-field {
     padding: 0;
     flex: 1;

@@ -5,12 +5,6 @@
         function() {
         $('.scroll-pane').jScrollPane();
     })
-
-    $('.sidenav-trigger').on('touchstart click',
-        function() {
-        $('.scroll-pane').jScrollPane();
-    })
-
     $('#side-bar').mouseenter(
         function() {
         $('.scroll-pane').jScrollPane();
