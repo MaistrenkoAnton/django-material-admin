@@ -1,3 +1,5 @@
+from django.core.exceptions import AppRegistryNotReady
+
 from material.decorators import register
 from material.options import MaterialModelAdmin
 
@@ -9,7 +11,7 @@ try:
         """Register Site model with material styles"""
         icon_name = 'web'
 
-except RuntimeError:
+except (RuntimeError, AppRegistryNotReady):
     pass
 
 try:
@@ -28,5 +30,5 @@ try:
         """Register Group model with material styles"""
         icon_name = 'people'
 
-except RuntimeError:
+except (RuntimeError, AppRegistryNotReady):
     pass
