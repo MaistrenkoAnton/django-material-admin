@@ -75,11 +75,3 @@ class PersonsConfig(AppConfig):
     name = 'persons'
     icon_name = 'person'
 ```
-
-### Todo:
-
-1. Fix FK choices
-1. Fix inlines.
-1. App icons check.
-1. Change password card margin fixes.
-1. Responsive enhancements.
