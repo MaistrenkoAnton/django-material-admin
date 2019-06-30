@@ -1,0 +1,46 @@
+.submit-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+a.dropdown-trigger {
+    display: flex;
+    min-width: 220px;
+    color: white;
+    margin: 10px 8px;
+}
+
+a.dropdown-trigger i {
+    margin-right: 8px;
+}
+
+.open-actions {
+    display: flex;
+}
+
+.open-actions .default,
+.submit-row a.deletelink {
+    height: 36px;
+    margin: 10px 8px;
+    width: 50%;
+    display: flex;
+}
+
+#save-dropdown li {
+    display: flex;
+    color: #477091;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#save-dropdown i {
+    margin-left: 10px;
+}
+
+#save-dropdown a,
+#save-dropdown input {
+    border: none;
+    background: none;
+    color: #477091;
+    font-size: 13px;
+}
