@@ -22,8 +22,8 @@ a.dropdown-trigger i {
 .submit-row a.deletelink {
     height: 36px;
     margin: 10px 8px;
-    width: 50%;
     display: flex;
+    flex: 1;
 }
 
 #save-dropdown li {
