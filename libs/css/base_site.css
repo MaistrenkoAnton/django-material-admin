@@ -16,7 +16,7 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
 }
 
 .card-wrapper {
-    margin: 0 5px 5px;
+    margin: 0 5px 5px 0;
 }
 
 #container {

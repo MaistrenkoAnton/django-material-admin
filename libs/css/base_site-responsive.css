@@ -51,6 +51,9 @@
     .aligned .form-row > div {
         width: 100% !important;
     }
+    .aligned .input-field label + div.readonly {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 576px) {
