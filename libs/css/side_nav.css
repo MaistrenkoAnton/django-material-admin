@@ -8,11 +8,11 @@
     position: fixed;
     z-index: 999;
     background: white;
+    width: 300px;
 }
 
 .collapsible {
     width: 300px;
-    box-shadow: none;
 }
 
 .collapsible img.login-logo {
