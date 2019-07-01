@@ -1,7 +1,6 @@
 .related-wrapper .selector {
     display: flex;
     width: 100%;
-    justify-content: space-around
 }
 
 .related-wrapper .selector select {
