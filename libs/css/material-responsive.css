@@ -1,3 +1,26 @@
+@media (max-width: 1200px) {
+    .side-wrapper-tools {
+        width: 220px;
+     }
+    #content-main {
+        flex-direction: column-reverse;
+    }
+    #changelist,
+    .side-wrapper {
+        width: 100% !important;
+        padding: 5px;
+    }
+    #changelist {
+        max-width: 98%;
+    }
+    .card .card-content {
+        width: 100%;
+    }
+    #changelist-search > div {
+     max-width: 100% !important;
+    }
+}
+
 @media (max-width: 1024px) {
     #header #site-name, #header #user-tools{
         position: absolute;
@@ -16,32 +39,11 @@
     .sidenav-trigger + h1 {
         display: none;
     }
-
 }
 
 @media (max-width: 992px) {
     #container {
        padding-left: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    #content-main {
-        flex-direction: column-reverse;
-    }
-    #changelist,
-    .side-wrapper {
-        width: 100% !important;
-        padding: 5px;
-    }
-    #changelist {
-        max-width: 98%;
-    }
-    .card .card-content {
-        width: 100%;
-    }
-    #changelist-search > div {
-        max-width: 100% !important;
     }
 }
 
