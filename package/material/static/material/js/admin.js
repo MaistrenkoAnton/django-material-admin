@@ -5,7 +5,7 @@
         function() {
         $('.scroll-pane').jScrollPane();
     })
-    $('#side-bar').mouseenter(
+    $('#side-bar').on('mouseenter scroll',
         function() {
         $('.scroll-pane').jScrollPane();
     }).mouseleave(

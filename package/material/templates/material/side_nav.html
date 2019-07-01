@@ -40,6 +40,12 @@
             {% endfor %}
         </ul>
     {% else %}
-    <p>{% trans "You don't have permission to view or edit anything." %}</p>
+    <div class="app">
+        <div class="card">
+            <div class="card-content">
+                <p>{% trans "You don't have permission to view or edit anything." %}</>
+            </div>
+        </div>
+    </div>
     {% endif %}
 </div>

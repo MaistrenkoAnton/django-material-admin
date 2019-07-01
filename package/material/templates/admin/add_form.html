@@ -1,0 +1,15 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block form_top %}
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="card-content">
+      {% if not is_popup %}
+        <p>{% trans "First, enter a username and password. Then, you'll be able to edit more user options." %}</p>
+      {% else %}
+        <p>{% trans "Enter a username and password." %}</p>
+      {% endif %}
+    </div></div>
+  </div>
+{% endblock %}
