@@ -5,6 +5,7 @@
 
 a.dropdown-trigger {
     display: flex;
+    justify-content: center;
     min-width: 220px;
     color: white;
     margin: 10px 8px;
@@ -24,6 +25,7 @@ a.dropdown-trigger i {
     margin: 10px 8px;
     display: flex;
     flex: 1;
+    justify-content: center;
 }
 
 #save-dropdown li {
