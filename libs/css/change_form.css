@@ -75,11 +75,6 @@ div.selector select {
     height: 30px;
 }
 
-.selector ul.selector-chooser {
-    background: none;
-    padding-top: 80px;
-}
-
 div.submit-row {
     background: none;
     border: none;

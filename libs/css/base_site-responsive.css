@@ -47,6 +47,12 @@
     }
 }
 
+@media (max-width: 767px) {
+    .aligned .form-row > div {
+        width: 100% !important;
+    }
+}
+
 @media (max-width: 576px) {
     #header {
         height: 150px !important;
