@@ -27,7 +27,7 @@
         height: 48px;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
     .related-wrapper .selector ul.selector-chooser .choose-item .material-icons {
         -webkit-transform: rotate(90deg);
