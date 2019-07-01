@@ -12,6 +12,8 @@ http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com/admin/
 Quick start
 -----------
 
+###pip install django-material-admin
+
 1. Add "django-material-admin" to your INSTALLED_APPS setting like this:
 
 ```python
