@@ -22,6 +22,7 @@ try:
     @register(User)
     class MaterialUserAdmin(MaterialModelAdmin, UserAdmin):
         """Register User model with material styles"""
+        add_form_template = 'admin/add_form.html'
         icon_name = 'person'
 
 

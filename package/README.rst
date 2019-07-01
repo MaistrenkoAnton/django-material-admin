@@ -1,6 +1,4 @@
-# Django Material Admin
-
-Coming soon...
+# Django Material Design Admin
 
 Quick start
 -----------

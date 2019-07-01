@@ -3,9 +3,7 @@
 ![Layout](https://github.com/MaistrenkoAnton/django-material-admin/blob/master/app/demo/screens/login.png)
 
 
-Still in progress
-
-Deployed version:
+Demo version:
 http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com/admin/
 
 ###### login: admin

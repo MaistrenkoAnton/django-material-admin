@@ -1,7 +1,7 @@
 @media (max-width: 1200px) {
     .side-wrapper-tools {
         width: 220px;
-     }
+    }
     #content-main {
         flex-direction: column-reverse;
     }
@@ -11,7 +11,7 @@
         padding: 5px;
     }
     #changelist {
-        max-width: 98%;
+        max-width: 100%;
     }
     .card .card-content {
         width: 100%;
