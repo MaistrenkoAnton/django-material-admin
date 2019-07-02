@@ -16,7 +16,8 @@
                   type="checkbox" {% if field.field.value %}checked{% endif %}/>
                 <span></span>
               </label>
-            </div><div class="checkbox-label">{{ field.field.label }}</div>
+            </div>
+            <div class="checkbox-label">{{ field.field.label }}</div>
           {% else %}
             {{ field.label_tag }}
             {% if field.is_readonly %}
