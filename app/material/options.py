@@ -12,6 +12,7 @@ FORMFIELD_FOR_DBFIELD_MATERIAL = {
         'widget': widgets.MaterialAdminSplitDateTime
     },
     models.TimeField: {'widget': widgets.MaterialAdminTimeWidget},
+    models.TextField: {'widget': widgets.MaterialAdminTextareaWidget},
     models.ImageField: {'widget': widgets.MaterialAdminFileWidget},
     models.FileField: {'widget': widgets.MaterialAdminFileWidget},
 }
