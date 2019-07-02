@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
-    'demo.countries'
+    'demo.countries',
+    'demo.documents',
 ]
 
 MIDDLEWARE = [
