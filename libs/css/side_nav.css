@@ -13,6 +13,7 @@
 
 .collapsible {
     width: 300px;
+    box-shadow: none;
 }
 
 .collapsible img.login-logo {
