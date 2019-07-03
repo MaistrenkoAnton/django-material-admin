@@ -15,8 +15,9 @@ class PersonInline(admin.TabularInline):
 class CountryAdmin(MaterialModelAdmin):
     list_display = ('name', 'created', 'modified')
     inlines = [PersonInline]
+    icon_name = 'location_city'
 
 
 @register(Person)
 class PersonAdmin(MaterialModelAdmin):
-    pass
+    icon_name = 'people_outline'
