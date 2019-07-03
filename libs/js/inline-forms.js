@@ -6,8 +6,13 @@
         if (deleteLink.length) {
             deleteLink.trigger("click");
         } else {
-            tableCell.find('input[type=checkbox]').prop('checked', true );
-            $(this).closest('.form-row').hide();
+            var checkbox = tableCell.find('input[type=checkbox]');
+            if (checkbox.length) {
+                checkbox.prop('checked', true);
+                $(this).closest('.form-row').hide();
+            } else {
+                $(this).closest('.form-row').remove();
+            }
         }
     });
 })(django.jQuery);
