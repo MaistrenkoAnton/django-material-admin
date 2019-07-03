@@ -15,6 +15,8 @@ RUN pip install -r requirements.txt
 RUN apk del .tmp-build-deps
 
 RUN mkdir /app
+RUN mkdir /app/material
 
 WORKDIR /app
 COPY ./app /app
+COPY ./material /app/material
