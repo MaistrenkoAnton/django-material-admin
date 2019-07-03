@@ -28,15 +28,12 @@ a.dropdown-trigger i {
     justify-content: center;
 }
 
-#save-dropdown li {
+#save-dropdown li label {
     display: flex;
     color: #477091;
     align-items: center;
     justify-content: flex-start;
-}
-
-#save-dropdown i {
-    margin-left: 10px;
+    cursor: pointer;
 }
 
 #save-dropdown a,
@@ -44,5 +41,28 @@ a.dropdown-trigger i {
     border: none;
     background: none;
     color: #477091;
-    font-size: 13px;
+    font-size: 14px;
+}
+
+#save-dropdown input:focus {
+    outline: none;
+}
+
+#save-dropdown label > input {
+    display: flex;
+    margin: 5px 10px;
+    padding: 0;
+}
+
+#save-dropdown li > a {
+    display: flex;
+    padding: 10px 0;
+}
+
+#save-dropdown i {
+    margin-left: 10px;
+}
+
+#save-dropdown li > a > i {
+    margin-right: 12px;
 }
