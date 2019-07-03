@@ -19,6 +19,10 @@ a.dropdown-trigger i {
     display: flex;
 }
 
+.submit-row a.deletelink {
+    padding: 10px 30px;
+}
+
 .open-actions .default,
 .submit-row a.deletelink {
     height: 36px;
@@ -26,6 +30,7 @@ a.dropdown-trigger i {
     display: flex;
     flex: 1;
     justify-content: center;
+    border-radius: 2px;
 }
 
 #save-dropdown li label {
