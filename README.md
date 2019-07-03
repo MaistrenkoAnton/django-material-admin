@@ -86,6 +86,6 @@ from persons.models import Person
 
 
 @register(Person)
-class MaterialUserAdmin(MaterialModelAdmin):
+class MaterialPersonAdmin(MaterialModelAdmin):
     icon_name = 'person'
 ```

@@ -77,5 +77,5 @@ https://materializecss.com/icons.html
 
 
         @register(Person)
-        class MaterialUserAdmin(MaterialModelAdmin):
+        class MaterialPersonAdmin(MaterialModelAdmin):
             icon_name = 'person'
