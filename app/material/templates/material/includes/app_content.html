@@ -15,7 +15,9 @@
                         {% if model.admin_url %}
                         <div class="app-item col s6 m6 l4">
                             <a href="{{ model.admin_url }}">
-                                <i class="material-icons">verified_user</i>
+                                <i class="material-icons">
+                                    {{ model.icon|default_if_none:'settings' }}
+                                </i>
                                 <h6>{{ model.name }}</h6>
                             </a>
                         </div>

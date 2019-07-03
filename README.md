@@ -75,3 +75,17 @@ class PersonsConfig(AppConfig):
     name = 'persons'
     icon_name = 'person'
 ```
+
+5. Add icon to the MaterialModelAdmin in `admin.py`
+
+```python
+from material.options import MaterialModelAdmin
+from material.decorators import register
+
+from persons.models import Person
+
+
+@register(Person)
+class MaterialUserAdmin(MaterialModelAdmin):
+    icon_name = 'person'
+```
