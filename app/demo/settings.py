@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'demo.countries',
     'demo.documents',
+    'demo.relations',
 ]
 
 MIDDLEWARE = [
