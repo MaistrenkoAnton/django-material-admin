@@ -1,4 +1,4 @@
-{% extends "admin/base.html" %}
+{% extends "admin/base_site.html" %}
 {% load static i18n %}
 
 {% block extrastyle %}
@@ -13,7 +13,11 @@
 <link rel="stylesheet" type="text/css" href="{% static 'material/css/jquery.jscrollpane.min.css' %}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <script src="{% static 'material/js/jquery.min.js' %}"></script>
+{% if favicon %}
+    <link rel="icon" href="{{ favicon }}" />
+{% endif %}
 {% endblock %}
+
 
 {% block branding %}
 

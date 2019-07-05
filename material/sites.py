@@ -12,6 +12,7 @@ class MaterialAdminSite(AdminSite):
         'auth': 'group',
         'sites': 'web'
     }
+    favicon = None
 
     def __init__(self, name='material'):
         super().__init__(name)
@@ -19,6 +20,12 @@ class MaterialAdminSite(AdminSite):
         self.logout_template = 'material/logout.html'
         self.index_template = 'material/index.html'
         self.password_change_template = 'material/password_change.html'
+
+    def each_context(self, request):
+        """Add favicon url to each context"""
+        context = super().each_context(request)
+        context['favicon'] = self.favicon
+        return context
 
     def _build_app_dict(self, request, label=None):
         """
