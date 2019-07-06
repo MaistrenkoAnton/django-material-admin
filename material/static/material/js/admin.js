@@ -37,6 +37,8 @@
                 M.toast({html: message.innerText, classes: `rounded ${toast}-toast`});
             }
         }
-
+        $('img[src$="icon-yes.svg"]').replaceWith('<i class="material-icons green-color medium-icon">check_circle</i>');
+        $('img[src$="icon-no.svg"]').replaceWith('<i class="material-icons red-color medium-icon">highlight_off</i>');
+        $('img[src$="icon-unknown.svg"]').replaceWith('<i class="material-icons medium-icon">help_outline</i>');
     });
 })(jQuery);

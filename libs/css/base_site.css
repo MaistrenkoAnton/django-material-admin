@@ -144,3 +144,14 @@ input.valid[type=text]:not(.browser-default) {
 .small-icon {
     font-size: 16px;
 }
+.medium-icon {
+    font-size: 19px;
+}
+
+.green-color {
+    color: green;
+}
+
+.red-color {
+    color: red;
+}
