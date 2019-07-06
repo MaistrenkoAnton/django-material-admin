@@ -24,11 +24,6 @@ class MaterialAdminTimeWidget(forms.TimeInput):
     template_name = 'material/widgets/time.html'
 
 
-class MaterialAdminFileWidget(widgets.AdminFileWidget):
-    """File input with material css styles"""
-    template_name = 'material/widgets/clearable_file_input.html'
-
-
 class MaterialAdminTextareaWidget(widgets.AdminTextareaWidget):
     """Textarea with material css styles"""
 
