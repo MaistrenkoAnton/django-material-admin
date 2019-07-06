@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
+    'demo.profile',
     'demo.countries',
     'demo.documents',
     'demo.relations',
