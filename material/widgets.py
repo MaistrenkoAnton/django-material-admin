@@ -13,7 +13,7 @@ class MaterialAdminDateWidget(widgets.AdminDateWidget):
     @property
     def media(self):
         return forms.Media(
-            js=['admin/js/DateTimeNowServerDiff.js'],
+            js=['admin/js/TimeServerDiff.js', 'admin/js/DateInput.js'],
             css={'all': ('material/css/date-input.min.css',)}
         )
 
@@ -23,7 +23,14 @@ class MaterialAdminSplitDateTime(forms.SplitDateTimeWidget):
     template_name = 'material/widgets/split_datetime.html'
 
     class Media:
-        js = ['admin/js/DateTimeNowServerDiff.js']
+        js = [
+            'admin/js/TimeServerDiff.js',
+            'admin/js/DateInput.js',
+            'admin/js/TimeInput.js'
+        ]
+        css = {'all': (
+            'material/css/split_datetime.min.css',
+        )}
 
     def __init__(self, attrs=None, date_format=None, time_format=None, date_attrs=None, time_attrs=None):
         date_attrs = date_attrs or {}
@@ -39,7 +46,10 @@ class MaterialAdminTimeWidget(forms.TimeInput):
 
     @property
     def media(self):
-        return forms.Media(js=['admin/js/DateTimeNowServerDiff.js'])
+        return forms.Media(
+            js=['admin/js/TimeServerDiff.js', 'admin/js/TimeInput.js'],
+            css={'all': ('material/css/time-input.min.css',)}
+        )
 
 
 class MaterialAdminTextareaWidget(widgets.AdminTextareaWidget):

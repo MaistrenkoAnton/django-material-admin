@@ -1,22 +1,22 @@
-.date-input {
+.time-input {
     display: flex;
     align-items: center;
 }
 
-.date-input .datetime.material {
+.time-input .datetime.material {
     margin: 0;
     padding-top: 30px;
 }
-.date-input .datetime-icons {
+.time-input .datetime-icons {
     color: #417690;
 }
 
-.date-input .datetime-icons.calendar {
+.time-input .datetime-icons.clock {
     margin: 10px 0 0 -25px;
     cursor: pointer;
 }
 
-.date-input .datetime-icons.today {
+.time-input .datetime-icons.now {
     margin: 10px 0 0 -55px;
     cursor: pointer;
     border-right: 2px solid #417690;

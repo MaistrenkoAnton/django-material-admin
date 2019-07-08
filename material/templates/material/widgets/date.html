@@ -1,6 +1,8 @@
+{% load i18n %}
+
 <div class="date-input">
     <input id="{{ widget.attrs.id }}" type="{{ widget.type }}" name="{{ widget.name }}" class="{{ widget.attrs.class }}" value="{{ widget.value|default_if_none:'' }}">
-    <i class="material-icons datetime-icons calendar">insert_invitation</i>
-    <i class="material-icons datetime-icons today" title="Today">save_alt</i>
+    <i class="material-icons datetime-icons calendar" title="{% trans 'Calendar' %}">insert_invitation</i>
+    <i class="material-icons datetime-icons today" title="{% trans 'Today' %}">save_alt</i>
 </div>
 <div class="time-difference"></div>
