@@ -1,0 +1,14 @@
+{% load static %}
+
+{% if user.profile.picture %}
+    <a href="{% url 'admin:auth_user_change' user.pk %}">
+        <img class="login-logo" src="{{ user.profile.picture.url }}">
+    </a>
+{% else %}
+    <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
+{% endif %}
+<img src="{% static 'material/images/login-bg.jpg' %}">
+<div class="card-title">
+    <strong>{% firstof user.get_short_name user.get_username %}</strong>
+    <small>{{ user.email|default_if_none:'' }}</small>
+</div>

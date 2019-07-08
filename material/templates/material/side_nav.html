@@ -1,4 +1,4 @@
-{% load i18n %}
+{% load i18n material %}
 
 <div class="scroll-pane">
     {% if available_apps %}
@@ -6,7 +6,11 @@
             <li>
                 <div class="card">
                     <div class="card-image">
-                        {% include 'material/user_picture.html' with user=user %}
+                        {% if 'profile/user_picture.html'|template_exists %}
+                          {% include 'profile/user_picture.html' %}
+                        {% else %}
+                          {% include 'material/user_picture.html' %}
+                        {% endif %}
                     </div>
                 </div>
             </li>
