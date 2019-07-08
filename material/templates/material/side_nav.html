@@ -1,4 +1,4 @@
-{% load i18n static %}
+{% load i18n %}
 
 <div class="scroll-pane">
     {% if available_apps %}
@@ -6,18 +6,7 @@
             <li>
                 <div class="card">
                     <div class="card-image">
-                        {% if user.profile.picture %}
-                            <img class="login-logo" src="{{ user.profile.picture.url }}">
-                        {% elif user.picture %}
-                            <img class="login-logo" src="{{ user.picture.url }}">
-                        {% else %}
-                            <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
-                        {% endif %}
-                        <img src="{% static 'material/images/login-bg.jpg' %}">
-                        <div class="card-title">
-                            <strong>{% firstof user.get_short_name user.get_username %}</strong>
-                            <small>{{ user.email|default_if_none:'' }}</small>
-                        </div>
+                        {% include 'material/user_picture.html' with user=user %}
                     </div>
                 </div>
             </li>

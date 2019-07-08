@@ -132,3 +132,10 @@ form .aligned div.help {
 .aligned label + div.readonly {
     padding-top: 20px;
 }
+tr {
+    border: 0;
+}
+
+fieldset.module {
+    box-shadow: none;
+}
