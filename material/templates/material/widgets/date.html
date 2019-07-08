@@ -1,4 +1,6 @@
-<div class="flex">
-    <input id="{{ widget.attrs.id }}" type="{{ widget.type }}" name="{{ widget.name }}" class="datepicker" value="{{ widget.value|default_if_none:'' }}">
-    <i class="material-icons datetime-icons">insert_invitation</i>
+<div class="date-input">
+    <input id="{{ widget.attrs.id }}" type="{{ widget.type }}" name="{{ widget.name }}" class="{{ widget.attrs.class }}" value="{{ widget.value|default_if_none:'' }}">
+    <i class="material-icons datetime-icons calendar">insert_invitation</i>
+    <i class="material-icons datetime-icons today" title="Today">save_alt</i>
 </div>
+<div class="time-difference"></div>

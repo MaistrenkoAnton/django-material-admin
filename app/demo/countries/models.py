@@ -26,6 +26,7 @@ class Person(models.Model):
     uuid = models.UUIDField(_('UUID number'))
     nationality = models.ForeignKey('countries.Country', on_delete=models.CASCADE, null=True, blank=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
+    date = models.DateField(_('Birth Date'))
 
     class Meta:
         verbose_name = _('Person')
