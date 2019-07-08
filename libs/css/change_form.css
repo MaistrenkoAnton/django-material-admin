@@ -80,10 +80,6 @@ div.submit-row {
     border: none;
 }
 
-.original {
-    display: flex;
-}
-
 .inline-group .tabular td.original p {
     overflow: visible;
 }
