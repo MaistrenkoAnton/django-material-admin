@@ -1,9 +1,18 @@
-function initSelectInline () {
-  $('.form-row:not(.empty-form) select').formSelect()
+function initInlineTabularSelect () {
+  $('.form-row:not(.empty-form) select').formSelect();
 }
 
-(function($, initSelectInline) {
+function initInlineStackedSelect () {
+  $('.inline-group .inline-related:not(.empty-form) select').formSelect();
+}
+
+function initTextareaInline() {
+  $('.vLargeTextField').addClass('materialize-textarea');
+}
+
+(function($, initInlineTabularSelect, initInlineStackedSelect, initTextareaInline) {
     'use strict';
+    var initInline = null;
     $.fn.formset = function(opts) {
         var options = $.extend({}, $.fn.formset.defaults, opts);
         var $this = $(this);
@@ -41,8 +50,8 @@ function initSelectInline () {
                     addButton = $parent.find("tr:last a");
                 } else {
                     // Otherwise, insert it immediately after the last form:
-                    $this.filter(":last").after('<div class="' + options.addCssClass + '"><a href="#">' + options.addText + "</a></div>");
-                    addButton = $this.filter(":last").next().find("a");
+                    $this.parent().after('<div><a href="#" class="add-inline-link"><i class="material-icons">add</i><span>' + options.addText + "</span></a></div>");
+                    addButton = $this.parent().next().find("a");
                 }
             }
             addButton.on('click', function(e) {
@@ -111,7 +120,7 @@ function initSelectInline () {
                     options.added(row);
                 }
                 $(document).trigger('formset:added', [row, options.prefix]);
-                initSelectInline();
+                initInline();
             });
         }
         return this;
@@ -273,14 +282,27 @@ function initSelectInline () {
                 selector;
             switch(data.inlineType) {
             case "stacked":
+                initInline = initInlineStackedSelect;
                 selector = inlineOptions.name + "-group .inline-related";
                 $(selector).stackedFormset(selector, inlineOptions.options);
                 break;
             case "tabular":
+                initInline = initInlineTabularSelect;
                 selector = inlineOptions.name + "-group .tabular.inline-related tbody:first > tr";
                 $(selector).tabularFormset(selector, inlineOptions.options);
                 break;
             }
         });
+        initTextareaInline();
+        $('.stacked-inline-close').on('click', function () {
+            var $parent = $(this).parent();
+            var closeLabel = $parent.find('.vCheckboxLabel');
+            if (closeLabel.length) {
+                closeLabel.click();
+                $parent.hide()
+            } else {
+                $parent.remove();
+            }
+        });
     });
-})(django.jQuery, initSelectInline);
+})(django.jQuery, initInlineTabularSelect, initInlineStackedSelect, initTextareaInline);

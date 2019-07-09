@@ -104,11 +104,14 @@ a.add-related {
     display: none;
 }
 
-.inline-group .tabular tr.add-row td a.add-inline-link {
+.inline-group .tabular tr.add-row td a.add-inline-link,
+.add-inline-link {
     background-image: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .form-row {
@@ -138,4 +141,25 @@ tr {
 
 fieldset.module {
     box-shadow: none;
+}
+
+.form-row .input-field textarea.materialize-textarea {
+    width: 100%;
+    max-width: none;
+}
+
+.card-grid {
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto [last-line];
+}
+
+.stacked-inline-close {
+    text-align: right;
+    cursor: pointer;
+}
+
+.inline-related .delete {
+    display: none;
 }

@@ -27,6 +27,7 @@ class Person(models.Model):
     nationality = models.ForeignKey('countries.Country', on_delete=models.CASCADE, null=True, blank=True)
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
     date = models.DateField(_('Birth Date'))
+    description = models.TextField(_('description'), null=True, blank=True)
 
     class Meta:
         verbose_name = _('Person')

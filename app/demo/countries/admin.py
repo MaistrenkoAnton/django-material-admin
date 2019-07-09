@@ -5,7 +5,7 @@ from material.decorators import register
 from material.options import MaterialModelAdmin
 
 
-class PersonInline(admin.TabularInline):
+class PersonInline(admin.StackedInline):
     model = Person
     ordering = ('id',)
     extra = 0
