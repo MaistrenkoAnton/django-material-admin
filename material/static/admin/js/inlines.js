@@ -51,8 +51,8 @@ function initTextareaInline() {
                     addButton = $parent.find("tr:last a");
                 } else {
                     // Otherwise, insert it immediately after the last form:
-                    $this.filter(":last").after('<div class="' + options.addCssClass + '"><a href="#">' + options.addText + "</a></div>");
-                    addButton = $this.filter(":last").next().find("a");
+                    $this.parent().after('<div><a href="#" class="add-inline-link"><i class="material-icons">add</i><span>' + options.addText + "</span></a></div>");
+                    addButton = $this.parent().next().find("a");
                 }
             }
             addButton.on('click', function(e) {
@@ -295,5 +295,15 @@ function initTextareaInline() {
             }
         });
         initTextareaInline();
+        $('.stacked-inline-close').on('click', function () {
+            var $parent = $(this).parent();
+            var closeLabel = $parent.find('.vCheckboxLabel');
+            if (closeLabel.length) {
+                closeLabel.click();
+                $parent.hide()
+            } else {
+                $parent.remove();
+            }
+        });
     });
 })(django.jQuery, initInlineTabularSelect, initInlineStackedSelect, initTextareaInline);

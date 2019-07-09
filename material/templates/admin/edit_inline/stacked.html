@@ -3,19 +3,19 @@
      id="{{ inline_admin_formset.formset.prefix }}-group"
      data-inline-type="stacked"
      data-inline-formset="{{ inline_admin_formset.inline_formset_data }}">
-  <fieldset class="module {{ inline_admin_formset.classes }}">
-    <h2>{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}</h2>
+  <h2>{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}</h2>
+  <div class="card-grid {{ inline_admin_formset.classes }}">
+
   {{ inline_admin_formset.formset.management_form }}
   {{ inline_admin_formset.formset.non_form_errors }}
 
   {% for inline_admin_form in inline_admin_formset %}
 
-    <div class="inline-related{% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}{% if forloop.last and inline_admin_formset.has_add_permission %} empty-form last-related{% endif %}"
+    <div class="inline-related card {% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}{% if forloop.last and inline_admin_formset.has_add_permission %} empty-form last-related{% endif %}"
          id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
-      <div class="card">
-        <div class="card-content">
-      <h3>
+      <div class="stacked-inline-close"><i class="material-icons">close</i></div>
 
+      <h3>
       <b>{{ inline_admin_formset.opts.verbose_name|capfirst }}:</b>&nbsp;
       <span class="inline_label">
         {% if inline_admin_form.original %}
@@ -44,10 +44,7 @@
           {{ inline_admin_form.deletion_field.field }} {{ inline_admin_form.deletion_field.label_tag }}
         </span>
       {% endif %}
-
     </h3>
-
-
     {% if inline_admin_form.form.non_field_errors %}
       {{ inline_admin_form.form.non_field_errors }}
     {% endif %}
@@ -61,7 +58,6 @@
       {{ inline_admin_form.fk_field.field }}
     {% endif %}
     </div>
-    </div></div>
   {% endfor %}
-  </fieldset>
+  </div>
 </div>
