@@ -6,7 +6,6 @@ function initInlineStackedSelect () {
   $('.inline-group .inline-related:not(.empty-form) select').formSelect();
 }
 
-
 function initTextareaInline() {
   $('.vLargeTextField').addClass('materialize-textarea');
 }
