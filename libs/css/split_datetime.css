@@ -1,4 +1,4 @@
-.datetime-block.material {
+.datetime-block.date-input {
     margin: 0;
     padding-top: 30px;
 }
@@ -30,11 +30,11 @@
     padding-right: 2px;
 }
 
-.datetime-block.material .datetime-icons.calendar {
+.datetime-block.date-input .material-icons.calendar {
     margin: 10px 0 0 -25px;
 }
 
-.datetime-block.material .datetime-icons.today {
+.datetime-block.date-input .material-icons.today {
     margin: 10px 0 0 -55px;
     border-right: 2px solid #417690;
     padding-right: 2px;

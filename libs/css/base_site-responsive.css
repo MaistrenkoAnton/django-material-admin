@@ -48,8 +48,9 @@
 }
 
 @media (max-width: 767px) {
-    .aligned .form-row > div {
-        width: 100% !important;
+    .aligned .form-row > div.input-field {
+        width: 100%;
+        display: block;
     }
     .aligned .input-field label + div.readonly {
         margin-top: 30px;
