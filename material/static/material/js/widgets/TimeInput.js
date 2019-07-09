@@ -22,5 +22,16 @@
                 });
             }
         }
+        var timePickers = document.querySelectorAll('.timepicker');
+        var re = /^([01]?[0-9]|2[0-3]):[0-5][0-9]$/;
+        if (timePickers.length) {
+            for(var timePicker of timePickers) {
+                timePicker.addEventListener('change', function() {
+                    if (this.value.match(re)) {
+                        this.value += ':00';
+                    }
+                });
+            }
+        }
     });
 })();
