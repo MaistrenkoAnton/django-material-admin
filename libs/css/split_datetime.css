@@ -1,4 +1,4 @@
-.datetime.material {
+.datetime-block.material {
     margin: 0;
     padding-top: 30px;
 }
@@ -8,54 +8,34 @@
     align-items: center;
     flex: 1;
 }
-.time-input {
+
+.datetime-block .time-input {
     margin-left: 40px;
 }
-.datetime-icons {
+
+.datetime-block .material-icons {
     margin: 10px 0 0 -25px;
     color: #417690;
-}
-
-.datetime-icons.today {
-    margin: 10px 0 0 -45px;
-}
-
-.datetime.material {
-    margin: 0;
-    padding-top: 30px;
-}
-.datetime.material .datetime-icons {
-    color: #417690;
-}
-
-.datetime.material .datetime-icons.clock {
-    margin: 10px 0 0 -25px;
     cursor: pointer;
 }
 
-.datetime.material .datetime-icons.now {
+.datetime-block .material-icons.clock {
+    margin: 10px 0 0 -25px;
+
+}
+
+.datetime-block .material-icons.now {
     margin: 10px 0 0 -55px;
-    cursor: pointer;
     border-right: 2px solid #417690;
     padding-right: 2px;
 }
 
-.datetime.material .datetime.material {
-    margin: 0;
-    padding-top: 30px;
-}
-.datetime.material .datetime-icons {
-    color: #417690;
-}
-
-.datetime.material .datetime-icons.calendar {
+.datetime-block.material .datetime-icons.calendar {
     margin: 10px 0 0 -25px;
-    cursor: pointer;
 }
 
-.datetime.material .datetime-icons.today {
+.datetime-block.material .datetime-icons.today {
     margin: 10px 0 0 -55px;
-    cursor: pointer;
     border-right: 2px solid #417690;
     padding-right: 2px;
 }

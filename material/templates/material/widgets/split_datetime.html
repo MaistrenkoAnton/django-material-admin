@@ -1,6 +1,6 @@
 {% load static i18n %}
 
-<p class="date-input datetime material datetime-flex">
+<p class="date-input datetime-block datetime material datetime-flex">
   <span class="datetime-flex">{{ date_label }} {% with widget=widget.subwidgets.0 %}{% include widget.template_name %}{% endwith %}
     <i class="material-icons datetime-icons calendar">insert_invitation</i>
     <i class="material-icons datetime-icons today" title="{% trans 'Today' %}">save_alt</i>
