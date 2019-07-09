@@ -1,4 +1,8 @@
-<div class="flex">
+{% load i18n %}
+
+<div class="time-input time-block">
     <input id="{{ widget.attrs.id }}" type="{{ widget.type }}" name="{{ widget.name }}" class="timepicker" value="{{ widget.value|default_if_none:''  }}">
-    <i class="material-icons datetime-icons">access_time</i>
+    <i class="material-icons clock" title="{% trans 'Time' %}">access_time</i>
+    <i class="material-icons now" title="{% trans 'Now' %}">save_alt</i>
 </div>
+<div class="time-difference"></div>
