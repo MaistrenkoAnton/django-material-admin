@@ -1,9 +1,19 @@
-function initSelectInline () {
-  $('.form-row:not(.empty-form) select').formSelect()
+function initInlineTabularSelect () {
+  $('.form-row:not(.empty-form) select').formSelect();
 }
 
-(function($, initSelectInline) {
+function initInlineStackedSelect () {
+  $('.inline-group .inline-related:not(.empty-form) select').formSelect();
+}
+
+
+function initTextareaInline() {
+  $('.vLargeTextField').addClass('materialize-textarea');
+}
+
+(function($, initInlineTabularSelect, initInlineStackedSelect, initTextareaInline) {
     'use strict';
+    var initInline = null;
     $.fn.formset = function(opts) {
         var options = $.extend({}, $.fn.formset.defaults, opts);
         var $this = $(this);
@@ -111,7 +121,7 @@ function initSelectInline () {
                     options.added(row);
                 }
                 $(document).trigger('formset:added', [row, options.prefix]);
-                initSelectInline();
+                initInline();
             });
         }
         return this;
@@ -273,14 +283,17 @@ function initSelectInline () {
                 selector;
             switch(data.inlineType) {
             case "stacked":
+                initInline = initInlineStackedSelect;
                 selector = inlineOptions.name + "-group .inline-related";
                 $(selector).stackedFormset(selector, inlineOptions.options);
                 break;
             case "tabular":
+                initInline = initInlineTabularSelect;
                 selector = inlineOptions.name + "-group .tabular.inline-related tbody:first > tr";
                 $(selector).tabularFormset(selector, inlineOptions.options);
                 break;
             }
         });
+        initTextareaInline();
     });
-})(django.jQuery, initSelectInline);
+})(django.jQuery, initInlineTabularSelect, initInlineStackedSelect, initTextareaInline);
