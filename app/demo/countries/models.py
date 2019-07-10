@@ -28,6 +28,10 @@ class Person(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
     date = models.DateField(_('Birth Date'))
     description = models.TextField(_('description'), null=True, blank=True)
+    google_play = models.URLField(_('Google Play Link'), blank=True, null=True)
+    spotify = models.URLField(_('Spotify Link'), blank=True, null=True)
+    itunes = models.URLField(_('Itunes Link'), blank=True, null=True)
+    video = models.FileField(_('Video'), null=True, blank=True)
 
     class Meta:
         verbose_name = _('Person')

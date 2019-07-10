@@ -139,10 +139,6 @@ tr {
     border: 0;
 }
 
-fieldset.module {
-    box-shadow: none;
-}
-
 .form-row .input-field textarea.materialize-textarea {
     width: 100%;
     max-width: none;
@@ -151,13 +147,27 @@ fieldset.module {
 .card-grid {
     grid-gap: 5px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: auto [last-line];
 }
 
 .stacked-inline-close {
     text-align: right;
     cursor: pointer;
+}
+
+.inline-related {
+    overflow: hidden;
+}
+
+.inline-related .input-field p {
+    margin: 0;
+}
+
+div.url {
+    position: absolute;
+    top: 12px;
+    right: 5px;
 }
 
 .inline-related .delete {

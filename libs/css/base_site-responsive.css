@@ -19,6 +19,9 @@
     #changelist-search > div {
      max-width: 100% !important;
     }
+    .inline-group .card-grid {
+       grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    }
 }
 
 @media (max-width: 1024px) {

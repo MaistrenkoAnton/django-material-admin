@@ -1,0 +1,10 @@
+{% load i18n %}
+{% include "django/forms/widgets/input.html" %}
+
+{% if url_valid %}
+    <div class="url">
+        <a href="{{ widget.href }}" title="{% trans 'Link' %}">
+            <i class="material-icons">link</i>
+        </a>
+    </div>
+{% endif %}
