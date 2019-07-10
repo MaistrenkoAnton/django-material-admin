@@ -167,7 +167,7 @@ tr {
 div.url {
     position: absolute;
     top: 12px;
-    right: 5px;
+    right: 0;
     background: white;
 }
 
