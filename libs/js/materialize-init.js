@@ -1,5 +1,6 @@
 var options = {
-    format: 'yyyy-mm-dd'
+    format: 'yyyy-mm-dd',
+    autoClose: true
 };
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.datepicker');
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var timeOptions = {
     twelveHour: false,
+    autoClose: true
 };
 
 document.addEventListener('DOMContentLoaded', function() {
