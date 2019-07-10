@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 <link rel="stylesheet" type="text/css" href="{% static 'material/css/clearable_file_input.min.css' %}">
 <div class="label-clear"></div>
 <div class="file-flex-block">
@@ -20,7 +20,8 @@
   </div>
 </div>
 {% if widget.is_initial %}
-  <a href="{{ widget.value.url }}" class="file-download {% if widget.required %}required{% endif %}">
+  <a href="{{ widget.value.url }}" class="file-download {% if widget.required %}required{% endif %}"
+     title="{% trans 'Download' %}">
     <i class="material-icons">get_app</i>
   </a>
 {% endif %}

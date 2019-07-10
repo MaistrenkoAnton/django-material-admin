@@ -88,8 +88,13 @@ p.errornote {
     margin: 0 5px 10px;
 }
 
-.errorlist + .input-field input {
-    background: #FFF1F2;
+.errorlist + .input-field input,
+.errorlist + .input-field textarea {
+    border-bottom: 2px solid #ba2121;
+}
+
+.errorlist + .input-field label {
+    color: #ba2121;
 }
 
 .error-toast {
