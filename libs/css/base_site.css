@@ -160,3 +160,9 @@ input.valid[type=text]:not(.browser-default) {
 .red-color {
     color: red;
 }
+
+.timepicker-modal,
+.datepicker-modal {
+    overflow-y: auto;
+    max-height: 90vh;
+}
