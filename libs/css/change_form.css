@@ -168,6 +168,7 @@ div.url {
     position: absolute;
     top: 12px;
     right: 5px;
+    background: white;
 }
 
 .inline-related .delete {
