@@ -1,6 +1,8 @@
 var options = {
     format: 'yyyy-mm-dd',
-    autoClose: true
+    autoClose: true,
+    setDefaultDate: true,
+    showClearBtn: true
 };
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.datepicker');
@@ -9,7 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 var timeOptions = {
     twelveHour: false,
-    autoClose: true
+    autoClose: true,
+    showClearBtn: true
 };
 
 document.addEventListener('DOMContentLoaded', function() {
