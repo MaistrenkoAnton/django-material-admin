@@ -1,7 +1,5 @@
 ## Django Material Administration
 
-|pypi|
-
 ![Layout](https://github.com/MaistrenkoAnton/django-material-admin/blob/master/app/demo/screens/login.png)
 
 
@@ -91,6 +89,3 @@ from persons.models import Person
 class MaterialPersonAdmin(MaterialModelAdmin):
     icon_name = 'person'
 ```
-
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.1.13&x2=0
-    :target: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.1.13&x2=0
