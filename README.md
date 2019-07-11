@@ -1,15 +1,5 @@
 ## Django Material Administration
 
-|pypi| |python| |django|
-
-
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.1.13&x2=0
-    :target: https://pypi.org/project/django-material-admin/
-.. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
-    :target: https://www.python.org/
-.. |django| image:: https://img.shields.io/badge/django-2.2-blue.svg
-    :target: https://www.djangoproject.com/
-
 ![Layout](https://github.com/MaistrenkoAnton/django-material-admin/blob/master/app/demo/screens/login.png)
 
 
