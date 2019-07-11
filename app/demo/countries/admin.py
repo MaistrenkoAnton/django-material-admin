@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from demo.countries.models import Country, Person
+from demo.countries.models import Country, Person, ProxyPerson
 from material.decorators import register
 from material.options import MaterialModelAdmin
 
@@ -22,5 +22,11 @@ class CountryAdmin(MaterialModelAdmin):
 @register(Person)
 class PersonAdmin(MaterialModelAdmin):
     icon_name = 'people_outline'
+    autocomplete_fields = ('user', 'nationality')
+
+
+@register(ProxyPerson)
+class PersonAdmin(MaterialModelAdmin):
+    icon_name = 'android'
     autocomplete_fields = ('user', 'nationality')
 

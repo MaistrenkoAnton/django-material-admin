@@ -40,3 +40,8 @@ class Person(models.Model):
         verbose_name = _('Person')
         verbose_name_plural = _('Persons')
         db_table = 'persons'
+
+
+class ProxyPerson(Person):
+    class Meta:
+        proxy = True
