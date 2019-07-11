@@ -61,7 +61,8 @@ class MaterialAdminSite(AdminSite):
                 'name': capfirst(model._meta.verbose_name_plural),
                 'object_name': model._meta.object_name,
                 'perms': perms,
-                'count': model.objects.count(),
+                'proxy': getattr(model, 'proxy', False),
+                'count': 0 if getattr(model, 'proxy', False) else model.objects.count(),
                 'icon': getattr(model_admin, 'icon_name', None)
             }
             if perms.get('change') or perms.get('view'):
