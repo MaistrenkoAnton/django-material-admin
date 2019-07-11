@@ -29,7 +29,8 @@
 
         var elems = document.querySelectorAll('.dropdown-trigger');
         M.Dropdown.init(elems);
-        $('select').not('.empty-form select, .selector-available select, .selector-chosen select').formSelect();
+        $('select').not('.empty-form select, .selector-available select, .selector-chosen select, .admin-autocomplete')
+        .formSelect();
 
         for(const toast of toasts) {
             const messages = $(`.messagelist > .${toast}`);

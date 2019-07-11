@@ -7,3 +7,4 @@ from material.options import MaterialModelAdmin
 class CountryAdmin(MaterialModelAdmin):
     list_display = ('name', 'picture', 'file', 'text')
     icon_name = 'library_books'
+    search_fields = ('name',)
