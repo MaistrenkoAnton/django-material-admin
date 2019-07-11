@@ -21,6 +21,9 @@ class Country(models.Model):
         db_table = 'country'
         ordering = ('name',)
 
+    def __str__(self):
+        return self.name
+
 
 class Person(models.Model):
     uuid = models.UUIDField(_('UUID number'))

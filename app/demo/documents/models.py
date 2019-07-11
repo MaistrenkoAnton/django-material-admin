@@ -13,3 +13,6 @@ class Document(models.Model):
         verbose_name_plural = _('Documents')
         db_table = 'documents'
         ordering = ('name',)
+
+    def __str__(self):
+        return self.name

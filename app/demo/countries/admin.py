@@ -16,8 +16,11 @@ class CountryAdmin(MaterialModelAdmin):
     list_display = ('name', 'created', 'modified')
     inlines = [PersonInline]
     icon_name = 'location_city'
+    search_fields = ('name',)
 
 
 @register(Person)
 class PersonAdmin(MaterialModelAdmin):
     icon_name = 'people_outline'
+    autocomplete_fields = ('user', 'nationality')
+
