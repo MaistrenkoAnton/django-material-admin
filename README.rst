@@ -21,6 +21,7 @@ http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com/admin/
 
 
 **login**: *admin*
+
 **pass**: *123qaz123!A*
 
 Quick start
