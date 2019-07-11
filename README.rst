@@ -114,9 +114,9 @@ https://materializecss.com/icons.html
 
 
 
-================
-Planned features
-================
++++++++++++++++++
+Planned features:
++++++++++++++++++
 
 +++++++++++++++++
 - Facets for apps
