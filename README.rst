@@ -149,6 +149,12 @@ Planned features:
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/addition-submit-line.png
 
++++++++++++++++++++++++++++++++++++
+- Additional Facets/Badges for apps
++++++++++++++++++++++++++++++++++++
+
+.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/badges.jpg
+
 
 +++++
 - UTs
