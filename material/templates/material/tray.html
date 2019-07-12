@@ -1,0 +1,19 @@
+{% load i18n %}
+
+<div class="card">
+    <div class="card-content">
+        <i class="tray-nav-bar material-icons {% if not nav_bar_minimized %}minimized{% endif %}"
+           title="{% trans 'Side Nav' %}">
+           format_list_bulleted
+        </i>
+        {% if site_url %}
+            <a href="{{ site_url }}"><i class="material-icons" title="{% trans 'View Site' %}">web</i></a>
+        {% endif %}
+        {% if user.has_usable_password %}
+            <a href="{% url 'admin:password_change' %}"><i class="material-icons" title="{% trans 'Change password' %}">vpn_key</i></a>
+        {% endif %}
+        <a href="{% url 'admin:logout' %}">
+            <i class="material-icons" title="{% trans 'Logout' %}">exit_to_app</i>
+        </a>
+    </div>
+</div>

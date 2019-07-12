@@ -45,8 +45,11 @@
 }
 
 @media (max-width: 992px) {
-    #container {
+    #container.indent {
        padding-left: 0;
+    }
+    .tray-nav-bar.material-icons {
+        display: none;
     }
 }
 
