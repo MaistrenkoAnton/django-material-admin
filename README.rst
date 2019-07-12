@@ -164,6 +164,13 @@ Planned features:
 - Check loading, refactor static
 ++++++++++++++++++++++++++++++++
 
+++++++++++++++++++++++
+- Material BreadCrumbs
+++++++++++++++++++++++
+
+++++++++++++++++++
+- Themes selection
+++++++++++++++++++
 
 +++++++++++++++++++++++++++++++++++++
 - Fixing issues, support new versions
