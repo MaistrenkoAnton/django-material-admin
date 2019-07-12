@@ -24,7 +24,14 @@
                     {% for model in app.models %}
                         {% if model.admin_url %}
                             <div {% if model.admin_url in request.path %}class="active"{% endif %}>
-                                <a href="{{ model.admin_url }}"><span class="badge">{{ model.count }}</span>{{ model.name }}</a>
+                                <a href="{{ model.admin_url }}">
+                                    {% if not model.proxy %}
+                                        <span class="badge">
+                                            {{ model.count }}
+                                        </span>
+                                    {% endif %}
+                                    {{ model.name }}
+                                </a>
                             </div>
                         {% else %}
                             <div class="disabled">{{ model.name }}
