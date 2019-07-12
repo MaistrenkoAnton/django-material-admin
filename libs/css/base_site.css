@@ -89,6 +89,7 @@ p.errornote {
 }
 
 .errorlist + .input-field input,
+.errorlist + .input-field span.select2-selection,
 .errorlist + .input-field textarea {
     border-bottom: 2px solid #ba2121;
 }
@@ -101,6 +102,7 @@ p.errornote {
     background: #f8d7da;
     color: #ba2121;
 }
+
 
 .warning-toast {
     background: #ffc107;
