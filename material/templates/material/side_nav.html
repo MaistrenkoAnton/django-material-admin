@@ -27,7 +27,11 @@
                                 <a href="{{ model.admin_url }}"><span class="badge">{{ model.count }}</span>{{ model.name }}</a>
                             </div>
                         {% else %}
-                            <div class="disabled">{{ model.name }}<span class="badge">{{ model.count }}</span></div>
+                            <div class="disabled">{{ model.name }}
+                                {% if not model.proxy %}
+                                    <span class="badge">{{ model.count }}</span>
+                                {% endif %}
+                            </div>
                         {% endif %}
                     {% endfor %}
                 </div>
