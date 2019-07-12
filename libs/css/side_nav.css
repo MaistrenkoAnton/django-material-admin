@@ -90,3 +90,22 @@
 .collapsible-body > div.active a {
     color: white;
 }
+
+.collapsible-body .disabled {
+    cursor: not-allowed;
+    color: gray;
+}
+
+.collapsible-body .disabled:hover {
+    background: lightgray;
+}
+
+.collapsible-body span.badge {
+    font-size: 13px;
+    color: #417690;
+    margin-top: 0;
+}
+
+.collapsible-body .active .badge {
+    color: white;
+}

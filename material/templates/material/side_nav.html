@@ -22,13 +22,13 @@
                 </div>
                 <div class="collapsible-body">
                     {% for model in app.models %}
-                    {% if model.admin_url %}
-                    <div {% if model.admin_url in request.path %}class="active"{% endif %}>
-                        <a href="{{ model.admin_url }}">{{ model.name }}</a>
-                    </div>
-                    {% else %}
-                    <div>{{ model.name }}</div>
-                    {% endif %}
+                        {% if model.admin_url %}
+                            <div {% if model.admin_url in request.path %}class="active"{% endif %}>
+                                <a href="{{ model.admin_url }}"><span class="badge">{{ model.count }}</span>{{ model.name }}</a>
+                            </div>
+                        {% else %}
+                            <div class="disabled">{{ model.name }}<span class="badge">{{ model.count }}</span></div>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </li>
