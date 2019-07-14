@@ -81,8 +81,18 @@ or
 
     site.register(Person)
 
+4. Unregister models
 
-4. Add icon to the application in `app.py`
+.. code-block:: python
+
+    from django.material.sites import site
+    from django.contrib.auth.models import User, Group
+
+    site.unregister(User)
+    site.unregister(Group)
+
+
+5. Add icon to the application in `app.py`
 https://materializecss.com/icons.html
 
 .. code-block:: python
@@ -95,7 +105,7 @@ https://materializecss.com/icons.html
         icon_name = 'person'
 
 
-5. Add icon to the MaterialModelAdmin in `admin.py`
+6. Add icon to the MaterialModelAdmin in `admin.py`
 
 .. code-block:: python
 
