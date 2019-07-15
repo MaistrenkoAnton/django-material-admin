@@ -171,6 +171,6 @@ div.url {
     background: white;
 }
 
-.inline-related .delete {
+.inline-related.has_original .delete {
     display: none;
 }
