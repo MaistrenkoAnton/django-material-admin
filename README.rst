@@ -1,7 +1,7 @@
 |pypi| |python| |django|
 
 
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.1.18&x2=0
+.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.1.20&x2=0
     :target: https://pypi.org/project/django-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
@@ -81,8 +81,18 @@ or
 
     site.register(Person)
 
+4. Unregister models
 
-4. Add icon to the application in `app.py`
+.. code-block:: python
+
+    from django.material.sites import site
+    from django.contrib.auth.models import User, Group
+
+    site.unregister(User)
+    site.unregister(Group)
+
+
+5. Add icon to the application in `app.py`
 https://materializecss.com/icons.html
 
 .. code-block:: python
@@ -95,7 +105,7 @@ https://materializecss.com/icons.html
         icon_name = 'person'
 
 
-5. Add icon to the MaterialModelAdmin in `admin.py`
+6. Add icon to the MaterialModelAdmin in `admin.py`
 
 .. code-block:: python
 
@@ -110,7 +120,37 @@ https://materializecss.com/icons.html
         icon_name = 'person'
 
 
+7. Manage profile picture
 
+.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/profile-pic.png
+
+Extend **User** model as OneToOne relation or extend **AbstractUser** and set new **AUTH_USER_MODEL**.
+
+**MEDIA** should be configured properly.
+
+Then define tempate **templates/profile/user_picture.html** in any your application as example:
+
+.. code-block:: python
+
+    {% load static %}
+
+    {% if user.profile.picture %}
+        <a href="{% url 'admin:auth_user_change' user.pk %}">
+            <img class="login-logo" src="{{ user.profile.picture.url }}">
+        </a>
+    {% else %}
+        <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
+    {% endif %}
+    <img src="{% static 'material/images/login-bg.jpg' %}">
+    <div class="card-title">
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>
+        <small>{{ user.email|default_if_none:'' }}</small>
+    </div>
+
+
+Where 
+ - *user.profile.picture* - the relation to ImageField from user,
+ - *material/images/login-logo.png* - default logo from material templates.
 
 
 
