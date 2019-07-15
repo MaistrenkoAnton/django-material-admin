@@ -120,7 +120,37 @@ https://materializecss.com/icons.html
         icon_name = 'person'
 
 
+7. Manage profile picture
 
+.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/profile-pic.png
+
+Extend **User** model as OneToOne relation or extend **AbstractUser** and set new **AUTH_USER_MODEL**.
+
+**MEDIA** should be configured properly.
+
+Then define tempate **templates/profile/user_picture.html** in any your application as example:
+
+.. code-block:: python
+
+    {% load static %}
+
+    {% if user.profile.picture %}
+        <a href="{% url 'admin:auth_user_change' user.pk %}">
+            <img class="login-logo" src="{{ user.profile.picture.url }}">
+        </a>
+    {% else %}
+        <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
+    {% endif %}
+    <img src="{% static 'material/images/login-bg.jpg' %}">
+    <div class="card-title">
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>
+        <small>{{ user.email|default_if_none:'' }}</small>
+    </div>
+
+
+Where 
+ - *user.profile.picture* - the relation to ImageField from user,
+ - *material/images/login-logo.png* - default logo from material templates.
 
 
 
