@@ -1,5 +1,5 @@
 {% extends "admin/change_form.html" %}
-{% load i18n admin_urls static admin_modify %}
+{% load i18n admin_urls static admin_modify material %}
 
 {% block extrastyle %}
   {{ block.super }}
@@ -10,7 +10,14 @@
 
 {% block content %}
   <div id="content-main">
-    <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.model_name }}_form" novalidate>{% csrf_token %}{% block form_top %}{% endblock %}
+    <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}
+          class="change-form"
+          action="{{ form_url }}"
+          method="post"
+          id="{{ opts.model_name }}_form"
+          novalidate>
+      {% csrf_token %}
+      {% block form_top %}{% endblock %}
       <div>
         {% if is_popup %}<input type="hidden" name="{{ is_popup_var }}" value="1">{% endif %}
         {% if to_field %}<input type="hidden" name="{{ to_field_var }}" value="{{ to_field }}">{% endif %}
@@ -21,7 +28,8 @@
           </p>
           {{ adminform.form.non_field_errors }}
         {% endif %}
-        <div class="module">
+        <div class="module indent">
+          {% block additional_submit_row %}{% additional_submit_row %}{% endblock %}
           {% block field_sets %}
             {% for fieldset in adminform %}
               {% include "admin/includes/fieldset.html" %}

@@ -1,6 +1,8 @@
 import re
 
 from django import template
+from django.contrib.admin.templatetags.admin_modify import submit_row
+from django.contrib.admin.templatetags.base import InclusionAdminNode
 from django.template import Library
 from django.template.defaultfilters import stringfilter
 
@@ -32,3 +34,8 @@ def cookie(context, cookie_name):
     request = context['request']
     result = request.COOKIES.get(cookie_name)
     return result == 'true'
+
+
+@register.tag(name='additional_submit_row')
+def additional_submit_row_tag(parser, token):
+    return InclusionAdminNode(parser, token, func=submit_row, template_name='additional_submit_line.html')

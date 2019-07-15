@@ -16,9 +16,10 @@
 </head>
 
 {% cookie 'tray-nav-bar' as nav_bar_minimized %}
+{% cookie 'additional-submit-line' as additional_submit_line %}
 
 <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}"
-  data-admin-utc-offset="{% now "Z" %}">
+  data-admin-utc-offset="{% now 'Z' %}">
 
 <!-- Side Nav -->
 {% block side_nav %}

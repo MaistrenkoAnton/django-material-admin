@@ -1,5 +1,10 @@
-form {
+form.change-form {
     flex: 1;
+}
+
+.change-form .module.indent {
+    padding-top: 25px;
+    position: relative;
 }
 
 .required label, label.required {
