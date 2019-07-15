@@ -61,24 +61,27 @@
 
       </div>
     </form>
-    {% block object-tools %}
-      {% if change %}
-        <div class="side-wrapper-tools">
-          <div class="card">
-            <div class="card-content">
-              <h4><i class="material-icons prefix">perm_data_setting</i>{% trans 'Tools' %}</h4>
-              {% if not is_popup %}
-                <ul class="material-object-tools collection with-header">
-                  {% block object-tools-items %}
-                    {% change_form_object_tools %}
-                  {% endblock %}
-                </ul>
-              {% endif %}
+    {% if not object_tools %}
+      {% block object-tools %}
+        {% if change %}
+          <div class="side-wrapper-tools">
+            <i class="material-icons minimize tools" title="Minimize">minimize</i>
+            <div class="card">
+              <div class="card-content">
+                <h4><i class="material-icons prefix">perm_data_setting</i>{% trans 'Tools' %}</h4>
+                {% if not is_popup %}
+                  <ul class="material-object-tools collection with-header">
+                    {% block object-tools-items %}
+                      {% change_form_object_tools %}
+                    {% endblock %}
+                  </ul>
+                {% endif %}
+              </div>
             </div>
           </div>
-        </div>
-      {% endif %}
-    {% endblock %}
+        {% endif %}
+      {% endblock %}
+    {% endif %}
   </div>
 {% endblock %}
 

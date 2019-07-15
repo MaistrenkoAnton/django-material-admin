@@ -26,7 +26,7 @@
     border: 1px solid #417690;
     cursor: pointer;
     margin-left: 10px;
-        width: 16px;
+    width: 16px;
     font-size: 14px;
     height: 16px;
 }
@@ -34,9 +34,4 @@
 .additional-submit-line i.minimize:hover {
     color: white;
     background: #417690;
-}
-
-.additional-submit-line i.title {
-    color: #417690;
-    margin-right: 10px;
 }

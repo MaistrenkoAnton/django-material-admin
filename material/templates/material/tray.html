@@ -10,6 +10,10 @@
            title="{% trans 'Additional submit line' %}">
            control_point_duplicate
         </i>
+         <i class="tray-object-tools material-icons {% if not object_tools %}minimized{% endif %}"
+           title="{% trans 'Object tools' %}">
+           perm_data_setting
+        </i>
         {% if site_url %}
             <a href="{{ site_url }}"><i class="material-icons" title="{% trans 'View Site' %}">web</i></a>
         {% endif %}
