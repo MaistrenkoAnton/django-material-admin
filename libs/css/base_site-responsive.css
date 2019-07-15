@@ -17,11 +17,16 @@
         width: 100%;
     }
     #changelist-search > div {
-     max-width: 100% !important;
+        max-width: 100% !important;
     }
     .inline-group .card-grid {
        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     }
+
+    .module {
+        margin-right: 0;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -45,8 +50,11 @@
 }
 
 @media (max-width: 992px) {
-    #container {
+    #container.indent {
        padding-left: 0;
+    }
+    .tray-nav-bar.material-icons {
+        display: none;
     }
 }
 

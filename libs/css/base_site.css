@@ -19,12 +19,12 @@ a, a:hover, a:active, a:link, a:visited, a:focus {
     margin: 0 5px 5px 0;
 }
 
-#container {
+#container.indent {
     padding-left: 300px;
 }
 
 #container-outside {
-    padding-ledt: 0
+    padding-left: 0
 }
 
 ul {

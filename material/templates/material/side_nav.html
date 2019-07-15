@@ -1,6 +1,9 @@
 {% load i18n material %}
 
 <div class="scroll-pane">
+    {% if not mobile %}
+        <i class="material-icons minimize nav-bar" title="{% trans 'Minimize' %}">minimize</i>
+    {% endif %}
     {% if available_apps %}
         <ul class="collapsible">
             <li>

@@ -2,6 +2,21 @@
     background-color: #EEEEEF;
 }
 
+#side-bar i.minimize {
+    position: absolute;
+    z-index: 1000;
+    right: 3px;
+    top: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #417690;
+}
+
+#side-bar i.minimize:hover {
+    background: #417690;
+    color: white;
+}
+
 .scroll-pane {
     height: 100vh;
     overflow: hidden;
