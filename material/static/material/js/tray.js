@@ -1,7 +1,5 @@
 (function ($) {
 
-    var sideBar = $('#side-bar');
-    var container = $('#container');
     var navBarIcon = $('.tray-nav-bar.material-icons');
     var navBarCookie = 'tray-nav-bar';
 
@@ -35,22 +33,14 @@
         createCookie(name, "", -1);
     }
 
-    function navMinimize () {
-        sideBar.hide();
-        container.removeClass('indent');
-        navBarIcon.removeClass('minimized');
-    }
-
     $('.nav-bar.minimize').on('click', function () {
-        navMinimize();
         createCookie(navBarCookie, true, 30);
+        location.reload();
     });
 
     navBarIcon.on('click', function () {
-        sideBar.show();
-        container.addClass('indent');
-        $(this).addClass('minimized');
-        eraseCookie(navBarCookie)
+        eraseCookie(navBarCookie);
+        location.reload();
     });
 
 
