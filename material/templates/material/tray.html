@@ -6,6 +6,10 @@
            title="{% trans 'Side Nav' %}">
            format_list_bulleted
         </i>
+        <i class="tray-additional-submit-row material-icons {% if not additional_submit_line %}minimized{% endif %}"
+           title="{% trans 'Additional submit line' %}">
+           control_point_duplicate
+        </i>
         {% if site_url %}
             <a href="{{ site_url }}"><i class="material-icons" title="{% trans 'View Site' %}">web</i></a>
         {% endif %}

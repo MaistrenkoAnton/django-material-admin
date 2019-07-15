@@ -1,7 +1,9 @@
 (function ($) {
 
     var navBarIcon = $('.tray-nav-bar.material-icons');
+    var additionalSubmitLineIcon = $('.tray-additional-submit-row.material-icons');
     var navBarCookie = 'tray-nav-bar';
+    var additionalSubmitLineCookie = 'additional-submit-line';
 
     function createCookie(name, value, days) {
         var expires;
@@ -38,10 +40,20 @@
         location.reload();
     });
 
+
+    $('.submit-line.minimize').on('click', function () {
+        createCookie(additionalSubmitLineCookie, true, 30);
+        location.reload();
+    });
+
     navBarIcon.on('click', function () {
         eraseCookie(navBarCookie);
         location.reload();
     });
 
+    additionalSubmitLineIcon.on('click', function () {
+        eraseCookie(additionalSubmitLineCookie);
+        location.reload();
+    });
 
 })(jQuery);
