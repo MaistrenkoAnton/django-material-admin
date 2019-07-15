@@ -122,6 +122,8 @@ https://materializecss.com/icons.html
 
 7. Manage profile picture
 
+.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/profile-pic.png
+
 Extend **User** model as OneToOne relation or extend **AbstractUser** and set new **AUTH_USER_MODEL**.
 
 **MEDIA** should be configured properly.
