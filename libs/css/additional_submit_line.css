@@ -23,12 +23,11 @@
 
 .additional-submit-line i.minimize {
     color: #417690;
-    border: 1px solid #417690;
     cursor: pointer;
     margin-left: 10px;
-    width: 16px;
+    width: 14px;
     font-size: 14px;
-    height: 16px;
+    height: 14px;
 }
 
 .additional-submit-line i.minimize:hover {
