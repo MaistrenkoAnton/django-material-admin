@@ -51,7 +51,6 @@ ul {
 }
 
 #content-main {
-    overflow: hidden;
     background-color: #eeeeef;
     padding: 5px;
     display: flex;

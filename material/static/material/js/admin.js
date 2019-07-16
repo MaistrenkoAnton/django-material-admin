@@ -29,6 +29,7 @@
 
         var elems = document.querySelectorAll('.dropdown-trigger');
         M.Dropdown.init(elems);
+        
         $('select').not('.empty-form select, .selector-available select, .selector-chosen select, .admin-autocomplete')
         .formSelect();
 
