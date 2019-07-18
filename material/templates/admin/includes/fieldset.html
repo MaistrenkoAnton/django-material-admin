@@ -17,7 +17,11 @@
                 <span></span>
               </label>
             </div>
-            <div class="checkbox-label">{{ field.field.label }}</div>
+            <div class="checkbox-label">
+              <label for="{{ field.field.name }}">
+                {{ field.field.label }}
+              </label>
+            </div>
           {% else %}
             {{ field.label_tag }}
             {% if field.is_readonly %}

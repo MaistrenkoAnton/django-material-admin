@@ -16,9 +16,11 @@ fieldset.module.aligned {
     margin-bottom: 0;
 }
 
-.checkbox-label {
+.checkbox-label label {
     color: #666;
     font-size: 14px;
+    margin-top: -6px;
+    cursor: pointer;
 }
 
 label.checkbox-block {
