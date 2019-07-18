@@ -30,6 +30,9 @@ class AppsLayoutsTest(TestCase):
         self.assertIn('class="scroll-pane"', response._container[0].decode('utf-8'))
         self.assertIn('class="breadcrumbs"', response._container[0].decode('utf-8'))
         self.assertIn('class="app-list"', response._container[0].decode('utf-8'))
+        self.assertNotIn(
+            'You don\'t have permission to view or edit anything.', response._container[0].decode('utf-8')
+        )
 
     def test_login_restricted_staff_user_layout(self):
         client = Client()

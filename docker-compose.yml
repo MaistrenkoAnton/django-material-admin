@@ -8,6 +8,7 @@ services:
       - "8000:8000"
     volumes:
       - ./app:/app
+      - ./tests:/app/tests
       - ./material:/app/material
     command: >
       sh -c "python manage.py wait_for_db &&
