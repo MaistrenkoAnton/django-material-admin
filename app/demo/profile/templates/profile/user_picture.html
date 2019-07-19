@@ -1,5 +1,11 @@
 {% load static %}
 
+<div style="position:fixed; bottom: 0; right: 10px;">
+    <a href="/en/">English</a> |
+    <a href="/uk/">Українська</a> |
+    <a href="/ru/">Русский</a>
+</div>
+
 {% if user.profile.picture %}
     <a href="{% url 'admin:auth_user_change' user.pk %}">
         <img class="login-logo" src="{{ user.profile.picture.url }}">

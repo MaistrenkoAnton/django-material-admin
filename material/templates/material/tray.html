@@ -3,7 +3,7 @@
 <div class="card">
     <div class="card-content">
         <i class="tray-nav-bar material-icons {% if not nav_bar_minimized %}minimized{% endif %}"
-           title="{% trans 'Side Nav' %}">
+           title="{% trans 'Side Navigation' %}">
            format_list_bulleted
         </i>
         <i class="tray-additional-submit-row material-icons {% if not additional_submit_line %}minimized{% endif %}"
@@ -15,13 +15,13 @@
            perm_data_setting
         </i>
         {% if site_url %}
-            <a href="{{ site_url }}"><i class="material-icons" title="{% trans 'View Site' %}">web</i></a>
+            <a href="{{ site_url }}"><i class="material-icons" title="{% trans 'View site' %}">web</i></a>
         {% endif %}
         {% if user.has_usable_password %}
             <a href="{% url 'admin:password_change' %}"><i class="material-icons" title="{% trans 'Change password' %}">vpn_key</i></a>
         {% endif %}
         <a href="{% url 'admin:logout' %}">
-            <i class="material-icons" title="{% trans 'Logout' %}">exit_to_app</i>
+            <i class="material-icons" title="{% trans 'Log out' %}">exit_to_app</i>
         </a>
     </div>
 </div>

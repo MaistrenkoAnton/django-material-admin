@@ -45,3 +45,5 @@ class Person(models.Model):
 class ProxyPerson(Person):
     class Meta:
         proxy = True
+        verbose_name = _('Proxy Person')
+        verbose_name_plural = _('Proxy Persons')

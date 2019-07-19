@@ -59,7 +59,7 @@ class AuthLayoutsTest(TestCase):
             is_active=True
         )
         client.force_login(user)
-        response = client.get('/admin/auth/user/')
+        response = client.get('/en/admin/auth/user/')
 
         self.assertEqual(response.status_code, 403)
         self.assertIn('class="side-bar"', response._container[0].decode('utf-8'))

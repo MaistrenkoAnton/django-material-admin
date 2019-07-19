@@ -11,6 +11,8 @@ RUN apk add --update --no-cache --virtual .tmp-build-deps gcc libc-dev linux-hea
 RUN apk --update add libxml2-dev libxslt-dev libffi-dev gcc musl-dev libgcc openssl-dev curl
 RUN apk add jpeg-dev zlib-dev freetype-dev lcms2-dev openjpeg-dev tiff-dev tk-dev tcl-dev
 
+RUN apk add gettext
+
 RUN pip install -r requirements.txt
 RUN apk del .tmp-build-deps
 

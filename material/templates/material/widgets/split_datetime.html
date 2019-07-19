@@ -2,11 +2,11 @@
 
 <p class="date-input datetime-block datetime-flex">
   <span class="datetime-flex">{{ date_label }} {% with widget=widget.subwidgets.0 %}{% include widget.template_name %}{% endwith %}
-    <i class="material-icons calendar">insert_invitation</i>
+    <i class="material-icons calendar" title="{% trans 'Calendar' %}">insert_invitation</i>
     <i class="material-icons today" title="{% trans 'Today' %}">save_alt</i>
   </span>
   <span class="time-input datetime-flex">{{ time_label }} {% with widget=widget.subwidgets.1 %}{% include widget.template_name %}{% endwith %}
-    <i class="material-icons clock">access_time</i>
+    <i class="material-icons clock" title="{% trans 'Time' %}">access_time</i>
     <i class="material-icons now" title="{% trans 'Now' %}">save_alt</i>
   </span>
 </p>

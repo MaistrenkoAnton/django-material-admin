@@ -17,7 +17,7 @@
             {% url cl.opts|admin_urlname:'add' as add_url %}
             <div class="fixed-action-btn">
               <a href="{% add_preserved_filters add_url is_popup to_field %}" class="btn-floating btn-large waves-effect waves-light">
-                {% blocktrans with cl.opts.verbose_name as name %}<i class="material-icons">add</i>{% endblocktrans %}
+                <i class="material-icons">add</i>
               </a>
             </div>
           </li>
