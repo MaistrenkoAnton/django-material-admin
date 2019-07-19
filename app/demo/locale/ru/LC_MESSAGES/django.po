@@ -20,14 +20,18 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: profile/apps.py:8
-msgid "Profile"
-msgstr ""
+#: settings.py:127
+msgid "English"
+msgstr "Англійська"
 
-#: profile/model.py:15
-msgid "User Picture"
-msgstr "Изображение пользователя"
+#: settings.py:128
+msgid "Russian"
+msgstr "Російський"
 
-#: profile/model.py:21 profile/model.py:22
-msgid "Picture"
-msgstr "Изображение"
+#: settings.py:129
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: urls.py:26 urls.py:27
+msgid "Demo"
+msgstr "Демо"

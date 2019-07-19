@@ -118,7 +118,7 @@ SITE_ID = 1
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
 LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'app/demo/locale')
+    os.path.join(BASE_DIR, 'demo/locale')
 ]
 
 LANGUAGE_CODE = 'en'

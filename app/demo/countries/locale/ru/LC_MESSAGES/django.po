@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 09:52+0000\n"
+"POT-Creation-Date: 2019-07-19 11:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,82 +20,82 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: apps.py:8 models.py:20
+#: countries/apps.py:8 countries/models.py:20
 msgid "Countries"
 msgstr "Страны"
 
-#: choices.py:4
+#: countries/choices.py:4
 msgid "Republic"
 msgstr "Республика"
 
-#: choices.py:5
+#: countries/choices.py:5
 msgid "Constitutional monarchy"
 msgstr "Конституционная монархия"
 
-#: choices.py:6
+#: countries/choices.py:6
 msgid "Absolute monarchy"
 msgstr "Абсолютная монархия"
 
-#: choices.py:7
+#: countries/choices.py:7
 msgid "N/A"
 msgstr "Непригодный"
 
-#: models.py:9
+#: countries/models.py:9
 msgid "Name"
 msgstr "Имя"
 
-#: models.py:10
+#: countries/models.py:10
 msgid "Picture"
 msgstr "Изображение"
 
-#: models.py:12
+#: countries/models.py:12
 msgid "Type"
 msgstr "Тип"
 
-#: models.py:19
+#: countries/models.py:19
 msgid "Country"
 msgstr "Страна"
 
-#: models.py:29
+#: countries/models.py:29
 msgid "UUID number"
 msgstr "UUID номер"
 
-#: models.py:32
+#: countries/models.py:32
 msgid "Birth Date"
 msgstr "День рождения"
 
-#: models.py:33
+#: countries/models.py:33
 msgid "description"
 msgstr "Описание"
 
-#: models.py:34
+#: countries/models.py:34
 msgid "Google Play Link"
 msgstr "Google Play ссылка"
 
-#: models.py:35
+#: countries/models.py:35
 msgid "Spotify Link"
 msgstr "Spotify ссылка"
 
-#: models.py:36
+#: countries/models.py:36
 msgid "Itunes Link"
 msgstr "Itunes ссылка"
 
-#: models.py:37
+#: countries/models.py:37
 msgid "Video"
 msgstr "Видео"
 
-#: models.py:40
+#: countries/models.py:40
 msgid "Person"
 msgstr "Персона"
 
-#: models.py:41
+#: countries/models.py:41
 msgid "Persons"
 msgstr "Персоны"
 
-#: models.py:48
+#: countries/models.py:48
 msgid "Proxy Person"
 msgstr "Доверенная личность"
 
-#: models.py:49
+#: countries/models.py:49
 msgid "Proxy Persons"
 msgstr "Доверенные личности"
