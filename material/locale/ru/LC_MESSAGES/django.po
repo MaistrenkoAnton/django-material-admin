@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 09:16+0000\n"
+"POT-Creation-Date: 2019-07-19 15:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME it2015maistrenko@gmail.com\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,7 +100,7 @@ msgstr ""
 #: templates/admin/submit_line.html:49 templates/admin/submit_line.html:51
 #: templates/admin/submit_line.html:60
 msgid "Close"
-msgstr ""
+msgstr "Закрыть"
 
 #: templates/admin/additional_submit_line.html:41
 #: templates/admin/submit_line.html:21 templates/admin/submit_line.html:73
@@ -139,6 +139,18 @@ msgstr ""
 
 #: templates/admin/base.html:66 templates/material/index.html:12
 msgid "Home"
+msgstr ""
+
+#: templates/admin/base_site.html:80 templates/admin/base_site.html:90
+msgid "Cancel"
+msgstr "Отменить"
+
+#: templates/admin/base_site.html:81 templates/admin/base_site.html:91
+msgid "Clear"
+msgstr ""
+
+#: templates/admin/base_site.html:82 templates/admin/base_site.html:92
+msgid "Ok"
 msgstr ""
 
 #: templates/admin/change_form.html:27 templates/admin/change_list.html:30
@@ -303,7 +315,11 @@ msgstr ""
 
 #: templates/admin/submit_line.html:7
 msgid "All actions"
-msgstr ""
+msgstr "Все действия"
+
+#: templates/admin/widgets/clearable_file_input.html:7
+msgid "File"
+msgstr "Файл"
 
 #: templates/admin/widgets/clearable_file_input.html:24
 msgid "Download"

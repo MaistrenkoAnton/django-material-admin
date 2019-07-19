@@ -8,12 +8,12 @@ from demo.countries.choices import COUNTRY_TYPES
 class Country(models.Model):
     name = models.CharField(_('Name'), max_length=64)
     picture = models.ImageField(_('Picture'), null=True, blank=True)
-    population = models.IntegerField(null=True)
+    population = models.IntegerField(_('Population'), null=True)
     type = models.CharField(_('Type'), choices=COUNTRY_TYPES, max_length=2)
-    is_safe = models.BooleanField(default=True)
-    created = models.DateField()
-    modified = models.DateTimeField()
-    time = models.TimeField()
+    is_safe = models.BooleanField(_('Is safe'), default=True)
+    created = models.DateField(_('Created'))
+    modified = models.DateTimeField(_('Modified'))
+    time = models.TimeField(_('Time'))
 
     class Meta:
         verbose_name = _('Country')
@@ -27,8 +27,12 @@ class Country(models.Model):
 
 class Person(models.Model):
     uuid = models.UUIDField(_('UUID number'))
-    nationality = models.ForeignKey('countries.Country', on_delete=models.CASCADE, null=True, blank=True)
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
+    nationality = models.ForeignKey(
+        'countries.Country', verbose_name=_('Nationality'), on_delete=models.CASCADE, null=True, blank=True
+    )
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL, verbose_name=_('User'), on_delete=models.CASCADE, null=True, blank=True
+    )
     date = models.DateField(_('Birth Date'))
     description = models.TextField(_('description'), null=True, blank=True)
     google_play = models.URLField(_('Google Play Link'), blank=True, null=True)

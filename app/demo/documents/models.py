@@ -6,7 +6,7 @@ class Document(models.Model):
     name = models.CharField(_('Name'), max_length=64)
     picture = models.ImageField(_('Picture'))
     file = models.FileField(_('File'))
-    text = models.TextField()
+    text = models.TextField(_('Text'))
 
     class Meta:
         verbose_name = _('Document')

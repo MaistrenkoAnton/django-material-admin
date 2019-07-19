@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 11:04+0000\n"
+"POT-Creation-Date: 2019-07-19 14:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,18 +20,22 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: settings.py:127
+#: demo/settings.py:127
 msgid "English"
 msgstr "Англійська"
 
-#: settings.py:128
+#: demo/settings.py:128
 msgid "Russian"
 msgstr "Російський"
 
-#: settings.py:129
+#: demo/settings.py:129
 msgid "Ukrainian"
 msgstr "Українська"
 
-#: urls.py:26 urls.py:27
+#: demo/settings.py:130
+msgid "Chinese"
+msgstr ""
+
+#: demo/urls.py:26 demo/urls.py:27
 msgid "Demo"
 msgstr "Демо"

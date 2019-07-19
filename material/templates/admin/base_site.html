@@ -70,6 +70,30 @@
 {% endblock %}
 
 {% block footer %}
+    <script>
+        var datepickerOptions = {
+            format: 'yyyy-mm-dd',
+            autoClose: true,
+            setDefaultDate: true,
+            showClearBtn: true,
+            i18n: {
+                cancel: '{% trans 'Cancel' %}',
+                clear: '{% trans 'Clear' %}',
+                done: '{% trans 'Ok' %}'
+            }
+        };
+        var timeOptions = {
+            twelveHour: false,
+            autoClose: true,
+            showClearBtn: true,
+            i18n: {
+                cancel: '{% trans 'Cancel' %}',
+                clear: '{% trans 'Clear' %}',
+                done: '{% trans 'Ok' %}'
+            }
+        };
+    </script>
+
     <script src="{% static 'material/js/materialize.min.js' %}"></script>
     <script src="{% static 'material/js/materialize-init.min.js' %}"></script>
     <script src="{% static 'material/js/admin.js' %}"></script>

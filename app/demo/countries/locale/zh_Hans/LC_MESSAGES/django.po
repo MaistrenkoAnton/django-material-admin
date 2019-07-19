@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 11:04+0000\n"
+"POT-Creation-Date: 2019-07-19 14:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,82 +20,110 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: countries/apps.py:8 countries/models.py:20
+#: demo/countries/apps.py:8 demo/countries/models.py:20
 msgid "Countries"
 msgstr "国家"
 
-#: countries/choices.py:4
+#: demo/countries/choices.py:4
 msgid "Republic"
 msgstr "共和国"
 
-#: countries/choices.py:5
+#: demo/countries/choices.py:5
 msgid "Constitutional monarchy"
 msgstr "君主立宪制"
 
-#: countries/choices.py:6
+#: demo/countries/choices.py:6
 msgid "Absolute monarchy"
 msgstr "绝对君主制"
 
-#: countries/choices.py:7
+#: demo/countries/choices.py:7
 msgid "N/A"
 msgstr "不适当"
 
-#: countries/models.py:9
+#: demo/countries/models.py:9
 msgid "Name"
 msgstr "名称"
 
-#: countries/models.py:10
+#: demo/countries/models.py:10
 msgid "Picture"
 msgstr "图片"
 
-#: countries/models.py:12
+#: demo/countries/models.py:11
+msgid "Population"
+msgstr "人口"
+
+#: demo/countries/models.py:12
 msgid "Type"
 msgstr "类型"
 
-#: countries/models.py:19
+#: demo/countries/models.py:13
+msgid "Is safe"
+msgstr "是安全的"
+
+#: demo/countries/models.py:14
+msgid "Created"
+msgstr "创建"
+
+#: demo/countries/models.py:15
+msgid "Modified"
+msgstr "改性"
+
+#: demo/countries/models.py:16
+msgid "Time"
+msgstr "时间"
+
+#: demo/countries/models.py:19
 msgid "Country"
 msgstr "国家"
 
-#: countries/models.py:29
+#: demo/countries/models.py:29
 msgid "UUID number"
 msgstr "UUID 数"
 
-#: countries/models.py:32
+#: demo/countries/models.py:31
+msgid "Nationality"
+msgstr "国籍"
+
+#: demo/countries/models.py:34
+msgid "User"
+msgstr "用户"
+
+#: demo/countries/models.py:36
 msgid "Birth Date"
 msgstr "生日"
 
-#: countries/models.py:33
+#: demo/countries/models.py:37
 msgid "description"
 msgstr "描述"
 
-#: countries/models.py:34
+#: demo/countries/models.py:38
 msgid "Google Play Link"
 msgstr "Google Play 链接"
 
-#: countries/models.py:35
+#: demo/countries/models.py:39
 msgid "Spotify Link"
 msgstr "Spotify 链接"
 
-#: countries/models.py:36
+#: demo/countries/models.py:40
 msgid "Itunes Link"
 msgstr "Itunes 链接"
 
-#: countries/models.py:37
+#: demo/countries/models.py:41
 msgid "Video"
 msgstr "视频"
 
-#: countries/models.py:40
+#: demo/countries/models.py:44
 msgid "Person"
 msgstr "人"
 
-#: countries/models.py:41
+#: demo/countries/models.py:45
 msgid "Persons"
 msgstr "人"
 
-#: countries/models.py:48
+#: demo/countries/models.py:52
 msgid "Proxy Person"
 msgstr "代理人"
 
-#: countries/models.py:49
+#: demo/countries/models.py:53
 msgid "Proxy Persons"
 msgstr "代理人"

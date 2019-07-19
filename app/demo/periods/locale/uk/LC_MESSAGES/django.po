@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 10:07+0000\n"
+"POT-Creation-Date: 2019-07-19 14:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,42 +20,42 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: apps.py:8
+#: demo/periods/apps.py:8
 msgid "Periods"
 msgstr "Періоди"
 
-#: models.py:6
+#: demo/periods/models.py:6
 msgid "Birth Date"
 msgstr "День народження"
 
-#: models.py:9
+#: demo/periods/models.py:9
 msgid "Date Model"
 msgstr "Модель дат"
 
-#: models.py:10
+#: demo/periods/models.py:10
 msgid "Date Models"
 msgstr "Моделі дат"
 
-#: models.py:14
+#: demo/periods/models.py:14
 msgid "Time"
 msgstr "Час"
 
-#: models.py:17
+#: demo/periods/models.py:17
 msgid "Time Model"
 msgstr "Модель часу"
 
-#: models.py:18
+#: demo/periods/models.py:18
 msgid "Time Models"
 msgstr "Моделі часів"
 
-#: models.py:22
+#: demo/periods/models.py:22
 msgid "Date Time"
 msgstr "Дата та Час"
 
-#: models.py:25
+#: demo/periods/models.py:25
 msgid "Date Time Model"
 msgstr "Модель дати та часу"
 
-#: models.py:26
+#: demo/periods/models.py:26
 msgid "Date Time Models"
 msgstr "Моделі дат та часів"
