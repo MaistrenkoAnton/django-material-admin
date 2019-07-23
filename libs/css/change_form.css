@@ -130,7 +130,11 @@ a.add-related {
 }
 
 .form-row td {
-    vertical-align: bottom;
+    position: relative;
+}
+
+.form-row td .url {
+    top: 38px;
 }
 
 form .aligned p.help,
