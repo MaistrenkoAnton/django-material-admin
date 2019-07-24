@@ -81,8 +81,7 @@ or
 
     site.register(Person)
 
-4. Unregister models
-
+4. If you want to hide default registered models, they can be unregistered:
 .. code-block:: python
 
     from django.material.sites import site
