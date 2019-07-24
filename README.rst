@@ -55,8 +55,8 @@ Quick start
     ]
 
 
-3. Extend Admin config from  `MaterialModelAdmin`
- - required
+3. Register your models and extend Admin config from  `MaterialModelAdmin`
+ - optional
 
 .. code-block:: python
 
