@@ -31,6 +31,7 @@ Quick start
 **pip install django-material-admin**
 
 1. Add "django-material-admin" to your INSTALLED_APPS setting like this:
+ - required
 
 .. code-block:: python
 
@@ -43,6 +44,7 @@ Quick start
 
 
 2. Include the material templates URLconf in your project urls.py like this:
+ - required 
 
 .. code-block:: python
 
@@ -54,6 +56,7 @@ Quick start
 
 
 3. Extend Admin config from  `MaterialModelAdmin`
+ - required
 
 .. code-block:: python
 
@@ -82,6 +85,7 @@ or
     site.register(Person)
 
 4. If you want to hide default registered models, they can be unregistered:
+ - optional
 
 .. code-block:: python
 
@@ -94,6 +98,7 @@ or
 
 5. Add icon to the application in `app.py`
 https://materializecss.com/icons.html
+ - optional
 
 .. code-block:: python
 
@@ -106,6 +111,7 @@ https://materializecss.com/icons.html
 
 
 6. Add icon to the MaterialModelAdmin in `admin.py`
+ - optional
 
 .. code-block:: python
 
@@ -121,6 +127,7 @@ https://materializecss.com/icons.html
 
 
 7. In order to add and manage the profile picture, this template can be added.  
+ - optional
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/profile-pic.png
 
