@@ -120,7 +120,7 @@ https://materializecss.com/icons.html
         icon_name = 'person'
 
 
-7. Manage profile picture
+7. In order to add and manage the profile picture, this template can be added.  
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/profile-pic.png
 
