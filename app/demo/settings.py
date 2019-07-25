@@ -41,11 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
-    'demo.profile',
     'demo.countries',
     'demo.documents',
     'demo.relations',
     'demo.periods',
+    'demo.profile',
 ]
 
 MIDDLEWARE = [
@@ -60,11 +60,10 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'demo.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

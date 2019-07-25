@@ -1,0 +1,33 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+
+{% block pretitle %}
+  <style>
+    #github {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 9999;
+      display: block;
+    }
+  </style>
+
+  <div id="github">
+    <a class="btn-floating pulse" href="https://github.com/MaistrenkoAnton/django-material-admin" target="_blank">
+      <img width="40" height="40 " src="{% static 'img/mark-github.png' %}"
+           alt="">
+    </a>
+  </div>
+
+  <script>
+    function showGitHub() {
+      var github = $('#github');
+        if (github.is(':hidden')) {
+          github.fadeIn();
+        } else {
+          github.fadeOut();
+        }
+    }
+    setInterval(showGitHub, 5000);
+  </script>
+{% endblock %}
