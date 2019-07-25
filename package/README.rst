@@ -9,7 +9,7 @@ Quick start
 
         INSTALLED_APPS = (
             ...
-            'material',
+            'material.admin',
             'django.contrib.admin',
             ...
         )
@@ -20,15 +20,15 @@ Quick start
     .. code-block:: python
 
         urlpatterns = [
-            path('admin/', include('material.urls')),
+            path('admin/', include('material.admin.urls')),
         ]
 
 3. Extend Admin config from  `MaterialModelAdmin`
 
     .. code-block:: python
 
-        from material.options import MaterialModelAdmin
-        from material.decorators import register
+        from material.admin.options import MaterialModelAdmin
+        from material.admin.decorators import register
 
         from persons.models import Person
 
@@ -41,8 +41,8 @@ Quick start
 
     .. code-block:: python
 
-        from material.options import MaterialModelAdmin
-        from material.sites import site
+        from material.admin.options import MaterialModelAdmin
+        from material.admin.sites import site
 
         from persons.models import Person
 
@@ -70,8 +70,8 @@ https://materializecss.com/icons.html
 
     .. code-block:: python
 
-        from material.options import MaterialModelAdmin
-        from material.decorators import register
+        from material.admin.options import MaterialModelAdmin
+        from material.admin.decorators import register
 
         from persons.models import Person
 

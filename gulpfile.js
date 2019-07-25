@@ -6,11 +6,11 @@ const uglify = require('gulp-uglify');
 const paths = {
   styles: {
     src: 'libs/css/*.css',
-    dest: 'material/static/material/css/'
+    dest: 'material/admin/static/material/admin/css/'
   },
   scripts: {
     src: 'libs/js/*.js',
-    dest: 'material/static/material/js/'
+    dest: 'material/admin/static/material/admin/js/'
   }
 };
 

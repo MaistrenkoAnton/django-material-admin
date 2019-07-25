@@ -1,0 +1,1 @@
+!function(){var e=document.getElementById("password-input"),i=document.getElementById("visible-off"),t=document.getElementById("visible-on");$("#visible-on").click(function(){e.type="text",t.classList.add("hide"),i.classList.remove("hide")}),$("#visible-off").click(function(){e.type="password",i.classList.add("hide"),t.classList.remove("hide")})}();

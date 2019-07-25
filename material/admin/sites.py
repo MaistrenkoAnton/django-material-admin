@@ -16,10 +16,10 @@ class MaterialAdminSite(AdminSite):
 
     def __init__(self, name='material'):
         super().__init__(name)
-        self.login_template = 'material/login.html'
-        self.logout_template = 'material/logout.html'
-        self.index_template = 'material/index.html'
-        self.password_change_template = 'material/password_change.html'
+        self.login_template = 'material/admin/login.html'
+        self.logout_template = 'material/admin/logout.html'
+        self.index_template = 'material/admin/index.html'
+        self.password_change_template = 'material/admin/password_change.html'
 
     def each_context(self, request):
         """Add favicon url to each context"""

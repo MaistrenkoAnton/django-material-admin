@@ -34,6 +34,6 @@ class MaterialModelAdmin(ModelAdmin):
             'vendor/xregexp/xregexp%s.js' % extra,
         ]
         material_js = [
-            'material/js/RelatedObjectLookups.min.js',
+            'material/admin/js/RelatedObjectLookups.min.js',
         ]
         return forms.Media(js=['admin/js/%s' % url for url in js] + material_js)

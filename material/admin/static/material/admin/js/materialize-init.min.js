@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll(".datepicker");M.Datepicker.init(e,datepickerOptions)}),document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll(".timepicker");M.Timepicker.init(e,timeOptions)});

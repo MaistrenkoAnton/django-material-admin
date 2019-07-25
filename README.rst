@@ -1,7 +1,7 @@
 |pypi| |python| |django|
 
 
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.2.6&x2=0
+.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.3.0&x2=0
     :target: https://pypi.org/project/django-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
@@ -37,7 +37,7 @@ Quick start
 
     INSTALLED_APPS = (
         ...,
-        'material',
+        'material.admin',
         'django.contrib.admin',
         ...,
     )
@@ -48,10 +48,17 @@ Quick start
 
 .. code-block:: python
 
-    from django.urls import path, include
+
+    from material.admin.sites import site
+    from django.utils.translation import ugettext_lazy as _
+
+    site.site_header = _('Your site header')
+    site.site_title = _('Your site title')
+    site.favicon = staticfiles('path/to/favicon')
+
 
     urlpatterns = [
-        path('admin/', include('material.urls')),
+        path('admin/', include('material.admin.urls')),
     ]
 
 
@@ -60,8 +67,9 @@ Quick start
 
 .. code-block:: python
 
-    from material.options import MaterialModelAdmin
-    from material.decorators import register
+    from material.admin.decorators import register
+    from material.admin.options import MaterialModelAdmin
+
 
     from persons.models import Person
 
@@ -73,8 +81,8 @@ or
 
 .. code-block:: python
 
-    from material.options import MaterialModelAdmin
-    from material.sites import site
+    from material.admin.options import MaterialModelAdmin
+    from material.admin.sites import site
 
     from persons.models import Person
 
@@ -89,7 +97,7 @@ or
 
 .. code-block:: python
 
-    from django.material.sites import site
+    from django.material.admin.sites import site
     from django.contrib.auth.models import User, Group
 
     site.unregister(User)
@@ -115,8 +123,8 @@ https://materializecss.com/icons.html
 
 .. code-block:: python
 
-    from material.options import MaterialModelAdmin
-    from material.decorators import register
+    from material.admin.options import MaterialModelAdmin
+    from material.admin.decorators import register
 
     from persons.models import Person
 
@@ -135,7 +143,7 @@ Extend **User** model as OneToOne relation or extend **AbstractUser** and set ne
 
 **MEDIA** should be configured properly.
 
-Then define tempate **templates/profile/user_picture.html** in any your application as example:
+Then define template **templates/profile/user_picture.html** in any your application as example:
 
 .. code-block:: python
 
@@ -146,9 +154,9 @@ Then define tempate **templates/profile/user_picture.html** in any your applicat
             <img class="login-logo" src="{{ user.profile.picture.url }}">
         </a>
     {% else %}
-        <img class="login-logo" src="{% static 'material/images/login-logo.png' %}">
+        <img class="login-logo" src="{% static 'material/admin/images/login-logo.png' %}">
     {% endif %}
-    <img src="{% static 'material/images/login-bg.jpg' %}">
+    <img src="{% static 'material/admin/images/login-bg.jpg' %}">
     <div class="card-title">
         <strong>{% firstof user.get_short_name user.get_username %}</strong>
         <small>{{ user.email|default_if_none:'' }}</small>
@@ -157,4 +165,4 @@ Then define tempate **templates/profile/user_picture.html** in any your applicat
 
 Where 
  - *user.profile.picture* - the relation to ImageField from user,
- - *material/images/login-logo.png* - default logo from material templates.
+ - *material/admin/images/login-logo.png* - default logo from material templates.

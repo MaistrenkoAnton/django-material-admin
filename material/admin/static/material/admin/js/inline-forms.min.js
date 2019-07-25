@@ -1,0 +1,1 @@
+!function(n){"use strict";n(".delete-inline-row").click(function(){var e=n(this).closest(".delete"),i=e.find(".inline-deletelink");if(i.length)i.trigger("click");else{var t=e.find("input[type=checkbox]");t.length?(t.prop("checked",!0),n(this).closest(".form-row").hide()):n(this).closest(".form-row").remove()}})}(django.jQuery);

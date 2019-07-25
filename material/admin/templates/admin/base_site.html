@@ -2,20 +2,20 @@
 {% load static i18n material %}
 
 {% block extrastyle %}
-    <link rel="stylesheet" href="{% static 'material/css/materialize.min.css' %}">
-    <link href="{% static 'material/css/material_icons.min.css' %}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/base_site.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/autocomplete.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/app_content.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/side_nav.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/header.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/tray.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/selector_relative.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/selector_relative-responsive.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/base_site-responsive.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/css/jquery.jscrollpane.min.css' %}">
+    <link rel="stylesheet" href="{% static 'material/admin/css/materialize.min.css' %}">
+    <link href="{% static 'material/admin/css/material_icons.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/autocomplete.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/app_content.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/side_nav.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/header.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/tray.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/selector_relative.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/selector_relative-responsive.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-responsive.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/jquery.jscrollpane.min.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="{% static 'material/js/jquery.min.js' %}"></script>
+    <script src="{% static 'material/admin/js/jquery.min.js' %}"></script>
     {% if favicon %}
         <link rel="icon" href="{{ favicon }}" />
     {% endif %}
@@ -61,11 +61,11 @@
 {% block side_nav %}
     {% if not nav_bar_minimized %}
         <div id="side-bar" class="hide-on-med-and-down">
-            {% include 'material/side_nav.html' with available_apps=available_apps app=app %}
+            {% include 'material/admin/side_nav.html' with available_apps=available_apps app=app %}
         </div>
     {% endif %}
     <div id="mobile-demo" class="sidenav">
-        {% include 'material/side_nav.html' with available_apps=available_apps app=app mobile=True %}
+        {% include 'material/admin/side_nav.html' with available_apps=available_apps app=app mobile=True %}
     </div>
 {% endblock %}
 
@@ -94,11 +94,11 @@
         };
     </script>
 
-    <script src="{% static 'material/js/materialize.min.js' %}"></script>
-    <script src="{% static 'material/js/materialize-init.min.js' %}"></script>
-    <script src="{% static 'material/js/admin.js' %}"></script>
-    <script src="{% static 'material/js/filters.js' %}"></script>
-    <script src="{% static 'material/js/tray.js' %}"></script>
-    <script type="text/javascript" src="{% static 'material/js/jquery.mousewheel.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'material/js/jquery.jscrollpane.min.js' %}"></script>
+    <script src="{% static 'material/admin/js/materialize.min.js' %}"></script>
+    <script src="{% static 'material/admin/js/materialize-init.min.js' %}"></script>
+    <script src="{% static 'material/admin/js/admin.js' %}"></script>
+    <script src="{% static 'material/admin/js/filters.js' %}"></script>
+    <script src="{% static 'material/admin/js/tray.js' %}"></script>
+    <script type="text/javascript" src="{% static 'material/admin/js/jquery.mousewheel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'material/admin/js/jquery.jscrollpane.min.js' %}"></script>
 {% endblock %}
