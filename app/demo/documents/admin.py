@@ -1,8 +1,8 @@
 from django.contrib import admin
 
 from demo.documents.models import Document, Link
-from material.decorators import register
-from material.options import MaterialModelAdmin
+from material.admin.decorators import register
+from material.admin.options import MaterialModelAdmin
 
 
 class LinkInline(admin.TabularInline):

@@ -1,7 +1,7 @@
 from django.core.exceptions import AppRegistryNotReady
 
-from material.decorators import register
-from material.options import MaterialModelAdmin
+from material.admin.decorators import register
+from material.admin.options import MaterialModelAdmin
 
 try:
     from django.contrib.sites.models import Site

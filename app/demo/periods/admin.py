@@ -1,6 +1,6 @@
 from demo.periods.models import DateTimeModel, TimeModel, DateModel
-from material.decorators import register
-from material.options import MaterialModelAdmin
+from material.admin.decorators import register
+from material.admin.options import MaterialModelAdmin
 
 
 @register(DateModel)

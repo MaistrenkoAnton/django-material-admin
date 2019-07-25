@@ -21,7 +21,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.views.generic import RedirectView
 from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
 
-from material.sites import site
+from material.admin.sites import site
 
 site.site_header = _('Demo')
 site.site_title = _('Demo')
@@ -29,7 +29,7 @@ site.favicon = staticfiles('demo.png')
 
 
 urlpatterns = i18n_patterns(
-    path('admin/', include('material.urls')),
+    path('admin/', include('material.admin.urls')),
     path('', RedirectView.as_view(url='admin/', permanent=False), name='index'),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT

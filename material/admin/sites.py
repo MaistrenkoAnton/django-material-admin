@@ -101,7 +101,7 @@ class MaterialAdminSite(AdminSite):
 
 class DefaultMaterialAdminSite(LazyObject):
     def _setup(self):
-        AdminSiteClass = import_string(apps.get_app_config('material').default_site)
+        AdminSiteClass = import_string(apps.get_app_config('material.admin').default_site)
         self._wrapped = AdminSiteClass()
 
 

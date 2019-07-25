@@ -1,8 +1,8 @@
 from django.contrib import admin
 
 from demo.countries.models import Country, Person, ProxyPerson
-from material.decorators import register
-from material.options import MaterialModelAdmin
+from material.admin.decorators import register
+from material.admin.options import MaterialModelAdmin
 
 
 class PersonInline(admin.StackedInline):

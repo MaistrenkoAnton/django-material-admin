@@ -2,12 +2,12 @@ from django.contrib import admin
 
 from demo.profile.model import UserProfile
 from demo.relations.models import Relation
-from material.admin import MaterialUserAdmin
-from material.decorators import register
-from material.sites import site
 
 from django.contrib.auth.models import User
 
+from material.admin.admin import MaterialUserAdmin
+from material.admin.decorators import register
+from material.admin.sites import site
 
 site.unregister(User)
 

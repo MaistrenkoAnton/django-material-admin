@@ -3,7 +3,7 @@ from django.contrib.admin.options import ModelAdmin
 from django.db import models
 from django.forms import SplitDateTimeField, forms
 
-from material import widgets
+from material.admin import widgets
 
 FORMFIELD_FOR_DBFIELD_MATERIAL = {
     models.DateField: {'widget': widgets.MaterialAdminDateWidget},
