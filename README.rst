@@ -1,12 +1,16 @@
 |pypi| |python| |django|
 
+|build|
+
 
 .. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.3.2&x2=0
     :target: https://pypi.org/project/django-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
 .. |django| image:: https://img.shields.io/badge/django-2.2-blue.svg
-    :target: https://www.djangoproject.com/
+    :target: https://www.djangoproject.com/    
+.. |build| image:: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com:8080/buildStatus/icon?job=Job1
+    :target: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com
 
 ==============================
 Django Material Administration
@@ -44,7 +48,7 @@ Quick start
 
 
 2. Include the material templates URLconf in your project urls.py like this:
- - required 
+ - required
 
 .. code-block:: python
 
