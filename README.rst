@@ -48,9 +48,10 @@ Quick start
 
 .. code-block:: python
 
+    from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
+    from django.utils.translation import ugettext_lazy as _
 
     from material.admin.sites import site
-    from django.utils.translation import ugettext_lazy as _
 
     site.site_header = _('Your site header')
     site.site_title = _('Your site title')
