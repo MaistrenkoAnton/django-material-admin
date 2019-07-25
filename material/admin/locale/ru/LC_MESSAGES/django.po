@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 15:29+0000\n"
+"POT-Creation-Date: 2019-07-25 11:56+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME it2015maistrenko@gmail.com\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,181 +20,197 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: templates/400.html:4 templates/403.html:4 templates/403.html:25
-#: templates/404.html:4 templates/404.html:25 templates/500.html:4
+#: material/admin/templates/400.html:4 material/admin/templates/403.html:4
+#: material/admin/templates/403.html:25 material/admin/templates/404.html:4
+#: material/admin/templates/404.html:25 material/admin/templates/500.html:4
 msgid "Page not found"
 msgstr ""
 
-#: templates/400.html:25
+#: material/admin/templates/400.html:25
 msgid "Bad request"
 msgstr ""
 
-#: templates/403.html:26
+#: material/admin/templates/403.html:26
 msgid "You have no permissions to do this action."
 msgstr ""
 
-#: templates/404.html:26
+#: material/admin/templates/404.html:26
 msgid "We\\"
 msgstr ""
 
-#: templates/500.html:25
+#: material/admin/templates/500.html:25
 msgid "Server error"
 msgstr ""
 
-#: templates/500.html:26
+#: material/admin/templates/500.html:26
 msgid "There\\"
 msgstr ""
 
-#: templates/admin/actions.html:30
+#: material/admin/templates/admin/actions.html:30
 msgid "Click here to select the objects across all pages"
 msgstr ""
 
-#: templates/admin/actions.html:30
+#: material/admin/templates/admin/actions.html:30
 #, python-format
 msgid "Select all %(total_count)s %(module_name)s"
 msgstr ""
 
-#: templates/admin/actions.html:32
+#: material/admin/templates/admin/actions.html:32
 msgid "Clear selection"
 msgstr ""
 
-#: templates/admin/actions.html:39
+#: material/admin/templates/admin/actions.html:39
 msgid "Run the selected action"
 msgstr ""
 
-#: templates/admin/actions.html:39
+#: material/admin/templates/admin/actions.html:39
 msgid "Go"
 msgstr ""
 
-#: templates/admin/add_form.html:9
+#: material/admin/templates/admin/add_form.html:9
 msgid ""
 "First, enter a username and password. Then, you'll be able to edit more user "
 "options."
 msgstr ""
 
-#: templates/admin/add_form.html:11
+#: material/admin/templates/admin/add_form.html:11
 msgid "Enter a username and password."
 msgstr ""
 
-#: templates/admin/additional_submit_line.html:9
-#: templates/admin/submit_line.html:13
+#: material/admin/templates/admin/additional_submit_line.html:9
+#: material/admin/templates/admin/submit_line.html:13
 msgid "Save as new"
 msgstr ""
 
-#: templates/admin/additional_submit_line.html:17
-#: templates/admin/submit_line.html:29
+#: material/admin/templates/admin/additional_submit_line.html:17
+#: material/admin/templates/admin/submit_line.html:29
 msgid "Save and add another"
 msgstr ""
 
-#: templates/admin/additional_submit_line.html:25
-#: templates/admin/submit_line.html:42
+#: material/admin/templates/admin/additional_submit_line.html:25
+#: material/admin/templates/admin/submit_line.html:42
 msgid "Save and continue editing"
 msgstr ""
 
-#: templates/admin/additional_submit_line.html:25
-#: templates/admin/submit_line.html:42
+#: material/admin/templates/admin/additional_submit_line.html:25
+#: material/admin/templates/admin/submit_line.html:42
 msgid "Save and view"
 msgstr ""
 
-#: templates/admin/additional_submit_line.html:36
-#: templates/admin/submit_line.html:49 templates/admin/submit_line.html:51
-#: templates/admin/submit_line.html:60
+#: material/admin/templates/admin/additional_submit_line.html:36
+#: material/admin/templates/admin/submit_line.html:49
+#: material/admin/templates/admin/submit_line.html:51
+#: material/admin/templates/admin/submit_line.html:60
 msgid "Close"
 msgstr "Закрыть"
 
-#: templates/admin/additional_submit_line.html:41
-#: templates/admin/submit_line.html:21 templates/admin/submit_line.html:73
+#: material/admin/templates/admin/additional_submit_line.html:41
+#: material/admin/templates/admin/submit_line.html:21
+#: material/admin/templates/admin/submit_line.html:73
 msgid "Save"
 msgstr ""
 
-#: templates/admin/additional_submit_line.html:48
-#: templates/admin/submit_line.html:62 templates/admin/submit_line.html:81
-#: templates/admin/widgets/related_widget_wrapper.html:26
+#: material/admin/templates/admin/additional_submit_line.html:48
+#: material/admin/templates/admin/submit_line.html:62
+#: material/admin/templates/admin/submit_line.html:81
+#: material/admin/templates/admin/widgets/related_widget_wrapper.html:26
 msgid "Delete"
 msgstr ""
 
-#: templates/admin/additional_submit_line.html:52
-#: templates/material/side_nav.html:5
+#: material/admin/templates/admin/additional_submit_line.html:52
+#: material/admin/templates/material/admin/side_nav.html:5
 msgid "Minimize"
 msgstr "Свернуть"
 
-#: templates/admin/base.html:45 templates/admin/base_site.html:42
-#: templates/material/tray.html:18
+#: material/admin/templates/admin/base.html:45
+#: material/admin/templates/admin/base_site.html:42
+#: material/admin/templates/material/admin/tray.html:18
 msgid "View site"
 msgstr ""
 
-#: templates/admin/base.html:50 templates/admin/base_site.html:47
+#: material/admin/templates/admin/base.html:50
+#: material/admin/templates/admin/base_site.html:47
 msgid "Documentation"
 msgstr ""
 
-#: templates/admin/base.html:54 templates/admin/base_site.html:52
-#: templates/material/tray.html:21
+#: material/admin/templates/admin/base.html:54
+#: material/admin/templates/admin/base_site.html:52
+#: material/admin/templates/material/admin/tray.html:21
 msgid "Change password"
 msgstr ""
 
-#: templates/admin/base.html:56 templates/admin/base_site.html:56
-#: templates/material/tray.html:24
+#: material/admin/templates/admin/base.html:56
+#: material/admin/templates/admin/base_site.html:56
+#: material/admin/templates/material/admin/tray.html:24
 msgid "Log out"
 msgstr ""
 
-#: templates/admin/base.html:66 templates/material/index.html:12
+#: material/admin/templates/admin/base.html:66
+#: material/admin/templates/material/admin/index.html:12
 msgid "Home"
 msgstr ""
 
-#: templates/admin/base_site.html:80 templates/admin/base_site.html:90
+#: material/admin/templates/admin/base_site.html:80
+#: material/admin/templates/admin/base_site.html:90
 msgid "Cancel"
 msgstr "Отменить"
 
-#: templates/admin/base_site.html:81 templates/admin/base_site.html:91
+#: material/admin/templates/admin/base_site.html:81
+#: material/admin/templates/admin/base_site.html:91
 msgid "Clear"
 msgstr ""
 
-#: templates/admin/base_site.html:82 templates/admin/base_site.html:92
+#: material/admin/templates/admin/base_site.html:82
+#: material/admin/templates/admin/base_site.html:92
 msgid "Ok"
 msgstr ""
 
-#: templates/admin/change_form.html:27 templates/admin/change_list.html:30
-#: templates/material/login.html:24 templates/material/password_change.html:21
+#: material/admin/templates/admin/change_form.html:27
+#: material/admin/templates/admin/change_list.html:30
+#: material/admin/templates/material/admin/login.html:24
+#: material/admin/templates/material/admin/password_change.html:21
 msgid "Please correct the error below."
 msgstr ""
 
-#: templates/admin/change_form.html:27 templates/admin/change_list.html:30
-#: templates/material/login.html:26 templates/material/password_change.html:23
+#: material/admin/templates/admin/change_form.html:27
+#: material/admin/templates/admin/change_list.html:30
+#: material/admin/templates/material/admin/login.html:26
+#: material/admin/templates/material/admin/password_change.html:23
 msgid "Please correct the errors below."
 msgstr ""
 
-#: templates/admin/change_form.html:71
+#: material/admin/templates/admin/change_form.html:71
 msgid "Tools"
 msgstr "Инструменты"
 
-#: templates/admin/change_form_object_tools.html:7
+#: material/admin/templates/admin/change_form_object_tools.html:7
 msgid "History"
 msgstr ""
 
-#: templates/admin/change_form_object_tools.html:14
-#: templates/admin/edit_inline/stacked.html:39
-#: templates/admin/edit_inline/tabular.html:38
+#: material/admin/templates/admin/change_form_object_tools.html:14
+#: material/admin/templates/admin/edit_inline/stacked.html:39
+#: material/admin/templates/admin/edit_inline/tabular.html:38
 msgid "View on site"
 msgstr ""
 
-#: templates/admin/change_list.html:61
+#: material/admin/templates/admin/change_list.html:61
 msgid "Filter"
 msgstr ""
 
-#: templates/admin/change_list_results.html:18
+#: material/admin/templates/admin/change_list_results.html:18
 msgid "Remove from sorting"
 msgstr ""
 
-#: templates/admin/change_list_results.html:19
+#: material/admin/templates/admin/change_list_results.html:19
 #, python-format
 msgid "Sorting priority: %(priority_number)s"
 msgstr ""
 
-#: templates/admin/change_list_results.html:20
+#: material/admin/templates/admin/change_list_results.html:20
 msgid "Toggle sorting"
 msgstr ""
 
-#: templates/admin/delete_confirmation.html:12
+#: material/admin/templates/admin/delete_confirmation.html:12
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
@@ -202,36 +218,36 @@ msgid ""
 "following types of objects:"
 msgstr ""
 
-#: templates/admin/delete_confirmation.html:21
+#: material/admin/templates/admin/delete_confirmation.html:21
 #, python-format
 msgid ""
 "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
 "following protected related objects:"
 msgstr ""
 
-#: templates/admin/delete_confirmation.html:30
+#: material/admin/templates/admin/delete_confirmation.html:30
 #, python-format
 msgid ""
-"Are you sure you want to delete the %(object_name)s\"%(escaped_object)s\"? "
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
 "All of the following related items will be deleted:"
 msgstr ""
 
-#: templates/admin/delete_confirmation.html:33
-#: templates/admin/delete_selected_confirmation.html:27
+#: material/admin/templates/admin/delete_confirmation.html:33
+#: material/admin/templates/admin/delete_selected_confirmation.html:27
 msgid "Objects"
 msgstr ""
 
-#: templates/admin/delete_confirmation.html:41
-#: templates/admin/delete_selected_confirmation.html:39
+#: material/admin/templates/admin/delete_confirmation.html:41
+#: material/admin/templates/admin/delete_selected_confirmation.html:39
 msgid "Yes, I\\"
 msgstr ""
 
-#: templates/admin/delete_confirmation.html:45
-#: templates/admin/delete_selected_confirmation.html:43
+#: material/admin/templates/admin/delete_confirmation.html:45
+#: material/admin/templates/admin/delete_selected_confirmation.html:43
 msgid "No, take me back"
 msgstr ""
 
-#: templates/admin/delete_selected_confirmation.html:11
+#: material/admin/templates/admin/delete_selected_confirmation.html:11
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would result in deleting related "
@@ -239,63 +255,64 @@ msgid ""
 "types of objects:"
 msgstr ""
 
-#: templates/admin/delete_selected_confirmation.html:18
+#: material/admin/templates/admin/delete_selected_confirmation.html:18
 #, python-format
 msgid ""
 "Deleting the selected %(objects_name)s would require deleting the following "
 "protected related objects:"
 msgstr ""
 
-#: templates/admin/delete_selected_confirmation.html:25
+#: material/admin/templates/admin/delete_selected_confirmation.html:25
 #, python-format
 msgid ""
 "Are you sure you want to delete the selected %(objects_name)s? All of the "
 "following objects and their related items will be deleted:"
 msgstr ""
 
-#: templates/admin/edit_inline/stacked.html:27
-#: templates/admin/edit_inline/tabular.html:36
-#: templates/admin/widgets/related_widget_wrapper.html:12
+#: material/admin/templates/admin/edit_inline/stacked.html:27
+#: material/admin/templates/admin/edit_inline/tabular.html:36
+#: material/admin/templates/admin/widgets/related_widget_wrapper.html:12
 msgid "Change"
 msgstr ""
 
-#: templates/admin/edit_inline/stacked.html:29
-#: templates/admin/edit_inline/tabular.html:36
+#: material/admin/templates/admin/edit_inline/stacked.html:29
+#: material/admin/templates/admin/edit_inline/tabular.html:36
 msgid "View"
 msgstr ""
 
-#: templates/admin/edit_inline/tabular.html:22
+#: material/admin/templates/admin/edit_inline/tabular.html:22
 msgid "Delete?"
 msgstr ""
 
-#: templates/admin/filter.html:3 templates/admin/filter.html:4
+#: material/admin/templates/admin/filter.html:3
+#: material/admin/templates/admin/filter.html:4
 #, python-format
 msgid " By %(filter_title)s "
 msgstr ""
 
-#: templates/admin/object_history.html:18
+#: material/admin/templates/admin/object_history.html:18
 msgid "Date/time"
 msgstr ""
 
-#: templates/admin/object_history.html:19
+#: material/admin/templates/admin/object_history.html:19
 msgid "User"
 msgstr ""
 
-#: templates/admin/object_history.html:20
+#: material/admin/templates/admin/object_history.html:20
 msgid "Action"
 msgstr ""
 
-#: templates/admin/object_history.html:37
+#: material/admin/templates/admin/object_history.html:37
 msgid ""
 "This object doesn't have a change history. It probably wasn't added via this "
 "admin site."
 msgstr ""
 
-#: templates/admin/search_form.html:14
+#: material/admin/templates/admin/search_form.html:14
 msgid "Search groups"
 msgstr "Поиск групп"
 
-#: templates/admin/search_form.html:18
+#: material/admin/templates/admin/search_form.html:18
 #, python-format
 msgid ""
 "%(counter)s\n"
@@ -304,132 +321,132 @@ msgid_plural "%(counter)s results"
 msgstr[0] ""
 msgstr[1] ""
 
-#: templates/admin/search_form.html:22
+#: material/admin/templates/admin/search_form.html:22
 #, python-format
 msgid "%(full_result_count)s total"
 msgstr ""
 
-#: templates/admin/search_form.html:23
+#: material/admin/templates/admin/search_form.html:23
 msgid "Show all"
 msgstr ""
 
-#: templates/admin/submit_line.html:7
+#: material/admin/templates/admin/submit_line.html:7
 msgid "All actions"
 msgstr "Все действия"
 
-#: templates/admin/widgets/clearable_file_input.html:7
+#: material/admin/templates/admin/widgets/clearable_file_input.html:7
 msgid "File"
 msgstr "Файл"
 
-#: templates/admin/widgets/clearable_file_input.html:24
+#: material/admin/templates/admin/widgets/clearable_file_input.html:24
 msgid "Download"
 msgstr ""
 
-#: templates/admin/widgets/related_widget_wrapper.html:11
+#: material/admin/templates/admin/widgets/related_widget_wrapper.html:11
 #, python-format
 msgid "Change selected %(model)s"
 msgstr ""
 
-#: templates/admin/widgets/related_widget_wrapper.html:18
+#: material/admin/templates/admin/widgets/related_widget_wrapper.html:18
 #, python-format
 msgid "Add another %(model)s"
 msgstr ""
 
-#: templates/admin/widgets/related_widget_wrapper.html:19
+#: material/admin/templates/admin/widgets/related_widget_wrapper.html:19
 msgid "Add"
 msgstr ""
 
-#: templates/admin/widgets/related_widget_wrapper.html:25
+#: material/admin/templates/admin/widgets/related_widget_wrapper.html:25
 #, python-format
 msgid "Delete selected %(model)s"
 msgstr ""
 
-#: templates/admin/widgets/url.html:6
+#: material/admin/templates/admin/widgets/url.html:6
 msgid "Link"
 msgstr ""
 
-#: templates/material/includes/app_content.html:40
-#: templates/material/side_nav.html:55
+#: material/admin/templates/material/admin/includes/app_content.html:40
+#: material/admin/templates/material/admin/side_nav.html:55
 msgid "You don't have permission to view or edit anything."
 msgstr ""
 
-#: templates/material/login.html:40
+#: material/admin/templates/material/admin/login.html:40
 #, python-format
 msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
 "page. Would you like to login to a different account?"
 msgstr ""
 
-#: templates/material/login.html:83
+#: material/admin/templates/material/admin/login.html:83
 msgid "Forgotten your password or username?"
 msgstr ""
 
-#: templates/material/login.html:87
+#: material/admin/templates/material/admin/login.html:87
 msgid "Log in"
 msgstr ""
 
-#: templates/material/logout.html:23
+#: material/admin/templates/material/admin/logout.html:23
 msgid "Logged out"
 msgstr ""
 
-#: templates/material/logout.html:24
+#: material/admin/templates/material/admin/logout.html:24
 msgid "Thanks for spending some quality time with the Web site today."
 msgstr ""
 
-#: templates/material/logout.html:25
+#: material/admin/templates/material/admin/logout.html:25
 msgid "Log in again"
 msgstr ""
 
-#: templates/material/password_change.html:29
+#: material/admin/templates/material/admin/password_change.html:29
 msgid ""
 "Please enter your old password, for security's sake, and then enter your new "
 "password twice so we can verify you typed it in correctly."
 msgstr ""
 
-#: templates/material/password_change.html:31
+#: material/admin/templates/material/admin/password_change.html:31
 msgid "Old password"
 msgstr ""
 
-#: templates/material/password_change.html:38
+#: material/admin/templates/material/admin/password_change.html:38
 msgid "New password"
 msgstr ""
 
-#: templates/material/password_change.html:46
+#: material/admin/templates/material/admin/password_change.html:46
 msgid "New password confirmation"
 msgstr ""
 
-#: templates/material/password_change.html:56
+#: material/admin/templates/material/admin/password_change.html:56
 msgid "Change my password"
 msgstr ""
 
-#: templates/material/tray.html:6
+#: material/admin/templates/material/admin/tray.html:6
 msgid "Side Navigation"
 msgstr "Навигация"
 
-#: templates/material/tray.html:10
+#: material/admin/templates/material/admin/tray.html:10
 msgid "Additional submit line"
 msgstr "Дополнительная строка отправки"
 
-#: templates/material/tray.html:14
+#: material/admin/templates/material/admin/tray.html:14
 msgid "Object tools"
 msgstr "Инструменты"
 
-#: templates/material/widgets/date.html:5
-#: templates/material/widgets/split_datetime.html:5
+#: material/admin/templates/material/admin/widgets/date.html:5
+#: material/admin/templates/material/admin/widgets/split_datetime.html:5
 msgid "Calendar"
 msgstr "Кадендарь"
 
-#: templates/material/widgets/date.html:6
-#: templates/material/widgets/split_datetime.html:6
+#: material/admin/templates/material/admin/widgets/date.html:6
+#: material/admin/templates/material/admin/widgets/split_datetime.html:6
 msgid "Today"
 msgstr ""
 
-#: templates/material/widgets/split_datetime.html:9
-#: templates/material/widgets/time.html:5
+#: material/admin/templates/material/admin/widgets/split_datetime.html:9
+#: material/admin/templates/material/admin/widgets/time.html:5
 msgid "Time"
 msgstr ""
 
-#: templates/material/widgets/split_datetime.html:10
-#: templates/material/widgets/time.html:6
+#: material/admin/templates/material/admin/widgets/split_datetime.html:10
+#: material/admin/templates/material/admin/widgets/time.html:6
 msgid "Now"
 msgstr "Сейчас"

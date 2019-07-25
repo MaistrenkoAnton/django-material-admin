@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 14:58+0000\n"
+"POT-Creation-Date: 2019-07-25 11:56+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,14 +20,14 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: demo/profile/apps.py:8
+#: app/demo/profile/apps.py:8
 msgid "Profile"
 msgstr "轮廓"
 
-#: demo/profile/model.py:15
+#: app/demo/profile/model.py:15
 msgid "User Picture"
 msgstr "用户图片"
 
-#: demo/profile/model.py:21 demo/profile/model.py:22
+#: app/demo/profile/model.py:21 app/demo/profile/model.py:22
 msgid "Picture"
 msgstr "图片"

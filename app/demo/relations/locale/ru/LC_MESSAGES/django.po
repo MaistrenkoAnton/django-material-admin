@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-19 14:58+0000\n"
+"POT-Creation-Date: 2019-07-25 11:56+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,22 +20,22 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: demo/relations/apps.py:8 demo/relations/models.py:13
+#: app/demo/relations/apps.py:8 app/demo/relations/models.py:13
 msgid "Relations"
 msgstr "Связи"
 
-#: demo/relations/models.py:7
+#: app/demo/relations/models.py:7
 msgid "Documents"
 msgstr ""
 
-#: demo/relations/models.py:8
+#: app/demo/relations/models.py:8
 msgid "User"
 msgstr ""
 
-#: demo/relations/models.py:9
+#: app/demo/relations/models.py:9
 msgid "Name"
 msgstr ""
 
-#: demo/relations/models.py:12
+#: app/demo/relations/models.py:12
 msgid "Relation"
 msgstr "Связь"
