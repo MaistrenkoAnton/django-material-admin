@@ -10,7 +10,7 @@ class AuthLayoutsTest(TestCase):
         client = Client()
         response = client.get(reverse_lazy('admin:login'))
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.template_name[0], 'material/login.html')
+        self.assertEqual(response.template_name[0], 'material/admin/login.html')
         self.assertIn('class="side-bar"', response._container[0].decode('utf-8'))
         self.assertIn('id="login-form"', response._container[0].decode('utf-8'))
         self.assertIn('id="username-input"', response._container[0].decode('utf-8'))
@@ -35,7 +35,7 @@ class AuthLayoutsTest(TestCase):
         response = client.get(reverse_lazy('admin:logout'))
 
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.template_name[0], 'material/logout.html')
+        self.assertEqual(response.template_name[0], 'material/admin/logout.html')
         self.assertIn('class="side-bar"', response._container[0].decode('utf-8'))
         self.assertIn(
             'Thanks for spending some quality time with the Web site today', response._container[0].decode('utf-8')
