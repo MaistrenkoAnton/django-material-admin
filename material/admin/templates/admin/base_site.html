@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/side_nav.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/header.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/tray.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/tray-responsive.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/selector_relative.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/selector_relative-responsive.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-responsive.min.css' %}">
@@ -24,7 +25,6 @@
 {% block branding %}
     <nav class="nav-extended">
         <div class="nav-wrapper">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <h1 id="site-name">
                 <a href="{% url 'admin:index' %}">
                     <strong>

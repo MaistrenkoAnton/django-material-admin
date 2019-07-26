@@ -1,27 +1,17 @@
 {% load i18n %}
 
-<div class="card">
-    <div class="card-content">
-        <i class="tray-nav-bar material-icons {% if not nav_bar_minimized %}minimized{% endif %}"
-           title="{% trans 'Side Navigation' %}">
-           format_list_bulleted
-        </i>
-        <i class="tray-additional-submit-row material-icons {% if not additional_submit_line %}minimized{% endif %}"
-           title="{% trans 'Additional submit line' %}">
-           control_point_duplicate
-        </i>
-         <i class="tray-object-tools material-icons {% if not object_tools %}minimized{% endif %}"
-           title="{% trans 'Object tools' %}">
-           perm_data_setting
-        </i>
-        {% if site_url %}
-            <a href="{{ site_url }}"><i class="material-icons" title="{% trans 'View site' %}">web</i></a>
-        {% endif %}
-        {% if user.has_usable_password %}
-            <a href="{% url 'admin:password_change' %}"><i class="material-icons" title="{% trans 'Change password' %}">vpn_key</i></a>
-        {% endif %}
-        <a href="{% url 'admin:logout' %}">
-            <i class="material-icons" title="{% trans 'Log out' %}">exit_to_app</i>
-        </a>
-    </div>
+<div>
+
+  <i class="tray-nav-bar material-icons {% if not nav_bar_minimized %}minimized{% endif %}"
+     title="{% trans 'Side Navigation' %}">
+     menu
+  </i>
+  <i class="tray-additional-submit-row material-icons {% if not additional_submit_line %}minimized{% endif %}"
+     title="{% trans 'Additional submit line' %}">
+     control_point_duplicate
+  </i>
+   <i class="tray-object-tools material-icons {% if not object_tools %}minimized{% endif %}"
+     title="{% trans 'Object tools' %}">
+     perm_data_setting
+  </i>
 </div>

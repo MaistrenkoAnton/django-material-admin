@@ -31,6 +31,11 @@
     line-height: 60px;
 }
 
+#header #branding {
+    display: flex;
+    z-index: 1;
+}
+
 #header #branding nav {
     box-shadow: none;
     background-color: transparent;
@@ -44,5 +49,5 @@
 
 #branding h1 {
     height: 100%;
-    line-height: 60px;
+    line-height: 67px;
 }
