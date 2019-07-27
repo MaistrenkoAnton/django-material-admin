@@ -103,7 +103,7 @@ or
 
 .. code-block:: python
 
-    from django.material.admin.sites import site
+    from material.admin.sites import site
     from django.contrib.auth.models import User, Group
 
     site.unregister(User)
