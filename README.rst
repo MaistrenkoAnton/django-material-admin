@@ -172,3 +172,9 @@ Then define template **templates/profile/user_picture.html** in any your applica
 Where 
  - *user.profile.picture* - the relation to ImageField from user,
  - *material/admin/images/login-logo.png* - default logo from material templates.
+
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UaIvrDWrIWM" frameborder="0" allowfullscreen></iframe>
+
