@@ -174,7 +174,26 @@ Where
  - *material/admin/images/login-logo.png* - default logo from material templates.
 
 
-.. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UaIvrDWrIWM" frameborder="0" allowfullscreen></iframe>
+==================
+Video instructions
+==================
+|
+|
+- Install Django
+
+.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material1.png
+   :target: https://youtu.be/G101hR6gkFo
+|
+|
+- Install Django-material-admin
+
+.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material2.png
+   :target: https://youtu.be/s0gi1CV5PZ0
+|
+|
+- Register models for material administration interface
+
+.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material3.png
+   :target: https://youtu.be/C8AxT5RMnAw
 
