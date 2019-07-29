@@ -12,4 +12,5 @@ staticfiles/
 media/
 package/material/
 *.txt.py
-.env/
+.env
+
