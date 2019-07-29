@@ -30,6 +30,7 @@ site.favicon = staticfiles('demo.png')
 
 urlpatterns = i18n_patterns(
     path('admin/', include('material.admin.urls')),
+    path('payments/', include('demo.payments.urls')),
     path('', RedirectView.as_view(url='admin/', permanent=False), name='index'),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
