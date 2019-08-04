@@ -167,3 +167,14 @@ input.valid[type=text]:not(.browser-default) {
     overflow-y: auto;
     max-height: 90vh;
 }
+
+.app {
+    page-break-inside: avoid;
+    padding: 5px;
+    width: 100%;
+}
+
+div.submit-row {
+    display: flex;
+    justify-content: flex-end;
+}

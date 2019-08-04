@@ -1,0 +1,17 @@
+.selection-line {
+    padding: 5px;
+    cursor: pointer;
+}
+.selection-line:hover {
+    background: GhostWhite;
+}
+.default.active {
+}
+.darcula.active {
+}
+.dark.active {
+}
+.green.active {
+}
+.red.active {
+}
