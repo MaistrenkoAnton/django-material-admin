@@ -26,7 +26,7 @@
               </div>
             {% endif %}
             {% for theme in themes %}
-              <div class="selection-line">{{ theme }}</div>
+              <div class="selection-line {{ theme.name }} active">{{ theme.display }}</div>
             {% endfor %}
 
             <div class="submit-row">

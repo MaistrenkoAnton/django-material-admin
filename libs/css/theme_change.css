@@ -6,12 +6,23 @@
     background: GhostWhite;
 }
 .default.active {
+    background: #417690;
+    color: #fff;
 }
 .darcula.active {
+	background: #676565;
+	color: lightgray;
 }
 .dark.active {
+    background: black;
+    opacity: 0.87;
+    color: white;
 }
 .green.active {
+    background: #ee6e73;
+    color: #fff;
 }
 .red.active {
+    background: #ee6e73;
+    color: #fff;
 }
