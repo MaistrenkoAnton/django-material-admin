@@ -1,0 +1,41 @@
+.btn.default,
+.btn-large.default,
+.btn-small.default {
+    background: #474444;
+    color: #f8f8f2;
+}
+
+#header,
+#side-bar i.material-icons,
+.collapsible-header {
+    color: #f8f8f2;
+    background: #474444;
+}
+
+div.breadcrumbs,
+div.breadcrumbs a:hover {
+    background: #676565;
+    color: #f8f8f2;
+}
+
+#side-bar .collapsible-header:hover i.material-icons,
+#side-bar .collapsible-body > div:hover,
+#side-bar .collapsible-body > div:hover a,
+#side-bar .collapsible-body > div:hover .badge,
+#user-tools a:hover,
+.collapsible-header:hover {
+    background: black;
+}
+
+#side-bar .active .collapsible-header i.material-icons,
+#side-bar .active .collapsible-header {
+    background: #676565;
+    color: #f8f8f2;
+}
+
+#side-bar .collapsible-body,
+#side-bar .collapsible-body .badge,
+#side-bar .collapsible-body a {
+    background: #676565;
+    color: #f8f8f2;
+}

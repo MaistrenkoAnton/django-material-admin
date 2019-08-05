@@ -11,11 +11,18 @@ class ThemesView(TemplateView):
             'title': self.title,
             'themes': (
                 {'display': _('Default'), 'name': 'default'},
-                {'display': _('Darcula'), 'name': 'darcula'},
                 {'display': _('Dark'), 'name': 'dark'},
+                {'display': _('Black'), 'name': 'black'},
                 {'display': _('Red'), 'name': 'red'},
                 {'display': _('Green'), 'name': 'green'},
             ),
             **(self.extra_context or {})
         })
         return context
+
+    def post(self, request, *args, **kwargs):
+        extra_kwargs = {}
+        preview = request.POST.get('preview')
+        if preview:
+            extra_kwargs['preview_theme'] = preview
+        return self.get(request, **extra_kwargs)

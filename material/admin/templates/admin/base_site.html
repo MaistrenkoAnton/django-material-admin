@@ -20,6 +20,9 @@
     {% if favicon %}
         <link rel="icon" href="{{ favicon }}" />
     {% endif %}
+    {% if current_theme == 'dark' %}
+        <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-dark.min.css' %}">
+    {% endif %}
 {% endblock %}
 
 {% block branding %}

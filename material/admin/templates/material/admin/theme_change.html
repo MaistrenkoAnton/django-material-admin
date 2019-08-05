@@ -12,7 +12,7 @@
   <div class="app">
     <div class="card">
       <div class="card-content">
-        <form method="post">{% csrf_token %}
+        <form method="post" name="themeForm">{% csrf_token %}
           <div>
             {% if form.errors %}
               <div id="toast-container">
@@ -26,7 +26,11 @@
               </div>
             {% endif %}
             {% for theme in themes %}
-              <div class="selection-line {{ theme.name }} active">{{ theme.display }}</div>
+              <button class="selection-line btn waves-effect waves-light default"
+                  name="preview" value="{{ theme.name }}"
+                  onclick="themeForm.submit();">
+                {{ theme.display }}
+              </button>
             {% endfor %}
 
             <div class="submit-row">
