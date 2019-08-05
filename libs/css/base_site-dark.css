@@ -7,6 +7,8 @@
 
 #header,
 #side-bar i.material-icons,
+.app-list .app .card .app-item a,
+.app-list .app .card .app-item i,
 .collapsible-header {
     color: #f8f8f2;
     background: #474444;
@@ -23,6 +25,7 @@ div.breadcrumbs a:hover {
 #side-bar .collapsible-body > div:hover a,
 #side-bar .collapsible-body > div:hover .badge,
 #user-tools a:hover,
+.card.app-count-badge,
 .collapsible-header:hover {
     background: black;
 }
@@ -45,4 +48,8 @@ div.breadcrumbs a:hover {
 .collapsible li:last-child,
 div.submit-row {
     background: darkgray;
+}
+
+.card .card-content .card-title {
+    color: #f8f8f2;
 }

@@ -25,4 +25,8 @@ class ThemesView(TemplateView):
         preview = request.POST.get('preview')
         if preview:
             extra_kwargs['preview_theme'] = preview
-        return self.get(request, **extra_kwargs)
+        response = self.get(request, **extra_kwargs)
+        save_action = request.POST.get('action')
+        if save_action:
+            response.set_cookie('current_theme', save_action)
+        return response
