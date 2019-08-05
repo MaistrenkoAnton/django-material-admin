@@ -39,3 +39,10 @@ div.breadcrumbs a:hover {
     background: #676565;
     color: #f8f8f2;
 }
+
+.card,
+.scroll-pane,
+.collapsible li:last-child,
+div.submit-row {
+    background: darkgray;
+}

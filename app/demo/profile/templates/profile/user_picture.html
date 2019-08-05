@@ -1,17 +1,18 @@
 {% extends 'material/admin/user_picture.html' %}
 {% load static %}
 
-{% block user_picture %}
+{% block user_profile %}
     <div style="position:fixed; bottom: 0; right: 10px;">
         <a href="/en/">English</a> |
         <a href="/uk/">Українська</a> |
         <a href="/ru/">Русский</a> |
         <a href="/zh-hans/">中国</a>
     </div>
+    {{ block.super }}
+{% endblock %}
 
-    {% if user.profile.picture %}
-        <a href="{% url 'admin:auth_user_change' user.pk %}">
-            <img class="login-logo" src="{{ user.profile.picture.url }}">
-        </a>
-    {% endif %}
+{% block user_picture %}
+    <a href="{% url 'admin:auth_user_change' user.pk %}">
+        <img class="login-logo" src="{{ user.profile.picture.url }}">
+    </a>
 {% endblock %}

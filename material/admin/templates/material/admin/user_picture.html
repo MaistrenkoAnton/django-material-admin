@@ -1,7 +1,6 @@
 {% load static %}
 
 {% block user_profile %}
-
     {% if user.profile.picture or user.picture  %}
         {% block user_picture %}
             {% if user.profile.picture.url %}
