@@ -1,28 +1,102 @@
-.btn.default,
-.btn-large.default,
-.btn-small.default {
-    background: #474444;
-    color: #f8f8f2;
+body,
+.content-wrapper,
+.app-list,
+#content-main {
+    background: gray;
 }
 
+.btn.default,
+.btn-large.default,
+.btn-small.default,
+div.selector-chosen h2,
 #header,
 #side-bar i.material-icons,
 .app-list .app .card .app-item a,
 .app-list .app .card .app-item i,
+.btn-floating,
+.btn,
 .collapsible-header {
-    color: #f8f8f2;
-    background: #474444;
+    color: lightgray;
+    background: #2b2727;
 }
 
 div.breadcrumbs,
 div.breadcrumbs a:hover {
     background: #676565;
-    color: #f8f8f2;
+    color: lightgray;
 }
 
+#side-bar .active .collapsible-header i.material-icons,
+#side-bar .active .collapsible-header {
+    background: #676565;
+    color: lightgray;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly]),
+#toolbar.actions,
+textarea.materialize-textarea:focus:not([readonly]),
+div.date-block .material-icons,
+div.date-block .material-icons.today,
+div.date-block .material-icons.calendar,
+.errornote,
+ul.errorlist,
+input,
+.input-field input[type=text],
+.input-field input[type=text]:focus,
+input[type=text]:not(.browser-default):focus:not([readonly]),
+.dropdown-content,
+ul#save-dropdown input,
+ul#save-dropdown i,
+ul#save-dropdown a,
+p,
+#changelist p.paginator,
+select,
+.selector p.selector-filter,
+.module input[type=text],
+div.selector .selector-available h2,
+.card,
+.scroll-pane,
+.collapsible li:last-child,
+.module,
+div.submit-row,
+#side-bar .collapsible-body,
+#side-bar .collapsible-body .badge,
+#side-bar .collapsible-body>div.active,
+#side-bar .collapsible-body a,
+.btn:hover,
+.btn:focus,
+.btn-floating:hover {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+}
+
+a,
+a.choose-item.active i,
+a.remove-item.active i,
+a.selector-choose-all.active,
+a.selector-choose-all.active i,
+a.selector-clear-all.active,
+a.selector-clear-all.active i,
+i.material-icons,
+.card .card-content .card-title {
+    color: lightgray;
+}
+
+.success-toast,
+.dropdown-content li:hover,
+ul#save-dropdown li:hover input,
+ul#save-dropdown  li:hover i,
+ul#save-dropdown a:hover,
+#side-bar .collapsible-header:hover,
 #side-bar .collapsible-header:hover i.material-icons,
 #side-bar .collapsible-body > div:hover,
+#side-bar .collapsible-body > div.active:hover,
+#side-bar .collapsible-body > div.active,
+#side-bar .collapsible-body > div.active a,
 #side-bar .collapsible-body > div:hover a,
+#side-bar .collapsible-body > div.active .badge,
 #side-bar .collapsible-body > div:hover .badge,
 #user-tools a:hover,
 .card.app-count-badge,
@@ -30,26 +104,9 @@ div.breadcrumbs a:hover {
     background: black;
 }
 
-#side-bar .active .collapsible-header i.material-icons,
-#side-bar .active .collapsible-header {
-    background: #676565;
-    color: #f8f8f2;
-}
-
-#side-bar .collapsible-body,
-#side-bar .collapsible-body .badge,
-#side-bar .collapsible-body a {
-    background: #676565;
-    color: #f8f8f2;
-}
-
-.card,
-.scroll-pane,
-.collapsible li:last-child,
-div.submit-row {
-    background: darkgray;
-}
-
-.card .card-content .card-title {
-    color: #f8f8f2;
+.errornote,
+ul.errorlist,
+.errorlist+.input-field input,
+.errorlist+.input-field label {
+    color: orangered;
 }
