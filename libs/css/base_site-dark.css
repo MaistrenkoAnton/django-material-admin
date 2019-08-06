@@ -19,12 +19,18 @@ div.selector-chosen h2,
     background: #2b2727;
 }
 
+.warning-toast,
 div.breadcrumbs,
 div.breadcrumbs a:hover {
     background: #676565;
     color: lightgray;
 }
 
+.datepicker-cancel,
+.datepicker-done,
+.datepicker-clear,
+.datepicker-date-display,
+.timepicker-digital-display,
 #side-bar .active .collapsible-header i.material-icons,
 #side-bar .active .collapsible-header {
     background: #676565;
@@ -68,7 +74,6 @@ input[type=text]:not(.browser-default):focus:not([readonly]),
 ul#save-dropdown input,
 ul#save-dropdown i,
 ul#save-dropdown a,
-p,
 #changelist p.paginator,
 select,
 .selector p.selector-filter,
@@ -94,6 +99,7 @@ div.submit-row,
 div.inline-related h3,
 div.inline-related fieldset,
 span.select2-dropdown,
+.datepicker-calendar-container,
 .inline-related fieldset.module {
     background: #474444;
     color: lightgray;
@@ -125,6 +131,7 @@ i.material-icons.minimize.nav-bar,
     color: lightgray;
 }
 
+.datepicker-table td.is-selected,
 .success-toast,
 .side-wrapper-tools i.minimize:hover,
 .additional-submit-line i.minimize.submit-line:hover,
@@ -164,5 +171,7 @@ input[type=checkbox]:checked+span:not(.lever):before {
     border-right: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
 }
-select > option {
+.datepicker-table td.is-today {
+    color: white;
+    font-weight: bold;
 }

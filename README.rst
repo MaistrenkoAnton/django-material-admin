@@ -160,7 +160,7 @@ Then define template **templates/profile/user_picture.html** in any your applica
             <img class="login-logo" src="{{ user.profile.picture.url }}">
         </a>
     {% else %}
-        <img class="login-logo" src="{% static 'material/admin/images/login-logo.png' %}">
+        <img class="login-logo" src="{% static 'material/admin/images/login-logo.jpg' %}">
     {% endif %}
     <img src="{% static 'material/admin/images/login-bg.jpg' %}">
     <div class="card-title">
@@ -171,7 +171,7 @@ Then define template **templates/profile/user_picture.html** in any your applica
 
 Where 
  - *user.profile.picture* - the relation to ImageField from user,
- - *material/admin/images/login-logo.png* - default logo from material templates.
+ - *material/admin/images/login-logo.jpg* - default logo from material templates.
 
 
 
