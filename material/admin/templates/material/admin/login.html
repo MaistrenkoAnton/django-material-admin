@@ -6,6 +6,9 @@
 {% block theme %}{% endblock %}
 <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/layout.min.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/login.min.css' %}">
+{% if current_theme %}
+  <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/login-{{ current_theme }}.min.css">
+{% endif %}
 <script src="{% static 'material/admin/js/password-toggle.min.js' %}" defer></script>
 {% endblock %}
 
