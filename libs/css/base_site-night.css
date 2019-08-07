@@ -105,6 +105,7 @@ div.inline-related fieldset,
 span.select2-dropdown,
 .datepicker-calendar-container,
 .input-field div.url,
+.field-url div.url,
 .inline-related fieldset.module {
     background: #474444;
     color: lightgray;
