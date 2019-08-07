@@ -1,3 +1,5 @@
+import re
+
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse_lazy
@@ -49,12 +51,8 @@ class ChangePasswordLayoutsTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.template_name[0], 'material/admin/password_change.html')
         self.assertIn(
-            """<div class="toast rounded error-toast panning">
-                  
-                  Please correct the errors below.
-                  
-                </div>
-            """, response._container[0].decode('utf-8')
+            """<div class="toast rounded error-toast panning"> Please correct the errors below. </div>""",
+            re.sub("\s\s+", " ", response._container[0].decode('utf-8'))
         )
         self.assertIn(
             """<button class="btn waves-effect waves-light default" type="submit" name="action">

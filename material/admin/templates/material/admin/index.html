@@ -2,8 +2,8 @@
 {% load static i18n %}
 
 {% block extrastyle %}
-    {{ block.super }}
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/index.min.css' %}">
+    {{ block.super }}
 {% endblock %}
 
 {% if not is_popup %}

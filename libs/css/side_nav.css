@@ -5,7 +5,7 @@
 #side-bar i.minimize {
     position: absolute;
     z-index: 1000;
-    right: 3px;
+    left: 280px;
     top: 3px;
     font-size: 16px;
     cursor: pointer;

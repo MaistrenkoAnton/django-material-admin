@@ -1,0 +1,121 @@
+.btn.default,
+.btn-large.default,
+.btn-small.default,
+div.selector-chosen h2,
+#header,
+.btn-floating,
+.btn {
+    color: white;
+    background: #5f000e;
+}
+
+.warning-toast,
+div.breadcrumbs,
+div.breadcrumbs a:hover {
+    background: #5f000e;
+    opacity: 0.8;
+    color: white;
+}
+
+.datepicker-date-display,
+.timepicker-digital-display,
+.active .collapsible-header,
+#side-bar .active .collapsible-header i.material-icons,
+#side-bar .active .collapsible-header {
+    color: white;
+    background: #5f000e;
+}
+
+.delete i.material-icons,
+ul#save-dropdown li label i.material-icons,
+ul#save-dropdown li label input,
+ul#save-dropdown a i.material-icons,
+ul#save-dropdown a,
+.dropdown-content li > span,
+.collapsible-header,
+.date-block i.material-icons.today,
+.date-block i.material-icons.calendar,
+.time-block i.material-icons.now,
+.time-block i.material-icons.clock,
+.input-field input[type=text]:not(.browser-default):focus:not([readonly]),
+.input-field input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+.input-field input[type=number]:not(.browser-default):focus:not([readonly]),
+.input-field input[type=password]:not(.browser-default):focus:not([readonly]),
+.input-field input[type=url]:not(.browser-default):focus:not([readonly]),
+ textarea.materialize-textarea:focus:not([readonly]),
+a,
+a:link,
+a:visited,
+a.choose-item.active i,
+a.remove-item.active i,
+a.selector-choose-all.active,
+a.selector-choose-all.active i,
+a.selector-clear-all.active,
+a.selector-clear-all.active i,
+i.minimize,
+i.material-icons.minimize.nav-bar,
+#side-bar i.material-icons,
+.material-icons.prefix,
+.additional-submit-line i.minimize,
+.additional-submit-line i.minimize.submit-line,
+.side-wrapper-tools i.minimize.tools,
+.datetime-block.date-input .material-icons.today,
+.datetime-block .material-icons.now,
+.datetime-block .material-icons.calendar,
+.datetime-block .material-icons.clock,
+.collapsible-body span.badge,
+.app-list .app .card .app-item i,
+.card .card-content .card-title {
+    color: #5f000e;
+    border-color: #5f000e;
+}
+
+.sidenav .collapsible-body,
+#side-bar .sidenav .collapsible-body,
+#side-bar .sidenav .collapsible-body>div.active,
+#side-bar .sidenav .collapsible-body a,
+.btn:hover,
+.btn:focus,
+.btn-floating:hover,
+.file-flex-block i.material-icons,
+.datepicker-table td.is-selected,
+.success-toast,
+.side-wrapper-tools i.minimize:hover,
+.additional-submit-line i.minimize.submit-line:hover,
+.dropdown-content li:hover,
+ul#save-dropdown li:hover input,
+ul#save-dropdown  li:hover i,
+ul#save-dropdown a:hover,
+.collapsible-body > div.active,
+.collapsible-body > div:hover,
+#side-bar .collapsible-header:hover,
+#side-bar .collapsible-header:hover i.material-icons,
+#side-bar .collapsible-body > div:hover,
+#side-bar .collapsible-body > div.active:hover,
+#side-bar .collapsible-body > div.active,
+#side-bar .collapsible-body > div.active a,
+#side-bar .collapsible-body > div:hover a,
+#side-bar .collapsible-body > div.active .badge,
+#side-bar .collapsible-body > div:hover .badge,
+#side-bar i.minimize:hover,
+.select2-container--admin-autocomplete li.select2-results__option--highlighted[aria-selected],
+#user-tools a:hover,
+.card.app-count-badge,
+.collapsible-header:hover {
+    background: #e60023;
+    color: white;
+}
+
+input[type=checkbox]:checked+span:not(.lever):before {
+    border-right: 2px solid #5f000e;
+    border-bottom: 2px solid #5f000e;
+}
+
+.datetime-block.date-input i.material-icons.today,
+.datetime-block.date-input i.material-icons.now {
+    border-color: #5f000e;
+}
+.module h2 {
+    color: #5f000e;;
+    border-color: #5f000e;;
+}

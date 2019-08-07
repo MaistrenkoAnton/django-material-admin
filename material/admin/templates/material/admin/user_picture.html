@@ -1,14 +1,20 @@
 {% load static %}
 
-{% if user.profile.picture %}
-    <img class="login-logo" src="{{ user.profile.picture.url }}">
-{% elif user.picture %}
-    <img class="login-logo" src="{{ user.picture.url }}">
-{% else %}
-    <img class="login-logo" src="{% static 'material/admin/images/login-logo.png' %}">
-{% endif %}
-<img src="{% static 'material/admin/images/login-bg.jpg' %}">
-<div class="card-title">
-    <strong>{% firstof user.get_short_name user.get_username %}</strong>
-    <small>{{ user.email|default_if_none:'' }}</small>
-</div>
+{% block user_profile %}
+    {% if user.profile.picture or user.picture  %}
+        {% block user_picture %}
+            {% if user.profile.picture.url %}
+                <img class="login-logo" src="{{ user.profile.picture.url }}">
+            {% else %}
+                <img class="login-logo" src="{{ user.picture.url }}">
+            {% endif %}
+        {% endblock %}
+    {% else %}
+        <img class="login-logo" src="{% static 'material/admin/images/' %}login-logo-{{ current_theme }}.jpg">
+    {% endif %}
+    <img src="{% static 'material/admin/images/' %}login-bg-{{ current_theme }}.jpg">
+    <div class="card-title">
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>
+        <small>{{ user.email|default_if_none:'' }}</small>
+    </div>
+{% endblock %}

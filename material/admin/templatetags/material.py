@@ -38,6 +38,16 @@ def cookie(context, cookie_name):
     return result == 'true'
 
 
+@register.simple_tag(takes_context=True)
+def cookie_current_theme(context, preview):
+    if preview:
+        return preview
+    if 'request' not in context:
+        return 'default'
+    request = context['request']
+    return request.COOKIES.get('current_theme', 'default')
+
+
 @register.tag(name='additional_submit_row')
 def additional_submit_row_tag(parser, token):
     return InclusionAdminNode(parser, token, func=submit_row, template_name='additional_submit_line.html')

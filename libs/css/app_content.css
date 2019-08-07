@@ -6,7 +6,7 @@
     right: -7px;
 }
 
-.app-count-badge .card-content {
+.app-count-badge .badge-content {
     padding: 3px;
     min-width: 25px;
     color: white;
@@ -14,7 +14,7 @@
     display: none;
 }
 
-.app:hover .app-count-badge .card-content {
+.app:hover .app-count-badge .badge-content {
     display: block;
 }
 

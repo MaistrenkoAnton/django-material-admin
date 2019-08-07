@@ -1,9 +1,11 @@
 from django.contrib.admin.sites import AdminSite
-from django.urls import NoReverseMatch, reverse
+from django.urls import NoReverseMatch, reverse, path
 from django.utils.functional import LazyObject
 from django.utils.module_loading import import_string
 from django.apps import apps
 from django.utils.text import capfirst
+
+from material.admin.views import ThemesView
 
 
 class MaterialAdminSite(AdminSite):
@@ -20,6 +22,22 @@ class MaterialAdminSite(AdminSite):
         self.logout_template = 'material/admin/logout.html'
         self.index_template = 'material/admin/index.html'
         self.password_change_template = 'material/admin/password_change.html'
+        self.theme_template = 'material/admin/theme_change.html'
+
+    def get_urls(self):
+        return super().get_urls() + [path('themes/', self.theme_change, name='themes')]
+
+    def theme_change(self, request, extra_context=None):
+        """
+        Handle the "change theme"
+        """
+        defaults = {
+            'extra_context': {**self.each_context(request), **(extra_context or {})},
+        }
+        if self.theme_template is not None:
+            defaults['template_name'] = self.theme_template
+        request.current_app = self.name
+        return ThemesView.as_view(**defaults)(request)
 
     def each_context(self, request):
         """Add favicon url to each context"""

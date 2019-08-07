@@ -17,9 +17,14 @@
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/jquery.jscrollpane.min.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="{% static 'material/admin/js/jquery.min.js' %}"></script>
-    {% if favicon %}
-        <link rel="icon" href="{{ favicon }}" />
-    {% endif %}
+    {% block theme %}
+        {% if favicon %}
+            <link rel="icon" href="{{ favicon }}" />
+        {% endif %}
+        {% if current_theme and current_theme != 'default' %}
+            <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/base_site-{{ current_theme }}.min.css">
+        {% endif %}
+    {% endblock %}
 {% endblock %}
 
 {% block branding %}
@@ -41,6 +46,7 @@
     {% if site_url %}
         <a href="{{ site_url }}">{% trans 'View site' %}</a>
     {% endif %}
+    <a href="{% url 'admin:themes' %}">{% trans 'Themes' %}</a>
     {% if user.is_active and user.is_staff %}
         {% url 'django-admindocs-docroot' as docsroot %}
         {% if docsroot %}
