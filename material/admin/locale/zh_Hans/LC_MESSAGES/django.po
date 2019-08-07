@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 11:56+0300\n"
+"POT-Creation-Date: 2019-08-07 19:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME it2015maistrenko@gmail.com\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,28 +21,28 @@ msgstr ""
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: material/admin/templates/400.html:4 material/admin/templates/403.html:4
-#: material/admin/templates/403.html:25 material/admin/templates/404.html:4
-#: material/admin/templates/404.html:25 material/admin/templates/500.html:4
+#: material/admin/templates/403.html:26 material/admin/templates/404.html:4
+#: material/admin/templates/404.html:26 material/admin/templates/500.html:4
 msgid "Page not found"
 msgstr ""
 
-#: material/admin/templates/400.html:25
+#: material/admin/templates/400.html:26
 msgid "Bad request"
 msgstr ""
 
-#: material/admin/templates/403.html:26
+#: material/admin/templates/403.html:27
 msgid "You have no permissions to do this action."
 msgstr ""
 
-#: material/admin/templates/404.html:26
+#: material/admin/templates/404.html:27
 msgid "We\\"
 msgstr ""
 
-#: material/admin/templates/500.html:25
+#: material/admin/templates/500.html:26
 msgid "Server error"
 msgstr ""
 
-#: material/admin/templates/500.html:26
+#: material/admin/templates/500.html:27
 msgid "There\\"
 msgstr ""
 
@@ -107,6 +107,7 @@ msgstr "关"
 #: material/admin/templates/admin/additional_submit_line.html:41
 #: material/admin/templates/admin/submit_line.html:21
 #: material/admin/templates/admin/submit_line.html:73
+#: material/admin/templates/material/admin/theme_change.html:39
 msgid "Save"
 msgstr ""
 
@@ -122,60 +123,59 @@ msgstr ""
 msgid "Minimize"
 msgstr "最小化"
 
-#: material/admin/templates/admin/base.html:45
-#: material/admin/templates/admin/base_site.html:42
-#: material/admin/templates/material/admin/tray.html:18
-msgid "View site"
-msgstr ""
-
-#: material/admin/templates/admin/base.html:50
-#: material/admin/templates/admin/base_site.html:47
-msgid "Documentation"
-msgstr ""
-
-#: material/admin/templates/admin/base.html:54
-#: material/admin/templates/admin/base_site.html:52
-#: material/admin/templates/material/admin/tray.html:21
-msgid "Change password"
-msgstr ""
-
-#: material/admin/templates/admin/base.html:56
-#: material/admin/templates/admin/base_site.html:56
-#: material/admin/templates/material/admin/tray.html:24
-msgid "Log out"
-msgstr ""
-
-#: material/admin/templates/admin/base.html:66
+#: material/admin/templates/admin/base.html:61
 #: material/admin/templates/material/admin/index.html:12
 msgid "Home"
 msgstr ""
 
-#: material/admin/templates/admin/base_site.html:80
-#: material/admin/templates/admin/base_site.html:90
+#: material/admin/templates/admin/base_site.html:50
+msgid "View site"
+msgstr ""
+
+#: material/admin/templates/admin/base_site.html:52
+msgid "Themes"
+msgstr "主题"
+
+#: material/admin/templates/admin/base_site.html:56
+msgid "Documentation"
+msgstr ""
+
+#: material/admin/templates/admin/base_site.html:61
+msgid "Change password"
+msgstr ""
+
+#: material/admin/templates/admin/base_site.html:65
+msgid "Log out"
+msgstr ""
+
+#: material/admin/templates/admin/base_site.html:89
+#: material/admin/templates/admin/base_site.html:99
 msgid "Cancel"
 msgstr "取消"
 
-#: material/admin/templates/admin/base_site.html:81
-#: material/admin/templates/admin/base_site.html:91
+#: material/admin/templates/admin/base_site.html:90
+#: material/admin/templates/admin/base_site.html:100
 msgid "Clear"
 msgstr ""
 
-#: material/admin/templates/admin/base_site.html:82
-#: material/admin/templates/admin/base_site.html:92
+#: material/admin/templates/admin/base_site.html:91
+#: material/admin/templates/admin/base_site.html:101
 msgid "Ok"
 msgstr "好"
 
 #: material/admin/templates/admin/change_form.html:27
 #: material/admin/templates/admin/change_list.html:30
-#: material/admin/templates/material/admin/login.html:24
-#: material/admin/templates/material/admin/password_change.html:21
+#: material/admin/templates/material/admin/login.html:25
+#: material/admin/templates/material/admin/password_change.html:16
+#: material/admin/templates/material/admin/theme_change.html:21
 msgid "Please correct the error below."
 msgstr ""
 
 #: material/admin/templates/admin/change_form.html:27
 #: material/admin/templates/admin/change_list.html:30
-#: material/admin/templates/material/admin/login.html:26
-#: material/admin/templates/material/admin/password_change.html:23
+#: material/admin/templates/material/admin/login.html:27
+#: material/admin/templates/material/admin/password_change.html:18
+#: material/admin/templates/material/admin/theme_change.html:23
 msgid "Please correct the errors below."
 msgstr ""
 
@@ -189,7 +189,7 @@ msgstr ""
 
 #: material/admin/templates/admin/change_form_object_tools.html:14
 #: material/admin/templates/admin/edit_inline/stacked.html:39
-#: material/admin/templates/admin/edit_inline/tabular.html:38
+#: material/admin/templates/admin/edit_inline/tabular.html:56
 msgid "View on site"
 msgstr ""
 
@@ -270,17 +270,17 @@ msgid ""
 msgstr ""
 
 #: material/admin/templates/admin/edit_inline/stacked.html:27
-#: material/admin/templates/admin/edit_inline/tabular.html:36
+#: material/admin/templates/admin/edit_inline/tabular.html:50
 #: material/admin/templates/admin/widgets/related_widget_wrapper.html:12
 msgid "Change"
 msgstr ""
 
 #: material/admin/templates/admin/edit_inline/stacked.html:29
-#: material/admin/templates/admin/edit_inline/tabular.html:36
+#: material/admin/templates/admin/edit_inline/tabular.html:50
 msgid "View"
 msgstr ""
 
-#: material/admin/templates/admin/edit_inline/tabular.html:22
+#: material/admin/templates/admin/edit_inline/tabular.html:25
 msgid "Delete?"
 msgstr ""
 
@@ -370,52 +370,52 @@ msgstr ""
 msgid "You don't have permission to view or edit anything."
 msgstr ""
 
-#: material/admin/templates/material/admin/login.html:40
+#: material/admin/templates/material/admin/login.html:41
 #, python-format
 msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
 "page. Would you like to login to a different account?"
 msgstr ""
 
-#: material/admin/templates/material/admin/login.html:83
+#: material/admin/templates/material/admin/login.html:84
 msgid "Forgotten your password or username?"
 msgstr ""
 
-#: material/admin/templates/material/admin/login.html:87
+#: material/admin/templates/material/admin/login.html:88
 msgid "Log in"
 msgstr ""
 
-#: material/admin/templates/material/admin/logout.html:23
+#: material/admin/templates/material/admin/logout.html:24
 msgid "Logged out"
 msgstr ""
 
-#: material/admin/templates/material/admin/logout.html:24
+#: material/admin/templates/material/admin/logout.html:25
 msgid "Thanks for spending some quality time with the Web site today."
 msgstr ""
 
-#: material/admin/templates/material/admin/logout.html:25
+#: material/admin/templates/material/admin/logout.html:26
 msgid "Log in again"
 msgstr ""
 
-#: material/admin/templates/material/admin/password_change.html:29
+#: material/admin/templates/material/admin/password_change.html:24
 msgid ""
 "Please enter your old password, for security's sake, and then enter your new "
 "password twice so we can verify you typed it in correctly."
 msgstr ""
 
-#: material/admin/templates/material/admin/password_change.html:31
+#: material/admin/templates/material/admin/password_change.html:26
 msgid "Old password"
 msgstr ""
 
-#: material/admin/templates/material/admin/password_change.html:38
+#: material/admin/templates/material/admin/password_change.html:33
 msgid "New password"
 msgstr ""
 
-#: material/admin/templates/material/admin/password_change.html:46
+#: material/admin/templates/material/admin/password_change.html:41
 msgid "New password confirmation"
 msgstr ""
 
-#: material/admin/templates/material/admin/password_change.html:56
+#: material/admin/templates/material/admin/password_change.html:51
 msgid "Change my password"
 msgstr ""
 
@@ -450,3 +450,31 @@ msgstr ""
 #: material/admin/templates/material/admin/widgets/time.html:6
 msgid "Now"
 msgstr "现在"
+
+#: material/admin/views.py:7
+msgid "Theme selection"
+msgstr "主题选择"
+
+#: material/admin/views.py:9 material/admin/views.py:48
+msgid "Default"
+msgstr "默认"
+
+#: material/admin/views.py:10
+msgid "Night"
+msgstr "晚"
+
+#: material/admin/views.py:11
+msgid "Black"
+msgstr "黑色"
+
+#: material/admin/views.py:12
+msgid "Red"
+msgstr "红色"
+
+#: material/admin/views.py:13
+msgid "Green"
+msgstr "绿色"
+
+#: material/admin/views.py:37
+msgid "The \"{}\" theme was saved successfully."
+msgstr "\"{}\"主题已成功保存。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 11:56+0300\n"
+"POT-Creation-Date: 2019-08-07 19:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,110 +20,110 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: app/demo/countries/apps.py:8 app/demo/countries/models.py:20
+#: demo/countries/apps.py:8 demo/countries/models.py:20
 msgid "Countries"
 msgstr "Країни"
 
-#: app/demo/countries/choices.py:4
+#: demo/countries/choices.py:4
 msgid "Republic"
 msgstr "Республіка"
 
-#: app/demo/countries/choices.py:5
+#: demo/countries/choices.py:5
 msgid "Constitutional monarchy"
 msgstr "Конституційна монархія"
 
-#: app/demo/countries/choices.py:6
+#: demo/countries/choices.py:6
 msgid "Absolute monarchy"
 msgstr "Абсолютна монархія"
 
-#: app/demo/countries/choices.py:7
+#: demo/countries/choices.py:7
 msgid "N/A"
 msgstr "Непридатний"
 
-#: app/demo/countries/models.py:9
+#: demo/countries/models.py:9
 msgid "Name"
 msgstr "Iм'я"
 
-#: app/demo/countries/models.py:10
+#: demo/countries/models.py:10
 msgid "Picture"
 msgstr "Зображення"
 
-#: app/demo/countries/models.py:11
+#: demo/countries/models.py:11
 msgid "Population"
 msgstr "Населення"
 
-#: app/demo/countries/models.py:12
+#: demo/countries/models.py:12
 msgid "Type"
 msgstr "Тип"
 
-#: app/demo/countries/models.py:13
+#: demo/countries/models.py:13
 msgid "Is safe"
 msgstr "Безпечний"
 
-#: app/demo/countries/models.py:14
+#: demo/countries/models.py:14
 msgid "Created"
 msgstr "Створено"
 
-#: app/demo/countries/models.py:15
+#: demo/countries/models.py:15
 msgid "Modified"
 msgstr "Змінено"
 
-#: app/demo/countries/models.py:16
+#: demo/countries/models.py:16
 msgid "Time"
 msgstr "Час"
 
-#: app/demo/countries/models.py:19
+#: demo/countries/models.py:19
 msgid "Country"
 msgstr "Країна"
 
-#: app/demo/countries/models.py:29
+#: demo/countries/models.py:29
 msgid "UUID number"
 msgstr "UUID номер"
 
-#: app/demo/countries/models.py:31
+#: demo/countries/models.py:31
 msgid "Nationality"
 msgstr "Громадянство"
 
-#: app/demo/countries/models.py:34
+#: demo/countries/models.py:34
 msgid "User"
 msgstr "Користувач"
 
-#: app/demo/countries/models.py:36
+#: demo/countries/models.py:36
 msgid "Birth Date"
 msgstr "День народження"
 
-#: app/demo/countries/models.py:37
+#: demo/countries/models.py:37
 msgid "description"
 msgstr "Опис"
 
-#: app/demo/countries/models.py:38
+#: demo/countries/models.py:38
 msgid "Google Play Link"
 msgstr "Google Play посилання"
 
-#: app/demo/countries/models.py:39
+#: demo/countries/models.py:39
 msgid "Spotify Link"
 msgstr "Spotify посилання"
 
-#: app/demo/countries/models.py:40
+#: demo/countries/models.py:40
 msgid "Itunes Link"
 msgstr "Itunes посилання"
 
-#: app/demo/countries/models.py:41
+#: demo/countries/models.py:41
 msgid "Video"
 msgstr "Відео"
 
-#: app/demo/countries/models.py:44
+#: demo/countries/models.py:44
 msgid "Person"
 msgstr "Персона"
 
-#: app/demo/countries/models.py:45
+#: demo/countries/models.py:45
 msgid "Persons"
 msgstr "Персони"
 
-#: app/demo/countries/models.py:52
+#: demo/countries/models.py:52
 msgid "Proxy Person"
 msgstr "Довірена особа"
 
-#: app/demo/countries/models.py:53
+#: demo/countries/models.py:53
 msgid "Proxy Persons"
 msgstr "Довірені особи"

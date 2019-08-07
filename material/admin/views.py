@@ -5,18 +5,19 @@ from django.views.generic import TemplateView
 
 class ThemesView(TemplateView):
     title = _('Theme selection')
+    themes = (
+        {'display': _('Default'), 'name': 'default'},
+        {'display': _('Night'), 'name': 'night'},
+        {'display': _('Black'), 'name': 'black'},
+        {'display': _('Red'), 'name': 'red'},
+        {'display': _('Green'), 'name': 'green'}
+    )
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context.update({
             'title': self.title,
-            'themes': (
-                {'display': _('Default'), 'name': 'default'},
-                {'display': _('Night'), 'name': 'night'},
-                {'display': _('Black'), 'name': 'black'},
-                {'display': _('Red'), 'name': 'red'},
-                {'display': _('Green'), 'name': 'green'},
-            ),
+            'themes': self.themes,
             **(self.extra_context or {})
         })
         return context
@@ -33,5 +34,15 @@ class ThemesView(TemplateView):
         return response
 
     def message_user(self, theme_name):
-        message = _('The "{}" theme was saved successfully.'.format(theme_name.title()))
-        messages.add_message(self.request, messages.SUCCESS, message, fail_silently=True)
+        message = _('The "{}" theme was saved successfully.')
+        messages.add_message(
+            self.request, messages.SUCCESS,
+            message.format(self._get_theme_display(theme_name)),
+            fail_silently=True
+        )
+
+    def _get_theme_display(self, theme_name):
+        themes = [theme['display'] for theme in self.themes if theme['name'] == theme_name]
+        if themes:
+            return themes[0]
+        return _('Default')

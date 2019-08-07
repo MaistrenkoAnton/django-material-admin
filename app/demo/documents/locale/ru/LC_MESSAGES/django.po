@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-25 11:56+0300\n"
+"POT-Creation-Date: 2019-08-07 19:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,38 +20,38 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: app/demo/documents/apps.py:8 app/demo/documents/models.py:14
+#: demo/documents/apps.py:8 demo/documents/models.py:14
 msgid "Documents"
 msgstr "Документы"
 
-#: app/demo/documents/models.py:6
+#: demo/documents/models.py:6
 msgid "Name"
 msgstr "Имя"
 
-#: app/demo/documents/models.py:7
+#: demo/documents/models.py:7
 msgid "Picture"
 msgstr "Изображение"
 
-#: app/demo/documents/models.py:8
+#: demo/documents/models.py:8
 msgid "File"
 msgstr "Файл"
 
-#: app/demo/documents/models.py:9
+#: demo/documents/models.py:9
 msgid "Text"
 msgstr "Текст"
 
-#: app/demo/documents/models.py:10 app/demo/documents/models.py:23
+#: demo/documents/models.py:10 demo/documents/models.py:23
 msgid "Url"
 msgstr ""
 
-#: app/demo/documents/models.py:13 app/demo/documents/models.py:24
+#: demo/documents/models.py:13 demo/documents/models.py:24
 msgid "Document"
 msgstr "Документ"
 
-#: app/demo/documents/models.py:27
+#: demo/documents/models.py:27
 msgid "Link"
 msgstr ""
 
-#: app/demo/documents/models.py:28
+#: demo/documents/models.py:28
 msgid "Links"
 msgstr ""
