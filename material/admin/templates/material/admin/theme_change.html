@@ -25,14 +25,15 @@
                 </div>
               </div>
             {% endif %}
-            {% for theme in themes %}
-              <button class="selection-line btn waves-effect waves-light default"
-                  name="preview" value="{{ theme.name }}"
-                  onclick="themeForm.submit();">
-                {{ theme.display }}
-              </button>
-            {% endfor %}
-
+            <div class="theme-selector">
+              {% for theme in themes %}
+                  <button class="selection-line btn waves-effect waves-light default"
+                      name="preview" value="{{ theme.name }}"
+                      onclick="themeForm.submit();">
+                    {{ theme.display }}
+                  </button>
+              {% endfor %}
+            </div>
             <div class="submit-row">
               <button class="btn waves-effect waves-light default" type="submit" name="action" value="{{ preview_theme }}">
                 {% trans 'Save' %}

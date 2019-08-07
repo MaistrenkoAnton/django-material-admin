@@ -23,6 +23,9 @@
         {% endif %}
         {% if current_theme and current_theme != 'default' %}
             <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/base_site-{{ current_theme }}.min.css">
+            {% if current_theme != 'night' %}
+                <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/base_site-theme.min.css">
+            {% endif %}
         {% endif %}
     {% endblock %}
 {% endblock %}
