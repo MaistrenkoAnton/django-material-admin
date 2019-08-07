@@ -40,7 +40,6 @@ def cookie(context, cookie_name):
 
 @register.simple_tag(takes_context=True)
 def cookie_current_theme(context, preview):
-    print('preview >> ', preview)
     if preview:
         return preview
     if 'request' not in context:
