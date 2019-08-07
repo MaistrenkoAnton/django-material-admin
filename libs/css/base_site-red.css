@@ -6,13 +6,13 @@ div.selector-chosen h2,
 .btn-floating,
 .btn {
     color: white;
-    background: #ee6e73;
+    background: #5f000e;
 }
 
 .warning-toast,
 div.breadcrumbs,
 div.breadcrumbs a:hover {
-    background: #ee6e73;
+    background: #5f000e;
     opacity: 0.8;
     color: white;
 }
@@ -23,7 +23,7 @@ div.breadcrumbs a:hover {
 #side-bar .active .collapsible-header i.material-icons,
 #side-bar .active .collapsible-header {
     color: white;
-    background: #ee6e73;
+    background: #5f000e;
 }
 
 .delete i.material-icons,
@@ -116,6 +116,6 @@ input[type=checkbox]:checked+span:not(.lever):before {
     border-color: #5f000e;
 }
 .module h2 {
-    color: #ee6e73;
-    border-color: #ee6e73;
+    color: #5f000e;;
+    border-color: #5f000e;;
 }

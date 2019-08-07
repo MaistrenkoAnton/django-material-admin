@@ -6,7 +6,7 @@ div.selector-chosen h2,
 .btn-floating,
 .btn {
     color: white;
-    background: #328a57;
+    background: #006622;
 }
 
 .warning-toast,
@@ -23,7 +23,7 @@ div.breadcrumbs a:hover {
 #side-bar .active .collapsible-header i.material-icons,
 #side-bar .active .collapsible-header {
     color: white;
-    background: #328a57;
+    background: #006622;
 }
 
 .delete i.material-icons,
@@ -66,8 +66,8 @@ i.material-icons.minimize.nav-bar,
 .collapsible-body span.badge,
 .app-list .app .card .app-item i,
 .card .card-content .card-title {
-    color: #328a57;
-    border-color: #328a57;
+    color: #006622;
+    border-color: #006622;
 }
 
 .sidenav .collapsible-body,
@@ -107,15 +107,15 @@ ul#save-dropdown a:hover,
 }
 
 input[type=checkbox]:checked+span:not(.lever):before {
-    border-right: 2px solid #328a57;
-    border-bottom: 2px solid #328a57;
+    border-right: 2px solid #006622;
+    border-bottom: 2px solid #006622;
 }
 
 .datetime-block.date-input i.material-icons.today,
 .datetime-block.date-input i.material-icons.now {
-    border-color: #328a57;
+    border-color: #006622;
 }
 .module h2 {
-    color: #328a57;
-    border-color: #328a57;
+    color: #006622;
+    border-color: #006622;
 }
