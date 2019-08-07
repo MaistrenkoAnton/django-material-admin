@@ -12,7 +12,7 @@ class ThemesView(TemplateView):
             'title': self.title,
             'themes': (
                 {'display': _('Default'), 'name': 'default'},
-                {'display': _('Dark'), 'name': 'dark'},
+                {'display': _('Night'), 'name': 'night'},
                 {'display': _('Black'), 'name': 'black'},
                 {'display': _('Red'), 'name': 'red'},
                 {'display': _('Green'), 'name': 'green'},
