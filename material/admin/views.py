@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.utils.translation import ugettext_lazy as _
 from django.views.generic import TemplateView
 
@@ -27,5 +28,10 @@ class ThemesView(TemplateView):
         extra_kwargs['preview_theme'] = preview or save_action
         response = self.get(request, **extra_kwargs)
         if save_action:
+            self.message_user(save_action)
             response.set_cookie('current_theme', save_action)
         return response
+
+    def message_user(self, theme_name):
+        message = _('The "{}" theme was saved successfully.'.format(theme_name.title()))
+        messages.add_message(self.request, messages.SUCCESS, message, fail_silently=True)
