@@ -1,3 +1,8 @@
+:root {
+  --main-bg-color: #006622;
+  --main-hover-color: #328a57;
+}
+
 .btn.default,
 .btn-large.default,
 .btn-small.default,
@@ -6,13 +11,13 @@ div.selector-chosen h2,
 .btn-floating,
 .btn {
     color: white;
-    background: #006622;
+    background: var(--main-bg-color);
 }
 
 .warning-toast,
 div.breadcrumbs,
 div.breadcrumbs a:hover {
-    background: #328a57;
+    background: var(--main-hover-color);
     opacity: 0.8;
     color: white;
 }
@@ -23,7 +28,7 @@ div.breadcrumbs a:hover {
 #side-bar .active .collapsible-header i.material-icons,
 #side-bar .active .collapsible-header {
     color: white;
-    background: #006622;
+    background: var(--main-bg-color);;
 }
 
 .delete i.material-icons,
@@ -66,8 +71,8 @@ i.material-icons.minimize.nav-bar,
 .collapsible-body span.badge,
 .app-list .app .card .app-item i,
 .card .card-content .card-title {
-    color: #006622;
-    border-color: #006622;
+    color: var(--main-bg-color);;
+    border-color: var(--main-bg-color);;
 }
 
 .sidenav .collapsible-body,
@@ -102,20 +107,20 @@ ul#save-dropdown a:hover,
 #user-tools a:hover,
 .card.app-count-badge,
 .collapsible-header:hover {
-    background: #328a57;
+    background: var(--main-hover-color);
     color: white;
 }
 
 input[type=checkbox]:checked+span:not(.lever):before {
-    border-right: 2px solid #006622;
-    border-bottom: 2px solid #006622;
+    border-right: 2px solid var(--main-bg-color);;
+    border-bottom: 2px solid var(--main-bg-color);;
 }
 
 .datetime-block.date-input i.material-icons.today,
 .datetime-block.date-input i.material-icons.now {
-    border-color: #006622;
+    border-color: var(--main-bg-color);;
 }
 .module h2 {
-    color: #006622;
-    border-color: #006622;
+    color: var(--main-bg-color);;
+    border-color: var(--main-bg-color);;
 }
