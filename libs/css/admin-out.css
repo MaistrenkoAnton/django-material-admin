@@ -1,0 +1,7 @@
+.btn, .btn:hover {
+    background: var(--main-color);
+}
+.material-icons.prefix,
+.input-field .material-icons.prefix.active {
+    color: var(--main-color);
+}

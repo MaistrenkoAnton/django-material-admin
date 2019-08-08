@@ -4,9 +4,13 @@
 {% block title %}{% trans 'Page not found' %}{% endblock %}
 
 {% block extrastyle %}
-{{ block.super }}
-{% block theme %}{% endblock %}
-<link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/layout.min.css' %}">
+  {{ block.super }}
+  {% block theme %}{% endblock %}
+  <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/layout.min.css' %}">
+  {% if current_theme %}
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/admin-out-{{ current_theme }}.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/admin-out.min.css">
+  {% endif %}
 {% endblock %}
 
 {% block branding %}{% endblock %}
@@ -19,7 +23,7 @@
 {% block content %}
   <div id="layout-content">
     <div class="side-bar">
-      <img src="{% static 'material/images/error.jpg' %}" alt="">
+      {% include 'material/admin/includes/admin-out-bg.html' with current_theme=current_theme %}
     </div>
     <div class="text-content">
       <h2>500</h2>
