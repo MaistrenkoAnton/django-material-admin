@@ -7,7 +7,7 @@
     <img src="{% static 'material/admin/images' %}/login-logo-{{ current_theme }}.jpg" alt="">
   {% endif %}
   <style>
-    .side-bar {background-image: url('/static/material/admin/images/login-bg-{{ current_theme }}.jpg'); }
+    .side-bar {background-image: url('{% static 'material/admin/images' %}/login-bg-{{ current_theme }}.jpg'); }
   </style>
 {% else %}
   {% if error %}
