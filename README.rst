@@ -149,30 +149,6 @@ Extend **User** model as OneToOne relation or extend **AbstractUser** and set ne
 
 **MEDIA** should be configured properly.
 
-Then define template **templates/profile/user_picture.html** in any your application as example:
-
-.. code-block:: python
-
-    {% load static %}
-
-    {% if user.profile.picture %}
-        <a href="{% url 'admin:auth_user_change' user.pk %}">
-            <img class="login-logo" src="{{ user.profile.picture.url }}">
-        </a>
-    {% else %}
-        <img class="login-logo" src="{% static 'material/admin/images/login-logo.jpg' %}">
-    {% endif %}
-    <img src="{% static 'material/admin/images/login-bg.jpg' %}">
-    <div class="card-title">
-        <strong>{% firstof user.get_short_name user.get_username %}</strong>
-        <small>{{ user.email|default_if_none:'' }}</small>
-    </div>
-
-
-Where 
- - *user.profile.picture* - the relation to ImageField from user,
- - *material/admin/images/login-logo.jpg* - default logo from material templates.
-
 
 
 ==================
