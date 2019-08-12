@@ -1,3 +1,5 @@
+import datetime
+
 from django.contrib import messages
 from django.utils.translation import ugettext_lazy as _
 from django.views.generic import TemplateView
@@ -30,7 +32,8 @@ class ThemesView(TemplateView):
         response = self.get(request, **extra_kwargs)
         if save_action:
             self.message_user(save_action)
-            response.set_cookie('current_theme', save_action)
+            expires = datetime.datetime.now() + datetime.timedelta(days=365)
+            response.set_cookie(key='current_theme', value=save_action, expires=expires)
         return response
 
     def message_user(self, theme_name):
