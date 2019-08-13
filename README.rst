@@ -1,6 +1,6 @@
 |pypi| |python| |django|
 
-|build|
+.. |build|
 
 
 .. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.4.1&x2=0
@@ -9,8 +9,8 @@
     :target: https://www.python.org/
 .. |django| image:: https://img.shields.io/badge/django-2.2-blue.svg
     :target: https://www.djangoproject.com/    
-.. |build| image:: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com:8080/buildStatus/icon?job=Job1
-    :target: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com
+.. .. |build| image:: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com:8080/buildStatus/icon?job=Job1
+..    :target: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com
 
 ==============================
 Django Material Administration
@@ -19,9 +19,9 @@ Django Material Administration
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/login.png
 
-**login**: *admin*
+.. **login**: *admin*
 
-**pass**: *123qaz123!A*
+.. **pass**: *123qaz123!A*
 
 Quick start
 -----------
