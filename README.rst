@@ -19,11 +19,6 @@ Django Material Administration
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/login.png
 
-
-Demo version:
-http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com/admin/
-
-
 **login**: *admin*
 
 **pass**: *123qaz123!A*
