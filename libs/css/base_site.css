@@ -113,7 +113,7 @@ input.valid[type=text]:not(.browser-default) {
 }
 
 .input-field > .btn {
-    width: 90px;
+    width: auto;
 }
 
 .aligned > .form-row {
