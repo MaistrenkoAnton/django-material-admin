@@ -119,6 +119,10 @@ input[type=checkbox]:checked+span:not(.lever):before {
 .datetime-block.date-input i.material-icons.now {
     border-color: var(--main-bg-color);
 }
+
+fieldset.collapse.collapsed h2,
+fieldset a.collapse-toggle,
+fieldset.collapsed a.collapse-toggle,
 .module h2 {
     color: var(--main-bg-color);
     border-color: var(--main-bg-color);

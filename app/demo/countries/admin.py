@@ -17,6 +17,10 @@ class CountryAdmin(MaterialModelAdmin):
     inlines = [PersonInline]
     icon_name = 'location_city'
     search_fields = ('name',)
+    fieldsets = (('Advanced options', {
+        'classes': ('collapse',),
+        'fields': ('name', 'created'),
+    }),)
 
 
 @register(Person)
