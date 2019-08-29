@@ -135,6 +135,10 @@ input.valid[type=text]:not(.browser-default) {
     margin-left: 20px;
 }
 
+.aligned > .form-row .input-field {
+    width: 100%;
+}
+
 .dropdown-content.select-dropdown {
     padding: 0;
 }
