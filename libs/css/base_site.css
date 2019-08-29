@@ -127,6 +127,12 @@ input.valid[type=text]:not(.browser-default) {
 
 .aligned > .form-row {
     overflow: visible;
+    display: flex;
+    align-items: baseline;
+}
+
+.aligned > .form-row .input-field:not(:first-child) {
+    margin-left: 20px;
 }
 
 .dropdown-content.select-dropdown {

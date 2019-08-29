@@ -19,7 +19,7 @@ class CountryAdmin(MaterialModelAdmin):
     search_fields = ('name',)
     fieldsets = (('Advanced options', {
         'classes': ('collapse',),
-        'fields': ('name', 'created'),
+        'fields': (('name', 'created'), 'modified', 'time'),
     }),)
 
 
