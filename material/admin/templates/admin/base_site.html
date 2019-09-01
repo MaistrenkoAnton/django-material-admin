@@ -30,7 +30,7 @@
     {% endif %}
     {% block theme %}
         {% if current_theme and current_theme != 'default' %}
-            <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-'|add:current_theme|add:'.min.css' %">
+            <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-'|add:current_theme|add:'.min.css' %}">
             {% if current_theme != 'night' %}
                 <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-theme.min.css' %}">
             {% endif %}
