@@ -4,6 +4,14 @@
 {% block extrastyle %}
     <link rel="stylesheet" href="{% static 'material/admin/css/materialize.min.css' %}">
     <link href="{% static 'material/admin/css/material_icons.min.css' %}" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url('{% static 'material/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2' %}') format('woff2');
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/autocomplete.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/app_content.min.css' %}">
@@ -22,9 +30,9 @@
     {% endif %}
     {% block theme %}
         {% if current_theme and current_theme != 'default' %}
-            <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/base_site-{{ current_theme }}.min.css">
+            <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-'|add:current_theme|add:'.min.css' %}">
             {% if current_theme != 'night' %}
-                <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/base_site-theme.min.css">
+                <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-theme.min.css' %}">
             {% endif %}
         {% endif %}
     {% endblock %}
