@@ -7,8 +7,8 @@
   <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/layout.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/logout.min.css' %}">
   {% if current_theme and current_theme != 'default' %}
-    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/admin-out-{{ current_theme }}.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css' %}/admin-out.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/admin-out-'|add:current_theme|add:'.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/admin-out.min.css' %}">
   {% endif %}
 {% endblock %}
 

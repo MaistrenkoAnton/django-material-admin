@@ -4,10 +4,10 @@
   {% if error %}
     <img src="{% static 'material/images/error.jpg' %}" alt="">
   {% else %}
-    <img src="{% static 'material/admin/images' %}/login-logo-{{ current_theme }}.jpg" alt="">
+    <img src="{% static 'material/admin/images/login-logo-'|add:current_theme|add:'.jpg' %}" alt="">
   {% endif %}
   <style>
-    .side-bar {background-image: url('{% static 'material/admin/images' %}/login-bg-{{ current_theme }}.jpg'); }
+    .side-bar {background-image: url('{% static 'material/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}'); }
   </style>
 {% else %}
   {% if error %}

@@ -1,7 +1,7 @@
 {% load static %}
 
 {% block user_profile %}
-    {% if user.profile.picture or user.picture  %}
+    {% if user.profile.picture or user.picture %}
         {% block user_picture %}
             {% if user.profile.picture.url %}
                 <img class="login-logo" src="{{ user.profile.picture.url }}">
@@ -10,9 +10,9 @@
             {% endif %}
         {% endblock %}
     {% else %}
-        <img class="login-logo" src="{% static 'material/admin/images/' %}login-logo-{{ current_theme }}.jpg">
+        <img class="login-logo" src="{% static 'material/admin/images/login-logo-'|add:current_theme|add:'.jpg' %}">
     {% endif %}
-    <img src="{% static 'material/admin/images/' %}login-bg-{{ current_theme }}.jpg">
+    <img src="{% static 'material/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}">
     <div class="card-title">
         <strong>{% firstof user.get_short_name user.get_username %}</strong>
         <small>{{ user.email|default_if_none:'' }}</small>
