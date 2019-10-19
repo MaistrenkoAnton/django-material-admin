@@ -34,6 +34,14 @@
             {% if current_theme != 'night' %}
                 <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-theme.min.css' %}">
             {% endif %}
+        {% elif main_bg_color and main_hover_color %}
+            <style>
+                :root {
+                  --main-bg-color: {{ main_bg_color }};
+                  --main-hover-color: {{ main_hover_color }};
+                }
+            </style>
+            <link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/base_site-theme.min.css' %}">
         {% endif %}
     {% endblock %}
 {% endblock %}

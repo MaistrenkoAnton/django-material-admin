@@ -26,6 +26,10 @@ from material.admin.sites import site
 site.site_header = _('Demo')
 site.site_title = _('Demo')
 site.favicon = staticfiles('demo.png')
+site.main_bg_color = 'green'
+site.main_hover_color = 'yellow'
+site.profile_picture = staticfiles('profile-background.jpeg')
+site.profile_bg = staticfiles('profile-background.jpeg')
 
 
 urlpatterns = i18n_patterns(

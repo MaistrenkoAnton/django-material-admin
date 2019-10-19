@@ -15,6 +15,10 @@ class MaterialAdminSite(AdminSite):
         'sites': 'web'
     }
     favicon = None
+    main_bg_color = None
+    main_hover_color = None
+    profile_picture = None
+    profile_bg = None
 
     def __init__(self, name='material'):
         super().__init__(name)
@@ -43,6 +47,10 @@ class MaterialAdminSite(AdminSite):
         """Add favicon url to each context"""
         context = super().each_context(request)
         context['favicon'] = self.favicon
+        context['main_bg_color'] = self.main_bg_color
+        context['main_hover_color'] = self.main_hover_color
+        context['profile_picture'] = self.profile_picture
+        context['profile_bg'] = self.profile_bg
         return context
 
     def _build_app_dict(self, request, label=None):
