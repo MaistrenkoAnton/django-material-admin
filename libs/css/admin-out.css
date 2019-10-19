@@ -2,6 +2,17 @@
     background: var(--main-color);
 }
 .material-icons.prefix,
-.input-field .material-icons.prefix.active {
+.input-field .material-icons.prefix.active,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label.active,
+.input-field > label.active {
     color: var(--main-color);
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]) {
+    border-bottom-color: var(--main-color);
+}
+
+.btn:focus {
+    background: var(--main-hover-color);
 }

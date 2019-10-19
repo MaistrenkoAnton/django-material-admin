@@ -19,6 +19,8 @@ class MaterialAdminSite(AdminSite):
     main_hover_color = None
     profile_picture = None
     profile_bg = None
+    login_logo = None
+    logout_bg = None
 
     def __init__(self, name='material'):
         super().__init__(name)
@@ -51,6 +53,8 @@ class MaterialAdminSite(AdminSite):
         context['main_hover_color'] = self.main_hover_color
         context['profile_picture'] = self.profile_picture
         context['profile_bg'] = self.profile_bg
+        context['login_logo'] = self.login_logo
+        context['logout_bg'] = self.logout_bg
         return context
 
     def _build_app_dict(self, request, label=None):

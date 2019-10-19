@@ -30,6 +30,8 @@ site.main_bg_color = 'green'
 site.main_hover_color = 'yellow'
 site.profile_picture = staticfiles('profile-background.jpeg')
 site.profile_bg = staticfiles('profile-background.jpeg')
+site.login_logo = staticfiles('profile-background.jpeg')
+site.logout_bg = staticfiles('profile-background.jpeg')
 
 
 urlpatterns = i18n_patterns(

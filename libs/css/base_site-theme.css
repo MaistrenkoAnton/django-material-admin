@@ -17,6 +17,7 @@ div.breadcrumbs a:hover {
     color: white;
 }
 
+#user-tools a:focus,
 .datepicker-date-display,
 .timepicker-digital-display,
 .active .collapsible-header,
@@ -67,9 +68,13 @@ i.material-icons.minimize.nav-bar,
 .datetime-block .material-icons.clock,
 .collapsible-body span.badge,
 .app-list .app .card .app-item i,
-.card .card-content .card-title {
-    color: var(--main-bg-color);;
-    border-color: var(--main-bg-color);;
+.card .card-content .card-title,
+fieldset.collapse.collapsed h2,
+fieldset a.collapse-toggle,
+fieldset.collapsed a.collapse-toggle,
+.module h2 {
+    color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
 }
 
 #side-bar .sidenav .collapsible-body,
@@ -117,13 +122,5 @@ input[type=checkbox]:checked+span:not(.lever):before {
 
 .datetime-block.date-input i.material-icons.today,
 .datetime-block.date-input i.material-icons.now {
-    border-color: var(--main-bg-color);
-}
-
-fieldset.collapse.collapsed h2,
-fieldset a.collapse-toggle,
-fieldset.collapsed a.collapse-toggle,
-.module h2 {
-    color: var(--main-bg-color);
     border-color: var(--main-bg-color);
 }

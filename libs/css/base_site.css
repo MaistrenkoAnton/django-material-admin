@@ -187,9 +187,16 @@ input.valid[type=text]:not(.browser-default) {
     max-height: 90vh;
 }
 
+#content .app {
+    padding: 5px;
+}
+
+#content .module .app {
+    padding: 0;
+}
+
 .app {
     page-break-inside: avoid;
-    padding: 5px;
     width: 100%;
 }
 

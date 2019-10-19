@@ -3,7 +3,7 @@
 .. .. |build|
 
 
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.4.8&x2=0
+.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.4.9&x2=0
     :target: https://pypi.org/project/django-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
@@ -61,7 +61,9 @@ Quick start
     site.main_bg_color = 'green'
     site.main_hover_color = 'yellow'
     site.profile_picture = staticfiles('path/to/image')
-    site.profile_bg = staticfiles('path/to/background')
+    site.profile_bg = staticfiles('path/to/image')
+    site.login_logo = staticfiles('path/to/image')
+    site.logout_bg = staticfiles('path/to/image')
     ###################################################
 
     urlpatterns = [

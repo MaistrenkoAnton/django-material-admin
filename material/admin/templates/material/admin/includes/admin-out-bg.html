@@ -4,15 +4,27 @@
   {% if error %}
     <img src="{% static 'material/images/error.jpg' %}" alt="">
   {% else %}
-    <img src="{% static 'material/admin/images/login-logo-'|add:current_theme|add:'.jpg' %}" alt="">
+    {% if login_logo %}
+      <img src="{{ login_logo }}" alt="Logo">
+    {% else %}
+      <img src="{% static 'material/admin/images/login-logo-'|add:current_theme|add:'.jpg' %}" alt="Logo">
+    {% endif %}
   {% endif %}
   <style>
-    .side-bar {background-image: url('{% static 'material/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}'); }
+    {% if logout_bg %}
+      .side-bar {background-image: url({{ logout_bg }})
+    {% else %}
+      .side-bar {background-image: url('{% static 'material/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}'); }
+    {% endif %}
   </style>
 {% else %}
   {% if error %}
     <img src="{% static 'material/images/error.jpg' %}" alt="">
   {% else %}
-    <img src="{% static 'material/admin/images/login-logo.jpg' %}" alt="">
+    {% if login_logo %}
+      <img src="{{ login_logo }}" alt="Logo">
+    {% else %}
+      <img src="{% static 'material/admin/images/login-logo.jpg' %}" alt="">
+    {% endif %}
   {% endif %}
 {% endif %}
