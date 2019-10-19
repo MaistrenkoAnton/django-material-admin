@@ -53,6 +53,8 @@ Quick start
 
     from material.admin.sites import site
 
+    # optional
+    ###################################################
     site.site_header = _('Your site header')
     site.site_title = _('Your site title')
     site.favicon = staticfiles('path/to/favicon')
@@ -60,7 +62,7 @@ Quick start
     site.main_hover_color = 'yellow'
     site.profile_picture = staticfiles('path/to/image')
     site.profile_bg = staticfiles('path/to/background')
-
+    ###################################################
 
     urlpatterns = [
         path('admin/', include('material.admin.urls')),
