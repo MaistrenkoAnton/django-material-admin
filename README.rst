@@ -128,6 +128,13 @@ https://materializecss.com/icons.html
 
 
 6. Add icon to the MaterialModelAdmin in `admin.py`
+
+Material icon's name sources:
+
+https://materializecss.com/icons.html
+
+https://material.io/resources/icons/?style=baseline
+
  - optional
 
 .. code-block:: python
