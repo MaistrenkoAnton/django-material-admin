@@ -1,5 +1,5 @@
 (function($) {
-    const toasts = ['success', 'warning']
+    const toasts = ['success', 'warning', 'info', 'error']
 
     $('#mobile-demo').on('touchstart click touchmove',
         function() {
