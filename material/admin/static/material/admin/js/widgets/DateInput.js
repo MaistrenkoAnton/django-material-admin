@@ -8,7 +8,7 @@
                 var today = new Date();
                 todayIcon.addEventListener('click', function() {
                     let input = this.closest('.date-input').querySelector('.datepicker');
-                    input.value = today.toISOString().substr(0, 10);
+                    input.value = today.strftime(get_format('DATE_INPUT_FORMATS')[0]);
                 });
             }
         }
