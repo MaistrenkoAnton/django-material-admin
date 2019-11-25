@@ -1,4 +1,4 @@
-from django.contrib import admin
+from django.contrib import admin, messages
 
 from demo.profile.model import UserProfile
 from demo.relations.models import Relation
@@ -26,4 +26,13 @@ class UserRelationInline(admin.TabularInline):
 class MaterialUserPictureAdmin(MaterialUserAdmin):
     """Register User model with material styles"""
     inlines = [UserPictureInline, UserRelationInline]
+    actions = ['make_published']
+
+    def make_published(self, request, queryset):
+        self.message_user(request, "Published INFO.")
+        self.message_user(request, "Published ERROR.", messages.ERROR)
+        self.message_user(request, "Published SUCCESS.", messages.SUCCESS)
+        self.message_user(request, "Published WARNING.", messages.WARNING)
+
+    make_published.short_description = "Mark selected stories as published"
 
