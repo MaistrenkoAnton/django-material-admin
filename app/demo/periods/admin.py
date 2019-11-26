@@ -8,6 +8,7 @@ class DateModelAdmin(MaterialModelAdmin):
     icon_name = 'insert_invitation'
     list_display = ('id', 'date',)
     list_editable = ['date', ]
+    list_filter = ('date', )
 
 
 @register(TimeModel)

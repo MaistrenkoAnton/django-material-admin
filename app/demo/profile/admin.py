@@ -1,6 +1,6 @@
 from django.contrib import admin, messages
 
-from demo.profile.model import UserProfile
+from demo.profile.models import UserProfile
 from demo.relations.models import Relation
 
 from django.contrib.auth.models import User
@@ -26,7 +26,10 @@ class UserRelationInline(admin.TabularInline):
 class MaterialUserPictureAdmin(MaterialUserAdmin):
     """Register User model with material styles"""
     inlines = [UserPictureInline, UserRelationInline]
+    list_display = ('username', 'is_active', 'is_staff')
     actions = ['make_published']
+    list_editable = ['is_staff']
+    list_filter = ('date_joined',)
 
     def make_published(self, request, queryset):
         self.message_user(request, "Published INFO.")

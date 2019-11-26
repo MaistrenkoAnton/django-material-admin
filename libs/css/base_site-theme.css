@@ -17,6 +17,7 @@ div.breadcrumbs a:hover {
     color: white;
 }
 
+.pagination li.active,
 #user-tools a:focus,
 .datepicker-date-display,
 .timepicker-digital-display,
