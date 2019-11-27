@@ -37,6 +37,11 @@
     padding: 0 20px;
 }
 
+.message-card {
+    width: 500px;
+    margin: auto;
+}
+
 @media (max-width: 767px) {
     .side-bar {
         display: none;

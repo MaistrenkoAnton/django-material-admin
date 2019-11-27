@@ -16,3 +16,7 @@ input[type=password]:not(.browser-default):focus:not([readonly]) {
 .btn:focus {
     background: var(--main-hover-color);
 }
+
+.password-reset-link a {
+    color: var(--main-color);
+}
