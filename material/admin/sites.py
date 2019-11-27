@@ -21,6 +21,7 @@ class MaterialAdminSite(AdminSite):
     profile_bg = None
     login_logo = None
     logout_bg = None
+    show_themes = False
 
     def __init__(self, name='material'):
         super().__init__(name)
@@ -55,6 +56,7 @@ class MaterialAdminSite(AdminSite):
         context['profile_bg'] = self.profile_bg
         context['login_logo'] = self.login_logo
         context['logout_bg'] = self.logout_bg
+        context['show_themes'] = self.show_themes
         return context
 
     def _build_app_dict(self, request, label=None):

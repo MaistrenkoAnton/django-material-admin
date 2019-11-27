@@ -32,6 +32,7 @@ site.profile_picture = staticfiles('profile-background.jpeg')
 site.profile_bg = staticfiles('profile-background.jpeg')
 site.login_logo = staticfiles('profile-background.jpeg')
 site.logout_bg = staticfiles('profile-background.jpeg')
+site.show_themes = True
 
 
 urlpatterns = i18n_patterns(

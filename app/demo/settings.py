@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
+    'daterangefilter',
+
     'demo.countries',
     'demo.documents',
     'demo.relations',

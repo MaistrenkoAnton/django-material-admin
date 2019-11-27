@@ -1,3 +1,5 @@
+from daterangefilter.filters import FutureDateRangeFilter
+
 from demo.periods.models import DateTimeModel, TimeModel, DateModel
 from material.admin.decorators import register
 from material.admin.options import MaterialModelAdmin
@@ -8,7 +10,13 @@ class DateModelAdmin(MaterialModelAdmin):
     icon_name = 'insert_invitation'
     list_display = ('id', 'date',)
     list_editable = ['date', ]
-    list_filter = ('date', )
+    list_filter = [('date', FutureDateRangeFilter)]
+    search_fields = (
+        'date',
+    )
+    date_heirarchy = (
+        'date',
+    )
 
 
 @register(TimeModel)
