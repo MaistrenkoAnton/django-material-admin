@@ -125,7 +125,7 @@ https://material.io/resources/icons/?style=baseline
         icon_name = 'person'
 
 
-7. In order to add and manage the profile picture, this template can be added.  
+6. In order to add and manage the profile picture, this template can be added. 
  - optional
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/profile-pic.png
@@ -137,7 +137,7 @@ Extend **User** model as OneToOne relation or extend **AbstractUser** and set ne
 
 
 ==================
-Video instructions
+Video instructions (DEPRECATED)
 ==================
 |
 |
