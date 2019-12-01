@@ -1,10 +1,10 @@
+from django.contrib.admin import ModelAdmin, register
+
 from demo.relations.models import Relation
-from material.admin.decorators import register
-from material.admin.options import MaterialModelAdmin
 
 
 @register(Relation)
-class RelationAdmin(MaterialModelAdmin):
+class RelationAdmin(ModelAdmin):
     list_display = ('id', 'name')
     icon_name = 'layers'
     autocomplete_fields = ('documents', 'user')

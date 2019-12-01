@@ -3,7 +3,7 @@
 .. .. |build|
 
 
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.5.6&x2=0
+.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.6.0&x2=0
     :target: https://pypi.org/project/django-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
@@ -29,16 +29,17 @@ Quick start
  
 **pip install django-material-admin**
 
-1. Add "django-material-admin" to your INSTALLED_APPS setting like this:
+1. Add "material.admin" and "material.admin.default" to your INSTALLED_APPS setting instead of "django.contrib.admin"::
  - required
 
 .. code-block:: python
 
     INSTALLED_APPS = (
-        ...,
         'material.admin',
-        'django.contrib.admin',
-        ...,
+        'material.admin.default',
+
+        'django.contrib.auth',
+        ...
     )
 
 
@@ -48,10 +49,11 @@ Quick start
 .. code-block:: python
 
     from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
+    from django.contrib import admin
     from django.urls import path, include
     from django.utils.translation import ugettext_lazy as _
 
-    from material.admin.sites import site
+    from material.admin.sites import MaterialAdminSite as site
 
     # optional
     ##########################################################
@@ -69,7 +71,7 @@ Quick start
     ##########################################################
 
     urlpatterns = [
-        path('admin/', include('material.admin.urls')),
+        path('admin/', admin.site.urls),
     ]
 
 
@@ -78,44 +80,16 @@ Quick start
 
 .. code-block:: python
 
-    from material.admin.decorators import register
-    from material.admin.options import MaterialModelAdmin
+    from django.contrib.admin import ModelAdmin, register
 
 
     from persons.models import Person
 
     @register(Person)
-    class PersonAdmin(MaterialModelAdmin):
+    class PersonAdmin(ModelAdmin):
         list_display = ('name', 'first_name', 'last_name')
 
-or
-
-.. code-block:: python
-
-    from material.admin.options import MaterialModelAdmin
-    from material.admin.sites import site
-
-    from persons.models import Person
-
-
-    class PersonAdmin(MaterialModelAdmin):
-        list_display = ('name', 'first_name', 'last_name')
-
-    site.register(Person)
-
-4. If you want to hide default registered models, they can be unregistered:
- - optional
-
-.. code-block:: python
-
-    from material.admin.sites import site
-    from django.contrib.auth.models import User, Group
-
-    site.unregister(User)
-    site.unregister(Group)
-
-
-5. Add icon to the application in `app.py`
+4. Add icon to the application in `app.py`
 https://materializecss.com/icons.html
  - optional
 
@@ -129,7 +103,7 @@ https://materializecss.com/icons.html
         icon_name = 'person'
 
 
-6. Add icon to the MaterialModelAdmin in `admin.py`
+5. Add icon to the MaterialModelAdmin in `admin.py`
 
 Material icon's name sources:
 
@@ -141,14 +115,13 @@ https://material.io/resources/icons/?style=baseline
 
 .. code-block:: python
 
-    from material.admin.options import MaterialModelAdmin
-    from material.admin.decorators import register
+    from django.contrib.admin import ModelAdmin, register
 
     from persons.models import Person
 
 
     @register(Person)
-    class MaterialPersonAdmin(MaterialModelAdmin):
+    class MaterialPersonAdmin(ModelAdmin):
         icon_name = 'person'
 
 

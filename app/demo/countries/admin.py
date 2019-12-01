@@ -1,8 +1,7 @@
 from django.contrib import admin
+from django.contrib.admin import ModelAdmin, register
 
 from demo.countries.models import Country, Person, ProxyPerson
-from material.admin.decorators import register
-from material.admin.options import MaterialModelAdmin
 
 
 class PersonInline(admin.StackedInline):
@@ -12,7 +11,7 @@ class PersonInline(admin.StackedInline):
 
 
 @register(Country)
-class CountryAdmin(MaterialModelAdmin):
+class CountryAdmin(ModelAdmin):
     list_display = ('name', 'created', 'modified')
     inlines = [PersonInline]
     icon_name = 'location_city'
@@ -24,13 +23,13 @@ class CountryAdmin(MaterialModelAdmin):
 
 
 @register(Person)
-class PersonAdmin(MaterialModelAdmin):
+class PersonAdmin(ModelAdmin):
     icon_name = 'people_outline'
     autocomplete_fields = ('user', 'nationality')
 
 
 @register(ProxyPerson)
-class PersonAdmin(MaterialModelAdmin):
+class PersonAdmin(ModelAdmin):
     icon_name = 'android'
     autocomplete_fields = ('user', 'nationality')
 

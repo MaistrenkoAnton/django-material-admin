@@ -3,14 +3,15 @@
 Quick start
 -----------
 
-1. Add "django-material-admin" to your INSTALLED_APPS setting like this:
+1. Add "material.admin" and "material.admin.default" to your INSTALLED_APPS setting instead of "django.contrib.admin":
 
      .. code-block:: python
 
         INSTALLED_APPS = (
-            ...
             'material.admin',
-            'django.contrib.admin',
+            'material.admin.default',
+
+            'django.contrib.auth',
             ...
         )
 
@@ -20,37 +21,22 @@ Quick start
     .. code-block:: python
 
         urlpatterns = [
-            path('admin/', include('material.admin.urls')),
+            path('admin/', admin.site.urls),
         ]
 
-3. Extend Admin config from  `MaterialModelAdmin`
+3. Use the admin with material styles
 
     .. code-block:: python
 
-        from material.admin.options import MaterialModelAdmin
-        from material.admin.decorators import register
+        from django.contrib.admin import ModelAdmin, register
 
         from persons.models import Person
 
 
         @register(Person)
-        class PersonAdmin(MaterialModelAdmin):
+        class PersonAdmin(ModelAdmin):
             list_display = ('name', 'first_name', 'last_name')
 
-    or
-
-    .. code-block:: python
-
-        from material.admin.options import MaterialModelAdmin
-        from material.admin.sites import site
-
-        from persons.models import Person
-
-
-        class PersonAdmin(MaterialModelAdmin):
-            list_display = ('name', 'first_name', 'last_name')
-
-        site.register(User)
 
 4. Add icon to the application in `app.py`
 https://materializecss.com/icons.html
@@ -70,12 +56,10 @@ https://materializecss.com/icons.html
 
     .. code-block:: python
 
-        from material.admin.options import MaterialModelAdmin
-        from material.admin.decorators import register
-
+        from django.contrib.admin import ModelAdmin, register
         from persons.models import Person
 
 
         @register(Person)
-        class MaterialPersonAdmin(MaterialModelAdmin):
+        class MaterialPersonAdmin(ModelAdmin):
             icon_name = 'person'

@@ -5,6 +5,7 @@ from django.utils.module_loading import import_string
 from django.apps import apps
 from django.utils.text import capfirst
 
+from material.admin.options import MaterialModelAdminMixin
 from material.admin.views import ThemesView
 
 
@@ -14,6 +15,11 @@ class MaterialAdminSite(AdminSite):
         'auth': 'group',
         'sites': 'web'
     }
+    model_icon_mapping = {
+        'user': 'person',
+        'group': 'people',
+        'site': 'web',
+    }
     favicon = None
     main_bg_color = None
     main_hover_color = None
@@ -22,6 +28,11 @@ class MaterialAdminSite(AdminSite):
     login_logo = None
     logout_bg = None
     show_themes = False
+
+    def register(self, model_or_iterable, admin_class=None, **options):
+        if admin_class:
+            admin_class = type('admin_class', (MaterialModelAdminMixin, admin_class), {})
+        return super().register(model_or_iterable, admin_class, **options)
 
     def __init__(self, name='material'):
         super().__init__(name)
@@ -89,13 +100,14 @@ class MaterialAdminSite(AdminSite):
                 continue
 
             info = (app_label, model._meta.model_name)
+            icon = getattr(model_admin, 'icon_name', None) or self.model_icon_mapping.get(model._meta.model_name)
             model_dict = {
                 'name': capfirst(model._meta.verbose_name_plural),
                 'object_name': model._meta.object_name,
                 'perms': perms,
                 'proxy': getattr(model, 'proxy', False),
                 'count': 0 if getattr(model, 'proxy', False) else model.objects.count(),
-                'icon': getattr(model_admin, 'icon_name', None)
+                'icon': icon
             }
             if perms.get('change') or perms.get('view'):
                 model_dict['view_only'] = not perms.get('change')

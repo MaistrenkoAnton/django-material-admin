@@ -1,8 +1,7 @@
 from django.contrib import admin
+from django.contrib.admin import ModelAdmin, register
 
 from demo.documents.models import Document, Link
-from material.admin.decorators import register
-from material.admin.options import MaterialModelAdmin
 
 
 class LinkInline(admin.TabularInline):
@@ -11,7 +10,7 @@ class LinkInline(admin.TabularInline):
 
 
 @register(Document)
-class CountryAdmin(MaterialModelAdmin):
+class CountryAdmin(ModelAdmin):
     list_display = ('name', 'picture', 'file', 'text')
     icon_name = 'library_books'
     search_fields = ('name',)

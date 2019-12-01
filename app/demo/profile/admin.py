@@ -1,15 +1,11 @@
 from django.contrib import admin, messages
+from django.contrib.admin import register
+from django.contrib.auth.admin import UserAdmin
 
 from demo.profile.models import UserProfile
 from demo.relations.models import Relation
 
 from django.contrib.auth.models import User
-
-from material.admin.admin import MaterialUserAdmin
-from material.admin.decorators import register
-from material.admin.sites import site
-
-site.unregister(User)
 
 
 class UserPictureInline(admin.TabularInline):
@@ -22,9 +18,13 @@ class UserRelationInline(admin.TabularInline):
     extra = 0
 
 
+admin.site.unregister(User)
+
+
 @register(User)
-class MaterialUserPictureAdmin(MaterialUserAdmin):
+class MaterialUserPictureAdmin(UserAdmin):
     """Register User model with material styles"""
+    icon_name = 'insert_invitation'
     inlines = [UserPictureInline, UserRelationInline]
     list_display = ('username', 'is_active', 'is_staff')
     actions = ['make_published']

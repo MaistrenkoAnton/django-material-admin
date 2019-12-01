@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.contrib import admin
 from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.urls import path, include
@@ -21,7 +22,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.views.generic import RedirectView
 from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
 
-from material.admin.sites import site
+from material.admin.sites import MaterialAdminSite as site
 from django.contrib.auth import views as auth_views
 
 site.site_header = _('Demo')
@@ -35,15 +36,14 @@ site.login_logo = staticfiles('profile-background.jpeg')
 site.logout_bg = staticfiles('profile-background.jpeg')
 site.show_themes = True
 
-
 urlpatterns = i18n_patterns(
     path('admin/password_reset/', auth_views.PasswordResetView.as_view(), name='admin_password_reset'),
     path('admin/password_reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),
     path('admin/reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(),
          name='password_reset_confirm'),
     path('admin/reset/done/', auth_views.PasswordResetCompleteView.as_view(), name='password_reset_complete'),
-    path('admin/', include('material.admin.urls')),
-
+    path('admin/', admin.site.urls),
+    path('invitations/', include('invitations.urls', namespace='invitations')),
     path('', RedirectView.as_view(url='admin/', permanent=False), name='index'),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT

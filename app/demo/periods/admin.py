@@ -1,12 +1,11 @@
 from daterangefilter.filters import FutureDateRangeFilter
+from django.contrib.admin import ModelAdmin, register
 
 from demo.periods.models import DateTimeModel, TimeModel, DateModel
-from material.admin.decorators import register
-from material.admin.options import MaterialModelAdmin
 
 
 @register(DateModel)
-class DateModelAdmin(MaterialModelAdmin):
+class DateModelAdmin(ModelAdmin):
     icon_name = 'insert_invitation'
     list_display = ('id', 'date',)
     list_editable = ['date', ]
@@ -20,10 +19,10 @@ class DateModelAdmin(MaterialModelAdmin):
 
 
 @register(TimeModel)
-class PersonAdmin(MaterialModelAdmin):
+class PersonAdmin(ModelAdmin):
     icon_name = 'access_time'
 
 
 @register(DateTimeModel)
-class PersonAdmin(MaterialModelAdmin):
+class PersonAdmin(ModelAdmin):
     icon_name = 'linear_scale'

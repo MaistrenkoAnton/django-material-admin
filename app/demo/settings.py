@@ -31,10 +31,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Application definition
-
 INSTALLED_APPS = [
     'material.admin',
-    'django.contrib.admin',
+    'material.admin.default',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -43,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'daterangefilter',
+    'invitations',
 
     'demo.countries',
     'demo.documents',
