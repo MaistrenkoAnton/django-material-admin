@@ -75,8 +75,7 @@ Quick start
     ]
 
 
-3. Register your models and extend Admin config from  `MaterialModelAdmin`
- - optional
+3. Register your models.
 
 .. code-block:: python
 
