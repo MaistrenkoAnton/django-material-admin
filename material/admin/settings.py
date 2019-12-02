@@ -1,8 +1,10 @@
 from django.conf import settings
 from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
 
-
-settings = settings.MATERIAL_ADMIN_SITE or {}
+try:
+    settings = settings.MATERIAL_ADMIN_SITE
+except AttributeError:
+    settings = {}
 
 
 def _get_setting(setting_name):
