@@ -29,7 +29,7 @@ Quick start
  
 **pip install django-material-admin**
 
-1. Add "material.admin" and "material.admin.default" to your INSTALLED_APPS setting instead of "django.contrib.admin"::
+1. Add **material.admin** and **material.admin.default** to your INSTALLED_APPS setting instead of **django.contrib.admin**::
  - required
 
 .. code-block:: python
@@ -43,23 +43,21 @@ Quick start
     )
 
 
-2. Include the material templates URLconf in your project urls.py like this:
+2. Include the material templates URLconf in your project **urls.py** like this:
  - required
 
 .. code-block:: python
 
-    from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
     from django.contrib import admin
-    from django.urls import path, include
-    from django.utils.translation import ugettext_lazy as _
+    from django.urls import path
 
     urlpatterns = [
         path('admin/', admin.site.urls),
     ]
 
 
-3. Register your models.
-
+3. Register your models in **admin.py**.
+  
 .. code-block:: python
 
     from django.contrib.admin import ModelAdmin, register
@@ -71,9 +69,18 @@ Quick start
     class PersonAdmin(ModelAdmin):
         list_display = ('name', 'first_name', 'last_name')
 
-4. Add icon to the application in `app.py`
+4. Add icon to the application in **app.py** and specify the app usage in **__init__.py**
+
 https://materializecss.com/icons.html
  - optional
+ 
+**__init.py__**
+
+.. code-block:: python
+    
+    default_app_config = 'persons.apps.PersonsConfig'
+    
+**apps.py**
 
 .. code-block:: python
 
@@ -85,7 +92,7 @@ https://materializecss.com/icons.html
         icon_name = 'person'
 
 
-5. Add icon to the MaterialModelAdmin in `admin.py`
+5. Add icon to the MaterialModelAdmin in **admin.py**
 
 Material icon's name sources:
 
@@ -107,7 +114,7 @@ https://material.io/resources/icons/?style=baseline
         icon_name = 'person'
 
 
-6. Add Admin site configurations to `settings.py` file:
+6. Add Admin site configurations to **settings.py** file:
 
  - optional
 ##########################################################
@@ -138,7 +145,7 @@ https://material.io/resources/icons/?style=baseline
 
 
 ==================
-Video instructions (DEPRECATED)
+Video instructions (DEPRECATED) #  will be updated soon
 ==================
 |
 |
