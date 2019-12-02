@@ -18,7 +18,7 @@ def _get_setting_static(setting_name):
 MATERIAL_ADMIN_SITE = {
     'HEADER':  _get_setting('HEADER'),
     'TITLE':  _get_setting('TITLE'),
-    'FAVICON':  staticfiles('demo.png'),
+    'FAVICON':  _get_setting_static('FAVICON'),
     'MAIN_BG_COLOR':  _get_setting('MAIN_BG_COLOR'),
     'MAIN_HOVER_COLOR':  _get_setting('MAIN_HOVER_COLOR'),
     'PROFILE_PICTURE':  _get_setting_static('PROFILE_PICTURE'),
