@@ -107,7 +107,7 @@ https://material.io/resources/icons/?style=baseline
         icon_name = 'person'
 
 
-6. Add Admin site configurations:
+6. Add Admin site configurations to `settings.py` file:
 
  - optional
 ##########################################################
@@ -120,7 +120,7 @@ https://material.io/resources/icons/?style=baseline
         'FAVICON':  'path/to/favicon',  # Admin site favicon (path to static should be specified)
         'MAIN_BG_COLOR':  'color',  # Admin site main color, css color should be specified
         'MAIN_HOVER_COLOR':  'color',  # Admin site main hover color, css color should be specified
-        'PROFILE_PICTURE':  'profile-background.jpeg',  # Admin site profile picture (path to static should be specified)
+        'PROFILE_PICTURE':  'path/to/image',  # Admin site profile picture (path to static should be specified)
         'PROFILE_BG':  'path/to/image',  # Admin site profile background (path to static should be specified)
         'LOGIN_LOGO':  'path/to/image',  # Admin site logo on login page (path to static should be specified)
         'LOGOUT_BG':  'path/to/image',  # Admin site background on login/logout pages (path to static should be specified)
