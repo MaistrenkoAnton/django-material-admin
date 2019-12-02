@@ -33,8 +33,8 @@ class MaterialAdminSite(AdminSite):
         self.index_template = 'material/admin/index.html'
         self.password_change_template = 'material/admin/password_change.html'
         self.theme_template = 'material/admin/theme_change.html'
-        self.site_header = self.site_header or MATERIAL_ADMIN_SITE['HEADER']
-        self.site_title = self.site_title or MATERIAL_ADMIN_SITE['TITLE']
+        self.site_header = MATERIAL_ADMIN_SITE['HEADER'] or self.site_header
+        self.site_title = MATERIAL_ADMIN_SITE['TITLE'] or self.site_title
         self.favicon = self.favicon or MATERIAL_ADMIN_SITE['FAVICON']
         self.main_bg_color = self.main_bg_color or MATERIAL_ADMIN_SITE['MAIN_BG_COLOR']
         self.main_hover_color = self.main_hover_color or MATERIAL_ADMIN_SITE['MAIN_HOVER_COLOR']
