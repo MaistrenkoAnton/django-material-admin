@@ -6,20 +6,12 @@ from django.apps import apps
 from django.utils.text import capfirst
 
 from material.admin.options import MaterialModelAdminMixin
+from material.admin.settings import MATERIAL_ADMIN_SITE
 from material.admin.views import ThemesView
 
 
 class MaterialAdminSite(AdminSite):
     """Extends AdminSite to add material design for admin interface"""
-    default_config_mapping = {
-        'auth': 'group',
-        'sites': 'web'
-    }
-    model_icon_mapping = {
-        'user': 'person',
-        'group': 'people',
-        'site': 'web',
-    }
     favicon = None
     main_bg_color = None
     main_hover_color = None
@@ -41,6 +33,16 @@ class MaterialAdminSite(AdminSite):
         self.index_template = 'material/admin/index.html'
         self.password_change_template = 'material/admin/password_change.html'
         self.theme_template = 'material/admin/theme_change.html'
+        self.site_header = self.favicon or MATERIAL_ADMIN_SITE['HEADER']
+        self.site_title = self.favicon or MATERIAL_ADMIN_SITE['TITLE']
+        self.favicon = self.favicon or MATERIAL_ADMIN_SITE['FAVICON']
+        self.main_bg_color = self.main_bg_color or MATERIAL_ADMIN_SITE['MAIN_BG_COLOR']
+        self.main_hover_color = self.main_hover_color or MATERIAL_ADMIN_SITE['MAIN_HOVER_COLOR']
+        self.profile_picture = self.profile_picture or MATERIAL_ADMIN_SITE['PROFILE_PICTURE']
+        self.profile_bg = self.profile_bg or MATERIAL_ADMIN_SITE['PROFILE_BG']
+        self.login_logo = self.login_logo or MATERIAL_ADMIN_SITE['LOGIN_LOGO']
+        self.logout_bg = self.logout_bg or MATERIAL_ADMIN_SITE['LOGOUT_BG']
+        self.show_themes = self.show_themes or MATERIAL_ADMIN_SITE['SHOW_THEMES']
 
     def get_urls(self):
         return super().get_urls() + [path('themes/', self.theme_change, name='themes')]
@@ -100,7 +102,8 @@ class MaterialAdminSite(AdminSite):
                 continue
 
             info = (app_label, model._meta.model_name)
-            icon = getattr(model_admin, 'icon_name', None) or self.model_icon_mapping.get(model._meta.model_name)
+            default_model_icons = MATERIAL_ADMIN_SITE['MODEL_ICONS'].get(model._meta.model_name)
+            icon = getattr(model_admin, 'icon_name', default_model_icons)
             model_dict = {
                 'name': capfirst(model._meta.verbose_name_plural),
                 'object_name': model._meta.object_name,
@@ -135,7 +138,7 @@ class MaterialAdminSite(AdminSite):
                     'has_module_perms': has_module_perms,
                     'models': [model_dict],
                     'icon': getattr(apps.get_app_config(app_label), 'icon_name', None)
-                    or self.default_config_mapping.get(app_label)
+                    or MATERIAL_ADMIN_SITE['APP_ICONS'].get(app_label)
                 }
 
         if label:

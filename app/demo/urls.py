@@ -18,23 +18,9 @@ from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.urls import path, include
 from django.conf import settings
-from django.utils.translation import ugettext_lazy as _
 from django.views.generic import RedirectView
-from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
-
-from material.admin.sites import MaterialAdminSite as site
 from django.contrib.auth import views as auth_views
 
-site.site_header = _('Demo')
-site.site_title = _('Demo')
-site.favicon = staticfiles('demo.png')
-site.main_bg_color = 'green'
-site.main_hover_color = 'yellow'
-site.profile_picture = staticfiles('profile-background.jpeg')
-site.profile_bg = staticfiles('profile-background.jpeg')
-site.login_logo = staticfiles('profile-background.jpeg')
-site.logout_bg = staticfiles('profile-background.jpeg')
-site.show_themes = True
 
 urlpatterns = i18n_patterns(
     path('admin/password_reset/', auth_views.PasswordResetView.as_view(), name='admin_password_reset'),

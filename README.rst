@@ -3,7 +3,7 @@
 .. .. |build|
 
 
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.6.0&x2=0
+.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.6.1&x2=0
     :target: https://pypi.org/project/django-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
@@ -52,23 +52,6 @@ Quick start
     from django.contrib import admin
     from django.urls import path, include
     from django.utils.translation import ugettext_lazy as _
-
-    from material.admin.sites import MaterialAdminSite as site
-
-    # optional
-    ##########################################################
-    site.site_header = _('Your site header')
-    site.site_title = _('Your site title')
-    site.favicon = staticfiles('path/to/favicon')
-    site.main_bg_color = 'green'
-    site.main_hover_color = 'yellow'
-    site.profile_picture = staticfiles('path/to/image')
-    site.profile_bg = staticfiles('path/to/image')
-    site.login_logo = staticfiles('path/to/image')
-    site.logout_bg = staticfiles('path/to/image')
-
-    site.show_themes = True #  Show themes tab inside admin UI
-    ##########################################################
 
     urlpatterns = [
         path('admin/', admin.site.urls),
@@ -124,14 +107,31 @@ https://material.io/resources/icons/?style=baseline
         icon_name = 'person'
 
 
-6. In order to add and manage the profile picture, this template can be added. 
- - optional
+6. Add Admin site configurations:
 
-.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/profile-pic.png
+# optional
+##########################################################
 
-Extend **User** model as OneToOne relation or extend **AbstractUser** and set new **AUTH_USER_MODEL**.
+MATERIAL_ADMIN_SITE = {
+    'HEADER':  _('Your site header'),  # Admin site header
+    'TITLE':  _('Your site title'),  # Admin site title
+    'FAVICON':  'path/to/favicon',  # Admin site favicon (path to static should be specified)
+    'MAIN_BG_COLOR':  'color',  # Admin site main color, css color should be specified
+    'MAIN_HOVER_COLOR':  'color',  # Admin site main hover color, css color should be specified
+    'PROFILE_PICTURE':  'profile-background.jpeg',  # Admin site profile picture (path to static should be specified)
+    'PROFILE_BG':  'path/to/image',  # Admin site profile background (path to static should be specified)
+    'LOGIN_LOGO':  'path/to/image',  # Admin site logo on login page (path to static should be specified)
+    'LOGOUT_BG':  'path/to/image',  # Admin site background on login/logout pages (path to static should be specified)
+    'SHOW_THEMES':  True,  #  Show default admin themes button
+    'APP_ICONS': {  # Set icons for applications(lowercase), including 3rd party apps, {'application_name': 'material_icon_name', ...}
+        'sites': 'send',
+    },
+    'MODEL_ICONS': {  # Set icons for models(lowercase), including 3rd party models, {'model_name': 'material_icon_name', ...}
+        'site': 'contact_mail',
+    }
+}
+##########################################################
 
-**MEDIA** should be configured properly.
 
 
 
