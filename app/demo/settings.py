@@ -62,7 +62,6 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'daterangefilter',
-    # 'invitations',
 
     'demo.countries',
     'demo.documents',

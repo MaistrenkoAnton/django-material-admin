@@ -29,7 +29,6 @@ urlpatterns = i18n_patterns(
          name='password_reset_confirm'),
     path('admin/reset/done/', auth_views.PasswordResetCompleteView.as_view(), name='password_reset_complete'),
     path('admin/', admin.site.urls),
-    # path('invitations/', include('invitations.urls', namespace='invitations')),
     path('', RedirectView.as_view(url='admin/', permanent=False), name='index'),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(
     settings.MEDIA_URL, document_root=settings.MEDIA_ROOT
