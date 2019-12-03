@@ -23,6 +23,7 @@ WORKDIR /app
 COPY ./app /app
 COPY ./material /app/material
 COPY ./docker /app/docker
+COPY ./tests /app/test
 
 RUN chmod +x /app/docker/start.sh
 
