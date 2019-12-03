@@ -1,5 +1,8 @@
 from django.conf import settings
-from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
+try:
+    from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
+except ImportError:
+    from django.templatetags.static import static as staticfiles
 
 try:
     settings = settings.MATERIAL_ADMIN_SITE
