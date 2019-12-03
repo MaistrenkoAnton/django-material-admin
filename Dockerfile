@@ -22,3 +22,8 @@ RUN mkdir /app/material
 WORKDIR /app
 COPY ./app /app
 COPY ./material /app/material
+COPY ./docker /app/docker
+
+RUN chmod +x /app/docker/start.sh
+
+CMD ["sh",   "/app/docker/start.sh"]
