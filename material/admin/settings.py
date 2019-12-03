@@ -1,6 +1,6 @@
 from django.conf import settings
 try:
-    from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles
+    from django.contrib.staticfiles.templatetags.staticfiles import static as staticfiles  # Django2 support
 except ImportError:
     from django.templatetags.static import static as staticfiles
 

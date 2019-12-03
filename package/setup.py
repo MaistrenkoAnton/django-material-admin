@@ -10,7 +10,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name="django-material-admin",
-    version="1.6.5",
+    version="1.6.6",
     license='MIT License',
     packages=find_packages(),
     author="Anton Maistrenko",
@@ -24,6 +24,7 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         'Framework :: Django :: 2.2',
+        'Framework :: Django :: 3.0',
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
