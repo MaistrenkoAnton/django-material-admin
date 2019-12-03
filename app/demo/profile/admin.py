@@ -24,7 +24,7 @@ admin.site.unregister(User)
 @register(User)
 class MaterialUserPictureAdmin(UserAdmin):
     """Register User model with material styles"""
-    icon_name = 'insert_invitation'
+    icon_name = 'person'
     inlines = [UserPictureInline, UserRelationInline]
     list_display = ('username', 'is_active', 'is_staff')
     actions = ['make_published']
