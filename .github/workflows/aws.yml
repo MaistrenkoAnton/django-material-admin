@@ -52,10 +52,10 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
 
     - name: Run tests
-        id: run-tests
-        run: |
-          # Run backend tests
-          docker-compose run app ./manage.py test
+      id: run-tests
+      run: |
+        # Run backend tests
+        docker-compose run app ./manage.py test
 
 
     - name: Build, tag, and push image to Amazon ECR
