@@ -1,4 +1,4 @@
-|pypi| |python| |django| |django3|
+|pypi| |python| |django|
 
 .. .. |build|
 
@@ -7,10 +7,8 @@
     :target: https://pypi.org/project/django-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
-.. |django| image:: https://img.shields.io/badge/django-2.2+-mediumseagreen.svg
-    :target: https://www.djangoproject.com/
-.. |django3| image:: https://img.shields.io/badge/django-3.0-mediumseagreen.svg
-    :target: https://www.djangoproject.com/    
+.. |django| image:: https://img.shields.io/badge/django-2.2+|3.0-mediumseagreen.svg
+    :target: https://www.djangoproject.com/ 
 .. .. |build| image:: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com:8080/buildStatus/icon?job=Job1
 ..    :target: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com
 
@@ -47,7 +45,6 @@ Quick start
 
 2. Include the material templates URLconf in your project **urls.py** like this:
  - required
-
 .. code-block:: python
 
     from django.contrib import admin
