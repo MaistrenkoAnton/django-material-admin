@@ -100,12 +100,67 @@
     <script>
         var datepickerOptions = {
             autoClose: true,
-            setDefaultDate: true,
+            defaultDate: true,
             showClearBtn: true,
             i18n: {
                 cancel: '{% trans 'Cancel' %}',
                 clear: '{% trans 'Clear' %}',
-                done: '{% trans 'Ok' %}'
+                done: '{% trans 'Ok' %}',
+                months: [
+                    '{% trans 'January' %}',
+                    '{% trans 'February' %}',
+                    '{% trans 'March' %}',
+                    '{% trans 'April' %}',
+                    '{% trans 'May' %}',
+                    '{% trans 'June' %}',
+                    '{% trans 'July' %}',
+                    '{% trans 'August' %}',
+                    '{% trans 'September' %}',
+                    '{% trans 'October' %}',
+                    '{% trans 'November' %}',
+                    '{% trans 'December' %}',
+                ],
+                monthsShort: [
+                    '{% trans 'Jan' %}',
+                    '{% trans 'Feb' %}',
+                    '{% trans 'Mar' %}',
+                    '{% trans 'Apr' %}',
+                    '{% trans 'May' %}',
+                    '{% trans 'Jun' %}',
+                    '{% trans 'Jul' %}',
+                    '{% trans 'Aug' %}',
+                    '{% trans 'Sep' %}',
+                    '{% trans 'Oct' %}',
+                    '{% trans 'Nov' %}',
+                    '{% trans 'Dec' %}',
+                ],
+                weekdays: [
+                   '{% trans 'Sunday' %}',
+                   '{% trans 'Monday' %}',
+                   '{% trans 'Tuesday' %}',
+                   '{% trans 'Wednesday' %}',
+                   '{% trans 'Thursday' %}',
+                   '{% trans 'Friday' %}',
+                   '{% trans 'Saturday' %}',
+                ],
+                weekdaysShort: [
+                    '{% trans 'Sun' %}',
+                    '{% trans 'Mon' %}',
+                    '{% trans 'Tue' %}',
+                    '{% trans 'Wed' %}',
+                    '{% trans 'Thu' %}',
+                    '{% trans 'Fri' %}',
+                    '{% trans 'Sat' %}',
+                ],
+                weekdaysAbbrev:	[
+                    '{% trans 'Su' %}',
+                    '{% trans 'Mo' %}',
+                    '{% trans 'Tu' %}',
+                    '{% trans 'We' %}',
+                    '{% trans 'Th' %}',
+                    '{% trans 'Fr' %}',
+                    '{% trans 'Sa' %}',
+                ]
             }
         };
         var timeOptions = {
@@ -115,7 +170,7 @@
             i18n: {
                 cancel: '{% trans 'Cancel' %}',
                 clear: '{% trans 'Clear' %}',
-                done: '{% trans 'Ok' %}'
+                done: '{% trans 'Ok' %}',
             }
         };
     </script>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 19:54+0000\n"
+"POT-Creation-Date: 2019-12-04 15:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,28 +21,28 @@ msgstr ""
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: material/admin/templates/400.html:4 material/admin/templates/403.html:4
-#: material/admin/templates/403.html:26 material/admin/templates/404.html:4
-#: material/admin/templates/404.html:26 material/admin/templates/500.html:4
+#: material/admin/templates/403.html:28 material/admin/templates/404.html:4
+#: material/admin/templates/404.html:28 material/admin/templates/500.html:4
 msgid "Page not found"
 msgstr ""
 
-#: material/admin/templates/400.html:26
+#: material/admin/templates/400.html:28
 msgid "Bad request"
 msgstr ""
 
-#: material/admin/templates/403.html:27
+#: material/admin/templates/403.html:29
 msgid "You have no permissions to do this action."
 msgstr ""
 
-#: material/admin/templates/404.html:27
+#: material/admin/templates/404.html:29
 msgid "We\\"
 msgstr ""
 
-#: material/admin/templates/500.html:26
+#: material/admin/templates/500.html:28
 msgid "Server error"
 msgstr ""
 
-#: material/admin/templates/500.html:27
+#: material/admin/templates/500.html:29
 msgid "There\\"
 msgstr ""
 
@@ -105,6 +105,7 @@ msgid "Close"
 msgstr "Закрити"
 
 #: material/admin/templates/admin/additional_submit_line.html:41
+#: material/admin/templates/admin/pagination.html:16
 #: material/admin/templates/admin/submit_line.html:21
 #: material/admin/templates/admin/submit_line.html:73
 #: material/admin/templates/material/admin/theme_change.html:39
@@ -128,44 +129,221 @@ msgstr "Згорнути"
 msgid "Home"
 msgstr ""
 
-#: material/admin/templates/admin/base_site.html:50
+#: material/admin/templates/admin/base_site.html:66
 msgid "View site"
 msgstr ""
 
-#: material/admin/templates/admin/base_site.html:52
+#: material/admin/templates/admin/base_site.html:69
 msgid "Themes"
 msgstr "Теми"
 
-#: material/admin/templates/admin/base_site.html:56
+#: material/admin/templates/admin/base_site.html:74
 msgid "Documentation"
 msgstr ""
 
-#: material/admin/templates/admin/base_site.html:61
+#: material/admin/templates/admin/base_site.html:79
 msgid "Change password"
 msgstr ""
 
-#: material/admin/templates/admin/base_site.html:65
+#: material/admin/templates/admin/base_site.html:83
 msgid "Log out"
 msgstr ""
 
-#: material/admin/templates/admin/base_site.html:89
-#: material/admin/templates/admin/base_site.html:99
+#: material/admin/templates/admin/base_site.html:106
+#: material/admin/templates/admin/base_site.html:171
 msgid "Cancel"
 msgstr "Cкасувати"
 
-#: material/admin/templates/admin/base_site.html:90
-#: material/admin/templates/admin/base_site.html:100
+#: material/admin/templates/admin/base_site.html:107
+#: material/admin/templates/admin/base_site.html:172
 msgid "Clear"
 msgstr ""
 
-#: material/admin/templates/admin/base_site.html:91
-#: material/admin/templates/admin/base_site.html:101
+#: material/admin/templates/admin/base_site.html:108
+#: material/admin/templates/admin/base_site.html:173
 msgid "Ok"
 msgstr ""
 
+#: material/admin/templates/admin/base_site.html:110
+msgid "January"
+msgstr "Січень"
+
+#: material/admin/templates/admin/base_site.html:111
+msgid "February"
+msgstr "Лютий"
+
+#: material/admin/templates/admin/base_site.html:112
+msgid "March"
+msgstr "Березень"
+
+#: material/admin/templates/admin/base_site.html:113
+msgid "April"
+msgstr "Квітень"
+
+#: material/admin/templates/admin/base_site.html:114
+#: material/admin/templates/admin/base_site.html:128
+msgid "May"
+msgstr "Травень"
+
+#: material/admin/templates/admin/base_site.html:115
+msgid "June"
+msgstr "Червень"
+
+#: material/admin/templates/admin/base_site.html:116
+msgid "July"
+msgstr "Липень"
+
+#: material/admin/templates/admin/base_site.html:117
+msgid "August"
+msgstr "Серпень"
+
+#: material/admin/templates/admin/base_site.html:118
+msgid "September"
+msgstr "Вересень"
+
+#: material/admin/templates/admin/base_site.html:119
+msgid "October"
+msgstr "Жовтень"
+
+#: material/admin/templates/admin/base_site.html:120
+msgid "November"
+msgstr "Листопад"
+
+#: material/admin/templates/admin/base_site.html:121
+msgid "December"
+msgstr "Грудень"
+
+#: material/admin/templates/admin/base_site.html:124
+msgid "Jan"
+msgstr "Січ"
+
+#: material/admin/templates/admin/base_site.html:125
+msgid "Feb"
+msgstr "Лют"
+
+#: material/admin/templates/admin/base_site.html:126
+msgid "Mar"
+msgstr "Бер"
+
+#: material/admin/templates/admin/base_site.html:127
+msgid "Apr"
+msgstr "Кві"
+
+#: material/admin/templates/admin/base_site.html:129
+msgid "Jun"
+msgstr "Чер"
+
+#: material/admin/templates/admin/base_site.html:130
+msgid "Jul"
+msgstr "Лип"
+
+#: material/admin/templates/admin/base_site.html:131
+msgid "Aug"
+msgstr "Сер"
+
+#: material/admin/templates/admin/base_site.html:132
+msgid "Sep"
+msgstr "Вер"
+
+#: material/admin/templates/admin/base_site.html:133
+msgid "Oct"
+msgstr "Жов"
+
+#: material/admin/templates/admin/base_site.html:134
+msgid "Nov"
+msgstr "Лис"
+
+#: material/admin/templates/admin/base_site.html:135
+msgid "Dec"
+msgstr "Гру"
+
+#: material/admin/templates/admin/base_site.html:138
+msgid "Sunday"
+msgstr "Неділя"
+
+#: material/admin/templates/admin/base_site.html:139
+msgid "Monday"
+msgstr "Понеділок"
+
+#: material/admin/templates/admin/base_site.html:140
+msgid "Tuesday"
+msgstr "Вівторок"
+
+#: material/admin/templates/admin/base_site.html:141
+msgid "Wednesday"
+msgstr "Середа"
+
+#: material/admin/templates/admin/base_site.html:142
+msgid "Thursday"
+msgstr "Четвер"
+
+#: material/admin/templates/admin/base_site.html:143
+msgid "Friday"
+msgstr "П’ятниця"
+
+#: material/admin/templates/admin/base_site.html:144
+msgid "Saturday"
+msgstr "Субота"
+
+#: material/admin/templates/admin/base_site.html:147
+msgid "Sun"
+msgstr "Нед"
+
+#: material/admin/templates/admin/base_site.html:148
+msgid "Mon"
+msgstr "Пон"
+
+#: material/admin/templates/admin/base_site.html:149
+msgid "Tue"
+msgstr "Вів"
+
+#: material/admin/templates/admin/base_site.html:150
+msgid "Wed"
+msgstr "Сер"
+
+#: material/admin/templates/admin/base_site.html:151
+msgid "Thu"
+msgstr "Чет"
+
+#: material/admin/templates/admin/base_site.html:152
+msgid "Fri"
+msgstr "П’ят"
+
+#: material/admin/templates/admin/base_site.html:153
+msgid "Sat"
+msgstr "Суб"
+
+#: material/admin/templates/admin/base_site.html:156
+msgid "Su"
+msgstr "Нд"
+
+#: material/admin/templates/admin/base_site.html:157
+msgid "Mo"
+msgstr "Пн"
+
+#: material/admin/templates/admin/base_site.html:158
+msgid "Tu"
+msgstr "Вт"
+
+#: material/admin/templates/admin/base_site.html:159
+msgid "We"
+msgstr "Ср"
+
+#: material/admin/templates/admin/base_site.html:160
+msgid "Th"
+msgstr "Чт"
+
+#: material/admin/templates/admin/base_site.html:161
+msgid "Fr"
+msgstr "Пт"
+
+#: material/admin/templates/admin/base_site.html:162
+msgid "Sa"
+msgstr "Сб"
+
 #: material/admin/templates/admin/change_form.html:27
 #: material/admin/templates/admin/change_list.html:30
-#: material/admin/templates/material/admin/login.html:25
+#: material/admin/templates/material/admin/login.html:31
 #: material/admin/templates/material/admin/password_change.html:16
 #: material/admin/templates/material/admin/theme_change.html:21
 msgid "Please correct the error below."
@@ -173,7 +351,7 @@ msgstr ""
 
 #: material/admin/templates/admin/change_form.html:27
 #: material/admin/templates/admin/change_list.html:30
-#: material/admin/templates/material/admin/login.html:27
+#: material/admin/templates/material/admin/login.html:33
 #: material/admin/templates/material/admin/password_change.html:18
 #: material/admin/templates/material/admin/theme_change.html:23
 msgid "Please correct the errors below."
@@ -308,6 +486,11 @@ msgid ""
 "admin site."
 msgstr ""
 
+#: material/admin/templates/admin/pagination.html:14
+#: material/admin/templates/admin/search_form.html:23
+msgid "Show all"
+msgstr ""
+
 #: material/admin/templates/admin/search_form.html:14
 msgid "Search groups"
 msgstr "Пошук груп"
@@ -324,10 +507,6 @@ msgstr[1] ""
 #: material/admin/templates/admin/search_form.html:22
 #, python-format
 msgid "%(full_result_count)s total"
-msgstr ""
-
-#: material/admin/templates/admin/search_form.html:23
-msgid "Show all"
 msgstr ""
 
 #: material/admin/templates/admin/submit_line.html:7
@@ -370,30 +549,31 @@ msgstr ""
 msgid "You don't have permission to view or edit anything."
 msgstr ""
 
-#: material/admin/templates/material/admin/login.html:41
+#: material/admin/templates/material/admin/login.html:47
 #, python-format
 msgid ""
 "You are authenticated as %(username)s, but are not authorized to access this "
 "page. Would you like to login to a different account?"
 msgstr ""
 
-#: material/admin/templates/material/admin/login.html:84
+#: material/admin/templates/material/admin/login.html:90
 msgid "Forgotten your password or username?"
 msgstr ""
 
-#: material/admin/templates/material/admin/login.html:88
+#: material/admin/templates/material/admin/login.html:94
+#: material/admin/templates/registration/password_reset_complete.html:27
 msgid "Log in"
 msgstr ""
 
-#: material/admin/templates/material/admin/logout.html:24
+#: material/admin/templates/material/admin/logout.html:26
 msgid "Logged out"
 msgstr ""
 
-#: material/admin/templates/material/admin/logout.html:25
+#: material/admin/templates/material/admin/logout.html:27
 msgid "Thanks for spending some quality time with the Web site today."
 msgstr ""
 
-#: material/admin/templates/material/admin/logout.html:26
+#: material/admin/templates/material/admin/logout.html:28
 msgid "Log in again"
 msgstr ""
 
@@ -416,6 +596,7 @@ msgid "New password confirmation"
 msgstr ""
 
 #: material/admin/templates/material/admin/password_change.html:51
+#: material/admin/templates/registration/password_reset_confirm.html:37
 msgid "Change my password"
 msgstr ""
 
@@ -451,30 +632,108 @@ msgstr ""
 msgid "Now"
 msgstr ""
 
-#: material/admin/views.py:7
+#: material/admin/templates/registration/password_reset_complete.html:26
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_confirm.html:22
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_confirm.html:29
+msgid "New password:"
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_confirm.html:34
+msgid "Confirm password:"
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_confirm.html:48
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_done.html:25
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_done.html:26
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_done.html:30
+msgid "Login"
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_email.html:10
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_form.html:22
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_form.html:29
+msgid "Email address:"
+msgstr ""
+
+#: material/admin/templates/registration/password_reset_form.html:33
+msgid "Reset my password"
+msgstr ""
+
+#: material/admin/views.py:9
 msgid "Theme selection"
 msgstr "Вибір теми"
 
-#: material/admin/views.py:9 material/admin/views.py:48
+#: material/admin/views.py:11 material/admin/views.py:51
 msgid "Default"
 msgstr "Замовчування"
 
-#: material/admin/views.py:10
+#: material/admin/views.py:12
 msgid "Night"
 msgstr "Ніч"
 
-#: material/admin/views.py:11
+#: material/admin/views.py:13
 msgid "Black"
 msgstr "Чорна"
 
-#: material/admin/views.py:12
+#: material/admin/views.py:14
 msgid "Red"
 msgstr "Червона"
 
-#: material/admin/views.py:13
+#: material/admin/views.py:15
 msgid "Green"
 msgstr "Зелена"
 
-#: material/admin/views.py:37
+#: material/admin/views.py:40
 msgid "The \"{}\" theme was saved successfully."
 msgstr "Тема \"{}\" збережена."
