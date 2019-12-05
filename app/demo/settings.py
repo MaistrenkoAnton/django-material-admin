@@ -54,6 +54,7 @@ MATERIAL_ADMIN_SITE = {
 INSTALLED_APPS = [
     'material.admin',
     'material.admin.default',
+    'material.dashboard',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
