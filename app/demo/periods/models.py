@@ -4,8 +4,10 @@ from django.utils.translation import gettext_lazy as _
 
 class DateModel(models.Model):
     date = models.DateField(_('Birth Date'))
+    my_order = models.PositiveIntegerField(default=0, blank=False, null=False)
 
     class Meta:
+        ordering = ('my_order',)
         verbose_name = _('Date Model')
         verbose_name_plural = _('Date Models')
 

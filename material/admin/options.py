@@ -35,4 +35,4 @@ class MaterialModelAdminMixin:
         material_js = [
             'material/admin/js/RelatedObjectLookups.min.js',
         ]
-        return forms.Media(js=['admin/js/%s' % url for url in js] + material_js)
+        return super().media + forms.Media(js=['admin/js/%s' % url for url in js] + material_js)

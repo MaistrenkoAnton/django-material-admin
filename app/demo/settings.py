@@ -54,6 +54,7 @@ MATERIAL_ADMIN_SITE = {
 INSTALLED_APPS = [
     'material.admin',
     'material.admin.default',
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -62,6 +63,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     'daterangefilter',
+    'adminsortable2',
 
     'demo.countries',
     'demo.documents',
