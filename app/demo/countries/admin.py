@@ -4,7 +4,7 @@ from django.contrib.admin import ModelAdmin, register
 from demo.countries.models import Country, Person, ProxyPerson
 
 
-class PersonInline(admin.StackedInline):
+class PersonInline(admin.TabularInline):
     model = Person
     ordering = ('id',)
     extra = 0

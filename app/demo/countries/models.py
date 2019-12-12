@@ -39,6 +39,7 @@ class Person(models.Model):
     spotify = models.URLField(_('Spotify Link'), blank=True, null=True)
     itunes = models.URLField(_('Itunes Link'), blank=True, null=True)
     video = models.FileField(_('Video'), null=True, blank=True)
+    smart = models.BooleanField(default=True)
 
     class Meta:
         verbose_name = _('Person')
