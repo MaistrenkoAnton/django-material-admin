@@ -196,7 +196,12 @@ input.valid[type=text]:not(.browser-default) {
 }
 
 .app {
-    page-break-inside: avoid;
+    padding: 5px;
+    display: inline-flex;
+    width: 100%;
+}
+
+.app > div {
     width: 100%;
 }
 

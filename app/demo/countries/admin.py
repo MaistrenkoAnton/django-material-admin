@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.admin import ModelAdmin, register
 
-from demo.countries.models import Country, Person, ProxyPerson
+from demo.countries.models import Country, Person, ProxyPerson, Country1, Country2, Country3, Country4, Country5, Country6
 
 
 class PersonInline(admin.TabularInline):
@@ -33,3 +33,32 @@ class PersonAdmin(ModelAdmin):
     icon_name = 'android'
     autocomplete_fields = ('user', 'nationality')
 
+
+@register(Country1)
+class PersonAdmin(ModelAdmin):
+    pass
+
+
+@register(Country2)
+class PersonAdmin(ModelAdmin):
+    pass
+
+
+@register(Country3)
+class PersonAdmin(ModelAdmin):
+    pass
+
+
+@register(Country4)
+class PersonAdmin(ModelAdmin):
+    pass
+
+
+@register(Country5)
+class PersonAdmin(ModelAdmin):
+    pass
+
+
+@register(Country6)
+class PersonAdmin(ModelAdmin):
+    pass

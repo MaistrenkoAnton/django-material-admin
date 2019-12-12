@@ -52,3 +52,27 @@ class ProxyPerson(Person):
         proxy = True
         verbose_name = _('Proxy Person')
         verbose_name_plural = _('Proxy Persons')
+
+
+class Country1(models.Model):
+    name = models.CharField(_('Name'), max_length=64)
+
+
+class Country2(models.Model):
+    name = models.CharField(_('Name'), max_length=64)
+
+
+class Country3(models.Model):
+    name = models.CharField(_('Name'), max_length=64)
+
+
+class Country4(models.Model):
+    name = models.CharField(_('Name'), max_length=64)
+
+
+class Country5(models.Model):
+    name = models.CharField(_('Name'), max_length=64)
+
+
+class Country6(models.Model):
+    name = models.CharField(_('Name'), max_length=64)

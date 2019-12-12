@@ -7,7 +7,7 @@ class Relation(models.Model):
     documents = models.ManyToManyField('documents.Document', verbose_name=_('Documents'))
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name=_('User'))
     name = models.CharField(max_length=255, verbose_name=_('Name'))
-
+    is_relation = models.BooleanField(default=True)
 
     class Meta:
         verbose_name = _('Relation')

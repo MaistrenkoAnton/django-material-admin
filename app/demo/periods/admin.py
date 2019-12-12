@@ -1,7 +1,7 @@
 from daterangefilter.filters import FutureDateRangeFilter
 from django.contrib.admin import ModelAdmin, register
 
-from demo.periods.models import DateTimeModel, TimeModel, DateModel
+from demo.periods.models import DateTimeModel, TimeModel, DateModel, Period1, Period2, Period3, Period4, Period5
 from adminsortable2.admin import SortableAdminMixin
 
 
@@ -28,3 +28,28 @@ class PersonAdmin(ModelAdmin):
 @register(DateTimeModel)
 class PersonAdmin(ModelAdmin):
     icon_name = 'linear_scale'
+
+
+@register(Period1)
+class Period1Admin(ModelAdmin):
+    icon_name = 'access_time'
+
+
+@register(Period2)
+class Period2Admin(ModelAdmin):
+    icon_name = 'access_time'
+
+
+@register(Period3)
+class Period3Admin(ModelAdmin):
+    icon_name = 'access_time'
+
+
+@register(Period4)
+class Period4Admin(ModelAdmin):
+    icon_name = 'access_time'
+
+
+@register(Period5)
+class Period5Admin(ModelAdmin):
+    icon_name = 'access_time'
