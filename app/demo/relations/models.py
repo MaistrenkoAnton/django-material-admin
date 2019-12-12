@@ -8,6 +8,7 @@ class Relation(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name=_('User'))
     name = models.CharField(max_length=255, verbose_name=_('Name'))
 
+
     class Meta:
         verbose_name = _('Relation')
         verbose_name_plural = _('Relations')

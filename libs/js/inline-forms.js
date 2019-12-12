@@ -15,4 +15,8 @@
             }
         }
     });
+    $('input:checkbox + span').click(function() {
+        var checkbox = $(this).prev();
+        checkbox.prop('checked', !checkbox.prop("checked"))
+    });
 })(django.jQuery);
