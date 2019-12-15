@@ -13,7 +13,7 @@ class UserPictureInline(admin.TabularInline):
     extra = 0
 
 
-class UserRelationInline(admin.TabularInline):
+class UserRelationInline(admin.StackedInline):
     model = Relation
     extra = 0
 
