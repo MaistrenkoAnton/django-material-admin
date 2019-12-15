@@ -35,12 +35,12 @@ def admin_change_list_editable_checkbox(html):
             if checked not in html:
                 checked = ''
             field_name = name[0].split('-')[-1]
-            return mark_safe(f"""<td class="field-{field_name}">
-              <label for="id_{name[0]}" class="checkbox-block">
-                <input class="action-select" name="{name[0]}" id="id_{name[0]}" type="checkbox" {checked}>
+            return mark_safe("""<td class="field-{field_name}">
+              <label for="id_{name}" class="checkbox-block">
+                <input class="action-select" name="{name}" id="id_{name}" type="checkbox" {checked}>
                 <span></span>
               </label>
-            </td>""")
+            </td>""".format(field_name=field_name, name=name[0], checked=checked))
     return html
 
 
