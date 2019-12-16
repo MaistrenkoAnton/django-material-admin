@@ -29,6 +29,7 @@ MATERIAL_ADMIN_SITE = {
     'LOGIN_LOGO':  _get_setting_static('LOGIN_LOGO'),
     'LOGOUT_BG':  _get_setting_static('LOGOUT_BG'),
     'SHOW_THEMES':  _get_setting('SHOW_THEMES'),
+    'TRAY_REVERSE':  _get_setting('TRAY_REVERSE'),
     'APP_ICONS': {
         'auth': 'group',
         'sites': 'web'

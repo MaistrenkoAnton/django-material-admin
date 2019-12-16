@@ -9,6 +9,8 @@ from django.template.defaultfilters import stringfilter
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 
+from material.admin.settings import MATERIAL_ADMIN_SITE
+
 register = Library()
 
 
@@ -58,8 +60,12 @@ def template_exists(value):
 def cookie(context, cookie_name):
     if 'request' not in context:
         return False
+
     request = context['request']
     result = request.COOKIES.get(cookie_name)
+    if MATERIAL_ADMIN_SITE['TRAY_REVERSE'] is True:
+        if cookie_name in ['additional-submit-line', 'object-tools']:
+            return result != 'true'
     return result == 'true'
 
 

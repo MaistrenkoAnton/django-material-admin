@@ -38,18 +38,18 @@
     }
 
     $('.nav-bar.minimize').on('click', function () {
-        createCookie(navBarCookie, true, 30);
+        createCookie(navBarCookie, true, 1000);
         location.reload();
     });
 
 
     $('.submit-line.minimize').on('click', function () {
-        createCookie(additionalSubmitLineCookie, true, 30);
+        createCookie(additionalSubmitLineCookie, true, 1000);
         location.reload();
     });
 
     $('.tools.minimize').on('click', function () {
-        createCookie(toolsCookie, true, 30);
+        createCookie(toolsCookie, true, 1000);
         location.reload();
     });
 

@@ -3,7 +3,7 @@
 .. .. |build|
 
 
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.6.12&x2=0
+.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.6.13&x2=0
     :target: https://pypi.org/project/django-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
@@ -131,6 +131,7 @@ https://material.io/resources/icons/?style=baseline
         'LOGIN_LOGO':  'path/to/image',  # Admin site logo on login page (path to static should be specified)
         'LOGOUT_BG':  'path/to/image',  # Admin site background on login/logout pages (path to static should be specified)
         'SHOW_THEMES':  True,  #  Show default admin themes button
+        'TRAY_REVERSE': True,  # Hide object-tools and additional-submit-line by default
         'APP_ICONS': {  # Set icons for applications(lowercase), including 3rd party apps, {'application_name': 'material_icon_name', ...}
             'sites': 'send',
         },
