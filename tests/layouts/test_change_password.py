@@ -4,6 +4,7 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse_lazy
 from django.test import Client
+from django.conf import settings
 
 
 class ChangePasswordLayoutsTest(TestCase):
@@ -28,7 +29,10 @@ class ChangePasswordLayoutsTest(TestCase):
         self.assertNotIn('id="password-input"', response._container[0].decode('utf-8'))
         self.assertNotIn('class="submit-row-btn"', response._container[0].decode('utf-8'))
         self.assertIn('id="container"', response._container[0].decode('utf-8'))
-        self.assertNotIn('id="tray"', response._container[0].decode('utf-8'))
+        if settings.MATERIAL_ADMIN_SITE['TRAY_REVERSE'] is True:
+            self.assertIn('id="tray"', response._container[0].decode('utf-8'))
+        else:
+            self.assertNotIn('id="tray"', response._container[0].decode('utf-8'))
         self.assertIn('class="scroll-pane"', response._container[0].decode('utf-8'))
         self.assertIn('class="breadcrumbs"', response._container[0].decode('utf-8'))
         self.assertNotIn('class="app-list"', response._container[0].decode('utf-8'))
