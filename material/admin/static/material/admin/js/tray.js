@@ -37,34 +37,39 @@
         createCookie(name, "", -1);
     }
 
+    navBarIcon.on('click', function () {
+        eraseCookie(navBarCookie);
+        location.reload();
+    });
     $('.nav-bar.minimize').on('click', function () {
         createCookie(navBarCookie, true, 1000);
         location.reload();
     });
 
-
-    $('.submit-line.minimize').on('click', function () {
-        createCookie(additionalSubmitLineCookie, true, 1000);
-        location.reload();
-    });
-
-    $('.tools.minimize').on('click', function () {
-        createCookie(toolsCookie, true, 1000);
-        location.reload();
-    });
-
-    navBarIcon.on('click', function () {
-        eraseCookie(navBarCookie);
-        location.reload();
-    });
-
     toolsIcon.on('click', function () {
-        eraseCookie(toolsCookie);
+        readCookie(toolsCookie)
+            ? eraseCookie(toolsCookie)
+            : createCookie(toolsCookie, true, 1000);
+        location.reload();
+    });
+     $('.tools.minimize').on('click', function () {
+        readCookie(toolsCookie)
+            ? eraseCookie(toolsCookie)
+            : createCookie(toolsCookie, true, 1000);
         location.reload();
     });
 
     additionalSubmitLineIcon.on('click', function () {
-        eraseCookie(additionalSubmitLineCookie);
+        readCookie(additionalSubmitLineCookie)
+            ? eraseCookie(additionalSubmitLineCookie)
+            : createCookie(additionalSubmitLineCookie, true, 1000);
+
+        location.reload();
+    });
+    $('.submit-line.minimize').on('click', function () {
+        readCookie(additionalSubmitLineCookie)
+            ? eraseCookie(additionalSubmitLineCookie)
+            : createCookie(additionalSubmitLineCookie, true, 1000);
         location.reload();
     });
 

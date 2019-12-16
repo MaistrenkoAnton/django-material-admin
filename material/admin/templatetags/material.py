@@ -62,11 +62,11 @@ def cookie(context, cookie_name):
         return False
 
     request = context['request']
-    result = request.COOKIES.get(cookie_name)
+    cookie_value = request.COOKIES.get(cookie_name)
     if MATERIAL_ADMIN_SITE['TRAY_REVERSE'] is True:
         if cookie_name in ['additional-submit-line', 'object-tools']:
-            return result != 'true'
-    return result == 'true'
+            return cookie_value != 'true'
+    return cookie_value == 'true'
 
 
 @register.simple_tag(takes_context=True)
