@@ -35,7 +35,7 @@ MATERIAL_ADMIN_SITE = {
     'TITLE':  _('Demo'),
     'FAVICON':  'demo.png',
     'MAIN_BG_COLOR':  'green',
-    'MAIN_HOVER_COLOR':  'yellow',
+    'MAIN_HOVER_COLOR':  'black',
     'PROFILE_PICTURE':  'profile-background.jpeg',
     'PROFILE_BG':  'profile-background.jpeg',
     'LOGIN_LOGO':  'profile-background.jpeg',

@@ -109,7 +109,7 @@ class MaterialAdminSite(AdminSite):
                 'object_name': model._meta.object_name,
                 'perms': perms,
                 'proxy': getattr(model, 'proxy', False),
-                'count': 0 if getattr(model, 'proxy', False) else model.objects.count(),
+                'count': 0 if getattr(model, 'proxy', False) else model_admin.get_queryset(request).count(),
                 'icon': icon
             }
             if perms.get('change') or perms.get('view'):
