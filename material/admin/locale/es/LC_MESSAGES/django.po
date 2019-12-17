@@ -510,11 +510,11 @@ msgstr ""
 
 #: material/admin/templates/admin/submit_line.html:7
 msgid "All actions"
-msgstr ""
+msgstr "Todas las acciones"
 
 #: material/admin/templates/admin/widgets/clearable_file_input.html:7
 msgid "File"
-msgstr ""
+msgstr "Archivo"
 
 #: material/admin/templates/admin/widgets/clearable_file_input.html:24
 msgid "Download"
