@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 15:23+0000\n"
+"POT-Creation-Date: 2019-12-17 21:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME it2015maistrenko@gmail.com\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,6 +120,7 @@ msgid "Delete"
 msgstr ""
 
 #: material/admin/templates/admin/additional_submit_line.html:52
+#: material/admin/templates/admin/change_form.html:68
 #: material/admin/templates/material/admin/side_nav.html:5
 msgid "Minimize"
 msgstr "最小化"

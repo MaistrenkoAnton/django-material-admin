@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-17 21:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: demo/countries/apps.py:8 demo/countries/models.py:20
+msgid "Countries"
+msgstr ""
+
+#: demo/countries/choices.py:4
+msgid "Republic"
+msgstr ""
+
+#: demo/countries/choices.py:5
+msgid "Constitutional monarchy"
+msgstr ""
+
+#: demo/countries/choices.py:6
+msgid "Absolute monarchy"
+msgstr ""
+
+#: demo/countries/choices.py:7
+msgid "N/A"
+msgstr ""
+
+#: demo/countries/models.py:9 demo/countries/models.py:58
+#: demo/countries/models.py:62 demo/countries/models.py:66
+#: demo/countries/models.py:70 demo/countries/models.py:74
+#: demo/countries/models.py:78
+msgid "Name"
+msgstr ""
+
+#: demo/countries/models.py:10
+msgid "Picture"
+msgstr ""
+
+#: demo/countries/models.py:11
+msgid "Population"
+msgstr ""
+
+#: demo/countries/models.py:12
+msgid "Type"
+msgstr ""
+
+#: demo/countries/models.py:13
+msgid "Is safe"
+msgstr ""
+
+#: demo/countries/models.py:14
+msgid "Created"
+msgstr ""
+
+#: demo/countries/models.py:15
+msgid "Modified"
+msgstr ""
+
+#: demo/countries/models.py:16
+msgid "Time"
+msgstr ""
+
+#: demo/countries/models.py:19
+msgid "Country"
+msgstr ""
+
+#: demo/countries/models.py:29
+msgid "UUID number"
+msgstr ""
+
+#: demo/countries/models.py:31
+msgid "Nationality"
+msgstr ""
+
+#: demo/countries/models.py:34
+msgid "User"
+msgstr ""
+
+#: demo/countries/models.py:36
+msgid "Birth Date"
+msgstr ""
+
+#: demo/countries/models.py:37
+msgid "description"
+msgstr ""
+
+#: demo/countries/models.py:38
+msgid "Google Play Link"
+msgstr ""
+
+#: demo/countries/models.py:39
+msgid "Spotify Link"
+msgstr ""
+
+#: demo/countries/models.py:40
+msgid "Itunes Link"
+msgstr ""
+
+#: demo/countries/models.py:41
+msgid "Video"
+msgstr ""
+
+#: demo/countries/models.py:45
+msgid "Person"
+msgstr ""
+
+#: demo/countries/models.py:46
+msgid "Persons"
+msgstr ""
+
+#: demo/countries/models.py:53
+msgid "Proxy Person"
+msgstr ""
+
+#: demo/countries/models.py:54
+msgid "Proxy Persons"
+msgstr ""

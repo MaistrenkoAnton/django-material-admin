@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 15:23+0000\n"
+"POT-Creation-Date: 2019-12-17 21:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,18 +24,22 @@ msgstr ""
 msgid "Demo"
 msgstr "Демо"
 
-#: demo/settings.py:149
+#: demo/settings.py:151
 msgid "English"
 msgstr "Английский"
 
-#: demo/settings.py:150
+#: demo/settings.py:152
+msgid "Spanish"
+msgstr ""
+
+#: demo/settings.py:153
 msgid "Russian"
 msgstr "Русский"
 
-#: demo/settings.py:151
+#: demo/settings.py:154
 msgid "Ukrainian"
 msgstr "Украинський"
 
-#: demo/settings.py:152
+#: demo/settings.py:155
 msgid "Chinese"
 msgstr ""

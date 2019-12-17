@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 15:23+0000\n"
+"POT-Creation-Date: 2019-12-17 21:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,10 @@ msgstr "Абсолютна монархія"
 msgid "N/A"
 msgstr "Непридатний"
 
-#: demo/countries/models.py:9
+#: demo/countries/models.py:9 demo/countries/models.py:58
+#: demo/countries/models.py:62 demo/countries/models.py:66
+#: demo/countries/models.py:70 demo/countries/models.py:74
+#: demo/countries/models.py:78
 msgid "Name"
 msgstr "Iм'я"
 
@@ -112,18 +115,18 @@ msgstr "Itunes посилання"
 msgid "Video"
 msgstr "Відео"
 
-#: demo/countries/models.py:44
+#: demo/countries/models.py:45
 msgid "Person"
 msgstr "Персона"
 
-#: demo/countries/models.py:45
+#: demo/countries/models.py:46
 msgid "Persons"
 msgstr "Персони"
 
-#: demo/countries/models.py:52
+#: demo/countries/models.py:53
 msgid "Proxy Person"
 msgstr "Довірена особа"
 
-#: demo/countries/models.py:53
+#: demo/countries/models.py:54
 msgid "Proxy Persons"
 msgstr "Довірені особи"

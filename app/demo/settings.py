@@ -149,6 +149,7 @@ LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
     ('en', _('English')),
+    ('es', _('Spanish')),
     ('ru', _('Russian')),
     ('uk', _('Ukrainian')),
     ('zh-hans', _('Chinese')),

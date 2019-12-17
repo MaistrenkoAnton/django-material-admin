@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-04 15:23+0000\n"
+"POT-Creation-Date: 2019-12-17 21:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,34 +28,94 @@ msgstr "期"
 msgid "Birth Date"
 msgstr "生日"
 
-#: demo/periods/models.py:9
+#: demo/periods/models.py:11
 msgid "Date Model"
 msgstr "日期模型"
 
-#: demo/periods/models.py:10
+#: demo/periods/models.py:12
 msgid "Date Models"
 msgstr "日期模型"
 
-#: demo/periods/models.py:14
+#: demo/periods/models.py:16
 msgid "Time"
 msgstr "时间"
 
-#: demo/periods/models.py:17
+#: demo/periods/models.py:19
 msgid "Time Model"
 msgstr "时间模型"
 
-#: demo/periods/models.py:18
+#: demo/periods/models.py:20
 msgid "Time Models"
 msgstr "时间模型"
 
-#: demo/periods/models.py:22
+#: demo/periods/models.py:24
 msgid "Date Time"
 msgstr "约会时间"
 
-#: demo/periods/models.py:25
+#: demo/periods/models.py:27
 msgid "Date Time Model"
 msgstr "日期时间模型"
 
-#: demo/periods/models.py:26
+#: demo/periods/models.py:28
 msgid "Date Time Models"
 msgstr "日期时间模型"
+
+#: demo/periods/models.py:32 demo/periods/models.py:35
+#, fuzzy
+#| msgid "Periods"
+msgid "Period1"
+msgstr "期"
+
+#: demo/periods/models.py:36
+#, fuzzy
+#| msgid "Periods"
+msgid "Periods1"
+msgstr "期"
+
+#: demo/periods/models.py:41 demo/periods/models.py:44
+#, fuzzy
+#| msgid "Periods"
+msgid "Period2"
+msgstr "期"
+
+#: demo/periods/models.py:45
+#, fuzzy
+#| msgid "Periods"
+msgid "Periods2"
+msgstr "期"
+
+#: demo/periods/models.py:49 demo/periods/models.py:52
+#, fuzzy
+#| msgid "Periods"
+msgid "Period3"
+msgstr "期"
+
+#: demo/periods/models.py:53
+#, fuzzy
+#| msgid "Periods"
+msgid "Periods3"
+msgstr "期"
+
+#: demo/periods/models.py:57 demo/periods/models.py:60
+#, fuzzy
+#| msgid "Periods"
+msgid "Period4"
+msgstr "期"
+
+#: demo/periods/models.py:61
+#, fuzzy
+#| msgid "Periods"
+msgid "Periods4"
+msgstr "期"
+
+#: demo/periods/models.py:65 demo/periods/models.py:68
+#, fuzzy
+#| msgid "Periods"
+msgid "Period5"
+msgstr "期"
+
+#: demo/periods/models.py:69
+#, fuzzy
+#| msgid "Periods"
+msgid "Periods5"
+msgstr "期"
