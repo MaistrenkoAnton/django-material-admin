@@ -1,4 +1,6 @@
+import json
 import re
+from json import JSONDecodeError
 
 from django import template
 from django.contrib.admin.templatetags.admin_modify import submit_row
@@ -61,14 +63,18 @@ def cookie(context, cookie_name):
     if 'request' not in context:
         return False
 
+    def _is_cookie_reversed(setting, *cookies):
+        return MATERIAL_ADMIN_SITE[setting] and cookie_name in cookies
+
     request = context['request']
-    cookie_value = request.COOKIES.get(cookie_name)
-    if (
-        MATERIAL_ADMIN_SITE['TRAY_REVERSE'] and cookie_name in ('additional-submit-line', 'object-tools')
-        or MATERIAL_ADMIN_SITE['NAVBAR_REVERSE'] and cookie_name == 'tray-nav-bar'
-    ):
-        return cookie_value != 'true'
-    return cookie_value == 'true'
+    try:
+        cookie_value = json.loads(request.COOKIES.get(cookie_name))
+    except (JSONDecodeError, TypeError):
+        cookie_value = False
+    if _is_cookie_reversed('TRAY_REVERSE', 'additional-submit-line', 'object-tools') \
+            or _is_cookie_reversed('NAVBAR_REVERSE', 'tray-nav-bar'):
+        return not cookie_value
+    return cookie_value
 
 
 @register.simple_tag(takes_context=True)

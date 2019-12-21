@@ -41,7 +41,8 @@ MATERIAL_ADMIN_SITE = {
     'LOGIN_LOGO':  'profile-background.jpeg',
     'LOGOUT_BG':  'profile-background.jpeg',
     'SHOW_THEMES':  True,
-    'TRAY_REVERSE': False,
+    'TRAY_REVERSE': True,
+    'NAVBAR_REVERSE': True,
     'APP_ICONS': {
         'invitations': 'send',
     },
