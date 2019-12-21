@@ -63,9 +63,11 @@ def cookie(context, cookie_name):
 
     request = context['request']
     cookie_value = request.COOKIES.get(cookie_name)
-    if MATERIAL_ADMIN_SITE['TRAY_REVERSE'] is True:
-        if cookie_name in ['additional-submit-line', 'object-tools']:
-            return cookie_value != 'true'
+    if (
+        MATERIAL_ADMIN_SITE['TRAY_REVERSE'] and cookie_name in ('additional-submit-line', 'object-tools')
+        or MATERIAL_ADMIN_SITE['NAVBAR_REVERSE'] and cookie_name == 'tray-nav-bar'
+    ):
+        return cookie_value != 'true'
     return cookie_value == 'true'
 
 
