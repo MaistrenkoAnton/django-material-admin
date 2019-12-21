@@ -30,6 +30,7 @@ MATERIAL_ADMIN_SITE = {
     'LOGOUT_BG':  _get_setting_static('LOGOUT_BG'),
     'SHOW_THEMES':  _get_setting('SHOW_THEMES'),
     'TRAY_REVERSE':  _get_setting('TRAY_REVERSE'),
+    'NAVBAR_REVERSE':  _get_setting('NAVBAR_REVERSE'),
     'APP_ICONS': {
         'auth': 'group',
         'sites': 'web'

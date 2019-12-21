@@ -132,6 +132,7 @@ https://material.io/resources/icons/?style=baseline
         'LOGOUT_BG':  'path/to/image',  # Admin site background on login/logout pages (path to static should be specified)
         'SHOW_THEMES':  True,  #  Show default admin themes button
         'TRAY_REVERSE': True,  # Hide object-tools and additional-submit-line by default
+        'NAVBAR_REVERSE': True,  # Hide side navbar by default
         'APP_ICONS': {  # Set icons for applications(lowercase), including 3rd party apps, {'application_name': 'material_icon_name', ...}
             'sites': 'send',
         },
