@@ -48,6 +48,25 @@
 }
 
 #branding h1 {
-    height: 100%;
-    line-height: 67px;
+    line-height: 60px;
+    margin: 0;
+}
+
+nav.nav-extended {
+    line-height: 1;
+    height: 60px;
+}
+
+#branding {
+    word-break: break-all;
+}
+
+#user-tools {
+    flex-shrink: 0;
+}
+
+@media only screen and (min-width: 601px) {
+    nav {
+        line-height: 1;
+    }
 }
