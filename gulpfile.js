@@ -33,4 +33,4 @@ gulp.task('uglify-js', function() {
     .pipe(gulp.dest(paths.scripts.dest))
 });
 
-gulp.task('default', ['minify-css', 'uglify-js']);
+gulp.task('default', gulp.series('minify-css', 'uglify-js'));
