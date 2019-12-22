@@ -4,7 +4,7 @@ from django.contrib.admin import ModelAdmin, register
 from demo.documents.models import Document, Link
 
 
-class LinkInline(admin.TabularInline):
+class LinkInline(admin.StackedInline):
     model = Link
     extra = 0
 

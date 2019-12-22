@@ -22,6 +22,7 @@ class Document(models.Model):
 class Link(models.Model):
     url = models.URLField(_('Url'))
     document = models.ForeignKey('documents.Document', verbose_name=_('Document'), null=True, on_delete=models.CASCADE)
+    is_approved = models.BooleanField(_('Approved'), default=False)
 
     class Meta:
         verbose_name = _('Link')

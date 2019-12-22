@@ -11,14 +11,13 @@
           {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
           {% if field.is_checkbox %}
             <div class="action-checkbox">
-              <label for="{{ field.field.name }}" class="checkbox-block">
-                <input class="action-select" name="{{ field.field.name }}" id="{{ field.field.name }}"
-                  type="checkbox" {% if field.field.value %}checked{% endif %}/>
+              <label for="" class="checkbox-block">
+                {{ field.field }}
                 <span></span>
               </label>
             </div>
             <div class="checkbox-label">
-              <label for="{{ field.field.name }}">
+              <label for="{{ field.field.auto_id }}">
                 {{ field.field.label }}
               </label>
             </div>

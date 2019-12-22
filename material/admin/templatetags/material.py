@@ -41,7 +41,7 @@ def admin_change_list_editable_checkbox(html):
             field_name = name[0].split('-')[-1]
             return mark_safe("""<td class="field-{field_name}">
               <label for="id_{name}" class="checkbox-block">
-                <input class="action-select" name="{name}" id="id_{name}" type="checkbox" {checked}>
+                <input name="{name}" id="id_{name}" type="checkbox" {checked}>
                 <span></span>
               </label>
             </td>""".format(field_name=field_name, name=name[0], checked=checked))

@@ -15,7 +15,7 @@
             }
         }
     });
-    $('.tabular.inline-related input:checkbox + span').click(function() {
+    $('.inline-related input:checkbox + span').click(function() {
         var checkbox = $(this).prev();
         checkbox.prop('checked', !checkbox.prop("checked"))
     });
