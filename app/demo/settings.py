@@ -43,6 +43,7 @@ MATERIAL_ADMIN_SITE = {
     'SHOW_THEMES':  True,
     'TRAY_REVERSE': True,
     'NAVBAR_REVERSE': True,
+    'SHOW_COUNTS': False,
     'APP_ICONS': {
         'invitations': 'send',
     },

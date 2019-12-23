@@ -31,6 +31,7 @@ MATERIAL_ADMIN_SITE = {
     'SHOW_THEMES':  _get_setting('SHOW_THEMES'),
     'TRAY_REVERSE':  _get_setting('TRAY_REVERSE'),
     'NAVBAR_REVERSE':  _get_setting('NAVBAR_REVERSE'),
+    'SHOW_COUNTS':  _get_setting('SHOW_COUNTS'),
     'APP_ICONS': {
         'auth': 'group',
         'sites': 'web'

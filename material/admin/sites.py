@@ -20,6 +20,7 @@ class MaterialAdminSite(AdminSite):
     login_logo = None
     logout_bg = None
     show_themes = False
+    show_counts = False
 
     def register(self, model_or_iterable, admin_class=None, **options):
         if admin_class:
@@ -43,6 +44,7 @@ class MaterialAdminSite(AdminSite):
         self.login_logo = self.login_logo or MATERIAL_ADMIN_SITE['LOGIN_LOGO']
         self.logout_bg = self.logout_bg or MATERIAL_ADMIN_SITE['LOGOUT_BG']
         self.show_themes = self.show_themes or MATERIAL_ADMIN_SITE['SHOW_THEMES']
+        self.show_counts = self.show_counts or MATERIAL_ADMIN_SITE['SHOW_COUNTS']
 
     def get_urls(self):
         return super().get_urls() + [path('themes/', self.theme_change, name='themes')]
@@ -109,7 +111,7 @@ class MaterialAdminSite(AdminSite):
                 'object_name': model._meta.object_name,
                 'perms': perms,
                 'proxy': getattr(model, 'proxy', False),
-                'count': model_admin.get_queryset(request).count(),
+                'count': model_admin.get_queryset(request).count() if self.show_counts else None,
                 'icon': icon
             }
             if perms.get('change') or perms.get('view'):
