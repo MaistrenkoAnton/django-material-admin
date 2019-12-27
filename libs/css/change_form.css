@@ -90,7 +90,9 @@ td.original {
     display: flex;
 }
 
-.inline-group .tabular td.original p {
+.inline-group,
+.inline-group .tabular td.original p,
+.inline-group .inline-related {
     overflow: visible;
 }
 

@@ -39,10 +39,13 @@
     h1 {
         display: none;
     }
+    .js-inline-admin-formset.inline-group {
+        overflow: visible;
+    }
 }
 
 @media (max-width: 992px) {
-     #header #site-name, #header #user-tools{
+     #header #site-name, #header #user-tools {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
