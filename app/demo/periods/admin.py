@@ -1,13 +1,28 @@
 from daterangefilter.filters import FutureDateRangeFilter
 from django.contrib.admin import ModelAdmin, register
+from django import forms
 
 from demo.periods.models import DateTimeModel, TimeModel, DateModel, Period1, Period2, Period3, Period4, Period5
 from adminsortable2.admin import SortableAdminMixin
+
+from material.admin.widgets import MaterialAdminTimeWidget, MaterialAdminDateWidget
+
+
+class DateForm(forms.ModelForm):
+    date = forms.DateField(
+        widget=MaterialAdminDateWidget,
+        disabled=True
+    )
+
+    class Meta:
+        model = DateModel
+        fields = ['date']
 
 
 @register(DateModel)
 class DateModelAdmin(SortableAdminMixin, ModelAdmin):
     icon_name = 'insert_invitation'
+    form = DateForm
     list_display = ('id', 'my_order', 'date')
     # ordering = ('my_order', )
     list_editable = ['date', ]
@@ -20,9 +35,21 @@ class DateModelAdmin(SortableAdminMixin, ModelAdmin):
     )
 
 
+class TimeForm(forms.ModelForm):
+    time = forms.TimeField(
+        widget=MaterialAdminTimeWidget,
+        disabled=True
+    )
+
+    class Meta:
+        model = TimeModel
+        fields = ['time']
+
+
 @register(TimeModel)
 class PersonAdmin(ModelAdmin):
     icon_name = 'access_time'
+    form = TimeForm
 
 
 @register(DateTimeModel)

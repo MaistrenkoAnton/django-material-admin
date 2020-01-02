@@ -1,8 +1,11 @@
 {% load i18n %}
 
 <div class="time-input time-block">
-    <input id="{{ widget.attrs.id }}" type="{{ widget.type }}" name="{{ widget.name }}" class="timepicker" value="{{ widget.value|default_if_none:''  }}">
-    <i class="material-icons clock" title="{% trans 'Time' %}">access_time</i>
-    <i class="material-icons now" title="{% trans 'Now' %}">save_alt</i>
+    <input id="{{ widget.attrs.id }}" type="{{ widget.type }}" name="{{ widget.name }}" class="timepicker"
+           value="{{ widget.value|default_if_none:''  }}" {% if widget.attrs.disabled %}disabled{% endif %}>
+    {% if not widget.attrs.disabled %}
+        <i class="material-icons clock" title="{% trans 'Time' %}">access_time</i>
+        <i class="material-icons now" title="{% trans 'Now' %}">save_alt</i>
+    {% endif %}
 </div>
 <div class="time-difference"></div>
