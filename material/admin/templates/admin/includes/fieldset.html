@@ -11,7 +11,7 @@
           {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
           {% if field.is_checkbox %}
             <div class="action-checkbox">
-              <label for="" class="checkbox-block">
+              <label class="checkbox-block">
                 {{ field.field }}
                 <span></span>
               </label>

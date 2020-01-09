@@ -27,7 +27,13 @@ label.checkbox-block {
     width: 25px;
     height: 25px;
     margin-top: -7px;
+    cursor: pointer;
 }
+
+label.checkbox-block span {
+    pointer-events: none;
+}
+
 form .aligned div.help {
    margin-left: -10px;
 }
