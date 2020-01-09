@@ -14,7 +14,6 @@
       {% for inline_admin_form in inline_admin_formset %}
         <div class="inline-related card {% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}{% if forloop.last and inline_admin_formset.has_add_permission %} empty-form last-related{% endif %}"
              id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
-          <div class="stacked-inline-close"><i class="material-icons">close</i></div>
           <h3>
             <b>{{ inline_admin_formset.opts.verbose_name|capfirst }}:</b>&nbsp;
             <span class="inline_label">
@@ -57,6 +56,7 @@
           {% if inline_admin_form.fk_field %}
             {{ inline_admin_form.fk_field.field }}
           {% endif %}
+          <div class="stacked-inline-close btn red">{% trans "Delete" %} <i class="material-icons right">delete_forever</i></div>
         </div>
       {% endfor %}
     </div>

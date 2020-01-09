@@ -166,6 +166,8 @@ tr {
 .stacked-inline-close {
     text-align: right;
     cursor: pointer;
+    float: right;
+    margin: 0 1% 1% 0;
 }
 
 .inline-related {
