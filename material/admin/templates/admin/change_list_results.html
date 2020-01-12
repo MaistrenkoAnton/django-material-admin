@@ -26,7 +26,7 @@
         <a href="{{ header.url_primary }}">{{ header.text|capfirst }}</a>
     {% else %}
       <label>{{ header.text|capfirst }}
-        {% if forloop.counter == 1 %}
+        {% if 'action-checkbox-column' in header.class_attrib %}
           <span></span>
         {% endif %}
       </label>
