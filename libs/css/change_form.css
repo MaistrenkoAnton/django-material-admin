@@ -150,6 +150,10 @@ form .aligned div.help {
     margin-top: 10px;
 }
 
+.aligned label {
+    width: 100%;
+}
+
 .aligned label + div.readonly {
     padding-top: 20px;
 }
