@@ -16,10 +16,6 @@ fieldset.module.aligned {
     margin-bottom: 0;
 }
 
-form .aligned div.help {
-   margin-left: -10px;
-}
-
 .input-field label + div {
     padding-top: 40px;
 }
@@ -126,6 +122,13 @@ a.add-related {
 .form-row td .url {
     top: 38px;
 }
+
+
+form .aligned div.help,
+form .aligned input + div.help {
+   margin-left: -10px;
+}
+
 
 form .aligned p.help,
 form .aligned div.help {
