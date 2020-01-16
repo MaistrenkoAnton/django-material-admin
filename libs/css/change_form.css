@@ -150,13 +150,15 @@ form .aligned div.help {
     margin-top: 10px;
 }
 
-.aligned label {
+.aligned label,
+.inline-group .aligned label {
     width: 100%;
 }
 
 .aligned label + div.readonly {
     padding-top: 20px;
 }
+
 tr {
     border: 0;
 }
