@@ -16,24 +16,6 @@ fieldset.module.aligned {
     margin-bottom: 0;
 }
 
-.checkbox-label label {
-    color: #666;
-    font-size: 14px;
-    margin-top: -6px;
-    cursor: pointer;
-}
-
-label.checkbox-block {
-    width: 25px;
-    height: 25px;
-    margin-top: -7px;
-    cursor: pointer;
-}
-
-label.checkbox-block span {
-    pointer-events: none;
-}
-
 form .aligned div.help {
    margin-left: -10px;
 }
@@ -157,6 +139,25 @@ form .aligned div.help {
 
 .aligned label + div.readonly {
     padding-top: 20px;
+}
+
+.checkbox-label label {
+    color: #666;
+    font-size: 14px;
+    margin-top: -6px;
+    cursor: pointer;
+    width: 160px;
+}
+
+label.checkbox-block {
+    width: 25px;
+    height: 25px;
+    margin-top: -7px;
+    cursor: pointer;
+}
+
+label.checkbox-block span {
+    pointer-events: none;
 }
 
 tr {
