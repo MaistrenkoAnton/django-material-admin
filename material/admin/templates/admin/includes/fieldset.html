@@ -7,8 +7,7 @@
     <div class="form-row{% if line.errors %} errors{% endif %}{% if not line.has_visible_field %} hidden{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}">
       {% if line.fields|length_is:'1' %}{{ line.errors }}{% endif %}
       {% for field in line %}
-        <div class="input-field"{% if not line.fields|length_is:'1' %} class="fieldBox{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% elif field.is_checkbox %} class="checkbox-row"{% endif %}>
-          {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
+        <div class="input-field{% if field.is_checkbox %} checkbox-row{% endif %}"{% if not line.fields|length_is:'1' %} class="fieldBox{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}{% if field.field.is_hidden %} hidden{% endif %}"{% endif %}>{% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
           {% if field.is_checkbox %}
             <div class="action-checkbox">
               <label class="checkbox-block">

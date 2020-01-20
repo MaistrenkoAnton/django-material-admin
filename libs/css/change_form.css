@@ -143,7 +143,7 @@ form .aligned div.help {
     width: 25px;
 }
 
-.inline-related .input-field {
+.checkbox-row {
     display: flex;
 }
 
