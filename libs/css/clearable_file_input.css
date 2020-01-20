@@ -39,4 +39,9 @@
 label.clear-cache-label {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+label.clear-cache-label span {
+    pointer-events: none;
 }

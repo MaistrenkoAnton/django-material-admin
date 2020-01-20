@@ -2,6 +2,7 @@ from django.contrib import admin, messages
 from django.contrib.admin import register
 from django.contrib.auth.admin import UserAdmin
 
+from demo.profile.forms import RelationForm
 from demo.profile.models import UserProfile
 from demo.relations.models import Relation
 
@@ -15,6 +16,7 @@ class UserPictureInline(admin.TabularInline):
 
 class UserRelationInline(admin.StackedInline):
     model = Relation
+    form = RelationForm
     extra = 0
 
 
