@@ -35,3 +35,8 @@
 .label-clear {
     height: 25px;
 }
+
+label.clear-cache-label {
+    display: flex;
+    align-items: center;
+}

@@ -67,6 +67,7 @@ INSTALLED_APPS = [
 
     'daterangefilter',
     'adminsortable2',
+    'filefield_cache',
 
     'demo.countries',
     'demo.documents',
