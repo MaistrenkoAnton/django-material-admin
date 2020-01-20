@@ -129,7 +129,6 @@ form .aligned input + div.help {
    margin-left: -10px;
 }
 
-
 form .aligned p.help,
 form .aligned div.help {
     margin-top: 10px;
@@ -138,6 +137,14 @@ form .aligned div.help {
 .aligned label,
 .inline-group .aligned label {
     width: 100%;
+}
+
+.inline-group .inline-related .aligned label.checkbox-block {
+    width: 25px;
+}
+
+.inline-related .input-field {
+    display: flex;
 }
 
 .aligned label + div.readonly {
