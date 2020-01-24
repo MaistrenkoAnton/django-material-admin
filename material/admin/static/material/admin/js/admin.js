@@ -1,12 +1,14 @@
 (function($) {
     const toasts = ['success', 'warning', 'info', 'error']
 
-    $('#mobile-demo').on('touchstart click touchmove',
-        function() {
+    $('#mobile-demo').on('touchstart click touchmove', function() {
         $('.scroll-pane').jScrollPane();
-    })
-    $('#side-bar').on('mouseenter scroll',
-        function() {
+    });
+
+    $('.collapsible-body').on('mouseenter', function() {
+        $('.scroll-pane').jScrollPane();
+    });
+    $('#side-bar').on('mouseenter scroll', function() {
         $('.scroll-pane').jScrollPane();
     }).mouseleave(
         function() {
