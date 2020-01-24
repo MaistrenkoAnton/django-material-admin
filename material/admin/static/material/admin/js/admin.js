@@ -5,7 +5,7 @@
         $('.scroll-pane').jScrollPane();
     });
 
-    $('.collapsible-body').on('mouseenter', function() {
+    $('.collapsible-body, .collapsible-header').on('mouseenter', function() {
         $('.scroll-pane').jScrollPane();
     });
     $('#side-bar').on('mouseenter scroll', function() {
