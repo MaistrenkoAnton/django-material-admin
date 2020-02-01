@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.contrib.admin import ModelAdmin, register
+from modeltranslation.admin import TranslationAdmin
 
 from demo.countries.models import Country, Person, ProxyPerson, Country1, Country2, Country3, Country4, Country5, Country6
 
@@ -11,15 +12,29 @@ class PersonInline(admin.TabularInline):
 
 
 @register(Country)
-class CountryAdmin(ModelAdmin):
+class CountryAdmin(TranslationAdmin):
     list_display = ('name', 'created', 'modified')
     inlines = [PersonInline]
     icon_name = 'location_city'
     search_fields = ('name',)
-    fieldsets = (('Advanced options', {
-        'classes': ('collapse',),
-        'fields': (('name', 'created'), 'modified', 'time'),
-    }),)
+
+    # def has_add_permission(self, obj):
+    #     return False
+
+    class Media:
+        js = (
+            'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
+            'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js',
+            'modeltranslation/js/tabbed_translation_fields1.js',
+        )
+        css = {
+            'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
+        }
+
+    # fieldsets = (('Advanced options', {
+    #     'classes': ('collapse',),
+    #     'fields': (('name', 'created'), 'modified', 'time'),
+    # }),)
 
 
 @register(Person)
