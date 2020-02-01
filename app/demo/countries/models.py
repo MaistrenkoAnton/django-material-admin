@@ -34,6 +34,7 @@ class Person(models.Model):
         settings.AUTH_USER_MODEL, verbose_name=_('User'), on_delete=models.CASCADE, null=True, blank=True
     )
     date = models.DateField(_('Birth Date'))
+    time = models.TimeField(_('Birth Time'), null=True)
     description = models.TextField(_('description'), null=True, blank=True)
     google_play = models.URLField(_('Google Play Link'), blank=True, null=True)
     spotify = models.URLField(_('Spotify Link'), blank=True, null=True)

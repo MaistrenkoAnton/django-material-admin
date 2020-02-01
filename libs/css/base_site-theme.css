@@ -125,3 +125,7 @@ input[type=checkbox]:checked+span:not(.lever):before {
 .datetime-block.date-input i.material-icons.now {
     border-color: var(--main-bg-color);
 }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.ui-state-active a {
+    background: var(--main-bg-color)
+}
