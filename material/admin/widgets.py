@@ -13,7 +13,7 @@ class MaterialAdminDateWidget(widgets.AdminDateWidget):
     @property
     def media(self):
         return forms.Media(
-            js=['material/admin/js/widgets/TimeServerDiff.js', 'material/admin/js/widgets//DateInput.js'],
+            js=['material/admin/js/widgets/TimeServerDiff.js', 'material/admin/js/widgets/DateInput.js'],
             css={'all': ('material/admin/css/date-input.min.css',)}
         )
 
