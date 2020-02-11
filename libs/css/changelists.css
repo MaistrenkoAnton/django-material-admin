@@ -4,6 +4,10 @@
     min-height: 0 !important;
 }
 
+.results {
+    width: 100%
+}
+
 label.label{
     font-size: 11px;
     text-transform: uppercase;

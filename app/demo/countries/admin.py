@@ -17,6 +17,7 @@ class CountryAdmin(TranslationAdmin):
     inlines = [PersonInline]
     icon_name = 'location_city'
     search_fields = ('name',)
+    date_hierarchy = 'created'
 
     # def has_add_permission(self, obj):
     #     return False
