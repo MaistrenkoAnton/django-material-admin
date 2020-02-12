@@ -4,7 +4,9 @@
     min-height: 0 !important;
 }
 
-.results {
+.results,
+.change-list .filtered .results,
+.filtered div.xfull {
     width: 100%;
 }
 

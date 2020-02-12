@@ -18,6 +18,7 @@ class CountryAdmin(TranslationAdmin):
     icon_name = 'location_city'
     search_fields = ('name',)
     date_hierarchy = 'created'
+    list_filter = ('name',)
 
     # def has_add_permission(self, obj):
     #     return False
