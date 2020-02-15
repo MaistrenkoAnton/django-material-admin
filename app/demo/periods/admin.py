@@ -11,7 +11,6 @@ from material.admin.widgets import MaterialAdminTimeWidget, MaterialAdminDateWid
 class DateForm(forms.ModelForm):
     date = forms.DateField(
         widget=MaterialAdminDateWidget,
-        disabled=True
     )
 
     class Meta:
@@ -38,7 +37,6 @@ class DateModelAdmin(SortableAdminMixin, ModelAdmin):
 class TimeForm(forms.ModelForm):
     time = forms.TimeField(
         widget=MaterialAdminTimeWidget,
-        disabled=True
     )
 
     class Meta:

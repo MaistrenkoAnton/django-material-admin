@@ -1,5 +1,4 @@
 {% load static i18n %}
-<link rel="stylesheet" type="text/css" href="{% static 'material/admin/css/clearable_file_input.min.css' %}">
 <div class="label-clear"></div>
 <div class="file-flex-block">
   <div class="file-field input-field">
@@ -27,14 +26,14 @@
 </div>
 {% else %}
 </div>
-  <p>
-    {% if widget.file_name %}
+  {% if widget.file_name %}
+    <p>
       {% trans 'Cached' %}: {{ widget.file_name }}<br>
       <label class="clear-cache-label">
         {% trans 'Clear cache' %}: <br>
         <input type="checkbox" name="{{ widget.name }}-clear-cache"><span></span>
       </label>
-    {% endif %}
-  </p>
+    </p>
+  {% endif %}
 {% endif %}
 <input type="hidden" name="{{ widget.name }}-cached-filefield" value="{{ widget.hash }}">

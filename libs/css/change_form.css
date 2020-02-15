@@ -80,6 +80,26 @@ td.original {
     overflow: visible;
 }
 
+.inline-group .tabular tr.form-row td {
+    padding-bottom: 18px;
+}
+
+.inline-group .tabular tr.form-row td.delete {
+    vertical-align: bottom;
+}
+
+.inline-group .tabular td .datetimeshortcuts{
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+}
+
+.inline-group .tabular td .timezonewarning {
+   position: absolute;
+   font-size: 9px;
+   top: 0;
+}
+
 .related-wrapper-row {
     position: relative;
 }

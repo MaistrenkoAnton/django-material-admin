@@ -36,7 +36,6 @@ class Period1(models.Model):
         verbose_name_plural = _('Periods1')
 
 
-
 class Period2(models.Model):
     period = models.CharField(_('Period2'), max_length=255)
 

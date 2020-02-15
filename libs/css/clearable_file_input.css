@@ -13,6 +13,10 @@
     flex: 1;
 }
 
+.file-field.input-field {
+    margin-bottom: 0;
+}
+
 .file-path-wrapper {
     display: flex;
     align-items: center;
