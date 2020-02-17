@@ -28,8 +28,8 @@
                         values.push(field.val());
                     }
                 });
-                prepopulatedField.val(URLify(values.join(' '), maxLength, allowUnicode));
                 let value = URLify(values.join(' '), maxLength, allowUnicode);
+                prepopulatedField.val(value);
                 if (value) {
                     prepopulatedField.prev().addClass('active');
                 } else {
