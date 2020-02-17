@@ -23,8 +23,6 @@
                 $.each(dependencies, function(i, field) {
                     field = $(field);
                     if (field.val().length > 0) {
-                        console.log('field', field)
-                        console.log('values', values)
                         values.push(field.val());
                     }
                 });
