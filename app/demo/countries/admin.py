@@ -8,8 +8,8 @@ from demo.countries.models import Country, Person, ProxyPerson, Country1, Countr
 class PersonInline(admin.TabularInline):
     model = Person
     ordering = ('id',)
-    extra = 0
-    # fields = ('uuid', 'date', 'video', 'time')
+    extra = 3
+    fields = ('uuid', 'date', 'video', 'time')
 
 
 @register(Country)

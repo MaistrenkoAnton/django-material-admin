@@ -8,6 +8,7 @@ class Relation(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, verbose_name=_('User'))
     image = models.ImageField(verbose_name=_('User Image'), null=True)
     name = models.CharField(max_length=255, verbose_name=_('Name'))
+    slug = models.SlugField(max_length=50, null=True)
     is_relation = models.BooleanField(default=True)
 
     class Meta:

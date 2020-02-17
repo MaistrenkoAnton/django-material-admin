@@ -8,3 +8,4 @@ class RelationAdmin(ModelAdmin):
     list_display = ('id', 'name')
     icon_name = 'layers'
     autocomplete_fields = ('documents', 'user')
+    prepopulated_fields = {"slug": ("name",)}
