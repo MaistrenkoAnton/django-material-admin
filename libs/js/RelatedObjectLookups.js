@@ -84,6 +84,14 @@
             var elemName = elem.nodeName.toUpperCase();
             if (elemName === 'SELECT') {
                 elem.options[elem.options.length] = new Option(newRepr, newId, true, true);
+                if(window.M&&window.M.FormSelect){
+                  var instance = M.FormSelect.getInstance(elem);
+                  if(instance){
+                    var options = instance.options
+                    instance.destroy()
+                    M.FormSelect.init(elem, options);
+                  }
+                }
             } else if (elemName === 'INPUT') {
                 if (elem.className.indexOf('vManyToManyRawIdAdminField') !== -1 && elem.value) {
                     elem.value += ',' + newId;
