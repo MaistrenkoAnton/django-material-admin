@@ -1,0 +1,88 @@
+.related-wrapper .selector {
+  display: flex;
+  width: 100%;
+
+  select {
+    width: 100%;
+  }
+}
+
+.selector-available h2 {
+  height: 35px;
+}
+
+.selector .selector-available, .selector-chosen {
+  flex: 1;
+  width: 100%;
+}
+
+.selector .selector-available .selector-filter {
+  display: flex;
+  padding: 12px;
+
+  input {
+    width: 100%;
+  }
+}
+
+.remove-item i, a.selector-clear-all i {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.related-wrapper .selector ul.selector-chooser {
+  background: none;
+  width: 40px;
+  padding-top: 80px;
+}
+
+a {
+  &.choose-item i, &.remove-item i {
+    color: lightgrey;
+    margin: 5px;
+    cursor: not-allowed;
+  }
+
+  &.selector-choose-all, &.selector-clear-all {
+    i {
+      color: lightgrey;
+      margin: 5px;
+      cursor: not-allowed;
+    }
+
+    color: lightgrey;
+    margin: 5px;
+    cursor: not-allowed;
+  }
+
+  &.choose-item.active i, &.remove-item.active i {
+    color: #417690;
+    cursor: pointer;
+  }
+
+  &.selector-choose-all.active, &.selector-clear-all.active {
+    color: #417690;
+    cursor: pointer;
+
+    i {
+      color: #417690;
+      cursor: pointer;
+    }
+  }
+
+  &.selector-choose-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.selector-clear-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+}

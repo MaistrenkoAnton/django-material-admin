@@ -1,0 +1,51 @@
+.file-flex-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  i {
+    background: white;
+  }
+}
+
+.input-field {
+  padding: 0;
+  flex: 1;
+}
+
+.file-field.input-field {
+  margin-bottom: 0;
+}
+
+.file-path-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.clearable-file-input {
+  padding-left: 20px;
+  width: 90px;
+}
+
+.file-download {
+  position: absolute;
+  right: 90px;
+
+  &.required {
+    right: 0;
+  }
+}
+
+.label-clear {
+  height: 25px;
+}
+
+label.clear-cache-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  span {
+    pointer-events: none;
+  }
+}

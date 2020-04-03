@@ -1,0 +1,39 @@
+.card.additional-submit-line {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+}
+
+.additional-submit-line {
+  .card-content {
+    padding: 5px;
+  }
+
+  button, a {
+    cursor: pointer;
+    padding: 0 5px;
+    height: 28px;
+    line-height: 28px;
+  }
+
+  i {
+    &.material-icons {
+      margin: 0;
+      color: white;
+    }
+
+    &.minimize {
+      color: #417690;
+      cursor: pointer;
+      margin-left: 10px;
+      width: 14px;
+      font-size: 14px;
+      height: 14px;
+
+      &:hover {
+        color: white;
+        background: #417690;
+      }
+    }
+  }
+}
