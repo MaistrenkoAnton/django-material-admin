@@ -49,6 +49,10 @@
         } else {
             document.getElementById(name).value = chosenId;
         }
+        var label = document.querySelector('label[for="'+name+'"]');
+        if(label){
+          label.classList.add('active')
+        }
         win.close();
     }
 
