@@ -1,0 +1,44 @@
+.datetime-block.date-input {
+  margin: 0;
+  padding-top: 30px;
+}
+
+.datetime-flex {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.datetime-block {
+  .time-input {
+    margin-left: 40px;
+  }
+
+  .material-icons {
+    margin: 10px 0 0 -25px;
+    color: #417690;
+    cursor: pointer;
+
+    &.clock {
+      margin: 10px 0 0 -25px;
+    }
+
+    &.now {
+      margin: 10px 0 0 -55px;
+      border-right: 2px solid #417690;
+      padding-right: 2px;
+    }
+  }
+
+  &.date-input .material-icons {
+    &.calendar {
+      margin: 10px 0 0 -25px;
+    }
+
+    &.today {
+      margin: 10px 0 0 -55px;
+      border-right: 2px solid #417690;
+      padding-right: 2px;
+    }
+  }
+}

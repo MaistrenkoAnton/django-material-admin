@@ -1,0 +1,80 @@
+.submit-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+a.dropdown-trigger {
+  display: flex;
+  justify-content: center;
+  min-width: 220px;
+  color: white;
+  margin: 10px 8px;
+
+  i {
+    margin-right: 8px;
+  }
+}
+
+.open-actions {
+  display: flex;
+}
+
+.submit-row a.deletelink {
+  padding: 10px 30px;
+}
+
+.open-actions .default, .submit-row a.deletelink {
+  height: 36px;
+  margin: 10px 8px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+#save-dropdown {
+  li label {
+    display: flex;
+    color: #477091;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+
+  a {
+    border: none;
+    background: none;
+    color: #477091;
+    font-size: 14px;
+  }
+
+  input {
+    border: none;
+    background: none;
+    color: #477091;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  label > input {
+    display: flex;
+    margin: 5px 10px;
+    padding: 0;
+  }
+
+  li > a {
+    display: flex;
+    padding: 10px 0;
+  }
+
+  i {
+    margin-left: 10px;
+  }
+
+  li > a > i {
+    margin-right: 12px;
+  }
+}
