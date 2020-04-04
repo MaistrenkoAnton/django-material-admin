@@ -50,8 +50,8 @@
             document.getElementById(name).value = chosenId;
         }
         var label = document.querySelector('label[for="'+name+'"]');
-        if(label){
-          label.classList.add('active')
+        if (label) {
+          label.classList.add('active');
         }
         win.close();
     }
@@ -84,11 +84,11 @@
             var elemName = elem.nodeName.toUpperCase();
             if (elemName === 'SELECT') {
                 elem.options[elem.options.length] = new Option(newRepr, newId, true, true);
-                if(window.M&&window.M.FormSelect){
+                if (window.M && window.M.FormSelect) {
                   var instance = M.FormSelect.getInstance(elem);
-                  if(instance){
-                    var options = instance.options
-                    instance.destroy()
+                  if (instance) {
+                    var options = instance.options;
+                    instance.destroy();
                     M.FormSelect.init(elem, options);
                   }
                 }
