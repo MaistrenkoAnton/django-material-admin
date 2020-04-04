@@ -1,0 +1,400 @@
+body, .content-wrapper, .app-list, #content-main {
+  background: gray;
+}
+
+.btn.default, .btn-large.default, .btn-small.default, div.selector-chosen h2, #header {
+  color: lightgray;
+  background: #2b2727;
+}
+
+.app-list .app .card .app-item {
+  a, i {
+    color: lightgray;
+    background: #2b2727;
+  }
+}
+
+.btn-floating, .btn, .collapsible-header {
+  color: lightgray;
+  background: #2b2727;
+}
+
+.warning-toast {
+  background: #676565;
+  color: lightgray;
+}
+
+div.breadcrumbs {
+  background: #676565;
+  color: lightgray;
+
+  a:hover {
+    background: #676565;
+    color: lightgray;
+  }
+}
+
+.datepicker-cancel, .datepicker-done, .datepicker-clear, .datepicker-date-display, .timepicker-digital-display, .active .collapsible-header {
+  background: #676565;
+  color: lightgray;
+}
+
+#side-bar .active .collapsible-header {
+  i.material-icons {
+    background: #676565;
+    color: lightgray;
+  }
+
+  background: #676565;
+  color: lightgray;
+}
+
+fieldset {
+  &.collapse.collapsed h2, a.collapse-toggle, &.collapsed a.collapse-toggle {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+.module h2 {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+.select2-container--admin-autocomplete {
+  li.select2-results__option[aria-selected=true] {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+
+  span.select2-selection--single {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+
+    .select2-selection__rendered {
+      background: #474444;
+      color: lightgray;
+      border-color: lightgray;
+    }
+  }
+}
+
+input {
+  &[type=text]:not(.browser-default):focus:not([readonly]) {
+    + label {
+      background: #474444;
+      color: lightgray;
+      border-color: lightgray;
+    }
+
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+
+  &[type=password]:not(.browser-default):focus:not([readonly]), &[type=search]:not(.browser-default):focus:not([readonly]), &[type=url]:not(.browser-default):focus:not([readonly]) {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+.dropdown-content li > {
+  a, span {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+#toolbar.actions, .card .actions, tr td, th td, thead th, .inline-group div.tabular tr.add-row td, table#result_list th, .collection .collection-item {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+.card {
+  .card-content {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+
+  #changelist-filter {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+
+    label {
+      background: #474444;
+      color: lightgray;
+      border-color: lightgray;
+    }
+  }
+
+  .actions label {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+div.date-block .material-icons {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+
+  &.today, &.calendar {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+.errornote, ul.errorlist, input {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+.input-field input[type=text] {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+
+  &:focus {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), .select-wrapper input.select-dropdown:focus, .dropdown-content {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+ul#save-dropdown {
+  input, i, a {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+#changelist p.paginator, select, .selector p.selector-filter, .module input[type=text], div.selector .selector-available h2, textarea, .card, .scroll-pane, .collapsible li:last-child, .module, div.submit-row, .sidenav .collapsible-body {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+#side-bar {
+  .collapsible-body .badge {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+
+  .sidenav .collapsible-body {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+
+    > div.active, a {
+      background: #474444;
+      color: lightgray;
+      border-color: lightgray;
+    }
+  }
+}
+
+.datetime-block.date-input i.material-icons {
+  &.today, &.now {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+.time-block i.material-icons {
+  &.now, &.clock {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+.btn {
+  &:hover, &:focus {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+.btn-floating:hover, .file-flex-block i.material-icons {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+div.inline-related {
+  h3, fieldset {
+    background: #474444;
+    color: lightgray;
+    border-color: lightgray;
+  }
+}
+
+span.select2-dropdown, .datepicker-calendar-container, .input-field div.url, .field-url div.url, .inline-related fieldset.module {
+  background: #474444;
+  color: lightgray;
+  border-color: lightgray;
+}
+
+a {
+  color: lightgray;
+
+  &:link, &:visited, &.choose-item.active i, &.remove-item.active i {
+    color: lightgray;
+  }
+
+  &.selector-choose-all.active, &.selector-clear-all.active {
+    color: lightgray;
+
+    i {
+      color: lightgray;
+    }
+  }
+}
+
+i {
+  &.material-icons, &.minimize, &.material-icons.minimize.nav-bar {
+    color: lightgray;
+  }
+}
+
+#side-bar i.material-icons, .material-icons.prefix {
+  color: lightgray;
+}
+
+.additional-submit-line i.minimize {
+  color: lightgray;
+
+  &.submit-line {
+    color: lightgray;
+  }
+}
+
+.side-wrapper-tools i.minimize.tools {
+  color: lightgray;
+}
+
+.datetime-block {
+  &.date-input .material-icons.today {
+    color: lightgray;
+  }
+
+  .material-icons {
+    &.now, &.calendar, &.clock {
+      color: lightgray;
+    }
+  }
+}
+
+.collapsible-body span.badge, .card .card-content .card-title {
+  color: lightgray;
+}
+
+.datepicker-table td.is-selected, .success-toast, .side-wrapper-tools i.minimize:hover, .additional-submit-line i.minimize.submit-line:hover, .dropdown-content li:hover {
+  background: black;
+}
+
+ul#save-dropdown {
+  li:hover {
+    input, i {
+      background: black;
+    }
+  }
+
+  a:hover {
+    background: black;
+  }
+}
+
+.collapsible-body > div {
+  &.active, &:hover {
+    background: black;
+  }
+}
+
+#side-bar {
+  .collapsible-header:hover {
+    background: black;
+
+    i.material-icons {
+      background: black;
+    }
+  }
+
+  .collapsible-body > div {
+    &:hover {
+      background: black;
+    }
+
+    &.active {
+      &:hover, a {
+        background: black;
+      }
+
+      background: black;
+    }
+
+    &:hover a, &.active .badge, &:hover .badge {
+      background: black;
+    }
+  }
+
+  i.minimize:hover {
+    background: black;
+  }
+}
+
+.select2-container--admin-autocomplete li.select2-results__option--highlighted[aria-selected], #user-tools a:hover, .card.app-count-badge, .collapsible-header:hover {
+  background: black;
+}
+
+.errornote, ul.errorlist {
+  color: orangered;
+}
+
+.errorlist + .input-field {
+  input, label {
+    color: orangered;
+  }
+}
+
+td, th {
+  border-radius: 0;
+}
+
+input[type=checkbox]:checked + span:not(.lever):before {
+  border-right: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+}
+
+.datepicker-table td.is-today {
+  color: white;
+  font-weight: bold;
+}

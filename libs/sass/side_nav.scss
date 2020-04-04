@@ -1,0 +1,129 @@
+#side-bar {
+  background-color: #EEEEEF;
+
+  i.minimize {
+    position: absolute;
+    z-index: 1000;
+    left: 280px;
+    top: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #417690;
+
+    &:hover {
+      background: #417690;
+      color: white;
+    }
+  }
+}
+
+.scroll-pane {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  background: white;
+  width: 300px;
+}
+
+.collapsible {
+  width: 300px;
+  box-shadow: none;
+
+  img.login-logo {
+    position: absolute;
+    top: 40px;
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    z-index: 999;
+    border-radius: 100%;
+  }
+
+  li {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+
+    &:first-child {
+      background: white;
+    }
+
+    &:last-child {
+      padding-bottom: 20px;
+      background: white;
+    }
+  }
+}
+
+.collapsible-header {
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: #417690;
+
+  &:hover {
+    background: rgba(46, 118, 143, 0.1);
+  }
+
+  i {
+    color: #417690;
+  }
+}
+
+.active .collapsible-header {
+  background: rgba(46, 118, 143, 0.2);
+  color: #417690;
+}
+
+.collapsible-body {
+  > div {
+    &:hover {
+      background: rgba(46, 118, 143, 0.2);
+      color: #417690;
+    }
+
+    cursor: pointer;
+    line-height: 20px;
+
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 7px 10px 7px 53px;
+    }
+
+    &.active {
+      background-color: #417690;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  padding: 0;
+  font-weight: bold;
+  border: none;
+
+  .disabled {
+    cursor: not-allowed;
+    color: gray;
+
+    &:hover {
+      background: lightgray;
+    }
+  }
+
+  span.badge {
+    font-size: 13px;
+    color: #417690;
+    margin-top: 0;
+  }
+
+  .active .badge {
+    color: white;
+  }
+}

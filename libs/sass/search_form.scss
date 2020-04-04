@@ -1,0 +1,66 @@
+.search_form_icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.input-field.col label {
+  left: 0;
+}
+
+.search-cta {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+button.search-cta {
+  &:active, &:hover, &:focus {
+    background-color: transparent;
+  }
+}
+
+.select-wrapper.valid > input.select-dropdown {
+  border-bottom: 1px solid #417690;
+  -webkit-box-shadow: 0 1px 0 0 #417690;
+  box-shadow: 0 1px 0 0 #417690;
+}
+
+input.valid {
+  &:not([type]), &[type=date]:not(.browser-default), &[type=datetime-local]:not(.browser-default), &[type=datetime]:not(.browser-default), &[type=email]:not(.browser-default), &[type=number]:not(.browser-default), &[type=password]:not(.browser-default), &[type=search]:not(.browser-default), &[type=tel]:not(.browser-default), &[type=text]:not(.browser-default), &[type=time]:not(.browser-default), &[type=url]:not(.browser-default) {
+    border-bottom: 1px solid #417690;
+    -webkit-box-shadow: 0 1px 0 0 #417690;
+    box-shadow: 0 1px 0 0 #417690;
+
+    &:focus {
+      border-bottom: 1px solid #417690;
+      -webkit-box-shadow: 0 1px 0 0 #417690;
+      box-shadow: 0 1px 0 0 #417690;
+    }
+  }
+}
+
+textarea.materialize-textarea.valid {
+  border-bottom: 1px solid #417690;
+  -webkit-box-shadow: 0 1px 0 0 #417690;
+  box-shadow: 0 1px 0 0 #417690;
+
+  &:focus {
+    border-bottom: 1px solid #417690;
+    -webkit-box-shadow: 0 1px 0 0 #417690;
+    box-shadow: 0 1px 0 0 #417690;
+  }
+}
+
+input {
+  &:not([type]):focus.valid ~ label, &[type=date]:not(.browser-default):focus.valid ~ label, &[type=datetime-local]:not(.browser-default):focus.valid ~ label, &[type=datetime]:not(.browser-default):focus.valid ~ label, &[type=email]:not(.browser-default):focus.valid ~ label, &[type=number]:not(.browser-default):focus.valid ~ label, &[type=password]:not(.browser-default):focus.valid ~ label, &[type=search]:not(.browser-default):focus.valid ~ label, &[type=tel]:not(.browser-default):focus.valid ~ label, &[type=text]:not(.browser-default):focus.valid ~ label, &[type=time]:not(.browser-default):focus.valid ~ label, &[type=url]:not(.browser-default):focus.valid ~ label {
+    color: #417690;
+  }
+}
+
+textarea.materialize-textarea:focus.valid ~ label {
+  color: #417690;
+}

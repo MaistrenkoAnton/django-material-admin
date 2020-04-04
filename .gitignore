@@ -13,3 +13,4 @@ media/
 package/material/
 *.txt.py
 .env
+.DS_Store

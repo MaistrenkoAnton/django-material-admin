@@ -1,0 +1,26 @@
+#tray {
+  display: flex;
+  align-items: center;
+  width: 170px;
+
+  .card .card-content {
+    padding: 5px 5px 0;
+  }
+
+  i {
+    cursor: pointer;
+    color: white;
+    height: 24px;
+    padding: 0 2px;
+  }
+}
+
+.minimized {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  #tray {
+    width: auto !important;
+  }
+}

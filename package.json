@@ -22,6 +22,9 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-minify": "^3.1.0",
     "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-dart-sass": "^1.0.0"
   }
 }
