@@ -21,18 +21,18 @@
     $('.collapsible-body > .active').closest('.scrollspy').addClass('active');
 
     window.addEventListener('load', function() {
-        var collapsible = document.querySelectorAll('.collapsible');
+        var collapsible = document.querySelectorAll('.collapsible:not(.no-autoinit)');
          M.Collapsible.init(collapsible, {
             accordion: false
         });
 
-        var sidenav = document.querySelectorAll('.sidenav');
+        var sidenav = document.querySelectorAll('.sidenav:not(.no-autoinit)');
         M.Sidenav.init(sidenav);
 
-        var elems = document.querySelectorAll('.dropdown-trigger');
+        var elems = document.querySelectorAll('.dropdown-trigger:not(.no-autoinit)');
         M.Dropdown.init(elems);
 
-        $('select').not('.empty-form select, .selector-available select, .selector-chosen select, .admin-autocomplete')
+        $('select').not('.empty-form select, .selector-available select, .selector-chosen select, .admin-autocomplete, .no-autoinit')
         .formSelect();
 
         for(const toast of toasts) {
