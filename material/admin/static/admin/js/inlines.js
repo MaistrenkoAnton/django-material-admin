@@ -1,9 +1,9 @@
 function initInlineTabularSelect () {
-  $('.form-row:not(.empty-form) select').formSelect();
+  $('.form-row:not(.empty-form) select:not(.admin-autocomplete)').formSelect();
 }
 
 function initInlineStackedSelect () {
-  $('.inline-group .inline-related:not(.empty-form) select').formSelect();
+  $('.inline-group .inline-related:not(.empty-form) select:not(.admin-autocomplete)').formSelect();
 }
 
 function initTextareaInline() {
