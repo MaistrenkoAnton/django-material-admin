@@ -29,8 +29,11 @@
         var sidenav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sidenav);
 
-        var elems = document.querySelectorAll('.dropdown-trigger');
-        M.Dropdown.init(elems);
+        var dropdowns = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdowns);
+        
+        var tooltips = document.querySelectorAll('.tooltipped:not(.no-autoinit)');
+        M.Tooltip.init(tooltips);
 
         $('select').not('.empty-form select, .selector-available select, .selector-chosen select, .admin-autocomplete')
         .formSelect();
