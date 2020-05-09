@@ -5,9 +5,10 @@ from demo.documents.forms import DocumentForm
 from demo.documents.models import Document, Link
 
 
-class LinkInline(admin.StackedInline):
+class LinkInline(admin.TabularInline):
     model = Link
     extra = 0
+    show_change_link = True
 
 
 @register(Document)
@@ -18,3 +19,7 @@ class CountryAdmin(ModelAdmin):
     inlines = [LinkInline]
     form = DocumentForm
 
+
+@register(Link)
+class LinkAdmin(ModelAdmin):
+    pass

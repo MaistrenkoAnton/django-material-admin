@@ -93,6 +93,13 @@ td.original {
     }
 
     td {
+      .inline-show-change-link {
+        z-index: 1;
+        i {
+          font-size: 18px;
+        }
+      }
+
       .datetimeshortcuts {
         position: absolute;
         bottom: 0;
