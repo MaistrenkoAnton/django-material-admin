@@ -29,7 +29,7 @@
     <!-- End Side Nav -->
 
     <!-- Container -->
-    <div {% block inside_container %}id="container"{% endblock %} class="{% if not nav_bar_minimized %}indent{% endif %}">
+    <div {% block inside_container %}id="container"{% endblock %} class="{% if not nav_bar_minimized and not is_popup %}indent{% endif %}">
 
       {% if not is_popup %}
         <!-- Header -->
