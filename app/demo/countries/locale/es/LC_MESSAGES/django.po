@@ -1,130 +1,132 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 21:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-05-10 17:36-0400\n"
+"PO-Revision-Date: 2020-05-10 18:20-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: ES <LL@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
 
 #: demo/countries/apps.py:8 demo/countries/models.py:20
 msgid "Countries"
-msgstr ""
+msgstr "Países"
 
 #: demo/countries/choices.py:4
 msgid "Republic"
-msgstr ""
+msgstr "República"
 
 #: demo/countries/choices.py:5
 msgid "Constitutional monarchy"
-msgstr ""
+msgstr "Monarquía constitucional"
 
 #: demo/countries/choices.py:6
 msgid "Absolute monarchy"
-msgstr ""
+msgstr "Monarquía absoluta"
 
 #: demo/countries/choices.py:7
 msgid "N/A"
-msgstr ""
+msgstr "No disponible"
 
-#: demo/countries/models.py:9 demo/countries/models.py:58
-#: demo/countries/models.py:62 demo/countries/models.py:66
-#: demo/countries/models.py:70 demo/countries/models.py:74
-#: demo/countries/models.py:78
+#: demo/countries/models.py:9 demo/countries/models.py:59 demo/countries/models.py:63
+#: demo/countries/models.py:67 demo/countries/models.py:71 demo/countries/models.py:75
+#: demo/countries/models.py:79
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: demo/countries/models.py:10
 msgid "Picture"
-msgstr ""
+msgstr "Imagen"
 
 #: demo/countries/models.py:11
 msgid "Population"
-msgstr ""
+msgstr "Población"
 
 #: demo/countries/models.py:12
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: demo/countries/models.py:13
 msgid "Is safe"
-msgstr ""
+msgstr "Es seguro"
 
 #: demo/countries/models.py:14
 msgid "Created"
-msgstr ""
+msgstr "Creado"
 
 #: demo/countries/models.py:15
 msgid "Modified"
-msgstr ""
+msgstr "Modificado"
 
 #: demo/countries/models.py:16
 msgid "Time"
-msgstr ""
+msgstr "Hora"
 
 #: demo/countries/models.py:19
 msgid "Country"
-msgstr ""
+msgstr "País"
 
 #: demo/countries/models.py:29
 msgid "UUID number"
-msgstr ""
+msgstr "Número UUID"
 
 #: demo/countries/models.py:31
 msgid "Nationality"
-msgstr ""
+msgstr "Nacionalidad"
 
 #: demo/countries/models.py:34
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #: demo/countries/models.py:36
 msgid "Birth Date"
-msgstr ""
+msgstr "Fecha de nacimiento"
 
 #: demo/countries/models.py:37
-msgid "description"
-msgstr ""
+msgid "Birth Time"
+msgstr "Hora de nacimiento"
 
 #: demo/countries/models.py:38
-msgid "Google Play Link"
-msgstr ""
+msgid "description"
+msgstr "descripción"
 
 #: demo/countries/models.py:39
-msgid "Spotify Link"
-msgstr ""
+msgid "Google Play Link"
+msgstr "Enlace de Google Play"
 
 #: demo/countries/models.py:40
-msgid "Itunes Link"
-msgstr ""
+msgid "Spotify Link"
+msgstr "Enlace de Spotify"
 
 #: demo/countries/models.py:41
-msgid "Video"
-msgstr ""
+msgid "Itunes Link"
+msgstr "Enlace de Itunes"
 
-#: demo/countries/models.py:45
-msgid "Person"
-msgstr ""
+#: demo/countries/models.py:42
+msgid "Video"
+msgstr "Vídeo"
 
 #: demo/countries/models.py:46
-msgid "Persons"
-msgstr ""
+msgid "Person"
+msgstr "Persona"
 
-#: demo/countries/models.py:53
-msgid "Proxy Person"
-msgstr ""
+#: demo/countries/models.py:47
+msgid "Persons"
+msgstr "Personas"
 
 #: demo/countries/models.py:54
+msgid "Proxy Person"
+msgstr "Persona de confianza"
+
+#: demo/countries/models.py:55
 msgid "Proxy Persons"
-msgstr ""
+msgstr "Personas de confianza"
