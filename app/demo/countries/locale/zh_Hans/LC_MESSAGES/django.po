@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 21:08+0000\n"
+"POT-Creation-Date: 2020-05-10 17:36-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,9 @@ msgstr "绝对君主制"
 msgid "N/A"
 msgstr "不适当"
 
-#: demo/countries/models.py:9 demo/countries/models.py:58
-#: demo/countries/models.py:62 demo/countries/models.py:66
-#: demo/countries/models.py:70 demo/countries/models.py:74
-#: demo/countries/models.py:78
+#: demo/countries/models.py:9 demo/countries/models.py:59 demo/countries/models.py:63
+#: demo/countries/models.py:67 demo/countries/models.py:71 demo/countries/models.py:75
+#: demo/countries/models.py:79
 msgid "Name"
 msgstr "名称"
 
@@ -96,37 +95,43 @@ msgid "Birth Date"
 msgstr "生日"
 
 #: demo/countries/models.py:37
+#, fuzzy
+#| msgid "Birth Date"
+msgid "Birth Time"
+msgstr "生日"
+
+#: demo/countries/models.py:38
 msgid "description"
 msgstr "描述"
 
-#: demo/countries/models.py:38
+#: demo/countries/models.py:39
 msgid "Google Play Link"
 msgstr "Google Play 链接"
 
-#: demo/countries/models.py:39
+#: demo/countries/models.py:40
 msgid "Spotify Link"
 msgstr "Spotify 链接"
 
-#: demo/countries/models.py:40
+#: demo/countries/models.py:41
 msgid "Itunes Link"
 msgstr "Itunes 链接"
 
-#: demo/countries/models.py:41
+#: demo/countries/models.py:42
 msgid "Video"
 msgstr "视频"
 
-#: demo/countries/models.py:45
+#: demo/countries/models.py:46
 msgid "Person"
 msgstr "人"
 
-#: demo/countries/models.py:46
+#: demo/countries/models.py:47
 msgid "Persons"
 msgstr "人"
 
-#: demo/countries/models.py:53
+#: demo/countries/models.py:54
 msgid "Proxy Person"
 msgstr "代理人"
 
-#: demo/countries/models.py:54
+#: demo/countries/models.py:55
 msgid "Proxy Persons"
 msgstr "代理人"

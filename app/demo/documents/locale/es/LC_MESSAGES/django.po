@@ -1,18 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 21:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-05-10 17:36-0400\n"
+"PO-Revision-Date: 2020-05-10 17:44-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: ES <LL@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,36 +18,44 @@ msgstr ""
 
 #: demo/documents/apps.py:8 demo/documents/models.py:14
 msgid "Documents"
-msgstr ""
+msgstr "Documentos"
 
 #: demo/documents/models.py:6
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: demo/documents/models.py:7
 msgid "Picture"
-msgstr ""
+msgstr "Imagen"
 
 #: demo/documents/models.py:8
 msgid "File"
-msgstr ""
+msgstr "Archivo"
 
 #: demo/documents/models.py:9
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: demo/documents/models.py:10 demo/documents/models.py:23
 msgid "Url"
-msgstr ""
+msgstr "Dirección Url"
 
 #: demo/documents/models.py:13 demo/documents/models.py:24
 msgid "Document"
-msgstr ""
+msgstr "Documento"
+
+#: demo/documents/models.py:25
+msgid "Approved"
+msgstr "Aprobado"
 
 #: demo/documents/models.py:27
-msgid "Link"
-msgstr ""
+msgid "Type"
+msgstr "Tipo"
 
-#: demo/documents/models.py:28
+#: demo/documents/models.py:46
+msgid "Link"
+msgstr "Enlace"
+
+#: demo/documents/models.py:47
 msgid "Links"
-msgstr ""
+msgstr "Enlaces"

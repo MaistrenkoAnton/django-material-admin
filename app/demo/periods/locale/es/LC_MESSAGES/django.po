@@ -1,18 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 21:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-05-10 17:36-0400\n"
+"PO-Revision-Date: 2020-05-10 17:43-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: ES <LL@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,80 +18,80 @@ msgstr ""
 
 #: demo/periods/apps.py:8
 msgid "Periods"
-msgstr ""
+msgstr "Períodos"
 
 #: demo/periods/models.py:6
 msgid "Birth Date"
-msgstr ""
+msgstr "Fecha de nacimiento"
 
 #: demo/periods/models.py:11
 msgid "Date Model"
-msgstr ""
+msgstr "Fecha del Modelo"
 
 #: demo/periods/models.py:12
 msgid "Date Models"
-msgstr ""
+msgstr "Fecha del Modelos"
 
 #: demo/periods/models.py:16
 msgid "Time"
-msgstr ""
+msgstr "Hora"
 
 #: demo/periods/models.py:19
 msgid "Time Model"
-msgstr ""
+msgstr "Hora del Modelo"
 
 #: demo/periods/models.py:20
 msgid "Time Models"
-msgstr ""
+msgstr "Hora del Modelos"
 
 #: demo/periods/models.py:24
 msgid "Date Time"
-msgstr ""
+msgstr "Fecha/hora"
 
 #: demo/periods/models.py:27
 msgid "Date Time Model"
-msgstr ""
+msgstr "Fecha/hora del Modelo"
 
 #: demo/periods/models.py:28
 msgid "Date Time Models"
-msgstr ""
+msgstr "Fecha/hora del Modelos"
 
 #: demo/periods/models.py:32 demo/periods/models.py:35
 msgid "Period1"
-msgstr ""
+msgstr "Período 1"
 
 #: demo/periods/models.py:36
 msgid "Periods1"
-msgstr ""
+msgstr "Períodos 1"
 
-#: demo/periods/models.py:41 demo/periods/models.py:44
+#: demo/periods/models.py:40 demo/periods/models.py:43
 msgid "Period2"
-msgstr ""
+msgstr "Período 2"
 
-#: demo/periods/models.py:45
+#: demo/periods/models.py:44
 msgid "Periods2"
-msgstr ""
+msgstr "Períodos 2"
 
-#: demo/periods/models.py:49 demo/periods/models.py:52
+#: demo/periods/models.py:48 demo/periods/models.py:51
 msgid "Period3"
-msgstr ""
+msgstr "Período 3"
 
-#: demo/periods/models.py:53
+#: demo/periods/models.py:52
 msgid "Periods3"
-msgstr ""
+msgstr "Períodos 3"
 
-#: demo/periods/models.py:57 demo/periods/models.py:60
+#: demo/periods/models.py:56 demo/periods/models.py:59
 msgid "Period4"
-msgstr ""
+msgstr "Período 4"
 
-#: demo/periods/models.py:61
+#: demo/periods/models.py:60
 msgid "Periods4"
-msgstr ""
+msgstr "Períodos 4"
 
-#: demo/periods/models.py:65 demo/periods/models.py:68
+#: demo/periods/models.py:64 demo/periods/models.py:67
 msgid "Period5"
-msgstr ""
+msgstr "Período 5"
 
-#: demo/periods/models.py:69
+#: demo/periods/models.py:68
 msgid "Periods5"
-msgstr ""
+msgstr "Períodos 5"

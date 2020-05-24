@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-17 21:08+0000\n"
+"POT-Creation-Date: 2020-05-10 17:36-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,49 +72,49 @@ msgstr "Періоди"
 msgid "Periods1"
 msgstr "Періоди"
 
-#: demo/periods/models.py:41 demo/periods/models.py:44
+#: demo/periods/models.py:40 demo/periods/models.py:43
 #, fuzzy
 #| msgid "Periods"
 msgid "Period2"
 msgstr "Періоди"
 
-#: demo/periods/models.py:45
+#: demo/periods/models.py:44
 #, fuzzy
 #| msgid "Periods"
 msgid "Periods2"
 msgstr "Періоди"
 
-#: demo/periods/models.py:49 demo/periods/models.py:52
+#: demo/periods/models.py:48 demo/periods/models.py:51
 #, fuzzy
 #| msgid "Periods"
 msgid "Period3"
 msgstr "Періоди"
 
-#: demo/periods/models.py:53
+#: demo/periods/models.py:52
 #, fuzzy
 #| msgid "Periods"
 msgid "Periods3"
 msgstr "Періоди"
 
-#: demo/periods/models.py:57 demo/periods/models.py:60
+#: demo/periods/models.py:56 demo/periods/models.py:59
 #, fuzzy
 #| msgid "Periods"
 msgid "Period4"
 msgstr "Періоди"
 
-#: demo/periods/models.py:61
+#: demo/periods/models.py:60
 #, fuzzy
 #| msgid "Periods"
 msgid "Periods4"
 msgstr "Періоди"
 
-#: demo/periods/models.py:65 demo/periods/models.py:68
+#: demo/periods/models.py:64 demo/periods/models.py:67
 #, fuzzy
 #| msgid "Periods"
 msgid "Period5"
 msgstr "Періоди"
 
-#: demo/periods/models.py:69
+#: demo/periods/models.py:68
 #, fuzzy
 #| msgid "Periods"
 msgid "Periods5"
