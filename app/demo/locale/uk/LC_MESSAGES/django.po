@@ -26,11 +26,11 @@ msgstr "Демо"
 
 #: demo/settings.py:156
 msgid "English"
-msgstr "Английский"
+msgstr "Англійська"
 
 #: demo/settings.py:157
 msgid "Spanish"
-msgstr ""
+msgstr "Іспанська"
 
 #: demo/settings.py:158
 msgid "Russian"
@@ -38,8 +38,8 @@ msgstr "Русский"
 
 #: demo/settings.py:159
 msgid "Ukrainian"
-msgstr "Украинський"
+msgstr "Українська"
 
 #: demo/settings.py:160
 msgid "Chinese"
-msgstr ""
+msgstr "Китайська"

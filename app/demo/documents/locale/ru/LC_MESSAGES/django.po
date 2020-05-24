@@ -50,16 +50,16 @@ msgstr "Документ"
 
 #: demo/documents/models.py:25
 msgid "Approved"
-msgstr ""
+msgstr "Одобрено"
 
 #: demo/documents/models.py:27
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 #: demo/documents/models.py:46
 msgid "Link"
-msgstr ""
+msgstr "Ссылка"
 
 #: demo/documents/models.py:47
 msgid "Links"
-msgstr ""
+msgstr "Ссылки"

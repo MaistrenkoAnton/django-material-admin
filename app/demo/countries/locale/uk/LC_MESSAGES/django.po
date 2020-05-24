@@ -95,10 +95,8 @@ msgid "Birth Date"
 msgstr "День народження"
 
 #: demo/countries/models.py:37
-#, fuzzy
-#| msgid "Birth Date"
 msgid "Birth Time"
-msgstr "День народження"
+msgstr "Час народження"
 
 #: demo/countries/models.py:38
 msgid "description"
