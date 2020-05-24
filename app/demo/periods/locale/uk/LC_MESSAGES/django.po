@@ -61,61 +61,41 @@ msgid "Date Time Models"
 msgstr "Моделі дат та часів"
 
 #: demo/periods/models.py:32 demo/periods/models.py:35
-#, fuzzy
-#| msgid "Periods"
 msgid "Period1"
-msgstr "Періоди"
+msgstr "Період1"
 
 #: demo/periods/models.py:36
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods1"
-msgstr "Періоди"
+msgstr "Періоди1"
 
 #: demo/periods/models.py:40 demo/periods/models.py:43
-#, fuzzy
-#| msgid "Periods"
 msgid "Period2"
-msgstr "Періоди"
+msgstr "Період2"
 
 #: demo/periods/models.py:44
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods2"
-msgstr "Періоди"
+msgstr "Періоди2"
 
 #: demo/periods/models.py:48 demo/periods/models.py:51
-#, fuzzy
-#| msgid "Periods"
 msgid "Period3"
-msgstr "Періоди"
+msgstr "Період3"
 
 #: demo/periods/models.py:52
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods3"
-msgstr "Періоди"
+msgstr "Періоди3"
 
 #: demo/periods/models.py:56 demo/periods/models.py:59
-#, fuzzy
-#| msgid "Periods"
 msgid "Period4"
-msgstr "Періоди"
+msgstr "Період4"
 
 #: demo/periods/models.py:60
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods4"
-msgstr "Періоди"
+msgstr "Періоди4"
 
 #: demo/periods/models.py:64 demo/periods/models.py:67
-#, fuzzy
-#| msgid "Periods"
 msgid "Period5"
-msgstr "Періоди"
+msgstr "Період5"
 
 #: demo/periods/models.py:68
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods5"
-msgstr "Періоди"
+msgstr "Періоди5"

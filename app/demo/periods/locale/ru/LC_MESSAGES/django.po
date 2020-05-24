@@ -67,55 +67,37 @@ msgid "Period1"
 msgstr "Периоды"
 
 #: demo/periods/models.py:36
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods1"
-msgstr "Периоды"
+msgstr "Период1"
 
 #: demo/periods/models.py:40 demo/periods/models.py:43
-#, fuzzy
-#| msgid "Periods"
 msgid "Period2"
-msgstr "Периоды"
+msgstr "Период2"
 
 #: demo/periods/models.py:44
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods2"
-msgstr "Периоды"
+msgstr "Период2"
 
 #: demo/periods/models.py:48 demo/periods/models.py:51
-#, fuzzy
-#| msgid "Periods"
 msgid "Period3"
-msgstr "Периоды"
+msgstr "Период3"
 
 #: demo/periods/models.py:52
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods3"
-msgstr "Периоды"
+msgstr "Период3"
 
 #: demo/periods/models.py:56 demo/periods/models.py:59
-#, fuzzy
-#| msgid "Periods"
 msgid "Period4"
-msgstr "Периоды"
+msgstr "Период4"
 
 #: demo/periods/models.py:60
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods4"
-msgstr "Периоды"
+msgstr "Период4"
 
 #: demo/periods/models.py:64 demo/periods/models.py:67
-#, fuzzy
-#| msgid "Periods"
 msgid "Period5"
-msgstr "Периоды"
+msgstr "Период5"
 
 #: demo/periods/models.py:68
-#, fuzzy
-#| msgid "Periods"
 msgid "Periods5"
-msgstr "Периоды"
+msgstr "Период5"
