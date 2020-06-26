@@ -19,6 +19,9 @@ class UserRelationInline(admin.StackedInline):
     form = RelationForm
     extra = 0
 
+    def has_delete_permission(self, request, obj=None):
+        return False
+
 
 admin.site.unregister(User)
 
