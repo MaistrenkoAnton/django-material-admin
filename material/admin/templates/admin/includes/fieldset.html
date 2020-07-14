@@ -21,10 +21,11 @@
               </label>
             </div>
           {% else %}
-            {{ field.label_tag }}
             {% if field.is_readonly %}
+              <div class="readonly-label">{{ field.label_tag }}</div>
               <div class="readonly">{{ field.contents }}</div>
             {% else %}
+              {{ field.label_tag }}
               {{ field.field }}
             {% endif %}
           {% endif %}
