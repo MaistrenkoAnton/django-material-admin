@@ -27,6 +27,7 @@ class Country(models.Model):
 
 class Person(models.Model):
     uuid = models.UUIDField(_('UUID number'))
+    name = models.CharField(_('Name'), max_length=64)
     nationality = models.ForeignKey(
         'countries.Country', verbose_name=_('Nationality'), on_delete=models.CASCADE, null=True, blank=True
     )

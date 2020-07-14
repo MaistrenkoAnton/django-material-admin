@@ -227,7 +227,9 @@ tr {
 .stacked-inline-close {
   text-align: right;
   cursor: pointer;
-  float: right;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
   margin: 0 1% 1% 0;
 }
 

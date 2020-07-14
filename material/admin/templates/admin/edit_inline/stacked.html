@@ -56,7 +56,7 @@
           {% if inline_admin_form.fk_field %}
             {{ inline_admin_form.fk_field.field }}
           {% endif %}
-          {% if inline_admin_formset.formset.can_delete and inline_admin_formset.has_delete_permission and inline_admin_form.original %}
+          {% if inline_admin_formset.formset.can_delete and inline_admin_formset.has_delete_permission %}
             <div class="stacked-inline-close btn-small btn red">{% trans "Delete" %} <i class="material-icons right">delete_forever</i></div>
           {% endif %}
         </div>

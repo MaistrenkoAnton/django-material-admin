@@ -3,13 +3,14 @@ from django.contrib.admin import ModelAdmin, register
 from modeltranslation.admin import TranslationAdmin
 
 from demo.countries.models import Country, Person, ProxyPerson, Country1, Country2, Country3, Country4, Country5, Country6
+from modeltranslation.admin import TranslationTabularInline
 
 
-class PersonInline(admin.TabularInline):
+class PersonInline(admin.StackedInline):
     model = Person
     ordering = ('id',)
-    extra = 3
-    fields = ('uuid', 'date', 'video', 'time')
+    extra = 1
+    fields = ('uuid', 'name', 'date', 'video', 'time')
 
 
 @register(Country)
@@ -41,7 +42,7 @@ class CountryAdmin(TranslationAdmin):
 
 
 @register(Person)
-class PersonAdmin(ModelAdmin):
+class PersonAdmin(TranslationAdmin):
     icon_name = 'people_outline'
     autocomplete_fields = ('user', 'nationality')
 
