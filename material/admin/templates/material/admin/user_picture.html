@@ -13,7 +13,7 @@
         <img src="{% static 'material/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}">
     {% endif %}
     <div class="card-title">
-        <strong>{% firstof user.get_short_name user.get_username %}</strong>
+        <strong>{% firstof user.get_short_name user.username|default_if_none:'' %}</strong><br>
         <small>{{ user.email|default_if_none:'' }}</small>
     </div>
 {% endblock %}
