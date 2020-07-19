@@ -1,4 +1,3 @@
-from django.contrib import admin
 from django.contrib.admin import ModelAdmin, register
 from modeltranslation.admin import TranslationAdmin
 
@@ -6,7 +5,7 @@ from demo.countries.models import Country, Person, ProxyPerson, Country1, Countr
 from modeltranslation.admin import TranslationTabularInline
 
 
-class PersonInline(admin.StackedInline):
+class PersonInline(TranslationTabularInline):
     model = Person
     ordering = ('id',)
     extra = 1
@@ -29,7 +28,7 @@ class CountryAdmin(TranslationAdmin):
         js = (
             'https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
             'https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js',
-            'modeltranslation/js/tabbed_translation_fields.js',
+            'material/js/tabbed_translation_fields.js',
         )
         css = {
             'screen': ('modeltranslation/css/tabbed_translation_fields.css',),
