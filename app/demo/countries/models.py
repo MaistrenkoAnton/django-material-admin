@@ -17,7 +17,7 @@ class Country(models.Model):
 
     class Meta:
         verbose_name = _('Country')
-        verbose_name_plural = _('Countries')
+        verbose_name_plural = _('Countries Test label value (length). Requires more text.')
         db_table = 'country'
         ordering = ('name',)
 

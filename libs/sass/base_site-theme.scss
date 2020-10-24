@@ -162,9 +162,20 @@ i {
   }
 }
 
-.collapsible-body span.badge, .app-list .app .card .app-item i, .card .card-content .card-title {
-  color: var(--main-bg-color);
-  border-color: var(--main-bg-color);
+.collapsible-body span.badge, .app-list .app .card .app-item i, .card .card-content {
+  .card-app-name {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-title {
+    color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
+  }
 }
 
 fieldset {
