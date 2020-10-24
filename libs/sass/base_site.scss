@@ -153,8 +153,11 @@ input.valid[type=text]:not(.browser-default) {
   }
 }
 
-#changelist #changelist-form .paginator {
-  border: none;
+#changelist #changelist-form {
+  width: 100%;
+  .paginator {
+    border: none;
+  }
 }
 
 #cancel-button {
