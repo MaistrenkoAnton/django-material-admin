@@ -163,6 +163,8 @@ i {
 }
 
 .collapsible-body span.badge, .app-list .app .card .app-item i, .card .card-content {
+   color: var(--main-bg-color);
+   
   .card-app-name {
     width: 90%;
     white-space: nowrap;
