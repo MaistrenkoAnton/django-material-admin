@@ -62,7 +62,9 @@ label.label {
   display: none;
 }
 
-#changelist-filter, .actions {
+#changelist-filter,
+.actions,
+#toolbar.actions {
   position: static !important;
   background-color: white;
   width: 100%;
