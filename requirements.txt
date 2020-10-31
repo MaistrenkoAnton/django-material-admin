@@ -7,3 +7,4 @@ mock==3.0.5
 filefield-cache==0.0.5
 django-modeltranslation==0.15.1
 twine==3.2.0
+whitenoise==5.2.0
