@@ -2,7 +2,7 @@
 
 {% block user_profile %}
     {% if profile_picture %}
-        <img class="login-logo" src="{{ profile_picture }}">
+      <a class="modal-trigger" href="#modal1"><img class="login-logo" src="{{ profile_picture }}"></a>
     {% else %}
         <img class="login-logo" src="{% static 'material/admin/images/login-logo-'|add:current_theme|add:'.jpg' %}">
     {% endif %}
@@ -16,4 +16,63 @@
         <strong>{% firstof user.get_short_name user.username|default_if_none:'' %}</strong><br>
         <small>{{ user.email|default_if_none:'' }}</small>
     </div>
+
+ <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Profile</h4>
+      <img class="login-logo" style="left:45%; width: 100px; height:100px" src="{{ profile_picture }}">
+      <img width="300" height="212" src="{{ profile_bg }}">
+      <form action="">
+        <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <input type="file" name="relation_set-1-image" accept="image/*" id="id_relation_set-1-image">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+        </div>
+           <div class="input-field languages">
+          <label class="required" for="languages">Languages:</label>
+            <div class="related-wrapper">
+            <div class="select-wrapper" >
+                <select name="document" id="languages" tabindex="-1">
+                    <option value="1">English</option>
+                    <option value="2">Русский</option>
+                    <option value="3">Language1</option>
+                    <option value="4">Language2</option>
+                    <option value="5">Language3</option>
+                    <option value="6">Language4</option>
+                    <option value="7">Language5</option>
+                </select>
+            </div>
+        </div>
+      </form>
+
+
+
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+    </div>
+  </div>
+ </div>
 {% endblock %}
+
+<script>
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+</script>
+
+<style>
+    .languages li {
+        height: 20px !important;
+    }
+    .languages ul {
+        height: 130px !important;
+    }
+</style>
