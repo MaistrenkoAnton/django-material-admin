@@ -56,9 +56,8 @@ MATERIAL_ADMIN_SITE = {
 # Application definition
 INSTALLED_APPS = [
     'modeltranslation',
-
+    'material',
     'material.admin',
-    'material.admin.default',
 
     # 'django.contrib.admin',
     'django.contrib.auth',
@@ -71,6 +70,7 @@ INSTALLED_APPS = [
     'daterangefilter',
     'adminsortable2',
     'filefield_cache',
+
 
     'demo.countries',
     'demo.documents',

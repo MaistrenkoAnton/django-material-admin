@@ -1,1 +1,1 @@
-default_app_config = 'material.admin.apps.MaterialConfig'
+default_app_config = 'material.admin.apps.AdminConfig'
