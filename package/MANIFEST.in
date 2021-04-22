@@ -1,5 +1,8 @@
 include LICENSE
 include README.rst
-recursive-include material/static *
 recursive-include material/admin/ *
+recursive-include material/locale/ *
+recursive-include material/static/ *
+recursive-include material/templates/ *
+recursive-include material/templatetags/ *
 recursive-include docs *
