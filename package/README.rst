@@ -8,8 +8,8 @@ Quick start
      .. code-block:: python
 
         INSTALLED_APPS = (
+            'material',
             'material.admin',
-            'material.admin.default',
 
             'django.contrib.auth',
             ...
