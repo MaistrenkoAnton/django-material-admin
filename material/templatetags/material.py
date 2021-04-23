@@ -100,11 +100,11 @@ def material_paginator_number(cl, i):
     if i == DOT:
         return '… '
     elif i == cl.page_num:
-        return format_html('<li class="active"><a>{}</a></li></li> ', i + 1)
+        return format_html('<li class="active"><a>{}</a></li></li> ', i)
     else:
         return format_html(
             '<li class="waves-effect"><a href="{}"{}>{}</a></li> ',
             cl.get_query_string({PAGE_VAR: i}),
-            mark_safe(' class="end"' if i == cl.paginator.num_pages - 1 else ''),
-            i + 1,
+            mark_safe(' class="end"' if i == cl.paginator.num_pages else ''),
+            i,
         )
