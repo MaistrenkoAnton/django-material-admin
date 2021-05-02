@@ -47,7 +47,8 @@ class MaterialAdminSite(AdminSite):
         self.show_counts = self.show_counts or MATERIAL_ADMIN_SITE['SHOW_COUNTS']
 
     def get_urls(self):
-        return super().get_urls() + [path('themes/', self.theme_change, name='themes')]
+        urls = super().get_urls()
+        return urls[:-1] + [path('themes/', self.theme_change, name='themes')] + [urls[-1]]
 
     def theme_change(self, request, extra_context=None):
         """

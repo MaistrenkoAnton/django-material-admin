@@ -51,7 +51,7 @@ MATERIAL_ADMIN_SITE = {
         'invitation': 'contact_mail',
     }
 }
-
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Application definition
 INSTALLED_APPS = [
