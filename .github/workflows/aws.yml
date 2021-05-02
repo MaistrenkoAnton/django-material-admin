@@ -55,6 +55,7 @@ jobs:
       id: run-tests
       run: |
         # Run backend tests
+        docker-compose build
         docker-compose run app ./manage.py test
 
 #
