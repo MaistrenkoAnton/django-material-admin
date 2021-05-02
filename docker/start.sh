@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 while ! (timeout 3 bash -c "</dev/tcp/${POSTGRES_HOST}/${POSTGRES_PORT}") &> /dev/null;
 do

@@ -1,0 +1,8 @@
+POSTGRES_HOST=db
+POSTGRES_DB=app
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=supersecretpassword
+POSTGRES_PORT=5432
+
+SECRET_KEY=d80&6!a9%!)ratrcdk-om7lv2%qkm))tn&c72n))ah+ev^2!7
+PG_TRUST_LOCALNET=true
