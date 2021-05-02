@@ -1,6 +1,6 @@
 #!/bin/bash
 
-then while ! (timeout 3 bash -c "</dev/tcp/${POSTGRES_HOST}/${POSTGRES_PORT}") &> /dev/null;
+while ! (timeout 3 bash -c "</dev/tcp/${POSTGRES_HOST}/${POSTGRES_PORT}") &> /dev/null;
 do
   echo waiting for PostgreSQL to start...;
   sleep 3;
