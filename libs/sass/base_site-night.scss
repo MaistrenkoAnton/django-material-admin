@@ -111,8 +111,14 @@ input {
   }
 }
 
-#toolbar.actions, .card .actions, tr td, th td, thead th, .inline-group div.tabular tr.add-row td, table#result_list th, .collection .collection-item {
-  background: #474444;
+#toolbar.actions,
+.card .actions,
+tr td, th td,
+thead th,
+.inline-group div.tabular tr.add-row td,
+table#result_list th,
+.collection .collection-item {
+  background: #474444 !important;
   color: lightgray;
   border-color: lightgray;
 }

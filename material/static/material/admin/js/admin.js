@@ -38,7 +38,11 @@
         for(const toast of toasts) {
             const messages = $(`.messagelist > .${toast}`);
             for(let message of messages) {
-                M.toast({html: message.innerText, classes: `rounded ${toast}-toast`});
+              M.toast({
+                html: message.innerText,
+                classes: `rounded ${toast}-toast`,
+                displayLength: 10000
+              });
             }
         }
         $('img[src$="icon-yes.svg"]').replaceWith('<i class="material-icons green-color medium-icon">check_circle</i>');
