@@ -13,10 +13,11 @@ services:
       - ./material:/app/material
       - ./docker:/app/docker
     environment:
-      - DB_HOST=db
-      - DB_NAME=app
-      - DB_USER=postgres
-      - DB_PASS=supersecretpassword
+      - POSTGRES_HOST=db
+      - POSTGRES_DB=app
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=supersecretpassword
+      - POSTGRES_PORT=5432
     depends_on:
       - db
 
@@ -26,5 +27,3 @@ services:
       - POSTGRES_DB=app
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=supersecretpassword
-    ports:
-      - "5432:5432"
