@@ -144,27 +144,35 @@ https://material.io/resources/icons/?style=baseline
 ##########################################################
 
 
+==============
+video lessons:
+==============
+
+- PySchool
+
+.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/pyself.png
+   :target: https://pyschool.tech/lessons/django-material-admin-installation
 
 
 ==================
-Video instructions (DEPRECATED) #  will be updated soon
+Video instructions
 ==================
 |
 |
 - Install Django
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material1.png
-   :target: https://youtu.be/G101hR6gkFo
+   :target: https://youtu.be/LiTcyD9A1A0
 |
 |
 - Install Django-material-admin
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material2.png
-   :target: https://youtu.be/s0gi1CV5PZ0
+   :target: https://youtu.be/trY492bgNQU
 |
 |
 - Register models for material administration interface
 
 .. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material3.png
-   :target: https://youtu.be/C8AxT5RMnAw
+   :target: https://youtu.be/_ifWi-a1z6M
 
