@@ -21,7 +21,7 @@
 {% if widget.is_initial %}
   <a href="{{ widget.value.url }}" class="file-download {% if widget.required %}required{% endif %}"
      title="{% trans 'Download' %}">
-    <i class="material-icons">get_app</i>
+    <i class="material-icons" aria-hidden="true">get_app</i>
   </a>
 </div>
 {% else %}

@@ -1,5 +1,6 @@
 {% load i18n admin_urls static %}
 <fieldset class="aligned">
+  <legend></legend>
   <div class="js-inline-admin-formset inline-group"
        id="{{ inline_admin_formset.formset.prefix }}-group"
        data-inline-type="stacked"
@@ -15,7 +16,7 @@
         <div class="inline-related card {% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}{% if forloop.last and inline_admin_formset.has_add_permission %} empty-form last-related{% endif %}"
              id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
           <h3>
-            <b>{{ inline_admin_formset.opts.verbose_name|capfirst }}:</b>&nbsp;
+            <strong>{{ inline_admin_formset.opts.verbose_name|capfirst }}:</strong>&nbsp;
             <span class="inline_label">
               {% if inline_admin_form.original %}
                 {{ inline_admin_form.original }}
@@ -57,7 +58,7 @@
             {{ inline_admin_form.fk_field.field }}
           {% endif %}
           {% if inline_admin_formset.formset.can_delete and inline_admin_formset.has_delete_permission %}
-            <div class="stacked-inline-close btn-small btn red">{% trans "Delete" %} <i class="material-icons right">delete_forever</i></div>
+            <div class="stacked-inline-close btn-small btn red">{% trans "Delete" %} <i class="material-icons right" aria-hidden="true">delete_forever</i></div>
           {% endif %}
         </div>
       {% endfor %}

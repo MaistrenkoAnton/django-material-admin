@@ -5,24 +5,25 @@
   <div class="tabular inline-related {% if forloop.last %}last-related{% endif %}">
     {{ inline_admin_formset.formset.management_form }}
     <fieldset class="module {{ inline_admin_formset.classes }}">
+      <legend></legend>
       <h2>{{ inline_admin_formset.opts.verbose_name_plural|capfirst }}</h2>
       {{ inline_admin_formset.formset.non_form_errors }}
-      <table>
+      <table aria-describedby="tabular inline">
 
         <thead>
           <tr>
-            <th class="original"></th>
+            <th scope="row"class="original"></th>
             {% for field in inline_admin_formset.fields %}
               {% if not field.widget.is_hidden %}
-                <th class="column-{{ field.name }}{% if field.required %} required{% endif %}">{{ field.label|capfirst }}
+                <th scope="row"class="column-{{ field.name }}{% if field.required %} required{% endif %}">{{ field.label|capfirst }}
                   {% if field.help_text %}
-                    <i class="help help-tooltip material-icons small-icon"
+                    <i class="help help-tooltip material-icons small-icon" aria-hidden="true"
                        title="{{ field.help_text|striptags }}">help_outline</i>
                   {% endif %}
                 </th>
               {% endif %}
             {% endfor %}
-            {% if inline_admin_formset.formset.can_delete %}<th class="center">{% trans "Delete?" %}</th>{% endif %}
+            {% if inline_admin_formset.formset.can_delete %}<th scope="row"class="center">{% trans "Delete?" %}</th>{% endif %}
           </tr>
         </thead>
 
@@ -46,7 +47,7 @@
                     {% if inline_admin_form.original %}
                       {% if inline_admin_form.model_admin.show_change_link and inline_admin_form.model_admin.has_registered_model %}
                         <a href="{% url inline_admin_form.model_admin.opts|admin_urlname:'change' inline_admin_form.original.pk|admin_urlquote %}">
-                          <i class="material-icons">
+                          <i class="material-icons" aria-hidden="true">
                             {% if inline_admin_formset.has_change_permission %}edit{% else %}remove_red_eye{% endif %}
                           </i>
                         </a>
@@ -91,7 +92,7 @@
                   {% if inline_admin_form.original %}
                     {{ inline_admin_form.deletion_field.field }}
                   {% endif %}
-                  <i class="material-icons delete-inline-row">delete_forever</i>
+                  <i class="material-icons delete-inline-row" aria-hidden="true">delete_forever</i>
                 </td>
               {% endif %}
             </tr>

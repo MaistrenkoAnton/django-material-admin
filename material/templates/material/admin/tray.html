@@ -1,14 +1,17 @@
 {% load i18n %}
 
   <i class="tray-nav-bar material-icons {% if not nav_bar_minimized %}minimized{% endif %}"
+     aria-hidden="true"
      title="{% trans 'Side Navigation' %}">
      menu
   </i>
   <i class="tray-additional-submit-row material-icons {% if not additional_submit_line %}minimized{% endif %}"
+     aria-hidden="true"
      title="{% trans 'Additional submit line' %}">
      control_point_duplicate
   </i>
    <i class="tray-object-tools material-icons {% if not object_tools %}minimized{% endif %}"
+     aria-hidden="true"
      title="{% trans 'Object tools' %}">
      perm_data_setting
   </i>

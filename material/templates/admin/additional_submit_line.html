@@ -8,7 +8,7 @@
         {% if show_save_as_new %}
           <button type="submit" title="{% trans 'Save as new' %}" name="_saveasnew"
             class="default waves-effect waves-light btn">
-            <i class="material-icons">fiber_new</i>
+            <i class="material-icons" aria-hidden="true">fiber_new</i>
           </button>
         {% endif %}
         {% if show_save_and_add_another %}
@@ -16,7 +16,7 @@
                   class="default waves-effect waves-light btn"
                   title="{% trans 'Save and add another' %}"
                   name="_addanother">
-                  <i class="material-icons">add_circle</i>
+                  <i class="material-icons" aria-hidden="true">add_circle</i>
           </button>
         {% endif %}
         {% if show_save_and_continue %}
@@ -24,9 +24,9 @@
                   class="default waves-effect waves-light btn"
                   title="{% if can_change %}{% trans 'Save and continue editing' %}{% else %}{% trans 'Save and view' %}{% endif %}">
             {% if can_change %}
-              <i class="material-icons right">edit</i>
+              <i class="material-icons right" aria-hidden="true">edit</i>
             {% else %}
-                <i class="material-icons right">visibility</i>
+                <i class="material-icons right" aria-hidden="true">visibility</i>
             {% endif %}
            </button>
         {% endif %}
@@ -34,22 +34,22 @@
            <a href="{% url opts|admin_urlname:'changelist' %}"
               class="default waves-effect waves-light btn"
               title="{% trans 'Close' %}">
-             <i class="material-icons right">close</i>
+             <i class="material-icons right" aria-hidden="true">close</i>
            </a>
         {% endif %}
         {% if show_save %}
            <button type="submit" class="default waves-effect waves-light btn" name="_save" title="{% trans 'Save' %}">
-               <i class="material-icons right">save</i>
+               <i class="material-icons right" aria-hidden="true">save</i>
            </button>
         {% endif %}
         {% if show_delete_link and original %}
           {% url opts|admin_urlname:'delete' original.pk|admin_urlquote as delete_url %}
             <a href="{% add_preserved_filters delete_url %}"
                class="deletelink waves-effect waves-light btn red" title="{% trans 'Delete' %}">
-                <i class="material-icons right small-icon">delete_forever</i>
+                <i class="material-icons right small-icon" aria-hidden="true">delete_forever</i>
             </a>
         {% endif %}
-          <i class="material-icons minimize submit-line" title="{% trans 'Minimize' %}">close</i>
+          <i class="material-icons minimize submit-line" aria-hidden="true" title="{% trans 'Minimize' %}">close</i>
       </div>
     </div>
   </div>

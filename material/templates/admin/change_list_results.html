@@ -6,12 +6,12 @@
 {% endif %}
 {% if results %}
 <div class="results">
-<table id="result_list" class="highlight">
+<table id="result_list" class="highlight" aria-describedby="result list">
 <thead>
 <tr>
 {% for header in result_headers %}
 
-<th scope="col" {{ header.class_attrib }}>
+<th scope="row"scope="col" {{ header.class_attrib }}>
  {% if header.sortable %}
    {% if header.sort_priority > 0 %}
      <div class="sortoptions">

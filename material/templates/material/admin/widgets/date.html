@@ -5,8 +5,8 @@
            class="{{ widget.attrs.class }}" value="{{ widget.value|default_if_none:'' }}"
            {% if widget.attrs.disabled %}disabled{% endif %}>
     {% if not widget.attrs.disabled %}
-        <i class="material-icons calendar" title="{% trans 'Calendar' %}">insert_invitation</i>
-        <i class="material-icons today" title="{% trans 'Today' %}">save_alt</i>
+        <i class="material-icons calendar" aria-hidden="true" title="{% trans 'Calendar' %}">insert_invitation</i>
+        <i class="material-icons today" aria-hidden="true" title="{% trans 'Today' %}">save_alt</i>
     {% endif %}
 </div>
 <div class="time-difference"></div>

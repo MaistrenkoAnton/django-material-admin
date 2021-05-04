@@ -2,15 +2,15 @@
 
 {% block user_profile %}
     {% if profile_picture %}
-        <img class="login-logo" src="{{ profile_picture }}">
+        <img class="login-logo" alt="login logo" src="{{ profile_picture }}">
     {% else %}
-        <img class="login-logo" src="{% static 'material/admin/images/login-logo-'|add:current_theme|add:'.jpg' %}">
+        <img class="login-logo" alt="login logo" src="{% static 'material/admin/images/login-logo-'|add:current_theme|add:'.jpg' %}">
     {% endif %}
 
     {% if profile_bg %}
-        <img width="300" height="212" src="{{ profile_bg }}">
+        <img width="300" height="212" alt="profile background" src="{{ profile_bg }}">
     {% else %}
-        <img src="{% static 'material/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}">
+        <img src="{% static 'material/admin/images/login-bg-'|add:current_theme|add:'.jpg' %}" alt="profile background">
     {% endif %}
     <div class="card-title">
         <strong>{% firstof user.get_short_name user.username|default_if_none:'' %}</strong><br>

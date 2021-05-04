@@ -36,7 +36,7 @@
         <div id="header">
           <div id="branding">
             {% block tray %}
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" aria-hidden="true">menu</i></a>
               {% if nav_bar_minimized or additional_submit_line or object_tools %}
                 <div id="tray">
                   {% include 'material/admin/tray.html' %}

@@ -12,7 +12,7 @@
   <div class="input-field col s6">
     <input id="icon_prefix" class="validate" type="text" size="40" name="{{ search_var }}" value="{{ cl.query }}">
     <label for="icon_prefix">{% trans 'Search' %} {{ cl.opts.verbose_name }}</label>
-    <button class="search-cta" type="submit"><i class="material-icons">search</i></button>
+    <button class="search-cta" type="submit"><i class="material-icons" aria-hidden="true">search</i></button>
     {% if show_result_count %}
     <span class="small quiet">
       {% blocktrans count counter=cl.result_count %}{{ counter }}

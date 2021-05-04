@@ -17,7 +17,7 @@
             {% url cl.opts|admin_urlname:'add' as add_url %}
             <div class="fixed-action-btn">
               <a href="{% add_preserved_filters add_url is_popup to_field %}" class="btn-floating btn-large waves-effect waves-light">
-                <i class="material-icons">add</i>
+                <i class="material-icons" aria-hidden="true">add</i>
               </a>
             </div>
           </li>

@@ -46,11 +46,11 @@ function initTextareaInline() {
                     // If forms are laid out as table rows, insert the
                     // "add" button in a new table row:
                     var numCols = this.eq(-1).children().length;
-                    $parent.append('<tr class="' + options.addCssClass + '"><td colspan="' + numCols + '"><a href="#" class="add-inline-link"><i class="material-icons">add</i>' + options.addText + "</a></tr>");
+                    $parent.append('<tr class="' + options.addCssClass + '"><td colspan="' + numCols + '"><a href="#" class="add-inline-link"><i class="material-icons" aria-hidden="true">add</i>' + options.addText + "</a></tr>");
                     addButton = $parent.find("tr:last a");
                 } else {
                     // Otherwise, insert it immediately after the last form:
-                    $this.parent().after('<div><a href="#" class="add-inline-link"><i class="material-icons">add</i><span>' + options.addText + "</span></a></div>");
+                    $this.parent().after('<div><a href="#" class="add-inline-link"><i class="material-icons" aria-hidden="true">add</i><span>' + options.addText + "</span></a></div>");
                     addButton = $this.parent().next().find("a");
                 }
             }

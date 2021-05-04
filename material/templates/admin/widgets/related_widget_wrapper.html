@@ -9,21 +9,21 @@
             <a class="related-widget-wrapper-link change-related" id="change_id_{{ name }}"
                 data-href-template="{{ change_related_template_url }}?{{ url_params }}"
                 title="{% blocktrans %}Change selected {{ model }}{% endblocktrans %}">
-                <i class="material-icons small-icon" title="{% trans 'Change' %}">edit</i>
+                <i class="material-icons small-icon" aria-hidden="true" title="{% trans 'Change' %}">edit</i>
             </a>
             {% endif %}
             {% if can_add_related %}
             <a class="related-widget-wrapper-link add-related" id="add_id_{{ name }}"
                 href="{{ add_related_url }}?{{ url_params }}"
                 title="{% blocktrans %}Add another {{ model }}{% endblocktrans %}">
-                <i class="material-icons small-icon" title="{% trans 'Add' %}">add</i>
+                <i class="material-icons small-icon" aria-hidden="true" title="{% trans 'Add' %}">add</i>
             </a>
             {% endif %}
             {% if can_delete_related %}
             <a class="related-widget-wrapper-link delete-related" id="delete_id_{{ name }}"
                 data-href-template="{{ delete_related_template_url }}?{{ url_params }}"
                 title="{% blocktrans %}Delete selected {{ model }}{% endblocktrans %}">
-                <i class="material-icons small-icon" title="{% trans 'Delete' %}">delete_forever</i>
+                <i class="material-icons small-icon" aria-hidden="true" title="{% trans 'Delete' %}">delete_forever</i>
             </a>
             {% endif %}
             {% endif %}

@@ -2,7 +2,7 @@
 
 <div class="scroll-pane">
     {% if not mobile %}
-        <i class="material-icons minimize nav-bar" title="{% trans 'Minimize' %}">close</i>
+        <i class="material-icons minimize nav-bar" aria-hidden="true" title="{% trans 'Minimize' %}">close</i>
     {% endif %}
     {% if available_apps %}
         <ul class="collapsible">
@@ -20,7 +20,7 @@
             {% for app in available_apps %}
             <li class="scrollspy">
                 <div class="collapsible-header">
-                    <i class="material-icons">{% if app.icon %}{{ app.icon }}{% else %}settings{% endif %}</i>
+                    <i class="material-icons" aria-hidden="true">{% if app.icon %}{{ app.icon }}{% else %}settings{% endif %}</i>
                     {{ app.name }}
                 </div>
                 <div class="collapsible-body">

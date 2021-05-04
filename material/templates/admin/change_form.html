@@ -65,10 +65,10 @@
       {% block object-tools %}
         {% if change %}
           <div class="side-wrapper-tools">
-            <i class="material-icons minimize tools" title="{% trans 'Minimize' %}">close</i>
+            <i class="material-icons minimize tools" aria-hidden="true" title="{% trans 'Minimize' %}">close</i>
             <div class="card">
               <div class="card-content">
-                <h4><i class="material-icons prefix">perm_data_setting</i>{% trans 'Tools' %}</h4>
+                <h4><i class="material-icons prefix" aria-hidden="true">perm_data_setting</i>{% trans 'Tools' %}</h4>
                 {% if not is_popup %}
                   <ul class="material-object-tools collection with-header">
                     {% block object-tools-items %}
