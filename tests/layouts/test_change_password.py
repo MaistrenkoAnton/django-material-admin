@@ -61,7 +61,7 @@ class ChangePasswordLayoutsTest(TestCase):
         self.assertIn(
             """<button class="btn waves-effect waves-light default" type="submit" name="action">
                 Change my password
-                <i class="material-icons right">send</i>
+                <i class="material-icons right" aria-hidden="true">send</i>
               </button>
             """, response._container[0].decode('utf-8')
         )
