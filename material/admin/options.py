@@ -27,9 +27,9 @@ class MaterialModelAdminMixin:
             'vendor/jquery/jquery%s.js' % extra,
             'jquery.init.js',
             'core.js',
-            'actions%s.js' % extra,
+            'actions.js',
             'urlify.js',
-            'prepopulate%s.js' % extra,
+            'prepopulate.js',
             'vendor/xregexp/xregexp%s.js' % extra,
         ]
         material_js = [
