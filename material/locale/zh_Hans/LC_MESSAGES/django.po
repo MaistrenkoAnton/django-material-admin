@@ -217,7 +217,7 @@ msgstr "二月"
 
 #: templates/admin/base_site.html:129
 msgid "Mar"
-msgstr "遊行"
+msgstr "三月"
 
 #: templates/admin/base_site.html:130
 msgid "Apr"
@@ -501,7 +501,7 @@ msgstr ""
 
 #: templates/admin/submit_line.html:7
 msgid "All actions"
-msgstr "所有行动"
+msgstr "所有操作"
 
 #: templates/admin/widgets/clearable_file_input.html:6
 msgid "File"
