@@ -8,7 +8,7 @@
     $('.collapsible-body, .collapsible-header').on('mouseenter', function() {
         $('.scroll-pane').jScrollPane();
     });
-    $('#side-bar').on('mouseenter scroll', function() {
+    $('#side-bar').on('mouseenter', function() {
         $('.scroll-pane').jScrollPane();
     }).mouseleave(
         function() {
