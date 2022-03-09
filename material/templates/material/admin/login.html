@@ -75,9 +75,9 @@
                 <input type="password" id="password-input" name="{{ form.password.name }}"
                        class="{% if form.password.errors %}invalid{% endif %}"
                        value="{{ form.password.value|default_if_none:'' }}">
+                <label for="password-input">{{ form.password.label }}</label>
                 <i id="visible-on" aria-hidden="true" class="material-icons prefix password-visible">visibility</i>
                 <i id="visible-off" aria-hidden="true" class="material-icons prefix password-visible hide">visibility_off</i>
-                <label for="password-input">{{ form.password.label }}</label>
                 <div class="prefix-error">{{ form.password.errors }}</div>
               </div>
             </div>
