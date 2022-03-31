@@ -47,6 +47,7 @@
       {% block pagination %}{% pagination cl %}{% endblock %}
       </form>
     </div>
+    {% block side_wrapper %}
     <div class="side-wrapper">
       <div id="changelist-form" class="card">
         {% if action_form and actions_on_top and cl.show_admin_actions %}{% admin_actions %}{% endif %}
@@ -65,5 +66,6 @@
         {% endblock %}
       </div>
     </div>
+    {% endblock %}
   </div>
 {% endblock %}
