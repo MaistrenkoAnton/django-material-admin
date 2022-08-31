@@ -1,3 +1,5 @@
+import django
+
 from django.contrib.admin.sites import AdminSite
 from django.urls import NoReverseMatch, reverse, path
 from django.utils.functional import LazyObject
@@ -144,7 +146,7 @@ class MaterialAdminSite(AdminSite):
                     or MATERIAL_ADMIN_SITE['APP_ICONS'].get(app_label)
                 }
 
-        if label:
+        if label and django.VERSION < (4, 1):
             return app_dict.get(label)
         return app_dict
 
