@@ -1,5 +1,5 @@
 Django==3.2
-Pillow==8.2.0
+Pillow==9.3.0
 django-daterangefilter==1.0.0
 psycopg2-binary==2.8.6
 django-admin-sortable2==1.0
