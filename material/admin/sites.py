@@ -143,9 +143,6 @@ class MaterialAdminSite(AdminSite):
                     'icon': getattr(apps.get_app_config(app_label), 'icon_name', None)
                     or MATERIAL_ADMIN_SITE['APP_ICONS'].get(app_label)
                 }
-
-        if label:
-            return app_dict.get(label)
         return app_dict
 
 
