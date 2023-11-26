@@ -3,8 +3,8 @@
 .. .. |build|
 
 
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.8.6&x2=0
-    :target: https://pypi.org/project/django-material-admin/
+.. |pypi| image:: https://github.com/godjangollc/django-material-admin/actions/workflows/python-publish.yml/badge.svg
+    :target: https://pypi.org/project/godjango-material-admin/
 .. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
     :target: https://www.python.org/
 .. |django| image:: https://img.shields.io/badge/django-2.2+|3.2-mediumseagreen.svg
