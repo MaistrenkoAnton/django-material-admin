@@ -80,10 +80,10 @@
             {% trans 'Change password' %}
         </a>
     {% endif %}
-    <a href="{% url 'admin:logout' %}">
-        {% trans 'Log out' %}
-        <i class="material-icons" aria-hidden="true">exit_to_app</i>
-    </a>
+    <form id="logout-form" method="post" action="{% url 'admin:logout' %}">
+        {% csrf_token %}
+        <button type="submit" style="font-weight:700; border:0;">{% trans 'Log out' %}</button>
+    </form>
 {% endblock %}
 
 {% block side_nav %}
